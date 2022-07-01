@@ -1,0 +1,13 @@
+.html-content-holder {
+  width: 200px;
+  height: 200px;
+  background-size: contain; 
+}
+
+.mferImg canvas {
+margin: 10px;
+}
+
+.mferImg {
+  text-align: center;
+}
