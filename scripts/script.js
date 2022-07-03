@@ -299,59 +299,55 @@ var _shortHair = "url(" + baseURL + shortHair[t14 - 1] + "), ";
 
 var rollHoodies = Math.floor(Math.random() * 10);
 if (rollHoodies <= 1) {
-var seed = _hoodies + _smoke + _watch420 + _mouth + _headphones + _eyes + _beard + _type + _background;
-document.getElementsByClassName("html-content-holder")[0].style.backgroundImage = seed;
-    
+var _hatsOver = "";
+var _hatsUnder = "";
+var _shortHair = "";
+var _longHair = "";
+var _shirt = "";    
 } else {
+    var _hoodies = "";
     var rollShirts = Math.floor(Math.random() * 10);
     if (rollShirts <= 5) {
     } else {
     var _shirt = "";
     }
     var rollOverUnder = Math.floor(Math.random() * 10);
-   
-    if (rollOverUnder <= 2) {
+    if (rollOverUnder <= 2) { 
+    var _hatsOver = ""
+    var _shortHair = ""
       var rollLongHair = Math.floor(Math.random() * 10);
       if (rollLongHair <= 3) {
-        var _hatsUnder = ""
       } else {
 				var _longHair = ""
       }
-var seed = _smoke + _watch420 + _mouth + _headphones   + _hatsUnder + _eyes + _longHair + _shirt + _beard + _type + _background;
-    document.getElementsByClassName("html-content-holder")[0].style.backgroundImage = seed;
-    
+   
     } else if (rollOverUnder >= 2 && rollOverUnder < 4){
-
+    var _hatsUnder = ""
+    var _shortHair = ""
       var rollLongHair = Math.floor(Math.random() * 10);
       if (rollLongHair <= 4) {
-        var _hatsOver = ""
       } else {
 				var _longHair = ""
       }
-var seed = _smoke  + _watch420 + _mouth + _hatsOver + _headphones + _eyes  + _longHair + _shirt + _beard + _type + _background;
-    document.getElementsByClassName("html-content-holder")[0].style.backgroundImage = seed;
-
-
     } else if (rollOverUnder >= 4 && rollOverUnder < 6){
-       
+    var _hatsUnder = "";
+    var _hatsOver = "";
+    var _shortHair = "";
        var rollLongHair = Math.floor(Math.random() * 10);
       if (rollLongHair <= 5) {
-				var _longHair = "";
-                       var seed = _smoke + _watch420 + _mouth + _headphones + _shortHair + _longHair + _eyes + _shirt + _beard + _type + _background;
-    document.getElementsByClassName("html-content-holder")[0].style.backgroundImage = seed;
       } else {
-
-        var _shortHair = "";
-               var seed = _smoke + _watch420 + _mouth + _headphones + _shortHair + _longHair + _eyes + _shirt + _beard + _type + _background;
-    document.getElementsByClassName("html-content-holder")[0].style.backgroundImage = seed;
+				var _longHair = "";
       }
-       
     } else if (rollOverUnder >= 6) {
-var seed = _smoke + _watch420 + _mouth + _headphones + _eyes + _shirt + _beard + _type + _background;
-    document.getElementsByClassName("html-content-holder")[0].style.backgroundImage = seed;
+    var _hatsUnder = "";
+    var _hatsOver = "";
+    var _longHair = "";
     }
     
 }
+
+var seed = _hoodies + _smoke + _watch420 + _mouth + _hatsOver + _headphones + _hatsUnder + _eyes + _longHair + _shortHair + _shirt + _beard + _type + _background;
+document.getElementsByClassName("html-content-holder")[0].style.backgroundImage = seed;
 
 html2canvas(document.getElementsByClassName("html-content-holder")[0],{
 	allowTaint: true,
@@ -366,7 +362,6 @@ document.getElementsByClassName("html-content-holder")[0].style.display = "none"
 }
 
 function buildMfers() {
-
 var _t1 = document.getElementsByClassName("background")[0].value;
 var _t2 = document.getElementsByClassName("type")[0].value;
 var _t3 = document.getElementsByClassName("eyes")[0].value;
@@ -381,9 +376,7 @@ var _t11 = document.getElementsByClassName("longHair")[0].value;
 var _t12 = document.getElementsByClassName("hatsUnder")[0].value;
 var _t13 = document.getElementsByClassName("hatsOver")[0].value;
 var _t14 = document.getElementsByClassName("shortHair")[0].value;
-
 var _seed = _t1 + _t2 + _t3 + _t4 + _t5 + _t6 + _t7 + _t8 + _t9 + _t10 + _t11 + _t12 + _t13 + _t14;
-console.log(_seed);
 generateMfers(100, _seed);
 
 }
