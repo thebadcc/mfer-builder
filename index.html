@@ -1,15 +1,178 @@
 <html>
-  <head>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.0.0-rc.7/dist/html2canvas.js"></script>
-    <link rel="stylesheet" href="./styles/style.css">
-  </head>
-  <body onload="generateMfers(100)">
-    <div class="html-content-holder"></div>
-    <div class="mferWrapper">
-          <div class="mferImg"></div>
-    </div>
-  <script src="./scripts/script.js"></script>
-  </body>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.0.0-rc.7/dist/html2canvas.js"></script>
+        <link rel="stylesheet" href="./styles/style.css">
+    </head>
+    <body onload="generateMfers(100, '0000000000000000000000000000')">
+        <button class="buildMfers" onclick="buildMfers()">Generate</button>
+        <select class="background">
+            <option value="00">Random</option>
+            <option value="-1">None</option>
+            <option value="01">Blue</option>
+            <option value="02">Yellow</option>
+            <option value="03">Green</option>
+            <option value="04">Orange</option>
+            <option value="05">Red</option>
+            <option value="06">Space</option>
+            <option value="07">Tree</option>
+        </select>
+        <select class="type">
+            <option value="00">Random</option>
+            <option value="-1">None</option>
+            <option value="01">Plain</option>
+            <option value="02">Charcoal</option>
+            <option value="03">Zombie</option>
+            <option value="04">Ape</option>
+            <option value="05">Alien</option>
+        </select>
+        <select class="eyes">
+            <option value="00">Random</option>
+            <option value="-1">None</option>
+            <option value="01">3dglasses</option>
+            <option value="02">alieneyes</option>
+            <option value="03">eyemask</option>
+            <option value="04">eyepatch</option>
+            <option value="05">nerdglasses</option>
+            <option value="06">purpleshades</option>
+            <option value="07">regulareyes</option>
+            <option value="05">vr</option>
+            <option value="06">zombieeyes</option>
+        </select>
+        <select class="mouth">
+            <option value="00">Random</option>
+            <option value="-1">None</option>
+            <option value="01">flat</option>
+            <option value="02">smile</option>
+        </select>
+        <select class="headphones">
+            <option value="00">Random</option>
+            <option value="-1">None</option>
+            <option value="01">RCS</option>
+            <option value="02">blackheadphones</option>
+            <option value="03">blueheadphones</option>
+            <option value="04">goldheadphones</option>
+            <option value="06">greenheadphones</option>
+            <option value="07">linedheadphones</option>
+            <option value="08">pinkheadphones</option>
+            <option value="09">redheadphones</option>
+            <option value="10">whiteheadphones</option>
+        </select>
+        <select class="smoke">
+            <option value="00">Random</option>
+            <option value="-1">None</option>
+            <option value="01">cigblack</option>
+            <option value="02">cigwhite</option>
+            <option value="03">pipe</option>
+        </select>
+        <select class="watch">
+            <option value="00">Random</option>
+            <option value="-1">None</option>
+            <option value="01">argoblack</option>
+            <option value="02">argowhite</option>
+            <option value="03">oystergold</option>
+            <option value="04">oystersilver</option>
+            <option value="06">subbat</option>
+            <option value="07">subblack</option>
+            <option value="08">subblue</option>
+            <option value="09">subcola</option>
+            <option value="10">sublantern</option>
+            <option value="11">subred</option>
+            <option value="12">subrose</option>
+            <option value="13">subturquoise</option>
+        </select>
+        <select class="beard">
+            <option value="00">Random</option>
+            <option value="-1">None</option>
+            <option value="01">shadowbeard</option>
+            <option value="02">fullbeard</option>
+        </select>
+        <select class="hoodies">
+            <option value="00">Random</option>
+            <option value="-1">None</option>
+            <option value="01">hoodie</option>
+        </select>
+        <select class="shirt">
+            <option value="00">Random</option>
+            <option value="-1">None</option>
+            <option value="01">collaredshirtblue</option>
+            <option value="02">collaredshirtgreen</option>
+            <option value="03">collaredshirtpink</option>
+            <option value="04">collaredshirtturquoise</option>
+            <option value="06">collaredshirtwhite</option>
+            <option value="07">collaredshirtyellow</option>
+            <option value="08">hoodiedownblue</option>
+            <option value="09">hoodiedowngray</option>
+            <option value="10">hoodiedowngreen</option>
+            <option value="11">hoodiedownpink</option>
+            <option value="12">hoodiedownred</option>
+            <option value="13">hoodiedownwhite</option>
+            <option value="14">goldchain</option>
+            <option value="15">silverchain</option>
+        </select>
+        <select class="longHair">
+            <option value="00">Random</option>
+            <option value="-1">None</option>
+            <option value="01">longhairblack</option>
+            <option value="02">longhairyellow</option>
+        </select>
+        <select class="hatsUnder">
+            <option value="00">Random</option>
+            <option value="-1">None</option>
+            <option value="01">bandanablue</option>
+            <option value="02">bandanadarkgray</option>
+            <option value="03">bandanared</option>
+            <option value="04">beaniemonochrome</option>
+            <option value="05">beanie</option>
+            <option value="06">capmonochrome</option>
+            <option value="07">cappurple</option>
+            <option value="05">headbandbluegreen</option>
+            <option value="06">headbandbluered</option>
+            <option value="07">headbandbluewhite</option>
+            <option value="08">headbandgreenwhite</option>
+            <option value="09">headbandpinkwhite</option>
+            <option value="10">knitatlanta</option>
+            <option value="11">knitbaltimore</option>
+            <option value="12">knitbuffalo</option>
+            <option value="13">knitchicago</option>
+            <option value="14">knitcleveland</option>
+            <option value="15">knitdallas</option>
+            <option value="16">knitkc</option>
+            <option value="17">knitlasvegas</option>
+            <option value="18">knitmiami</option>
+            <option value="19">knitnewyork</option>
+            <option value="20">knitpittsburgh</option>
+            <option value="21">knitsanfran</option>    
+        </select>
+        <select class="hatsOver">
+            <option value="00">Random</option>
+            <option value="-1">None</option>
+            <option value="01">cowboyhat</option>
+            <option value="02">pilothelmet</option>
+            <option value="03">tophat</option>
+        </select>
+        <select class="shortHair">
+            <option value="00">Random</option>
+            <option value="-1">None</option>
+            <option value="01">messyblack</option>
+            <option value="02">messypurple</option>
+            <option value="03">messyred</option>
+            <option value="04">messyyellow</option>
+            <option value="06">mohawkblack</option>
+            <option value="07">mohawkblue</option>
+            <option value="08">mohawkgreen</option>
+            <option value="09">mohawkpink</option>
+            <option value="10">mohawkpurple</option>
+            <option value="11">mohawkred</option>
+            <option value="12">mohawkyellow</option>
+        </select>
+        <div class="html-content-holder"></div>
+        <div class="mferWrapper">
+            <div class="mferImg"></div>
+        </div>
+        <script src="./scripts/script.js"></script>
+    </body>
 </html>
+
+
