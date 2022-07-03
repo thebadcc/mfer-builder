@@ -346,7 +346,7 @@ var _shirt = "";
     
 }
 
-var seed = _hoodies + _smoke + _watch420 + _mouth + _hatsOver + _headphones + _hatsUnder + _eyes + _longHair + _shortHair + _shirt + _beard + _type + _background;
+var seed = _hoodies + _smoke + _watch420 + _mouth + _hatsOver + _headphones + _hatsUnder + _longHair + _shortHair + _shirt + _eyes + _beard + _type + _background;
 document.getElementsByClassName("html-content-holder")[0].style.backgroundImage = seed;
 
 html2canvas(document.getElementsByClassName("html-content-holder")[0],{
