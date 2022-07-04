@@ -1,12 +1,12 @@
 # mfer-builder
 
-Assets
+**Assets**
 
 pulled from cerealbox.wtf and archieved in this repository under images.
 
-Seed
+**Seed**
 
-mfers are generated using a 28 length "seed" of numbers expressed as a string: 'xxxxxxxxxxxxxxxxxxxxxxxxxxx'
+mfers are generated using a 28 length "seed" of numbers expressed as a string ('xxxxxxxxxxxxxxxxxxxxxxxxxxx') in the following order:
 
 xx: background
 
@@ -49,5 +49,5 @@ For Example:
 0000000000000000000000000000 would mean all mfers traits are selected at random
 -100000000000000000000000000 would mean there was no background
 
-Function
+**Function**
 
