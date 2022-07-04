@@ -37,14 +37,16 @@ input {
   font-size: 16px;
   padding-top: 1.625rem;
   padding-bottom: 0.625rem;
+  width: 100%;
 }
 
 .traitWrapper {
-  float: left;
-  margin: 10px;
-  border: solid 1px lightgray;
-  border-radius: 5px;
-  background: white;
+    float: left;
+    margin: 10px;
+    border: solid 1px lightgray;
+    border-radius: 5px;
+    background: white;
+    padding-right: 10px;
 }
 
 .traitWrapper>label {
