@@ -8,47 +8,19 @@ All images pull from [cerealbox.wtf](https://www.cerealbox.wtf/traits) and are a
 
 **Seed**
 
-mfers are generated using a 28 length "seed" of numbers expressed as a string ('xxxxxxxxxxxxxxxxxxxxxxxxxxx') in the following order:
-
-xx: background
-
-xx: type
-
-xx: eyes
-
-xx: mouth
-
-xx: headphones
-
-xx: smoke
-
-xx: watch
-
-xx: beard
-
-xx: hoodies
-
-xx: shirt
-
-xx: longHair
-
-xx: hatsUnder
-
-xx: hatsOver
-
-xx: shortHair
-
-
-All traits are expressed using the following convention:
+mfers are generated using a 28 length "seed" of numbers expressed as a string ('xxxxxxxxxxxxxxxxxxxxxxxxxxx'). Each trait is 'xx' for a total of 14 traits and may be expressed using the following convention:
 
 None: -1
 Random: 00
-Trait n: n
-Trait n + 1: n + 1
+Trait 1: 01
+Trait 2: 02
+... and so forth up.
+
+If you exceed the trait maximum, that trait will be reset to random.
 
 For Example:
 
-0000000000000000000000000000 would mean all mfers traits are selected at random
+0000000000000000000000000000 would mean all mfer traits are selected at random
 -100000000000000000000000000 would mean there was no background
 
 **Function**
