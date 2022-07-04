@@ -86,9 +86,6 @@ For example, generateMfers(1,'01040202040203-1-112-1-1-110') will create the bel
 
 ![image](https://github.com/thebadcc-eth/mfer-builder/blob/main/images/exampleMfer.png?raw=true)
 
-Enjoy.
-
-```
-Sincerely,
--thebadcc
-```  
+Enjoy,
+thebadcc
+ 
