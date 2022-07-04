@@ -25,10 +25,18 @@ Add the mfer wrapper to your HTML:
 </div>
 ```
 
-In order to generate the image(s), you must then execute the generateMfers() function. 
+In order to generate the image(s), you must then execute the generateMfers() function. For example, the Playground utilizes this function onload:
+```
+<body onload="generateMfers(100, '0000000000000000000000000000')">
+```
+
 
 **generateMfers()**    
  
+The generateMfers() function requires two inputs:
+* Number of mfers to generate; and 
+* A 28 character seed expressed as a string.
+
    
     
 **Seed**
