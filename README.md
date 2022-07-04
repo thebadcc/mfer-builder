@@ -6,12 +6,15 @@
 
 All images pull from [cerealbox.wtf](https://www.cerealbox.wtf/traits) and are archieved in this repository under [images](https://github.com/thebadcc-eth/mfer-builder/tree/main/images).
 
-[You can find a working playground here](https://thebadcc-eth.github.io/mfer-builder/)`
+[You can find a working playground here](https://thebadcc-eth.github.io/mfer-builder/).
 
 **Install**
 
+Add the following Javascript Library to your header:
+
 `
-hello
+<script src="https://raw.githubusercontent.com/thebadcc-eth/mfer-builder/main/scripts/script.js"></script>
+
 `
 
 **Seed**
