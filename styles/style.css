@@ -49,6 +49,26 @@ input {
     border: 1px solid transparent;
 }
 
+.titleSection h1 {
+    font-family: Lobster;
+    font-size: 3rem;
+    letter-spacing: -.02em;
+}
+
+.titleSection h1, .titleSection p {
+    line-height: 1.5em;
+    margin: 0;
+}
+
+.titleSection p {
+    font-size: 1.05rem;
+    letter-spacing: -.03em;
+}
+
+.titleSection {
+    margin-bottom: 2rem;
+    text-align: center;
+}
 
 .buildMfers {
   font-size: 28px;
