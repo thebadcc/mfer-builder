@@ -6,7 +6,7 @@
 
 All images pull from [cerealbox.wtf](https://www.cerealbox.wtf/traits) and are archieved in this repository under [images](https://github.com/thebadcc-eth/mfer-builder/tree/main/images).
 
-[You can find a working playground to build your own mfer here](https://thebadcc-eth.github.io/mfer-builder/).
+Here we build a working [mfer Playground](https://thebadcc-eth.github.io/mfer-builder/) to create your own mfer. If you'd like to generate mfers on your own site, please see the installation guide below.
 
 **Install**
 
@@ -25,7 +25,7 @@ Add the mfer wrapper to your HTML:
 </div>
 ```
 
-In order to generate the image(s), you must then execute the generateMfers() function. For example, the Playground utilizes this function onload:
+In order to generate the image(s), you must then execute the generateMfers() function. For example, the [mfer Playground](https://thebadcc-eth.github.io/mfer-builder/) utilizes this function onload:
 ```
 <body onload="generateMfers(100, '0000000000000000000000000000')">
 ```
