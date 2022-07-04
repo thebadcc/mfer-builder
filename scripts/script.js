@@ -144,7 +144,6 @@ function generateMfers(mfers, seedinput) {
 var t1 = parseFloat(seedinput.slice(0, 2));
 var t2 = parseFloat(seedinput.slice(2, 4));
 var t3 = parseFloat(seedinput.slice(4, 6));
-	console.log(t3);
 var t4 = parseFloat(seedinput.slice(6, 8));
 var t5 = parseFloat(seedinput.slice(8, 10));
 var t6 = parseFloat(seedinput.slice(10, 12));
