@@ -99,3 +99,8 @@ input {
 .line {
     border-bottom: solid 1px lightgray;
 }
+
+.iconWrapper {
+    text-align: center;
+    margin-top: -20px;
+}
