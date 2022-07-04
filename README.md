@@ -82,6 +82,13 @@ If you exceed the trait maximum, the image will not render. Future releases will
 
 To obtain the seed, you may look at the table below or generate one using the [mfer playground](https://thebadcc-eth.github.io/mfer-builder/). 
 
+For example, generateMfers(1,'01040202040203-1-112-1-1-110') will create the below image:
+
+![image](https://github.com/thebadcc-eth/mfer-builder/blob/main/images/exampleMfer.PNG?raw=true)
+
+Enjoy.
+
+```
 Sincerely,
-    
-    -thebadcc
+-thebadcc
+```  
