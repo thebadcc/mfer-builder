@@ -33,8 +33,6 @@ select {
     position: absolute;
     color: gray;
     font-size: 12px;
-    top: 5px;
-    left: 10px;
     height: 100%;
     padding: 1rem 0.75rem;
     pointer-events: none;
