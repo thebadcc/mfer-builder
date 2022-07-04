@@ -10,7 +10,7 @@ All images pull from [cerealbox.wtf](https://www.cerealbox.wtf/traits) and are a
 
 **Install**
 
-Add the following Javascript Library to your header:
+Add the following Javascript link to your header:
 
 ```
 <script src="https://raw.githubusercontent.com/thebadcc-eth/mfer-builder/main/scripts/script.js"></script>
