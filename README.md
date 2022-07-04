@@ -24,7 +24,13 @@ Add the mfer wrapper to your HTML:
     <div class="mferImg"></div>
 </div>
 ```
-  
+
+In order to generate the image(s), you must then execute the generateMfers() function. 
+
+**generateMfers()**    
+ 
+   
+    
 **Seed**
 
 mfers are generated using a 28 length "seed" of numbers expressed as a string ('xxxxxxxxxxxxxxxxxxxxxxxxxxx'). Each trait is 'xx' for a total of 14 traits and may be expressed using the following convention:
@@ -42,5 +48,4 @@ For Example:
 * 0000000000000000000000000000 would mean all mfer traits are selected at random
 * -100000000000000000000000000 would mean there was no background
 
-**Function**
 
