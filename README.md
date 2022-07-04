@@ -37,11 +37,11 @@ The generateMfers() function requires two inputs:
 * Number of mfers to generate; and 
 * A 28 character seed expressed as a string.
 
-   
+By reading a seed, the function pulls the necessary image layers, processes any exclusion rules (e.g. Long Hair and Hoodies, Shirts and Chains, etc.), and compiles them into one image using html2canvas.
     
-**Seed**
+**Seeds**
 
-mfers are generated using a 28 length "seed" of numbers expressed as a string ('xxxxxxxxxxxxxxxxxxxxxxxxxxx'). Each trait is 'xx' for a total of 14 traits and may be expressed using the following convention:
+Seeds are a 28 length of numbers expressed as a string ('xxxxxxxxxxxxxxxxxxxxxxxxxxx'). Each trait is 'xx' for a total of 14 traits and may be expressed using the following convention:
 
 * None: -1
 * Random: 00
