@@ -13,7 +13,7 @@
         </div>
         <div class="traitWrapper">
         <label for="background">Background</label>
-        <select class="background">
+        <select class="background" onchange="updateSeed()">
             <option value="00">random</option>
             <option value="-1">none</option>
             <option value="01">Blue</option>
@@ -27,7 +27,7 @@
         </div>
         <div class="traitWrapper">
         <label for="type">Type</label>
-        <select class="type">
+        <select class="type" onchange="updateSeed()">
             <option value="00">random</option>
             <option value="-1">none</option>
             <option value="01">Plain</option>
@@ -39,7 +39,7 @@
         </div>
         <div class="traitWrapper">        
         <label for="eyes">Eyes</label>
-        <select class="eyes">
+        <select class="eyes" onchange="updateSeed()">
             <option value="00">random</option>
             <option value="-1">none</option>
             <option value="01">3dglasses</option>
@@ -56,7 +56,7 @@
         </div>
         <div class="traitWrapper">        
         <label for="mouth">Mouth</label>
-        <select class="mouth">
+        <select class="mouth" onchange="updateSeed()">
             <option value="00">random</option>
             <option value="-1">none</option>
             <option value="01">flat</option>
@@ -65,7 +65,7 @@
         </div>
         <div class="traitWrapper">        
         <label for="headphones">Headphones</label>        
-        <select class="headphones">
+        <select class="headphones" onchange="updateSeed()">
             <option value="00">random</option>
             <option value="-1">none</option>
             <option value="01">rcs</option>
@@ -81,7 +81,7 @@
         </div>
         <div class="traitWrapper">        
         <label for="smoke">Smoke</label>   
-        <select class="smoke">
+        <select class="smoke" onchange="updateSeed()">
             <option value="00">random</option>
             <option value="-1">none</option>
             <option value="01">cigblack</option>
@@ -91,7 +91,7 @@
         </div>
         <div class="traitWrapper">
         <label for="watch">Watch</label>  
-        <select class="watch">
+        <select class="watch" onchange="updateSeed()">
             <option value="00">random</option>
             <option value="-1">none</option>
             <option value="01">argoblack</option>
@@ -110,7 +110,7 @@
         </div>
         <div class="traitWrapper">
         <label for="beard">Beard</label>        
-        <select class="beard">
+        <select class="beard" onchange="updateSeed()">
             <option value="00">random</option>
             <option value="-1">none</option>
             <option value="01">fullbeard</option>
@@ -119,7 +119,7 @@
         </div>
         <div class="traitWrapper">
         <label for="hoodies">Hoodies</label>      
-        <select class="hoodies">
+        <select class="hoodies" onchange="updateSeed()">
             <option value="00">random</option>
             <option value="-1">none</option>
             <option value="01">hoodie</option>
@@ -127,7 +127,7 @@
         </div>
         <div class="traitWrapper">
         <label for="shirt">Shirt</label>              
-        <select class="shirt">
+        <select class="shirt" onchange="updateSeed()">
             <option value="00">random</option>
             <option value="-1">none</option>
             <option value="01">collaredshirtblue</option>
@@ -148,7 +148,7 @@
         </div>
         <div class="traitWrapper">
         <label for="longHair">Long Hair</label>          
-        <select class="longHair">
+        <select class="longHair" onchange="updateSeed()">
             <option value="00">random</option>
             <option value="-1">none</option>
             <option value="01">longhairblack</option>
@@ -157,7 +157,7 @@
         </div>
         <div class="traitWrapper">
         <label for="hatsUnder">Hats Under</label>          
-        <select class="hatsUnder">
+        <select class="hatsUnder" onchange="updateSeed()">
             <option value="00">random</option>
             <option value="-1">none</option>
             <option value="01">bandanablue</option>
@@ -188,7 +188,7 @@
         </div>
         <div class="traitWrapper">
         <label for="hatsOver">Hats Over</label>
-        <select class="hatsOver">
+        <select class="hatsOver" onchange="updateSeed()">
             <option value="00">random</option>
             <option value="-1">none</option>
             <option value="01">cowboyhat</option>
@@ -198,7 +198,7 @@
         </div>
         <div class="traitWrapper">
         <label for="shortHair">Short Hair</label>        
-        <select class="shortHair">
+        <select class="shortHair" onchange="updateSeed()">
             <option value="00">random</option>
             <option value="-1">none</option>
             <option value="01">messyblack</option>
@@ -216,7 +216,7 @@
         </div>
         <div class="traitWrapper">
         <label for="quantity">Quantity</label>          
-        <input type="number" class="quantity" min="1" max="100" value="12">
+        <input type="number" class="quantity" min="1" max="100" value="12" onchange="updateSeed()">
         </div>
         <div class="traitWrapper">
         <label for="seed">Seed</label>          
