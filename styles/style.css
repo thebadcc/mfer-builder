@@ -108,5 +108,17 @@ input {
 }
 
 #seedWrapper {
-  padding-right: 30px;
+  padding-right: 40px;
 }
+
+#seedWrapper input {
+    border: none;
+    font-weight: bold;
+    margin: 5px;
+    font-size: 16px;
+    padding-top: 1.625rem;
+    padding-bottom: 0.625rem;
+    width: 110%;
+}
+
+
