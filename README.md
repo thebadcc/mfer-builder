@@ -9,18 +9,31 @@ Seed
 mfers are generated using a 28 length "seed" of numbers expressed as a string: 'xxxxxxxxxxxxxxxxxxxxxxxxxxx'
 
 xx: background
+
 xx: type
+
 xx: eyes
+
 xx: mouth
+
 xx: headphones
+
 xx: smoke
+
 xx: watch
+
 xx: beard
+
 xx: hoodies
+
 xx: shirt
+
 xx: longHair
+
 xx: hatsUnder
+
 xx: hatsOver
+
 xx: shortHair
 
 
