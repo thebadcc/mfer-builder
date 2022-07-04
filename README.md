@@ -4,7 +4,7 @@
 
 **Assets**
 
-All images pull from [cerealbox.wtf](https://www.cerealbox.wtf/traits) and were archieved in this repository under [images](https://github.com/thebadcc-eth/mfer-builder/tree/main/images).
+All images pull from [cerealbox.wtf](https://www.cerealbox.wtf/traits) and are archieved in this repository under [images](https://github.com/thebadcc-eth/mfer-builder/tree/main/images).
 
 **Seed**
 
