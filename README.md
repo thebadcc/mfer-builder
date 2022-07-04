@@ -38,7 +38,7 @@ Add the mfer wrapper to your HTML:
 </div>
 ```
 
-In order to generate the image(s), you must then execute the generateMfers() function. For example, the [mfer Playground](https://thebadcc-eth.github.io/mfer-builder/) utilizes this function onload:
+In order to generate the image(s), you must then execute the generateMfers() function. For example, the [mfer playground](https://thebadcc-eth.github.io/mfer-builder/) utilizes this function onload:
 ```
 <body onload="generateMfers(12, '0000000000000000000000000000')">
 ```
@@ -85,6 +85,5 @@ For Example:
 * 0000000000000000000000000000 would mean all traits are selected at random;
 * -100000000000000000000000000 would mean there was no background and all other traits are selected at random.
 
-**Building a Seed**
 
 
