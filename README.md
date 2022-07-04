@@ -11,10 +11,14 @@ All images pull from [cerealbox.wtf](https://www.cerealbox.wtf/traits) and are a
 mfers are generated using a 28 length "seed" of numbers expressed as a string ('xxxxxxxxxxxxxxxxxxxxxxxxxxx'). Each trait is 'xx' for a total of 14 traits and may be expressed using the following convention:
 
 None: -1
+
 Random: 00
+
 Trait 1: 01
+
 Trait 2: 02
-... and so forth up.
+
+... and so forth.
 
 If you exceed the trait maximum, that trait will be reset to random.
 
