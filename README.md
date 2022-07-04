@@ -78,12 +78,10 @@ Seeds are a length of 28 characters (e.g. '-1', '00', '01', etc.) expressed as a
 * Trait 2: 02
 * ... and so forth.
 
-If you exceed the trait maximum, that trait will be automatically reset to random ('00').
+If you exceed the trait maximum, the image will not render. Future releases will default these over inclusion to random ('00').
 
-For Example:
+To obtain the seed, you may look at the table below or generate one using the [mfer playground](https://thebadcc-eth.github.io/mfer-builder/). 
 
-* 0000000000000000000000000000 would mean all traits are selected at random;
-* -100000000000000000000000000 would mean there was no background and all other traits are selected at random.
-
-
-
+Sincerely,
+    
+    -thebadcc
