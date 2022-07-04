@@ -108,7 +108,8 @@ input {
 }
 
 #seedWrapper {
-  padding-right: 50px;
+  background: none;
+  border: none;
 }
 
 #seedWrapper input {
@@ -118,7 +119,7 @@ input {
     font-size: 16px;
     padding-top: 1.625rem;
     padding-bottom: 0.625rem;
-    width: 130%;
+    width: 140%;
 }
 
 
