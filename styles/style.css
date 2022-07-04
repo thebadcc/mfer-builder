@@ -50,6 +50,7 @@ input {
     padding: 1rem 0.75rem;
     pointer-events: none;
     border: 1px solid transparent;
+    margin-left: -5px;
 }
 
 .titleSection h1 {
