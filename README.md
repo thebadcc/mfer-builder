@@ -10,10 +10,23 @@ A working [mfer playground](https://thebadcc-eth.github.io/mfer-builder/) is ava
 
 **Install**
 
-Add the following Javascript link at the end of your HTML in the <body>:
+Add the following libraries in your <head> tag:
 
 ```
-<script src="https://raw.githubusercontent.com/thebadcc-eth/mfer-builder/main/scripts/script.js"></script>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.0.0-rc.7/dist/html2canvas.js"></script>
+</head>
+```
+
+Add the following script  at the end of your <body> tag:
+
+```
+<body>
+    ....
+    <script src="https://raw.githubusercontent.com/thebadcc-eth/mfer-builder/main/scripts/script.js"></script>
+</body>
 ```
 
 Add the mfer wrapper to your HTML:
