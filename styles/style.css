@@ -1,6 +1,4 @@
 body {
-  font-family: cursive; 
-y {
     background: #f6f9fc;
     font-family: monospace;
 }
@@ -110,7 +108,7 @@ input {
 }
 
 #seedWrapper {
-  padding-right: 40px;
+  padding-right: 50px;
 }
 
 #seedWrapper input {
@@ -120,7 +118,7 @@ input {
     font-size: 16px;
     padding-top: 1.625rem;
     padding-bottom: 0.625rem;
-    width: 110%;
+    width: 130%;
 }
 
 
