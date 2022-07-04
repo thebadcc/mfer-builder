@@ -40,7 +40,7 @@ Add the mfer wrapper to your HTML:
 
 In order to generate the image(s), you must then execute the generateMfers() function. For example, the [mfer Playground](https://thebadcc-eth.github.io/mfer-builder/) utilizes this function onload:
 ```
-<body onload="generateMfers(100, '0000000000000000000000000000')">
+<body onload="generateMfers(12, '0000000000000000000000000000')">
 ```
 
 You can change the displayed image(s) size via CSS of the html-content-holder:
@@ -49,6 +49,14 @@ You can change the displayed image(s) size via CSS of the html-content-holder:
   width: 300px;
   height: 300px;
   background-size: contain; 
+}
+
+.mferImg canvas {
+margin: 10px;
+}
+
+.mferImg {
+  text-align: center;
 }
 ```
 
