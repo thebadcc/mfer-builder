@@ -10,12 +10,21 @@ All images pull from [cerealbox.wtf](https://www.cerealbox.wtf/traits) and are a
 
 **Install**
 
-Add the following Javascript link to your header:
+Add the following Javascript link at the end of your HTML in the <body>:
 
 ```
 <script src="https://raw.githubusercontent.com/thebadcc-eth/mfer-builder/main/scripts/script.js"></script>
 ```
 
+Add the mfer wrapper to your HTML:
+
+```
+<div class="html-content-holder"></div>
+<div class="mferWrapper">
+    <div class="mferImg"></div>
+</div>
+```
+  
 **Seed**
 
 mfers are generated using a 28 length "seed" of numbers expressed as a string ('xxxxxxxxxxxxxxxxxxxxxxxxxxx'). Each trait is 'xx' for a total of 14 traits and may be expressed using the following convention:
