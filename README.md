@@ -79,7 +79,7 @@ Seeds are a length of 28 characters (e.g. '-1', '00', '01', etc.) expressed as a
 
 If you exceed the trait maximum, the image will not render. Future releases will default these over inclusion to random ('00').
 
-To obtain the seed, see the trait table below or generate one using the [mfer playground](https://thebadcc-eth.github.io/mfer-builder/):
+To obtain the seed, see the trait list below or generate one using the [mfer playground](https://thebadcc-eth.github.io/mfer-builder/):
 * xx(1): background
 * xx(2): type    
 * xx(3): eyes
