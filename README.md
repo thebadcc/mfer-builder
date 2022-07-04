@@ -62,7 +62,7 @@ margin: 10px;
 
 **generateMfers()**    
  
-The generateMfers() function requires two inputs:
+The generateMfers(number, string) function requires two inputs:
 * Number of mfers to generate; and 
 * A 28 character seed expressed as a string.
 
