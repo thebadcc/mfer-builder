@@ -156,7 +156,6 @@ var t12 = parseFloat(seedinput.slice(22, 24));
 var t13 = parseFloat(seedinput.slice(24, 26));
 var t14 = parseFloat(seedinput.slice(26, 28));
 
-// Prepare html and reset
 document.getElementsByClassName("html-content-holder")[0].style.display = "inherit";
 const elements = document.getElementsByClassName('mferImg');
 var div = document.createElement("div");
@@ -164,10 +163,7 @@ div.setAttribute('class', 'mferImg');
 document.getElementsByClassName('mferWrapper')[0].appendChild(div);
 elements[0].parentNode.removeChild(elements[0]);
 
-// Generate Seed
-
 for (let i = 0; i < mfers; i++){
-
 
 if (t1 < 0) {
 var _background = "url()"
@@ -176,7 +172,6 @@ var _background = "url(" + baseURL + background[Math.floor(Math.random() * 7)] +
 } else if (t1 > 0) {
 var _background = "url(" + baseURL + background[t1 - 1] + ")";
 }
-
 if (t2 < 0) {
 var _type = "";
 } else if (t2 == 0) {
@@ -184,7 +179,6 @@ var _type = "url(" + baseURL + type[Math.floor(Math.random() * 5)] + "), ";
 } else if (t2 > 0) {
 var _type = "url(" + baseURL + type[t2 - 1] + "), ";
 }
-
 if (t3 < 0) {
 var _eyes = "";
 } else if (t3 == 0) {
@@ -192,7 +186,6 @@ var _eyes = "url(" + baseURL + eyes[Math.floor(Math.random() * 10)] + "), ";
 } else if (t3 > 0) {
 var _eyes = "url(" + baseURL + eyes[t3 - 1] + "), ";
 }
-
 if (t4 < 0) {
 var _mouth = "";
 } else if (t4 == 0) {
@@ -200,7 +193,6 @@ var _mouth = "url(" + baseURL + mouth[Math.floor(Math.random() * 2)] + "), ";
 } else if (t4 > 0) {
 var _mouth = "url(" + baseURL + mouth[t4 - 1] + "), ";
 }
-
 if (t5 < 0) {
 var _headphones = "";
 } else if (t5 == 0) {
@@ -208,7 +200,6 @@ var _headphones = "url(" + baseURL + headphones[Math.floor(Math.random() * 9)] +
 } else if (t5 > 0) {
 var _headphones = "url(" + baseURL + headphones[t5 - 1] + "), ";
 }
-
 if (t6 < 0) {
 var _smoke = ""
 } else if (t6 == 0) {
@@ -221,7 +212,6 @@ var rollSmoke = Math.floor(Math.random() * 10);
 } else if (t6 > 0) {
 var _smoke = "url(" + baseURL + smoke[t6 - 1] + "), ";
 }
-
 if (t7 < 0) {
 var _watch420 = ""
 } else if (t7 == 0) {
@@ -234,21 +224,18 @@ if (rollWatch <= 5) {
 } else if (t7 > 0) {
 		var _watch420 = "url(" + baseURL + watch420[t7 - 1] + "), ";
 }
-
 if (t8 < 0) {
 var _beard = "";
 } else if (t8 == 0) {
 var rollBeard = Math.floor(Math.random() * 10);
 if (rollBeard <= 3) {
 		var _beard = "url(" + baseURL + beard[Math.floor(Math.random() * 2)] + "), ";
-
 } else {
 		var _beard = "";
 }
 } else if (t8 > 0) {
 		var _beard = "url(" + baseURL + beard[t8 - 1] + "), ";
 }
-
 if (t9 < 0) {
 var _hoodies = "";
 } else if (t9 == 0) {
@@ -256,7 +243,6 @@ var _hoodies = "url(" + baseURL + hoodies[0] + "), ";
 } else if (t9 > 0) {
 var _hoodies = "url(" + baseURL + hoodies[t9 - 1] + "), ";
 }
-
 if (t10 < 0) {
 var _shirt = "";
 } else if (t10 == 0) {
@@ -264,7 +250,6 @@ var _shirt = "url(" + baseURL + shirt[Math.floor(Math.random() * 14)] + "), ";
 } else if (t10 > 0) {
 var _shirt = "url(" + baseURL + shirt[t10 - 1] + "), ";
 }
-
 if (t11 < 0) {
 var _longHair = "";
 } else if (t11 == 0) {
@@ -272,7 +257,6 @@ var _longHair = "url(" + baseURL + longHair[Math.floor(Math.random() * 2)] + "),
 } else if (t11 > 0) {
 var _longHair = "url(" + baseURL + longHair[t11 - 1] + "), ";
 }
-
 if (t12 < 0) {
 var _hatsUnder = "";           
 } else if (t12 == 0) {
@@ -280,15 +264,13 @@ var _hatsUnder = "url(" + baseURL + hatsUnder[Math.floor(Math.random() * 24)] + 
 } else if (t12 > 0) {
 var _hatsUnder = "url(" + baseURL + hatsUnder[t12 - 1] + "), ";           
 }
-
 if (t13 < 0) {
 var _hatsOver = "";  
 } else if (t13 == 0) {
 var _hatsOver = "url(" + baseURL + hatsOver[Math.floor(Math.random() * 3)] + "), ";  
 } else if (t13 > 0) {
-var _hatsOver = "url(" + baseURL + hatsOver[t13 - 1] + "), ";  
+var _hatsOver = "url(" + baseURL + hatsOver[t13 - 1] + "), "; 
 }
-
 if (t14 < 0) {
 var _shortHair = "";
 } else if (t14 == 0) {
@@ -298,52 +280,92 @@ var _shortHair = "url(" + baseURL + shortHair[t14 - 1] + "), ";
 }
 
 var rollHoodies = Math.floor(Math.random() * 10);
-if (rollHoodies <= 1) {
+if (rollHoodies <= 1 && t9 == 0) {
 var _hatsOver = "";
 var _hatsUnder = "";
 var _shortHair = "";
 var _longHair = "";
 var _shirt = "";    
+} else if (t9 > 0) {
+var _hatsOver = "";
+var _hatsUnder = "";
+var _shortHair = "";
+var _longHair = "";
+var _shirt = "";  
 } else {
     var _hoodies = "";
     var rollShirts = Math.floor(Math.random() * 10);
-    if (rollShirts <= 5) {
+    if (rollShirts <= 5 && t10 == 0) {
+    } else if (t10 > 0) {
     } else {
     var _shirt = "";
     }
     var rollOverUnder = Math.floor(Math.random() * 10);
-    if (rollOverUnder <= 2) { 
-    var _hatsOver = ""
-    var _shortHair = ""
+    if (rollOverUnder <= 2 && t12 == 0) { 
+      var _hatsOver = ""
+      var _shortHair = ""
       var rollLongHair = Math.floor(Math.random() * 10);
-      if (rollLongHair <= 3) {
-      } else {
+    if (rollLongHair <= 3 && t11 == 0) {
+    } else if (t11 > 0) {
+    } else {
 				var _longHair = ""
       }
-   
-    } else if (rollOverUnder >= 2 && rollOverUnder < 4){
+    } else if (t12 > 0) {
+    var _hatsOver = ""
+      var _shortHair = ""
+      var rollLongHair = Math.floor(Math.random() * 10);
+    if (rollLongHair <= 3 && t11 == 0) {
+    } else if (t11 > 0) {
+    } else {
+				var _longHair = ""
+      }
+    } else if (rollOverUnder >= 2 && rollOverUnder < 4 && t13 == 0){
     var _hatsUnder = ""
     var _shortHair = ""
-      var rollLongHair = Math.floor(Math.random() * 10);
-      if (rollLongHair <= 4) {
-      } else {
-				var _longHair = ""
-      }
-    } else if (rollOverUnder >= 4 && rollOverUnder < 6){
+    var rollLongHair = Math.floor(Math.random() * 10);
+      if (rollLongHair <= 3 && t11 == 0) {
+       } else if (t11 > 0) {
+        } else {
+        	var _longHair = ""
+        }
+    } else if (t13 > 0){
+    var _hatsUnder = ""
+    var _shortHair = ""
+    var rollLongHair = Math.floor(Math.random() * 10);
+      if (rollLongHair <= 3 && t11 == 0) {
+       } else if (t11 > 0) {
+        } else {
+        	var _longHair = ""
+        }
+    } else if (rollOverUnder >= 4 && rollOverUnder < 6 && t11 == 0){
     var _hatsUnder = "";
     var _hatsOver = "";
     var _shortHair = "";
-       var rollLongHair = Math.floor(Math.random() * 10);
-      if (rollLongHair <= 5) {
-      } else {
-				var _longHair = "";
-      }
-    } else if (rollOverUnder >= 6) {
+    var rollLongHair = Math.floor(Math.random() * 10);
+      if (rollLongHair <= 3 && t11 == 0) {
+       } else if (t11 > 0) {
+        } else {
+        	var _longHair = ""
+        }
+    } else if (t11 > 0){
+    var _hatsUnder = "";
+    var _hatsOver = "";
+    var _shortHair = "";
+    var rollLongHair = Math.floor(Math.random() * 10);
+      if (rollLongHair <= 3 && t11 == 0) {
+       } else if (t11 > 0) {
+       } else {
+        	var _longHair = ""
+        }
+    } else if (rollOverUnder >= 6 && t14 == 0) {
+    var _hatsUnder = "";
+    var _hatsOver = "";
+    var _longHair = "";
+    } else if (t14 > 0) {
     var _hatsUnder = "";
     var _hatsOver = "";
     var _longHair = "";
     }
-    
 }
 
 var seed = _hoodies + _smoke + _watch420 + _mouth + _hatsOver + _headphones + _hatsUnder + _longHair + _shortHair + _shirt + _eyes + _beard + _type + _background;
