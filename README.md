@@ -14,7 +14,6 @@ Add the following Javascript Library to your header:
 
 `
 <script src="https://raw.githubusercontent.com/thebadcc-eth/mfer-builder/main/scripts/script.js"></script>
-
 `
 
 **Seed**
