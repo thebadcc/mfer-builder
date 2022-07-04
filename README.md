@@ -71,7 +71,6 @@ The seed instructs the function to pull certain image layers, process any exclus
 **Seeds**
 
 Seeds are a length of 28 characters (e.g. '-1', '00', '01', etc.) expressed as a string ('xxxxxxxxxxxxxxxxxxxxxxxxxxx'). Each trait is represented by 'xx' for a total of 14 traits under the following conventions:
-
 * None: -1
 * Random: 00
 * Trait 1: 01
@@ -80,8 +79,22 @@ Seeds are a length of 28 characters (e.g. '-1', '00', '01', etc.) expressed as a
 
 If you exceed the trait maximum, the image will not render. Future releases will default these over inclusion to random ('00').
 
-To obtain the seed, you may look at the table below or generate one using the [mfer playground](https://thebadcc-eth.github.io/mfer-builder/). 
-
+To obtain the seed, see the trait table below or generate one using the [mfer playground](https://thebadcc-eth.github.io/mfer-builder/):
+* xx(1): background
+* xx(2): type    
+* xx(3): eyes
+* xx(4): mouth  
+* xx(5): headphones
+* xx(6): smoke  
+* xx(7): watch
+* xx(8): beard    
+* xx(9): hoodies
+* xx(10): shirt  
+* xx(11): longHair
+* xx(12): hatsUnder  
+* xx(13): hatsOver
+* xx(14): shortHair 
+   
 For example, generateMfers(1,'01040202040203-1-112-1-1-110') will create the below image:
 
 ![image](https://github.com/thebadcc-eth/mfer-builder/blob/main/images/exampleMfer.png?raw=true)
