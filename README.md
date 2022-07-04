@@ -12,9 +12,9 @@ All images pull from [cerealbox.wtf](https://www.cerealbox.wtf/traits) and are a
 
 Add the following Javascript Library to your header:
 
-`
+```
 <script src="https://raw.githubusercontent.com/thebadcc-eth/mfer-builder/main/scripts/script.js"></script>
-`
+```
 
 **Seed**
 
