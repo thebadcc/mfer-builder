@@ -1,6 +1,5 @@
 body {
   font-family: cursive; 
-  background-color: #f6f9fc;
 }
 
 
@@ -44,7 +43,6 @@ input {
   margin: 10px;
   border: solid 1px lightgray;
   border-radius: 5px;
-  background: white;
 }
 
 .traitWrapper>label {
@@ -55,7 +53,6 @@ input {
     padding: 1rem 0.75rem;
     pointer-events: none;
     border: 1px solid transparent;
-    margin-left: -5px;
 }
 
 .titleSection h1 {
