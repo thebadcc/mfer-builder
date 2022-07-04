@@ -2,9 +2,11 @@
 
 # mfer-builder SDK
 
-**Assets**
+**Assets & Playground**
 
 All images pull from [cerealbox.wtf](https://www.cerealbox.wtf/traits) and are archieved in this repository under [images](https://github.com/thebadcc-eth/mfer-builder/tree/main/images).
+
+[You can find a working playground here](https://thebadcc-eth.github.io/mfer-builder/).
 
 **Seed**
 
