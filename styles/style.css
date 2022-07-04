@@ -1,3 +1,6 @@
+body {
+  font-family: cursive; 
+}
 .html-content-holder {
   width: 300px;
   height: 300px;
@@ -50,7 +53,6 @@ input {
 }
 
 .titleSection h1 {
-    font-family: Lobster;
     font-size: 3rem;
     letter-spacing: -.02em;
 }
