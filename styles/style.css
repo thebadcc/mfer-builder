@@ -106,3 +106,7 @@ input {
     text-align: center;
     margin-top: -20px;
 }
+
+#seedWrapper {
+  padding-right: 30px;
+}
