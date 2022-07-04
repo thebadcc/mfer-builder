@@ -22,6 +22,16 @@ select {
   padding-bottom: 0.625rem;
 }
 
+
+input {
+  border:none;
+  font-weight: bold;
+  margin: 5px;
+  font-size: 16px;
+  padding-top: 1.625rem;
+  padding-bottom: 0.625rem;
+}
+
 .traitWrapper {
   float: left;
   margin: 10px;
@@ -38,6 +48,7 @@ select {
     pointer-events: none;
     border: 1px solid transparent;
 }
+
 
 .buildMfers {
   font-size: 28px;
