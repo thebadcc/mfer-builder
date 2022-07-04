@@ -1,6 +1,6 @@
 ![image](https://github.com/thebadcc-eth/mfer-builder/blob/main/images/mferBanner.PNG?raw=true)
 
-# mfer-builder SDK
+# mferBuilder SDK
 
 **Assets & Playground**
 
