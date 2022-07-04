@@ -51,7 +51,7 @@ input {
     position: absolute;
     color: gray;
     font-size: 12px;
-    padding-left: -5px;
+    margin-left: -5px;
     height: 100%;
     padding: 1rem 0.75rem;
     pointer-events: none;
