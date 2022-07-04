@@ -45,7 +45,7 @@ The generateMfers() function requires two inputs:
 * Number of mfers to generate; and 
 * A 28 character seed expressed as a string.
 
-A seed tells the function to pull necessary image layers, process any exclusion rules (e.g. long hair & hoodies, shirts & chains, etc.), and convert them into one image using html2canvas.
+The seed instructs the function to pull certain image layers, process any exclusion rules (e.g. long hair & hoodies, shirts & chains, etc.), and convert them into one image using html2canvas.
     
 **Seeds**
 
@@ -61,7 +61,9 @@ If you exceed the trait maximum, that trait will be automatically reset to rando
 
 For Example:
 
-* 0000000000000000000000000000 would mean all mfer traits are selected at random
-* -100000000000000000000000000 would mean there was no background
+* 0000000000000000000000000000 would mean all traits are selected at random;
+* -100000000000000000000000000 would mean there was no background and all other traits are selected at random.
+
+**Building a Seed**
 
 
