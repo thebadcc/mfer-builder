@@ -384,6 +384,7 @@ document.getElementsByClassName("html-content-holder")[0].style.display = "none"
 }
 
 function buildMfers() {
+var quant = document.getElementsByClassName("quantity")[0].value;
 var _t1 = document.getElementsByClassName("background")[0].value;
 var _t2 = document.getElementsByClassName("type")[0].value;
 var _t3 = document.getElementsByClassName("eyes")[0].value;
@@ -399,6 +400,6 @@ var _t12 = document.getElementsByClassName("hatsUnder")[0].value;
 var _t13 = document.getElementsByClassName("hatsOver")[0].value;
 var _t14 = document.getElementsByClassName("shortHair")[0].value;
 var _seed = _t1 + _t2 + _t3 + _t4 + _t5 + _t6 + _t7 + _t8 + _t9 + _t10 + _t11 + _t12 + _t13 + _t14;
-generateMfers(100, _seed);
+generateMfers(quant, _seed);
 
 }
