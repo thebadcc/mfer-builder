@@ -84,7 +84,7 @@ To obtain the seed, you may look at the table below or generate one using the [m
 
 For example, generateMfers(1,'01040202040203-1-112-1-1-110') will create the below image:
 
-![image](https://github.com/thebadcc-eth/mfer-builder/blob/main/images/exampleMfer.PNG?raw=true)
+![image](https://github.com/thebadcc-eth/mfer-builder/blob/main/images/exampleMfer.png?raw=true)
 
 Enjoy.
 
