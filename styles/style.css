@@ -114,12 +114,13 @@ input {
 
 #seedWrapper input {
     border: none;
+    background: #f6f9fc;
     font-weight: bold;
     margin: 5px;
     font-size: 16px;
     padding-top: 1.625rem;
     padding-bottom: 0.625rem;
-    width: 140%;
+    width: 120%;
 }
 
 
