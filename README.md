@@ -10,7 +10,7 @@ A working [mfer playground](https://thebadcc-eth.github.io/mfer-builder/) is ava
 
 **Install**
 
-Add the following libraries in your <head> tag:
+Add the following libraries in your '<head>' tag:
 
 ```
 <head>
@@ -20,7 +20,7 @@ Add the following libraries in your <head> tag:
 </head>
 ```
 
-Add the following script  at the end of your <body> tag:
+Add the following script  at the end of your '<body>' tag:
 
 ```
 <body>
