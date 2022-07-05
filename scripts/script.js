@@ -370,7 +370,7 @@ var _shirt = "";
 
 var seed = _hoodies + _smoke + _watch420 + _mouth + _hatsOver + _headphones + _hatsUnder + _longHair + _shortHair + _shirt + _eyes + _beard + _type + _background;
 document.getElementsByClassName("html-content-holder")[0].style.backgroundImage = seed;
-
+window.scrollTo(0,0);	
 html2canvas(document.getElementsByClassName("html-content-holder")[0],{
 	allowTaint: true,
 	useCORS: true
@@ -384,7 +384,6 @@ document.getElementsByClassName("html-content-holder")[0].style.display = "none"
 }
 
 function buildMfers() {
-	
 var quant = document.getElementsByClassName("quantity")[0].value;
 var _t1 = document.getElementsByClassName("background")[0].value;
 var _t2 = document.getElementsByClassName("type")[0].value;
@@ -406,7 +405,6 @@ generateMfers(quant, _seed);
 }
 
 function updateSeed() {
-	
 var _t1 = document.getElementsByClassName("background")[0].value;
 var _t2 = document.getElementsByClassName("type")[0].value;
 var _t3 = document.getElementsByClassName("eyes")[0].value;
