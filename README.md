@@ -43,7 +43,7 @@ In order to generate the image(s), you must then execute the generateMfers() fun
 <body onload="generateMfers(12, '0000000000000000000000000000')">
 ```
 
-You can change the displayed image(s) size via CSS of the html-content-holder:
+You can change the displayed image(s) size via CSS:
 ```
 .html-content-holder {
   width: 300px;
