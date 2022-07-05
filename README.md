@@ -29,7 +29,7 @@ Add the following script  at the end of your `<body>` tag:
 </body>
 ```
 
-Add the mfer wrapper to your HTML:
+Add the content holder and mfer wrapper to your HTML:
 
 ```
 <div class="html-content-holder"></div>
