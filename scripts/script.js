@@ -9,6 +9,7 @@ background[3]= "/traits/background/background-orange.png";
 background[4]= "/traits/background/background-red.png";
 background[5]= "/traits/background/background-space.png";
 background[6]= "/traits/background/background-tree.png";
+background[7]= "/traits/background/background-graveyard.png";
 
 const type = [];
 type[0]= "/traits/type/type-plainmfer.png";
@@ -168,7 +169,7 @@ for (let i = 0; i < mfers; i++){
 if (t1 < 0) {
 var _background = "url()"
 } else if (t1 == 0) {
-var _background = "url(" + baseURL + background[Math.floor(Math.random() * 7)] + ")";
+var _background = "url(" + baseURL + background[Math.floor(Math.random() * 8)] + ")";
 } else if (t1 > 0) {
 var _background = "url(" + baseURL + background[t1 - 1] + ")";
 }
