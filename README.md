@@ -38,7 +38,7 @@ Add the content holder and mfer wrapper to your HTML:
 </div>
 ```
 
-In order to generate the image(s), you must then execute the generateMfers() function. For example, the [mfer playground](https://thebadcc-eth.github.io/mfer-builder/) utilizes this function onload:
+In order to generate the image(s), you must execute the generateMfers() function. For example, the [mfer playground](https://thebadcc-eth.github.io/mfer-builder/) utilizes this function onload:
 ```
 <body onload="generateMfers(12, '0000000000000000000000000000')">
 ```
