@@ -4,11 +4,11 @@
 
 **Assets & Playground**
 
-All traits pull from [cerealbox.wtf](https://www.cerealbox.wtf/traits) and are archieved in this repository under [images](https://github.com/thebadcc-eth/mfer-builder/tree/main/images).
+All traits pull from [cerealbox.wtf](https://www.cerealbox.wtf/traits) and are being archieved in this repository under [images](https://github.com/thebadcc-eth/mfer-builder/tree/main/images).
 
-A working [mfer playground](https://thebadcc-eth.github.io/mfer-builder/) is available to create your own mfer. If you'd like to generate mfers on your another site, please see the installation guide below.
+A working [mfer playground](https://thebadcc-eth.github.io/mfer-builder/) is available to create your own mfer. If you'd like to generate mfers on another site, please see the installation guide below.
 
-**Install**
+**Installation Guide**
 
 Add the following libraries in your `<head>` tag:
 
@@ -79,7 +79,7 @@ Seeds are a length of 28 characters (e.g. '-1', '00', '01', etc.) expressed as a
 
 If you exceed the trait maximum, the image will not render. Future releases will default these invalid traits to random ('00').
 
-To create a seed, see the trait list below for guidance or generate one using the [mfer playground](https://thebadcc-eth.github.io/mfer-builder/):
+To create a seed, see the trait list below for guidance or generate a seed using the [mfer playground](https://thebadcc-eth.github.io/mfer-builder/):
 * xx(1): background
 * xx(2): type    
 * xx(3): eyes
