@@ -1,6 +1,7 @@
-// Assets
+// base domain for image layers
 var baseURL = 'https://www.cerealbox.wtf';
 
+// mfer traits and layers
 const background = [];
 background[0]= "/traits/background/background-blue.png";
 background[1]= "/traits/background/background-yellow.png";
@@ -11,13 +12,13 @@ background[5]= "/traits/background/background-space.png";
 background[6]= "/traits/background/background-tree.png";
 background[7]= "/traits/background/background-graveyard.png";
 
+
 const type = [];
 type[0]= "/traits/type/type-plainmfer.png";
 type[1]= "/traits/type/type-charcoalmfer.png";
 type[2]= "/traits/type/type-zombiemfer.png";
 type[3]= "/traits/type/type-apemfer.png";
 type[4]= "/traits/type/type-alienmfer.png";
-
 
 const watch420 = [];
 watch420[0]= "/traits/watch/watch-argoblack.png";
@@ -62,7 +63,6 @@ headphones[5]= "/traits/headphones/headphones-linedheadphones.png";
 headphones[6]= "/traits/headphones/headphones-pinkheadphones.png";
 headphones[7]= "/traits/headphones/headphones-redheadphones.png";
 headphones[8]= "/traits/headphones/headphones-whiteheadphones.png";
-
 
 const hatsUnder = [];
 hatsUnder[0]= "/traits/hatunderheadphones/hatunderheadphones-bandanablue.png";
@@ -132,54 +132,50 @@ shirt[11]= "/traits/shirt/shirt-hoodiedownwhite.png";
 shirt[12]= "/traits/chain/chain-goldchain.png";
 shirt[13]= "/traits/chain/chain-silverchain.png";
 
-
 const smoke = [];
 smoke[0]= "/traits/smoke/smoke-cigblack.png";
 smoke[1]= "/traits/smoke/smoke-cigwhite.png";
 smoke[2]= "/traits/smoke/smoke-pipe.png";
 
 
-
 function generateMfers(mfers, seedinput) {
 
-var t1 = parseFloat(seedinput.slice(0, 2));
-var t2 = parseFloat(seedinput.slice(2, 4));
-var t3 = parseFloat(seedinput.slice(4, 6));
-var t4 = parseFloat(seedinput.slice(6, 8));
-var t5 = parseFloat(seedinput.slice(8, 10));
-var t6 = parseFloat(seedinput.slice(10, 12));
-var t7 = parseFloat(seedinput.slice(12, 14));
-var t8 = parseFloat(seedinput.slice(14, 16));
-var t9 = parseFloat(seedinput.slice(16, 18));
-var t10 = parseFloat(seedinput.slice(18, 20));
-var t11 = parseFloat(seedinput.slice(20, 22));
-var t12 = parseFloat(seedinput.slice(22, 24));
-var t13 = parseFloat(seedinput.slice(24, 26));
-var t14 = parseFloat(seedinput.slice(26, 28));
-
-document.getElementsByClassName("html-content-holder")[0].style.display = "inherit";
-const elements = document.getElementsByClassName('mferImg');
-var div = document.createElement("div");
-div.setAttribute('class', 'mferImg');
-document.getElementsByClassName('mferWrapper')[0].appendChild(div);
-elements[0].parentNode.removeChild(elements[0]);
-
-for (let i = 0; i < mfers; i++){
-
-if (t1 < 0) {
-var _background = "url()"
-} else if (t1 == 0) {
-var _background = "url(" + baseURL + background[Math.floor(Math.random() * 8)] + ")";
-} else if (t1 > 0) {
-var _background = "url(" + baseURL + background[t1 - 1] + ")";
-}
-if (t2 < 0) {
-var _type = "";
-} else if (t2 == 0) {
-var _type = "url(" + baseURL + type[Math.floor(Math.random() * 5)] + "), ";
-} else if (t2 > 0) {
-var _type = "url(" + baseURL + type[t2 - 1] + "), ";
-}
+	var t1 = parseFloat(seedinput.slice(0, 2));
+	var t2 = parseFloat(seedinput.slice(2, 4));
+	var t3 = parseFloat(seedinput.slice(4, 6));
+	var t4 = parseFloat(seedinput.slice(6, 8));
+	var t5 = parseFloat(seedinput.slice(8, 10));
+	var t6 = parseFloat(seedinput.slice(10, 12));
+	var t7 = parseFloat(seedinput.slice(12, 14));
+	var t8 = parseFloat(seedinput.slice(14, 16));
+	var t9 = parseFloat(seedinput.slice(16, 18));
+	var t10 = parseFloat(seedinput.slice(18, 20));
+	var t11 = parseFloat(seedinput.slice(20, 22));
+	var t12 = parseFloat(seedinput.slice(22, 24));
+	var t13 = parseFloat(seedinput.slice(24, 26));
+	var t14 = parseFloat(seedinput.slice(26, 28));
+	
+	document.getElementsByClassName("html-content-holder")[0].style.display = "inherit";
+	const elements = document.getElementsByClassName('mferImg');
+	var div = document.createElement("div");
+	div.setAttribute('class', 'mferImg');
+	document.getElementsByClassName('mferWrapper')[0].appendChild(div);
+	elements[0].parentNode.removeChild(elements[0]);
+	for (let i = 0; i < mfers; i++){
+		if (t1 < 0) {
+			var _background = "url()"
+		} else if (t1 == 0) {
+			var _background = "url(" + baseURL + background[Math.floor(Math.random() * 8)] + ")";
+		} else if (t1 > 0) {
+			var _background = "url(" + baseURL + background[t1 - 1] + ")";
+		}
+		if (t2 < 0) {
+			var _type = "";
+		} else if (t2 == 0) {
+			var _type = "url(" + baseURL + type[Math.floor(Math.random() * 5)] + "), ";
+		} else if (t2 > 0) {
+			var _type = "url(" + baseURL + type[t2 - 1] + "), ";
+		}
 if (t3 < 0) {
 var _eyes = "";
 } else if (t3 == 0) {
@@ -386,21 +382,7 @@ document.getElementsByClassName("html-content-holder")[0].style.display = "none"
 
 function buildMfers() {
 var quant = document.getElementsByClassName("quantity")[0].value;
-var _t1 = document.getElementsByClassName("background")[0].value;
-var _t2 = document.getElementsByClassName("type")[0].value;
-var _t3 = document.getElementsByClassName("eyes")[0].value;
-var _t4 = document.getElementsByClassName("mouth")[0].value;
-var _t5 = document.getElementsByClassName("headphones")[0].value;
-var _t6 = document.getElementsByClassName("smoke")[0].value;
-var _t7 = document.getElementsByClassName("watch")[0].value;
-var _t8 = document.getElementsByClassName("beard")[0].value;
-var _t9 = document.getElementsByClassName("hoodies")[0].value;
-var _t10 = document.getElementsByClassName("shirt")[0].value;
-var _t11 = document.getElementsByClassName("longHair")[0].value;
-var _t12 = document.getElementsByClassName("hatsUnder")[0].value;
-var _t13 = document.getElementsByClassName("hatsOver")[0].value;
-var _t14 = document.getElementsByClassName("shortHair")[0].value;
-var _seed = _t1 + _t2 + _t3 + _t4 + _t5 + _t6 + _t7 + _t8 + _t9 + _t10 + _t11 + _t12 + _t13 + _t14;
+var _seed = document.getElementsByClassName("seed")[0].text;
 generateMfers(quant, _seed);
 
 }
