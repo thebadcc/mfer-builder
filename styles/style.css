@@ -5,40 +5,40 @@ body {
 
 
 .html-content-holder {
-  width: 300px;
-  height: 300px;
-  background-size: contain; 
-  padding-top: 1px;
+    width: 300px;
+    height: 300px;
+    background-size: contain; 
+    padding-top: 1px;
 }
 
 .mferImg canvas {
-margin: 10px;
+    margin: 10px;
 }
 
 .mferImg {
-  text-align: center;
+    text-align: center;
 }
 
 
 select {
-  border:none;
-  font-weight: bold;
-  margin: 5px;
-  font-size: 16px;
-  padding-top: 1.625rem;
-  padding-bottom: 0.625rem;
-  background: white;
+    border:none;
+    font-weight: bold;
+    margin: 5px;
+    font-size: 16px;
+    padding-top: 1.625rem;
+    padding-bottom: 0.625rem;
+    background: white;
 }
 
 
 input{
-  border:none;
-  font-weight: bold;
-  margin: 5px;
-  font-size: 16px;
-  padding-top: 1.625rem;
-  padding-bottom: 0.625rem;
-  width: 100%;
+    border:none;
+    font-weight: bold;
+    margin: 5px;
+    font-size: 16px;
+    padding-top: 1.625rem;
+    padding-bottom: 0.625rem;
+    width: 100%;
 }
 
 
@@ -93,14 +93,14 @@ button:focus {
 }
 
 .buildMfers {
-  font-size: 28px;
-  width: 100%;
-  background: #5468ff;
-  color: white;
-  border-radius: 5px;
-  border: 1px solid white;
-  padding: 10px;
-  margin-top: 20px;
+    font-size: 28px;
+    width: 100%;
+    background: #5468ff;
+    color: white;
+    border-radius: 5px;
+    border: 1px solid white;
+    padding: 10px;
+    margin-top: 20px;
 }
 
 .lineWrapper {
@@ -118,9 +118,9 @@ button:focus {
 }
 
 #seedWrapper {
-  background: none;
-  border: none;
-  width: 95%;  
+    background: none;
+    border: none;
+    width: 95%;  
 }
 
 #seedWrapper input {
@@ -131,6 +131,7 @@ button:focus {
     font-size: 16px;
     padding-top: 1.625rem;
     padding-bottom: 0.625rem;
+    color: gray;
 }
 
 
