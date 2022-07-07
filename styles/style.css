@@ -28,6 +28,7 @@ select {
     padding-top: 1.625rem;
     padding-bottom: 0.625rem;
     background: white;
+    appearance: none;
 }
 
 
