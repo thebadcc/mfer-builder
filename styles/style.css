@@ -31,7 +31,7 @@ select {
 }
 
 
-input, input:focus {
+input{
   border:none;
   font-weight: bold;
   margin: 5px;
@@ -41,6 +41,13 @@ input, input:focus {
   width: 100%;
 }
 
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
 
 
 .traitWrapper {
