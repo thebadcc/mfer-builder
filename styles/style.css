@@ -31,7 +31,7 @@ select {
 }
 
 
-input {
+input, input:focus {
   border:none;
   font-weight: bold;
   margin: 5px;
@@ -40,6 +40,8 @@ input {
   padding-bottom: 0.625rem;
   width: 100%;
 }
+
+
 
 .traitWrapper {
     float: left;
