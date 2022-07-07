@@ -382,7 +382,7 @@ document.getElementsByClassName("html-content-holder")[0].style.display = "none"
 
 function buildMfers() {
 var quant = document.getElementsByClassName("quantity")[0].value;
-var _seed = document.getElementsByClassName("seed")[0].text;
+var _seed = document.getElementsByClassName("seed")[0].innerHTML;
 generateMfers(quant, _seed);
 
 }
