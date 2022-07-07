@@ -113,6 +113,7 @@ input, input:focus {
 #seedWrapper {
   background: none;
   border: none;
+  width: 100%;  
 }
 
 #seedWrapper input {
@@ -123,7 +124,6 @@ input, input:focus {
     font-size: 16px;
     padding-top: 1.625rem;
     padding-bottom: 0.625rem;
-    width: 120%;
 }
 
 
