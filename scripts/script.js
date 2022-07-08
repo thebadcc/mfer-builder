@@ -381,23 +381,5 @@ function buildMfers() {
 	var seed = _seed;
 	}
 	generateMfers(quant, seed);
-}
-
-function updateSeed() {
-	var _t1 = document.getElementsByClassName("background")[0].value;
-	var _t2 = document.getElementsByClassName("type")[0].value;
-	var _t3 = document.getElementsByClassName("eyes")[0].value;
-	var _t4 = document.getElementsByClassName("mouth")[0].value;
-	var _t5 = document.getElementsByClassName("headphones")[0].value;
-	var _t6 = document.getElementsByClassName("smoke")[0].value;
-	var _t7 = document.getElementsByClassName("watch")[0].value;
-	var _t8 = document.getElementsByClassName("beard")[0].value;
-	var _t9 = document.getElementsByClassName("hoodies")[0].value;
-	var _t10 = document.getElementsByClassName("shirt")[0].value;
-	var _t11 = document.getElementsByClassName("longHair")[0].value;
-	var _t12 = document.getElementsByClassName("hatsUnder")[0].value;
-	var _t13 = document.getElementsByClassName("hatsOver")[0].value;
-	var _t14 = document.getElementsByClassName("shortHair")[0].value;
-	var _seed = _t1 + _t2 + _t3 + _t4 + _t5 + _t6 + _t7 + _t8 + _t9 + _t10 + _t11 + _t12 + _t13 + _t14;
-	document.getElementsByClassName("seed")[0].value = _seed;
+	document.getElementsByClassName("seed")[0].value = seed;
 }
