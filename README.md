@@ -51,12 +51,12 @@ You can change the displayed image(s) size via CSS:
   background-size: contain; 
 }
 
-.mferImg canvas {
-margin: 10px;
-}
-
 .mferImg {
   text-align: center;
+}
+
+.mferImg img {
+margin: 10px;
 }
 ```
 
