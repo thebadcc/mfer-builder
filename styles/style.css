@@ -10,12 +10,9 @@ body {
     background-size: contain; 
 }
 
-.mferImg canvas {
-    margin: 10px;
-}
-
 .mferImg img {
     margin: 10px;
+    width: 300px;
 }
 
 .mferImg {
