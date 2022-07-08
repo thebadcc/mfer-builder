@@ -52,6 +52,11 @@ button:focus {
     outline: none;
 }
 
+.navigationWrapper {
+width: 100%;
+float: left;
+}
+
 
 .traitWrapper {
     float: left;
