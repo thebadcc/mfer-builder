@@ -14,7 +14,13 @@
             <p>the <!-- --><b>unofficial</b> builder of <!-- --><b>mfers</b></p>
             <p>by @thebadcc</p>
         </div>
-        <div class="navigationhWrapper"> 
+        <div class="navigationWrapper"> 
+            <div class="traitWrapper" id="seedWrapper">      
+                <input class="seed" value="" placeholder="  Are ya winning, son?">
+                <button class="buildMfers" onclick="buildMfers()">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>        
+            </div>
             <div class="traitWrapper">
             <label for="background">Background</label>
             <select class="background" onchange="updateSeed()">
@@ -222,12 +228,6 @@
             <div class="traitWrapper">
             <label for="quantity">Quantity</label>          
             <input type="number" class="quantity" min="1" max="100" value="12">
-            </div>
-            <div class="traitWrapper" id="seedWrapper">      
-                <input class="seed" value="" placeholder="  Are ya winning, son?">
-            <button class="buildMfers" onclick="buildMfers()">
-                <i class="fa-solid fa-magnifying-glass"></i>
-            </button>        
             </div>
         </div>
         <div class="html-content-holder"></div>
