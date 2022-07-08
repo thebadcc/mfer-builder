@@ -100,10 +100,10 @@ button:focus {
     width: 100%;
     background: #5468ff;
     color: white;
-    border-radius: 5px;
+    border-radius: 0 5px 5px 0;
     border: 1px solid white;
     padding: 10px;
-    margin-top: 20px;
+    border-radius: 0 5px 5px 0;
 }
 
 .lineWrapper {
@@ -123,6 +123,8 @@ button:focus {
 #seedWrapper {
     width: 95%;  
     display: flex;
+    border-radius: 5px 0 0 5px;
+    padding-right: 0;
 }
 
 #seedWrapper input {
