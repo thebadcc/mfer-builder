@@ -12,7 +12,6 @@ background[5]= "/traits/background/background-space.png";
 background[6]= "/traits/background/background-tree.png";
 background[7]= "/traits/background/background-graveyard.png";
 
-
 const type = [];
 type[0]= "/traits/type/type-plainmfer.png";
 type[1]= "/traits/type/type-charcoalmfer.png";
@@ -137,7 +136,7 @@ smoke[0]= "/traits/smoke/smoke-cigblack.png";
 smoke[1]= "/traits/smoke/smoke-cigwhite.png";
 smoke[2]= "/traits/smoke/smoke-pipe.png";
 
-
+// function to generate mfers
 function generateMfers(mfers, seedinput) {
 
 	var t1 = parseFloat(seedinput.slice(0, 2));
@@ -154,7 +153,6 @@ function generateMfers(mfers, seedinput) {
 	var t12 = parseFloat(seedinput.slice(22, 24));
 	var t13 = parseFloat(seedinput.slice(24, 26));
 	var t14 = parseFloat(seedinput.slice(26, 28));
-	
 	document.getElementsByClassName("html-content-holder")[0].style.display = "inherit";
 	const elements = document.getElementsByClassName('mferImg');
 	var div = document.createElement("div");
@@ -176,204 +174,198 @@ function generateMfers(mfers, seedinput) {
 		} else if (t2 > 0) {
 			var _type = "url(" + baseURL + type[t2 - 1] + "), ";
 		}
-if (t3 < 0) {
-var _eyes = "";
-} else if (t3 == 0) {
-var _eyes = "url(" + baseURL + eyes[Math.floor(Math.random() * 10)] + "), ";
-} else if (t3 > 0) {
-var _eyes = "url(" + baseURL + eyes[t3 - 1] + "), ";
-}
-if (t4 < 0) {
-var _mouth = "";
-} else if (t4 == 0) {
-var _mouth = "url(" + baseURL + mouth[Math.floor(Math.random() * 2)] + "), ";
-} else if (t4 > 0) {
-var _mouth = "url(" + baseURL + mouth[t4 - 1] + "), ";
-}
-if (t5 < 0) {
-var _headphones = "";
-} else if (t5 == 0) {
-var _headphones = "url(" + baseURL + headphones[Math.floor(Math.random() * 9)] + "), ";
-} else if (t5 > 0) {
-var _headphones = "url(" + baseURL + headphones[t5 - 1] + "), ";
-}
-if (t6 < 0) {
-var _smoke = ""
-} else if (t6 == 0) {
-var rollSmoke = Math.floor(Math.random() * 10);
-	if (rollSmoke <= 7) {
-		var _smoke = "url(" + baseURL + smoke[Math.floor(Math.random() * 3)] + "), ";
-	} else {
-		var _smoke = ""
-   }
-} else if (t6 > 0) {
-var _smoke = "url(" + baseURL + smoke[t6 - 1] + "), ";
-}
-if (t7 < 0) {
-var _watch420 = ""
-} else if (t7 == 0) {
-var rollWatch = Math.floor(Math.random() * 10);
-if (rollWatch <= 5) {
-		var _watch420 = "url(" + baseURL + watch420[Math.floor(Math.random() * 12)] + "), ";
-} else {
-		var _watch420 = ""
-}
-} else if (t7 > 0) {
-		var _watch420 = "url(" + baseURL + watch420[t7 - 1] + "), ";
-}
-if (t8 < 0) {
-var _beard = "";
-} else if (t8 == 0) {
-var rollBeard = Math.floor(Math.random() * 10);
-if (rollBeard <= 3) {
-		var _beard = "url(" + baseURL + beard[Math.floor(Math.random() * 2)] + "), ";
-} else {
-		var _beard = "";
-}
-} else if (t8 > 0) {
-		var _beard = "url(" + baseURL + beard[t8 - 1] + "), ";
-}
-if (t9 < 0) {
-var _hoodies = "";
-} else if (t9 == 0) {
-var _hoodies = "url(" + baseURL + hoodies[0] + "), ";
-} else if (t9 > 0) {
-var _hoodies = "url(" + baseURL + hoodies[t9 - 1] + "), ";
-}
-if (t10 < 0) {
-var _shirt = "";
-} else if (t10 == 0) {
-var _shirt = "url(" + baseURL + shirt[Math.floor(Math.random() * 14)] + "), ";
-} else if (t10 > 0) {
-var _shirt = "url(" + baseURL + shirt[t10 - 1] + "), ";
-}
-if (t11 < 0) {
-var _longHair = "";
-} else if (t11 == 0) {
-var _longHair = "url(" + baseURL + longHair[Math.floor(Math.random() * 2)] + "), ";
-} else if (t11 > 0) {
-var _longHair = "url(" + baseURL + longHair[t11 - 1] + "), ";
-}
-if (t12 < 0) {
-var _hatsUnder = "";           
-} else if (t12 == 0) {
-var _hatsUnder = "url(" + baseURL + hatsUnder[Math.floor(Math.random() * 24)] + "), ";           
-} else if (t12 > 0) {
-var _hatsUnder = "url(" + baseURL + hatsUnder[t12 - 1] + "), ";           
-}
-if (t13 < 0) {
-var _hatsOver = "";  
-} else if (t13 == 0) {
-var _hatsOver = "url(" + baseURL + hatsOver[Math.floor(Math.random() * 3)] + "), ";  
-} else if (t13 > 0) {
-var _hatsOver = "url(" + baseURL + hatsOver[t13 - 1] + "), "; 
-}
-if (t14 < 0) {
-var _shortHair = "";
-} else if (t14 == 0) {
-var _shortHair = "url(" + baseURL + shortHair[Math.floor(Math.random() * 12)] + "), ";
-} else if (t14 > 0) {
-var _shortHair = "url(" + baseURL + shortHair[t14 - 1] + "), ";
-}
-
-var rollHoodies = Math.floor(Math.random() * 10);
-if (rollHoodies <= 1 && t9 == 0) {
-var _hatsOver = "";
-var _hatsUnder = "";
-var _shortHair = "";
-var _longHair = "";
-var _shirt = "";    
-} else if (t9 > 0) {
-var _hatsOver = "";
-var _hatsUnder = "";
-var _shortHair = "";
-var _longHair = "";
-var _shirt = "";  
-} else {
-    var _hoodies = "";
-    var rollShirts = Math.floor(Math.random() * 10);
-    if (rollShirts <= 5 && t10 == 0) {
-    } else if (t10 > 0) {
-    } else {
-    var _shirt = "";
-    }
-    var rollOverUnder = Math.floor(Math.random() * 10);
-    if (rollOverUnder <= 2 && t12 == 0) { 
-      var _hatsOver = ""
-      var _shortHair = ""
-      var rollLongHair = Math.floor(Math.random() * 10);
-    if (rollLongHair <= 3 && t11 == 0) {
-    } else if (t11 > 0) {
-    } else {
+		if (t3 < 0) {
+			var _eyes = "";
+		} else if (t3 == 0) {
+			var _eyes = "url(" + baseURL + eyes[Math.floor(Math.random() * 10)] + "), ";
+		} else if (t3 > 0) {
+			var _eyes = "url(" + baseURL + eyes[t3 - 1] + "), ";
+		}
+		if (t4 < 0) {
+			var _mouth = "";
+		} else if (t4 == 0) {
+			var _mouth = "url(" + baseURL + mouth[Math.floor(Math.random() * 2)] + "), ";
+		} else if (t4 > 0) {
+			var _mouth = "url(" + baseURL + mouth[t4 - 1] + "), ";
+		}
+		if (t5 < 0) {
+			var _headphones = "";
+		} else if (t5 == 0) {
+			var _headphones = "url(" + baseURL + headphones[Math.floor(Math.random() * 9)] + "), ";
+		} else if (t5 > 0) {
+			var _headphones = "url(" + baseURL + headphones[t5 - 1] + "), ";
+		}
+		if (t6 < 0) {
+			var _smoke = ""
+		} else if (t6 == 0) {
+			var rollSmoke = Math.floor(Math.random() * 10);
+			if (rollSmoke <= 7) {
+				var _smoke = "url(" + baseURL + smoke[Math.floor(Math.random() * 3)] + "), ";
+			} else {
+				var _smoke = ""
+   			}
+		} else if (t6 > 0) {
+			var _smoke = "url(" + baseURL + smoke[t6 - 1] + "), ";
+		}
+		if (t7 < 0) {
+			var _watch420 = ""
+		} else if (t7 == 0) {
+			var rollWatch = Math.floor(Math.random() * 10);
+			if (rollWatch <= 5) {
+				var _watch420 = "url(" + baseURL + watch420[Math.floor(Math.random() * 12)] + "), ";
+			} else {
+				var _watch420 = ""
+			}
+		} else if (t7 > 0) {
+			var _watch420 = "url(" + baseURL + watch420[t7 - 1] + "), ";
+		}
+		if (t8 < 0) {
+			var _beard = "";
+		} else if (t8 == 0) {
+			var rollBeard = Math.floor(Math.random() * 10);
+			if (rollBeard <= 3) {
+				var _beard = "url(" + baseURL + beard[Math.floor(Math.random() * 2)] + "), ";
+			} else {
+				var _beard = "";
+			}
+		} else if (t8 > 0) {
+			var _beard = "url(" + baseURL + beard[t8 - 1] + "), ";
+		}
+		if (t9 < 0) {
+			var _hoodies = "";
+		} else if (t9 == 0) {
+			var _hoodies = "url(" + baseURL + hoodies[0] + "), ";
+		} else if (t9 > 0) {
+			var _hoodies = "url(" + baseURL + hoodies[t9 - 1] + "), ";
+		}
+		if (t10 < 0) {
+			var _shirt = "";
+		} else if (t10 == 0) {
+			var _shirt = "url(" + baseURL + shirt[Math.floor(Math.random() * 14)] + "), ";
+		} else if (t10 > 0) {
+			var _shirt = "url(" + baseURL + shirt[t10 - 1] + "), ";
+		}
+		if (t11 < 0) {
+			var _longHair = "";
+		} else if (t11 == 0) {
+			var _longHair = "url(" + baseURL + longHair[Math.floor(Math.random() * 2)] + "), ";
+		} else if (t11 > 0) {
+			var _longHair = "url(" + baseURL + longHair[t11 - 1] + "), ";
+		}
+		if (t12 < 0) {
+			var _hatsUnder = "";           
+		} else if (t12 == 0) {
+			var _hatsUnder = "url(" + baseURL + hatsUnder[Math.floor(Math.random() * 24)] + "), ";           
+		} else if (t12 > 0) {
+			var _hatsUnder = "url(" + baseURL + hatsUnder[t12 - 1] + "), ";           
+		}
+		if (t13 < 0) {
+			var _hatsOver = "";  
+		} else if (t13 == 0) {
+			var _hatsOver = "url(" + baseURL + hatsOver[Math.floor(Math.random() * 3)] + "), ";  
+		} else if (t13 > 0) {
+			var _hatsOver = "url(" + baseURL + hatsOver[t13 - 1] + "), "; 
+		}
+		if (t14 < 0) {
+			var _shortHair = "";
+		} else if (t14 == 0) {
+			var _shortHair = "url(" + baseURL + shortHair[Math.floor(Math.random() * 12)] + "), ";
+		} else if (t14 > 0) {
+			var _shortHair = "url(" + baseURL + shortHair[t14 - 1] + "), ";
+		}
+		var rollHoodies = Math.floor(Math.random() * 10);
+		if (rollHoodies <= 1 && t9 == 0) {
+			var _hatsOver = "";
+			var _hatsUnder = "";
+			var _shortHair = "";
+			var _longHair = "";
+			var _shirt = "";    
+		} else if (t9 > 0) {
+			var _hatsOver = "";
+			var _hatsUnder = "";
+			var _shortHair = "";
+			var _longHair = "";
+			var _shirt = "";  
+		} else {
+			var _hoodies = "";
+			var rollShirts = Math.floor(Math.random() * 10);
+    		if (rollShirts <= 5 && t10 == 0) {
+    		} else if (t10 > 0) {
+    		} else {
+    			var _shirt = "";
+    	}
+    	var rollOverUnder = Math.floor(Math.random() * 10);
+    	if (rollOverUnder <= 2 && t12 == 0) { 
+			var _hatsOver = ""
+			var _shortHair = ""
+			var rollLongHair = Math.floor(Math.random() * 10);
+			if (rollLongHair <= 3 && t11 == 0) {
+    		} else if (t11 > 0) {
+    		} else {
 				var _longHair = ""
-      }
-    } else if (t12 > 0) {
-    var _hatsOver = ""
-      var _shortHair = ""
-      var rollLongHair = Math.floor(Math.random() * 10);
-    if (rollLongHair <= 3 && t11 == 0) {
-    } else if (t11 > 0) {
-    } else {
+      		}
+    	} else if (t12 > 0) {
+			var _hatsOver = ""
+			var _shortHair = ""
+			var rollLongHair = Math.floor(Math.random() * 10);
+    		if (rollLongHair <= 3 && t11 == 0) {
+    		} else if (t11 > 0) {
+    		} else {
 				var _longHair = ""
-      }
-    } else if (rollOverUnder >= 2 && rollOverUnder < 4 && t13 == 0){
-    var _hatsUnder = ""
-    var _shortHair = ""
-    var rollLongHair = Math.floor(Math.random() * 10);
-      if (rollLongHair <= 3 && t11 == 0) {
-       } else if (t11 > 0) {
-        } else {
-        	var _longHair = ""
-        }
-    } else if (t13 > 0){
-    var _hatsUnder = ""
-    var _shortHair = ""
-    var rollLongHair = Math.floor(Math.random() * 10);
-      if (rollLongHair <= 3 && t11 == 0) {
-       } else if (t11 > 0) {
-        } else {
-        	var _longHair = ""
-        }
-    } else if (rollOverUnder >= 4 && rollOverUnder < 6 && t11 == 0){
-    var _hatsUnder = "";
-    var _hatsOver = "";
-    var _shortHair = "";
-    var rollLongHair = Math.floor(Math.random() * 10);
-      if (rollLongHair <= 3 && t11 == 0) {
-       } else if (t11 > 0) {
-        } else {
-        	var _longHair = ""
-        }
-    } else if (t11 > 0){
-    var _hatsUnder = "";
-    var _hatsOver = "";
-    var _shortHair = "";
-    var rollLongHair = Math.floor(Math.random() * 10);
-      if (rollLongHair <= 3 && t11 == 0) {
-       } else if (t11 > 0) {
-       } else {
-        	var _longHair = ""
-        }
-    } else if (rollOverUnder >= 6 && t14 == 0) {
-    var _hatsUnder = "";
-    var _hatsOver = "";
-    var _longHair = "";
-    } else if (t14 > 0) {
-    var _hatsUnder = "";
-    var _hatsOver = "";
-    var _longHair = "";
-    }
-}
-
-var seed = _hoodies + _smoke + _watch420 + _mouth + _hatsOver + _headphones + _hatsUnder + _longHair + _shortHair + _shirt + _eyes + _beard + _type + _background;
-document.getElementsByClassName("html-content-holder")[0].style.backgroundImage = seed;
-window.scrollTo(0,0);	
-html2canvas(document.getElementsByClassName("html-content-holder")[0],{
-	allowTaint: true,
-	useCORS: true
-	}).then(function (canvas) {
-
-    document.getElementsByClassName("mferImg")[0].appendChild(canvas);
+			}
+    	} else if (rollOverUnder >= 2 && rollOverUnder < 4 && t13 == 0){
+			var _hatsUnder = ""
+			var _shortHair = ""
+			var rollLongHair = Math.floor(Math.random() * 10);
+      		if (rollLongHair <= 3 && t11 == 0) {
+       		} else if (t11 > 0) {
+        	} else {
+        		var _longHair = ""
+        	}
+    	} else if (t13 > 0){
+			var _hatsUnder = ""
+			var _shortHair = ""
+			var rollLongHair = Math.floor(Math.random() * 10);
+      		if (rollLongHair <= 3 && t11 == 0) {
+       		} else if (t11 > 0) {
+        	} else {
+        		var _longHair = ""
+        	}
+    	} else if (rollOverUnder >= 4 && rollOverUnder < 6 && t11 == 0){
+			var _hatsUnder = "";
+			var _hatsOver = "";
+			var _shortHair = "";
+			var rollLongHair = Math.floor(Math.random() * 10);
+      		if (rollLongHair <= 3 && t11 == 0) {
+       		} else if (t11 > 0) {
+        	} else {
+        		var _longHair = ""
+        	}
+    	} else if (t11 > 0){
+    		var _hatsUnder = "";
+    		var _hatsOver = "";
+    		var _shortHair = "";
+    		var rollLongHair = Math.floor(Math.random() * 10);
+      		if (rollLongHair <= 3 && t11 == 0) {
+       		} else if (t11 > 0) {
+       		} else {
+        		var _longHair = ""
+        	}
+    	} else if (rollOverUnder >= 6 && t14 == 0) {
+			var _hatsUnder = "";
+			var _hatsOver = "";
+			var _longHair = "";
+    	} else if (t14 > 0) {
+			var _hatsUnder = "";
+			var _hatsOver = "";
+			var _longHair = "";
+    	}
+	}
+	var seed = _hoodies + _smoke + _watch420 + _mouth + _hatsOver + _headphones + _hatsUnder + _longHair + _shortHair + _shirt + _eyes + _beard + _type + _background;
+	document.getElementsByClassName("html-content-holder")[0].style.backgroundImage = seed;
+	window.scrollTo(0,0);	
+	html2canvas(document.getElementsByClassName("html-content-holder")[0],{allowTaint: true,useCORS: true}).then(function (canvas) {
+    	document.getElementsByClassName("mferImg")[0].appendChild(canvas);
 	});
 }
 
@@ -381,27 +373,26 @@ document.getElementsByClassName("html-content-holder")[0].style.display = "none"
 }
 
 function buildMfers() {
-var quant = document.getElementsByClassName("quantity")[0].value;
-var _seed = document.getElementsByClassName("seed")[0].value.toString();
-generateMfers(quant, _seed);
+	var quant = document.getElementsByClassName("quantity")[0].value;
+	var _seed = document.getElementsByClassName("seed")[0].value.toString();
+	generateMfers(quant, _seed);
 }
 
 function updateSeed() {
-var _t1 = document.getElementsByClassName("background")[0].value;
-var _t2 = document.getElementsByClassName("type")[0].value;
-var _t3 = document.getElementsByClassName("eyes")[0].value;
-var _t4 = document.getElementsByClassName("mouth")[0].value;
-var _t5 = document.getElementsByClassName("headphones")[0].value;
-var _t6 = document.getElementsByClassName("smoke")[0].value;
-var _t7 = document.getElementsByClassName("watch")[0].value;
-var _t8 = document.getElementsByClassName("beard")[0].value;
-var _t9 = document.getElementsByClassName("hoodies")[0].value;
-var _t10 = document.getElementsByClassName("shirt")[0].value;
-var _t11 = document.getElementsByClassName("longHair")[0].value;
-var _t12 = document.getElementsByClassName("hatsUnder")[0].value;
-var _t13 = document.getElementsByClassName("hatsOver")[0].value;
-var _t14 = document.getElementsByClassName("shortHair")[0].value;
-var _seed = _t1 + _t2 + _t3 + _t4 + _t5 + _t6 + _t7 + _t8 + _t9 + _t10 + _t11 + _t12 + _t13 + _t14;
-document.getElementsByClassName("seed")[0].value = _seed;
-	
+	var _t1 = document.getElementsByClassName("background")[0].value;
+	var _t2 = document.getElementsByClassName("type")[0].value;
+	var _t3 = document.getElementsByClassName("eyes")[0].value;
+	var _t4 = document.getElementsByClassName("mouth")[0].value;
+	var _t5 = document.getElementsByClassName("headphones")[0].value;
+	var _t6 = document.getElementsByClassName("smoke")[0].value;
+	var _t7 = document.getElementsByClassName("watch")[0].value;
+	var _t8 = document.getElementsByClassName("beard")[0].value;
+	var _t9 = document.getElementsByClassName("hoodies")[0].value;
+	var _t10 = document.getElementsByClassName("shirt")[0].value;
+	var _t11 = document.getElementsByClassName("longHair")[0].value;
+	var _t12 = document.getElementsByClassName("hatsUnder")[0].value;
+	var _t13 = document.getElementsByClassName("hatsOver")[0].value;
+	var _t14 = document.getElementsByClassName("shortHair")[0].value;
+	var _seed = _t1 + _t2 + _t3 + _t4 + _t5 + _t6 + _t7 + _t8 + _t9 + _t10 + _t11 + _t12 + _t13 + _t14;
+	document.getElementsByClassName("seed")[0].value = _seed;
 }
