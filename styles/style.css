@@ -55,6 +55,9 @@ button:focus {
 .navigationWrapper {
 width: 100%;
 float: left;
+padding-bottom: 20px;
+margin-bottom: 20px;
+border-bottom: solid 1px lightgray;
 }
 
 
