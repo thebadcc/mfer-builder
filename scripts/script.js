@@ -379,12 +379,16 @@ function buildMfers() {
 	var quant = document.getElementsByClassName("quantity")[0].value;
 	var _seed = document.getElementsByClassName("seed")[0].value.toString();
 	if (_seed == '') {
-	var seed = '0000000000000000000000000000';
+		var seed = '0000000000000000000000000000';
 	} else {
-	var seed = _seed;
+		var seed = _seed;
 	}
 	generateMfers(quant, seed);
-	document.getElementsByClassName("seed")[0].value = seed;
+	if (seed == '0000000000000000000000000000') {
+		document.getElementsByClassName("seed")[0].value = '';
+	} else {
+		document.getElementsByClassName("seed")[0].value = seed;
+	}	
 }
 
 function updateSeed() {
