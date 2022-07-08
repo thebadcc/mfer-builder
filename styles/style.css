@@ -100,7 +100,6 @@ button:focus {
     width: 75px;
     background: #5468ff;
     color: white;
-    border-radius: 0 5px 5px 0;
     border: 1px solid white;
     padding: 10px;
     border-radius: 0 5px 5px 0;
@@ -125,12 +124,14 @@ button:focus {
     display: flex;
     border-radius: 5px 0 0 5px;
     padding-right: 0;
+    border: none;
+    background: none;
 }
 
 #seedWrapper input {
     border: none;
     font-weight: bold;
-    margin: 5px;
+    margin: 0px;
     font-size: 20px;
     padding-top: 1rem;
     padding-bottom: 0.625rem;
