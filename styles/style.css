@@ -14,6 +14,10 @@ body {
     margin: 10px;
 }
 
+.mferImg img {
+    margin: 10px;
+}
+
 .mferImg {
     text-align: center;
 }
