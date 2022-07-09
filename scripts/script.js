@@ -412,5 +412,5 @@ function updateSeed() {
 }
 
 function toggleDropdown () {
-	document.getElementsByClassName("dropdown")[0].style.display = inherit;
+	document.getElementsByClassName("dropdown")[0].style.display = "inherit";
 }
