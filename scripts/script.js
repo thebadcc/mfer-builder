@@ -389,7 +389,6 @@ function buildMfers() {
 	} else {
 		document.getElementsByClassName("seed")[0].value = seed;
 	}
-	document.getElementsByClassName("dropdown")[0].style.display = "none";
 }
 
 function updateSeed() {
@@ -409,8 +408,4 @@ function updateSeed() {
 	var _t14 = document.getElementsByClassName("shortHair")[0].value;
 	var _seed = _t1 + _t2 + _t3 + _t4 + _t5 + _t6 + _t7 + _t8 + _t9 + _t10 + _t11 + _t12 + _t13 + _t14;
 	document.getElementsByClassName("seed")[0].value = _seed;
-}
-
-function toggleDropdown () {
-	document.getElementsByClassName("dropdown")[0].style.display = "inherit";
 }
