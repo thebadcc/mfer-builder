@@ -150,4 +150,7 @@ border-bottom: solid 1px lightgray;
     border-radius: 5px 0px 0px 5px;
 }
 
+.dropdown {
+    display: none;
+}
 
