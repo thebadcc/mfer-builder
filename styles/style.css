@@ -149,11 +149,3 @@ border-bottom: solid 1px lightgray;
     border: solid 1px lightgray;
     border-radius: 5px 0px 0px 5px;
 }
-
-.waitingWrapper {
-    text-align: center;
-}
-
-.waitingImg {
-    width: 100px;  
-}
