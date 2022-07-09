@@ -134,6 +134,8 @@ border-bottom: solid 1px lightgray;
     padding-right: 0;
     border: none;
     background: none;
+    float: left;
+    margin: 10px;
 }
 
 #seedWrapper input {
