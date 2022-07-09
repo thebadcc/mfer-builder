@@ -388,7 +388,8 @@ function buildMfers() {
 		document.getElementsByClassName("seed")[0].value = '';
 	} else {
 		document.getElementsByClassName("seed")[0].value = seed;
-	}	
+	}
+	document.getElementsByClassName("dropdown")[0].style.display = none;
 }
 
 function updateSeed() {
