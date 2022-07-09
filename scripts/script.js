@@ -160,42 +160,42 @@ function generateMfers(mfers, seedinput) {
 	document.getElementsByClassName('mferWrapper')[0].appendChild(div);
 	elements[0].parentNode.removeChild(elements[0]);
 	for (let i = 0; i < mfers; i++){
-		if (t1 < 0) {
+		if (t1 == 1) {
 			var _background = "url()"
 		} else if (t1 == 0) {
 			var _background = "url(" + baseURL + background[Math.floor(Math.random() * 8)] + ")";
-		} else if (t1 > 0) {
-			var _background = "url(" + baseURL + background[t1 - 1] + ")";
+		} else if (t1 > 1) {
+			var _background = "url(" + baseURL + background[t1 - 2] + ")";
 		}
-		if (t2 < 0) {
+		if (t2 == 1) {
 			var _type = "";
 		} else if (t2 == 0) {
 			var _type = "url(" + baseURL + type[Math.floor(Math.random() * 5)] + "), ";
-		} else if (t2 > 0) {
-			var _type = "url(" + baseURL + type[t2 - 1] + "), ";
+		} else if (t2 > 1) {
+			var _type = "url(" + baseURL + type[t2 - 2] + "), ";
 		}
-		if (t3 < 0) {
+		if (t3 == 1) {
 			var _eyes = "";
 		} else if (t3 == 0) {
 			var _eyes = "url(" + baseURL + eyes[Math.floor(Math.random() * 10)] + "), ";
-		} else if (t3 > 0) {
-			var _eyes = "url(" + baseURL + eyes[t3 - 1] + "), ";
+		} else if (t3 > 1) {
+			var _eyes = "url(" + baseURL + eyes[t3 - 2] + "), ";
 		}
-		if (t4 < 0) {
+		if (t4 == 1) {
 			var _mouth = "";
 		} else if (t4 == 0) {
 			var _mouth = "url(" + baseURL + mouth[Math.floor(Math.random() * 2)] + "), ";
-		} else if (t4 > 0) {
-			var _mouth = "url(" + baseURL + mouth[t4 - 1] + "), ";
+		} else if (t4 > 1) {
+			var _mouth = "url(" + baseURL + mouth[t4 - 2] + "), ";
 		}
-		if (t5 < 0) {
+		if (t5 == 1) {
 			var _headphones = "";
 		} else if (t5 == 0) {
 			var _headphones = "url(" + baseURL + headphones[Math.floor(Math.random() * 9)] + "), ";
-		} else if (t5 > 0) {
-			var _headphones = "url(" + baseURL + headphones[t5 - 1] + "), ";
+		} else if (t5 > 1) {
+			var _headphones = "url(" + baseURL + headphones[t5 - 2] + "), ";
 		}
-		if (t6 < 0) {
+		if (t6 == 1) {
 			var _smoke = ""
 		} else if (t6 == 0) {
 			var rollSmoke = Math.floor(Math.random() * 10);
@@ -204,10 +204,10 @@ function generateMfers(mfers, seedinput) {
 			} else {
 				var _smoke = ""
    			}
-		} else if (t6 > 0) {
-			var _smoke = "url(" + baseURL + smoke[t6 - 1] + "), ";
+		} else if (t6 > 1) {
+			var _smoke = "url(" + baseURL + smoke[t6 - 2] + "), ";
 		}
-		if (t7 < 0) {
+		if (t7 == 1) {
 			var _watch420 = ""
 		} else if (t7 == 0) {
 			var rollWatch = Math.floor(Math.random() * 10);
@@ -216,10 +216,10 @@ function generateMfers(mfers, seedinput) {
 			} else {
 				var _watch420 = ""
 			}
-		} else if (t7 > 0) {
-			var _watch420 = "url(" + baseURL + watch420[t7 - 1] + "), ";
+		} else if (t7 > 1) {
+			var _watch420 = "url(" + baseURL + watch420[t7 - 2] + "), ";
 		}
-		if (t8 < 0) {
+		if (t8 == 1) {
 			var _beard = "";
 		} else if (t8 == 0) {
 			var rollBeard = Math.floor(Math.random() * 10);
@@ -228,50 +228,50 @@ function generateMfers(mfers, seedinput) {
 			} else {
 				var _beard = "";
 			}
-		} else if (t8 > 0) {
-			var _beard = "url(" + baseURL + beard[t8 - 1] + "), ";
+		} else if (t8 > 1) {
+			var _beard = "url(" + baseURL + beard[t8 - 2] + "), ";
 		}
-		if (t9 < 0) {
+		if (t9 == 1) {
 			var _hoodies = "";
 		} else if (t9 == 0) {
 			var _hoodies = "url(" + baseURL + hoodies[0] + "), ";
-		} else if (t9 > 0) {
-			var _hoodies = "url(" + baseURL + hoodies[t9 - 1] + "), ";
+		} else if (t9 > 1) {
+			var _hoodies = "url(" + baseURL + hoodies[t9 - 2] + "), ";
 		}
-		if (t10 < 0) {
+		if (t10 == 1) {
 			var _shirt = "";
 		} else if (t10 == 0) {
 			var _shirt = "url(" + baseURL + shirt[Math.floor(Math.random() * 14)] + "), ";
-		} else if (t10 > 0) {
-			var _shirt = "url(" + baseURL + shirt[t10 - 1] + "), ";
+		} else if (t10 > 1) {
+			var _shirt = "url(" + baseURL + shirt[t10 - 2] + "), ";
 		}
-		if (t11 < 0) {
+		if (t11 == 1) {
 			var _longHair = "";
 		} else if (t11 == 0) {
 			var _longHair = "url(" + baseURL + longHair[Math.floor(Math.random() * 2)] + "), ";
-		} else if (t11 > 0) {
-			var _longHair = "url(" + baseURL + longHair[t11 - 1] + "), ";
+		} else if (t11 > 1) {
+			var _longHair = "url(" + baseURL + longHair[t11 - 2] + "), ";
 		}
-		if (t12 < 0) {
+		if (t12 == 1) {
 			var _hatsUnder = "";           
 		} else if (t12 == 0) {
 			var _hatsUnder = "url(" + baseURL + hatsUnder[Math.floor(Math.random() * 24)] + "), ";           
-		} else if (t12 > 0) {
-			var _hatsUnder = "url(" + baseURL + hatsUnder[t12 - 1] + "), ";           
+		} else if (t12 > 1) {
+			var _hatsUnder = "url(" + baseURL + hatsUnder[t12 - 2] + "), ";           
 		}
-		if (t13 < 0) {
+		if (t13 == 1) {
 			var _hatsOver = "";  
 		} else if (t13 == 0) {
 			var _hatsOver = "url(" + baseURL + hatsOver[Math.floor(Math.random() * 3)] + "), ";  
-		} else if (t13 > 0) {
-			var _hatsOver = "url(" + baseURL + hatsOver[t13 - 1] + "), "; 
+		} else if (t13 > 1) {
+			var _hatsOver = "url(" + baseURL + hatsOver[t13 - 2] + "), "; 
 		}
-		if (t14 < 0) {
+		if (t14 == 1) {
 			var _shortHair = "";
 		} else if (t14 == 0) {
 			var _shortHair = "url(" + baseURL + shortHair[Math.floor(Math.random() * 12)] + "), ";
-		} else if (t14 > 0) {
-			var _shortHair = "url(" + baseURL + shortHair[t14 - 1] + "), ";
+		} else if (t14 > 1) {
+			var _shortHair = "url(" + baseURL + shortHair[t14 - 2] + "), ";
 		}
 		var rollHoodies = Math.floor(Math.random() * 10);
 		if (rollHoodies <= 1 && t9 == 0) {
@@ -280,7 +280,7 @@ function generateMfers(mfers, seedinput) {
 			var _shortHair = "";
 			var _longHair = "";
 			var _shirt = "";    
-		} else if (t9 > 0) {
+		} else if (t9 > 1) {
 			var _hatsOver = "";
 			var _hatsUnder = "";
 			var _shortHair = "";
@@ -290,7 +290,7 @@ function generateMfers(mfers, seedinput) {
 			var _hoodies = "";
 			var rollShirts = Math.floor(Math.random() * 10);
     		if (rollShirts <= 5 && t10 == 0) {
-    		} else if (t10 > 0) {
+    		} else if (t10 > 1) {
     		} else {
     			var _shirt = "";
     	}
@@ -300,16 +300,16 @@ function generateMfers(mfers, seedinput) {
 			var _shortHair = ""
 			var rollLongHair = Math.floor(Math.random() * 10);
 			if (rollLongHair <= 3 && t11 == 0) {
-    		} else if (t11 > 0) {
+    		} else if (t11 > 1) {
     		} else {
 				var _longHair = ""
       		}
-    	} else if (t12 > 0) {
+    	} else if (t12 > 1) {
 			var _hatsOver = ""
 			var _shortHair = ""
 			var rollLongHair = Math.floor(Math.random() * 10);
     		if (rollLongHair <= 3 && t11 == 0) {
-    		} else if (t11 > 0) {
+    		} else if (t11 > 1) {
     		} else {
 				var _longHair = ""
 			}
@@ -318,16 +318,16 @@ function generateMfers(mfers, seedinput) {
 			var _shortHair = ""
 			var rollLongHair = Math.floor(Math.random() * 10);
       		if (rollLongHair <= 3 && t11 == 0) {
-       		} else if (t11 > 0) {
+       		} else if (t11 > 1) {
         	} else {
         		var _longHair = ""
         	}
-    	} else if (t13 > 0){
+    	} else if (t13 > 1){
 			var _hatsUnder = ""
 			var _shortHair = ""
 			var rollLongHair = Math.floor(Math.random() * 10);
       		if (rollLongHair <= 3 && t11 == 0) {
-       		} else if (t11 > 0) {
+       		} else if (t11 > 1) {
         	} else {
         		var _longHair = ""
         	}
@@ -337,17 +337,17 @@ function generateMfers(mfers, seedinput) {
 			var _shortHair = "";
 			var rollLongHair = Math.floor(Math.random() * 10);
       		if (rollLongHair <= 3 && t11 == 0) {
-       		} else if (t11 > 0) {
+       		} else if (t11 > 1) {
         	} else {
         		var _longHair = ""
         	}
-    	} else if (t11 > 0){
+    	} else if (t11 > 1){
     		var _hatsUnder = "";
     		var _hatsOver = "";
     		var _shortHair = "";
     		var rollLongHair = Math.floor(Math.random() * 10);
       		if (rollLongHair <= 3 && t11 == 0) {
-       		} else if (t11 > 0) {
+       		} else if (t11 > 1) {
        		} else {
         		var _longHair = ""
         	}
@@ -355,7 +355,7 @@ function generateMfers(mfers, seedinput) {
 			var _hatsUnder = "";
 			var _hatsOver = "";
 			var _longHair = "";
-    	} else if (t14 > 0) {
+    	} else if (t14 > 1) {
 			var _hatsUnder = "";
 			var _hatsOver = "";
 			var _longHair = "";
