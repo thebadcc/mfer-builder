@@ -70,11 +70,11 @@ The seed instructs the function to pull certain image layers, process any exclus
     
 **Seeds**
 
-Seeds are a length of 28 characters (e.g. '-1', '00', '01', etc.) expressed as a string ('xxxxxxxxxxxxxxxxxxxxxxxxxxx'). Each trait is represented by 'xx' for a total of 14 traits under the following conventions:
-* None: -1
+Seeds are a length of 28 characters (e.g. '00', '01', '02', etc.) expressed as a string ('xxxxxxxxxxxxxxxxxxxxxxxxxxx'). Each trait is represented by 'xx' for a total of 14 traits under the following conventions:
 * Random: 00
-* Trait 1: 01
-* Trait 2: 02
+* None: 01
+* Trait 1: 02
+* Trait 2: 03
 * ... and so forth.
 
 If you exceed the trait maximum, the image will not render. Future releases will default these invalid traits to random ('00').
@@ -95,7 +95,7 @@ To create a seed, see the trait list below for guidance or generate a seed using
 * xx(13): hatsOver
 * xx(14): shortHair 
    
-For example, generateMfers(1,'01040202040203-1-112-1-1-110') will create the below image:
+For example, generateMfers(1,'0104020204020301011201010110') will create the below image:
 
 ![image](https://github.com/thebadcc-eth/mfer-builder/blob/main/images/exampleMfer.png?raw=true)
 
