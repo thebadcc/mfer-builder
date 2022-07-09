@@ -95,7 +95,7 @@ To create a seed, see the trait list below for guidance or generate a seed using
 * xx(13): hatsOver
 * xx(14): shortHair 
    
-For example, generateMfers(1,'0104020204020301011201010110') will create the below image:
+For example, generateMfers(1,'0205030305030401011301010111') will create the below image:
 
 ![image](https://github.com/thebadcc-eth/mfer-builder/blob/main/images/exampleMfer.png?raw=true)
 
