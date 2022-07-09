@@ -376,7 +376,6 @@ document.getElementsByClassName("html-content-holder")[0].style.display = "none"
 }
 
 function buildMfers() {
-	document.getElementsByClassName("waitingWrapper")[0].style.display = "inherit";
 	var quant = document.getElementsByClassName("quantity")[0].value;
 	var _seed = document.getElementsByClassName("seed")[0].value.toString();
 	if (_seed == '') {
@@ -385,7 +384,6 @@ function buildMfers() {
 		var seed = _seed;
 	}
 	generateMfers(quant, seed);
-	document.getElementsByClassName("waitingWrapper")[0].style.display = "none";
 	if (seed == '0000000000000000000000000000') {
 		document.getElementsByClassName("seed")[0].value = '';
 	} else {
