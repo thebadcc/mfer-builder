@@ -389,7 +389,7 @@ function buildMfers() {
 	} else {
 		document.getElementsByClassName("seed")[0].value = seed;
 	}
-	document.getElementsByClassName("dropdown")[0].style.display = none;
+	document.getElementsByClassName("dropdown")[0].style.display = "none";
 }
 
 function updateSeed() {
