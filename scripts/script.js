@@ -417,12 +417,11 @@ function wtf() {
 	const filters = [];
 	filters[0]= "invert(.8)";
 	filters[1]= "grayscale(100%)";
-	filters[2]= "blur(3px)";
-	filters[3]= "saturate(10)";
-	filters[4]= "sepia(1)";
-	filters[5]= "contrast(5)";
-	filters[6]= "hue-rotate(3.142rad)";
-	var _rollWtf = Math.floor(Math.random() * 7);
+	filters[2]= "saturate(10)";
+	filters[3]= "sepia(1)";
+	filters[4]= "contrast(5)";
+	filters[5]= "hue-rotate(3.142rad)";
+	var _rollWtf = Math.floor(Math.random() * 6);
 	for (let i = 0; i < document.getElementsByClassName("mfers").length; i++){
 	document.getElementsByClassName("mfers")[i].style.filter = filters[_rollWtf];
 	};
