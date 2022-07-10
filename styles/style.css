@@ -155,3 +155,13 @@ border-bottom: solid 1px lightgray;
   color: black;
   opacity: 1;
 }
+
+.wtfButton {
+    font-size: 30;
+    float: left;
+    margin: 10px;
+    border: solid 1px lightgray;
+    border-radius: 5px;
+    background: white;
+    padding: 1rem;
+}
