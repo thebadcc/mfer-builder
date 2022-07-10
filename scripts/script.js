@@ -424,5 +424,5 @@ function wtf() {
 	filters[6]= "hue-rotate(3.142rad)";
 	for (let i = 0; i < document.getElementsByClassName("mfers").length; i++){
 	document.getElementsByClassName("mfers")[i].style.filter = filters[Math.floor(Math.random() * 10)];
-	});
+	};
 }
