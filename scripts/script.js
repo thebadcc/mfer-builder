@@ -368,7 +368,7 @@ function generateMfers(mfers, seedinput) {
 	var pngUrl = canvas.toDataURL("image/png");
 	var mferImg = document.createElement("img");
 	mferImg.src = pngUrl;
-	mferImg.id = 'mfers';
+	mferImg.className = 'mfers';
 	document.getElementsByClassName("mferImg")[0].appendChild(mferImg);
 	});
 }
@@ -422,5 +422,7 @@ function wtf() {
 	filters[4]= "sepia(1)";
 	filters[5]= "contrast(5)";
 	filters[6]= "hue-rotate(3.142rad)";
-	document.getElementById("mfers").style.filter = filters[Math.floor(Math.random() * 10)];
+	for (let i = 0; i < document.getElementsByClassName("mfers").length; i++){
+	document.getElementsByClassName("mfers")[i].style.filter = filters[Math.floor(Math.random() * 10)];
+	});
 }
