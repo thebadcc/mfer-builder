@@ -422,5 +422,5 @@ function wtf() {
 	filters[4]= "sepia(1)";
 	filters[5]= "contrast(5)";
 	filters[6]= "hue-rotate(3.142rad)";
-	document.getElementById("mfers").style.filter = filter[Math.floor(Math.random() * 10)];
+	document.getElementById("mfers").style.filter = filters[Math.floor(Math.random() * 10)];
 }
