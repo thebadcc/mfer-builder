@@ -368,13 +368,13 @@ function generateMfers(mfers, seedinput) {
 	var pngUrl = canvas.toDataURL("image/png");
 	var mferImg = document.createElement("img");
 	mferImg.src = pngUrl;
-	mferImg.className = 'mfers';
+	mferImg.id = 'mfers';
 	document.getElementsByClassName("mferImg")[0].appendChild(mferImg);
 	});
 }
 
 document.getElementsByClassName("html-content-holder")[0].style.display = "none";
-document.getElementsByClassName("html-content-holder")[0].style.url = "";
+
 }
 
 function buildMfers() {
@@ -414,4 +414,13 @@ function updateSeed() {
 }
 
 function wtf() {
+	const filters = [];
+	filters[0]= "invert(.8)";
+	filters[1]= "grayscale(100%)";
+	filters[2]= "blur(3px)";
+	filters[3]= "saturate(10)";
+	filters[4]= "sepia(1)";
+	filters[5]= "contrast(5)";
+	filters[6]= "hue-rotate(3.142rad)";
+	document.getElementById("mfers").style.filter = filter[Math.floor(Math.random() * 10)];
 }
