@@ -423,6 +423,10 @@ function wtf() {
 	filters[5]= "hue-rotate(3.142rad)";
 	var _rollWtf = Math.floor(Math.random() * 6);
 	for (let i = 0; i < document.getElementsByClassName("mfers").length; i++){
-	document.getElementsByClassName("mfers")[i].style.filter = filters[_rollWtf];
+		document.getElementsByClassName("mfers")[i].style.filter = filters[_rollWtf];
+		html2canvas(document.getElementsByClassName("mfers")[i],{allowTaint: true,useCORS: true}).then(function (canvas) {
+			var pngUrl = canvas.toDataURL("image/png");
+			document.getElementsByClassName("mfers")[i].src = pngUrl;
+		});
 	};
 }
