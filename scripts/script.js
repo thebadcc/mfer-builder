@@ -370,7 +370,7 @@ function generateMfers(mfers, seedinput) {
 	var pngUrl = canvas.toDataURL("image/png");
 	var mferImg = document.createElement("img");
 	mferImg.src = pngUrl;
-	mferImg.className = 'mfers';	
+	mferImg.className = 'mfers';
 	document.getElementsByClassName("mferImg")[0].appendChild(mferImg);
 	});
 }
@@ -416,17 +416,18 @@ function updateSeed() {
 	buildMfers();
 }
 
-var wtf = (function() {
-const filters = [];
-filters[0]= "invert(.8)";
-filters[1]= "grayscale(100%)";
-filters[2]= "saturate(10)";
-filters[3]= "sepia(1)";
-filters[4]= "contrast(5)";
-filters[5]= "hue-rotate(3.142rad)";
-  var count = -1;
-  return function() {
-    return filters[++count % filters.length];
-  }
-console.log(filters[++count % filters.length]);
-}());
+var wtf() = 
+	const filters = [];
+	filters[0]= "none";
+	filters[1]= "invert(.8)";
+	filters[2]= "grayscale(100%)";
+	filters[3]= "saturate(10)";
+	filters[4]= "sepia(1)";
+	filters[5]= "contrast(5)";
+	filters[6]= "hue-rotate(3.142rad)";
+	document.getElementsByClassName("wtfButton")[0].value = currentFilter;
+	console.log(currentFilter);
+	var imgLength = document.
+	for (var i = 0; i < imgLength; i++) {	
+	}
+}
