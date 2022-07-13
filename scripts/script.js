@@ -435,7 +435,7 @@ function wtf() {
 		document.getElementsByClassName("mfers")[i].style.filter = filters[newFilter];
 	}
 	if (currentFilter >=6) {
-	document.getElementsByClassName("wtfButton")[0].value = 0;
+	document.getElementsByClassName("wtfButton")[0].value = -1;
 	} else {
 	document.getElementsByClassName("wtfButton")[0].value = newFilter;
 	}
