@@ -425,8 +425,7 @@ function wtf() {
 	filters[4]= "contrast(5)";
 	filters[5]= "hue-rotate(3.142rad)";
 	var count = -1;
-	var selectFilter = filters[++count % filters.length];
 	for (let i = 0; i < document.getElementsByClassName("mfers").length; i++){
-		document.getElementsByClassName("mfers")[i].style.filter = selectFilter;
+		document.getElementsByClassName("mfers")[i].style.filter = filters[++count % filters.length];
 	};
 }
