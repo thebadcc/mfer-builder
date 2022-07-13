@@ -428,9 +428,14 @@ function wtf() {
 	var currentFilter = document.getElementsByClassName("wtfButton")[0].value;
 	console.log(currentFilter);
 	var imgLength = document.getElementsByClassName("mfers").length;
+	console.log(imgLength);
 	for (var i = 0; i < imgLength; i++) {	
-		document.getElementsByClassName("mfers")[i].style.filter = filters[currentFilter + 1];
-		
+		document.getElementsByClassName("mfers")[i].style.filter = filters[newFilter];
+	}
+	if (currentFilter >=6) {
+	document.getElementsByClassName("wtfButton")[0].value = "0";
+	} else {
+	document.getElementsByClassName("wtfButton")[0].value = newFilter;
 	}
 	
 }
