@@ -416,7 +416,7 @@ function updateSeed() {
 	buildMfers();
 }
 
-var wtf() = 
+function wtf() { 
 	const filters = [];
 	filters[0]= "none";
 	filters[1]= "invert(.8)";
