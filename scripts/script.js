@@ -434,8 +434,8 @@ function wtf() {
 	for (var i = 0; i < imgLength; i++) {	
 		document.getElementsByClassName("mfers")[i].style.filter = filters[newFilter];
 	}
-	if (currentFilter >=6) {
-	document.getElementsByClassName("wtfButton")[0].value = -1;
+	if (currentFilter = 6) {
+	document.getElementsByClassName("wtfButton")[0].value = "-1";
 	} else {
 	document.getElementsByClassName("wtfButton")[0].value = newFilter;
 	}
