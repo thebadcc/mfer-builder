@@ -429,12 +429,13 @@ function wtf() {
 	console.log(currentFilter);
 	var imgLength = document.getElementsByClassName("mfers").length;
 	console.log(imgLength);
-	var newFilter = currentFilter + 1;
+	var newFilter = parseFloat(currentFilter) + 1;
+	console.log(newFilter);
 	for (var i = 0; i < imgLength; i++) {	
 		document.getElementsByClassName("mfers")[i].style.filter = filters[newFilter];
 	}
 	if (currentFilter >=6) {
-	document.getElementsByClassName("wtfButton")[0].value = "0";
+	document.getElementsByClassName("wtfButton")[0].value = 0;
 	} else {
 	document.getElementsByClassName("wtfButton")[0].value = newFilter;
 	}
