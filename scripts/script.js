@@ -138,21 +138,23 @@ smoke[2]= "/traits/smoke/smoke-pipe.png";
 
 // function to generate mfers
 function generateMfers(mfers, seedinput) {
-
-	var t1 = parseFloat(seedinput.slice(0, 2));
-	var t2 = parseFloat(seedinput.slice(2, 4));
-	var t3 = parseFloat(seedinput.slice(4, 6));
-	var t4 = parseFloat(seedinput.slice(6, 8));
-	var t5 = parseFloat(seedinput.slice(8, 10));
-	var t6 = parseFloat(seedinput.slice(10, 12));
-	var t7 = parseFloat(seedinput.slice(12, 14));
-	var t8 = parseFloat(seedinput.slice(14, 16));
-	var t9 = parseFloat(seedinput.slice(16, 18));
-	var t10 = parseFloat(seedinput.slice(18, 20));
-	var t11 = parseFloat(seedinput.slice(20, 22));
-	var t12 = parseFloat(seedinput.slice(22, 24));
-	var t13 = parseFloat(seedinput.slice(24, 26));
-	var t14 = parseFloat(seedinput.slice(26, 28));
+	
+	var t0 = parseFloat(seedinput.slice(0, 2));
+	var t1 = parseFloat(seedinput.slice(2, 4));
+	var t2 = parseFloat(seedinput.slice(4, 6));
+	var t3 = parseFloat(seedinput.slice(6, 8));
+	var t4 = parseFloat(seedinput.slice(8, 10));
+	var t5 = parseFloat(seedinput.slice(10, 12));
+	var t6 = parseFloat(seedinput.slice(12, 14));
+	var t7 = parseFloat(seedinput.slice(14, 16));
+	var t8 = parseFloat(seedinput.slice(16, 18));
+	var t9 = parseFloat(seedinput.slice(18, 20));
+	var t10 = parseFloat(seedinput.slice(20, 22));
+	var t11 = parseFloat(seedinput.slice(22, 24));
+	var t12 = parseFloat(seedinput.slice(24, 26));
+	var t13 = parseFloat(seedinput.slice(26, 28));
+	var t14 = parseFloat(seedinput.slice(28, 30));
+	
 	document.getElementsByClassName("html-content-holder")[0].style.display = "inherit";
 	const elements = document.getElementsByClassName('mferImg');
 	var div = document.createElement("div");
@@ -381,12 +383,12 @@ function buildMfers() {
 	var quant = document.getElementsByClassName("quantity")[0].value;
 	var _seed = document.getElementsByClassName("seed")[0].value.toString();
 	if (_seed == '') {
-		var seed = '0000000000000000000000000000';
+		var seed = '000000000000000000000000000000';
 	} else {
 		var seed = _seed;
 	}
 	generateMfers(quant, seed);
-	if (seed == '0000000000000000000000000000') {
+	if (seed == '000000000000000000000000000000') {
 		document.getElementsByClassName("seed")[0].value = '';
 	} else {
 		document.getElementsByClassName("seed")[0].value = seed;
