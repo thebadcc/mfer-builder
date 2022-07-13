@@ -429,7 +429,7 @@ function wtf() {
 	console.log(currentFilter);
 	var imgLength = document.getElementsByClassName("mfers").length;
 	for (var i = 0; i < imgLength; i++) {	
-		document.getElementsByClassName("mfers").style.filter = filters[currentFilter + 1];
+		document.getElementsByClassName("mfers")[i].style.filter = filters[currentFilter + 1];
 		
 	}
 	
