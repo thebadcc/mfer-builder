@@ -416,13 +416,7 @@ function updateSeed() {
 	buildMfers();
 }
 
-function wtf() {
-
-  	var count = -1;
-    	console.log(filters[++count % filters.length]);
-}
-
-var nextWord = (function() {
+var wtf = (function() {
 const filters = [];
 filters[0]= "invert(.8)";
 filters[1]= "grayscale(100%)";
