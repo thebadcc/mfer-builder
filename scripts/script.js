@@ -427,7 +427,8 @@ var wtf() =
 	filters[6]= "hue-rotate(3.142rad)";
 	document.getElementsByClassName("wtfButton")[0].value = currentFilter;
 	console.log(currentFilter);
-	var imgLength = document.
+	var imgLength = document.getElementsByClassName("mfers").length;
 	for (var i = 0; i < imgLength; i++) {	
+		
 	}
 }
