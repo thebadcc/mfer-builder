@@ -396,6 +396,7 @@ function buildMfers() {
 }
 
 function updateSeed() {
+	var _t0 = '00';
 	var _t1 = document.getElementsByClassName("background")[0].value;
 	var _t2 = document.getElementsByClassName("type")[0].value;
 	var _t3 = document.getElementsByClassName("eyes")[0].value;
