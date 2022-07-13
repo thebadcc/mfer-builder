@@ -425,10 +425,12 @@ function wtf() {
 	filters[4]= "sepia(1)";
 	filters[5]= "contrast(5)";
 	filters[6]= "hue-rotate(3.142rad)";
-	document.getElementsByClassName("wtfButton")[0].value = currentFilter;
+	var currentFilter = document.getElementsByClassName("wtfButton")[0].value;
 	console.log(currentFilter);
 	var imgLength = document.getElementsByClassName("mfers").length;
 	for (var i = 0; i < imgLength; i++) {	
+		document.getElementsByClassName("mfers").style.filter = filters[currentFilter + 1];
 		
 	}
+	
 }
