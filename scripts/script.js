@@ -417,13 +417,22 @@ function updateSeed() {
 }
 
 function wtf() {
-	const filters = [];
-	filters[0]= "invert(.8)";
-	filters[1]= "grayscale(100%)";
-	filters[2]= "saturate(10)";
-	filters[3]= "sepia(1)";
-	filters[4]= "contrast(5)";
-	filters[5]= "hue-rotate(3.142rad)";
+
   	var count = -1;
     	console.log(filters[++count % filters.length]);
 }
+
+var nextWord = (function() {
+const filters = [];
+filters[0]= "invert(.8)";
+filters[1]= "grayscale(100%)";
+filters[2]= "saturate(10)";
+filters[3]= "sepia(1)";
+filters[4]= "contrast(5)";
+filters[5]= "hue-rotate(3.142rad)";
+  var count = -1;
+  return function() {
+    return filters[++count % filters.length];
+  }
+console.log(filters[++count % filters.length]);
+}());
