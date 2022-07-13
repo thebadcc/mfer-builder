@@ -369,6 +369,7 @@ function generateMfers(mfers, seedinput) {
 	var mferImg = document.createElement("img");
 	mferImg.src = pngUrl;
 	mferImg.className = 'mfers';
+	mferImg.alt = seed; 	
 	document.getElementsByClassName("mferImg")[0].appendChild(mferImg);
 	});
 }
