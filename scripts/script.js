@@ -424,11 +424,6 @@ function wtf() {
 	filters[3]= "sepia(1)";
 	filters[4]= "contrast(5)";
 	filters[5]= "hue-rotate(3.142rad)";
-	var nextWord = (function() {
   	var count = -1;
-  		return function() {
-    			console.log(filters[++count % filters.length]);
-  		}
-	}());
-
+    	console.log(filters[++count % filters.length]);
 }
