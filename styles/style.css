@@ -9,9 +9,12 @@
     src: url("fonts/SartoshiScript-Regular.otf") format("opentype");
 }
 
+* {
+   font-family: mferFont;
+}
+
 body {
     background: #f6f9fc;
-   font-family: mferFont;
 }
 
 
