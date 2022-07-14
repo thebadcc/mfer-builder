@@ -97,7 +97,7 @@ border-bottom: solid 1px lightgray;
 }
 
 .titleSection h1 {
-    font-size: 3rem;
+    font-size: 6rem;
     letter-spacing: -.02em;
 }
 
@@ -107,12 +107,12 @@ border-bottom: solid 1px lightgray;
 }
 
 .titleSection p {
-    font-size: 1.05rem;
+    font-size: 2.05rem;
     letter-spacing: -.03em;
 }
 
 .titleSection {
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
     text-align: center;
     padding-bottom: 20px;
     border-bottom: solid 1px lightgray;
