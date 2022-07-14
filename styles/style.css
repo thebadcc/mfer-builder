@@ -1,7 +1,7 @@
 @font-face {
    font-family: mferFont;
    src: 
-	url('styles/fonts/SartoshiScript-Regular.otf') 
+	url(./styles/fonts/SartoshiScript-Regular.otf) 
 	format('opentype');
 }
 
