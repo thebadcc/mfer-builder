@@ -1,6 +1,10 @@
 @font-face {
    font-family: mferFont;
-   src: url(/styles/fonts/SartoshiScript-Regular.otf);
+   src: 
+	local('Lovely Font'),
+	local('Lovely-Font'),
+	url('styles/fonts/SartoshiScript-Regular.otf') 
+	format('opentype');
 }
 
 * {
@@ -9,6 +13,7 @@
 
 body {
     background: #f6f9fc;
+   font-family: mferFont;
 }
 
 
