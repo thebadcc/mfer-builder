@@ -1,12 +1,12 @@
 @font-face {
-   font-family: mferFont;
-   src: 
-	url(./styles/fonts/SartoshiScript-Regular.otf) 
-	format('opentype');
+    font-family: mferFont;
+    src: url("styles/fonts/SartoshiScript-Regular.otf") format("opentype");
 }
 
-* {
-   font-family: mferFont;
+@font-face {
+    font-family: mferFont;
+    font-weight: bold;
+    src: url("styles/fonts/SartoshiScript-Regular.otf") format("opentype");
 }
 
 body {
