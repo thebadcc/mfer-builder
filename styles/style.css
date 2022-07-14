@@ -170,7 +170,7 @@ border-bottom: solid 1px lightgray;
 }
 
 .wtfButton {
-    font-size: 2.8rem;
+    font-size: 3rem;
     float: left;
     margin: 10px;
     border: solid 1px lightgray;
@@ -179,4 +179,8 @@ border-bottom: solid 1px lightgray;
     padding: 1rem;
     color: black;
     appearance: none;
+}
+
+.quantity {
+    padding-bottom: 0;
 }
