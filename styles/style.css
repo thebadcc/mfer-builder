@@ -1,6 +1,14 @@
+@font-face {
+   font-family: mferFont;
+   src: url(/styles/fonts/SartoshiScript-Regular.otf);
+}
+
+* {
+   font-family: mferFont;
+}
+
 body {
     background: #f6f9fc;
-    font-family: monospace;
 }
 
 
