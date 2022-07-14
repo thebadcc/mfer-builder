@@ -39,7 +39,7 @@ select {
     border:none;
     font-weight: bold;
     margin: 5px;
-    font-size: 16px;
+    font-size: 2rem;
     padding-top: 1.625rem;
     padding-bottom: 0.625rem;
     background: white;
@@ -52,7 +52,7 @@ input{
     border:none;
     font-weight: bold;
     margin: 5px;
-    font-size: 16px;
+    font-size: 2rem;
     padding-top: 1.625rem;
     padding-bottom: 0.625rem;
     width: 100%;
@@ -88,7 +88,7 @@ border-bottom: solid 1px lightgray;
 .traitWrapper>label {
     position: absolute;
     color: gray;
-    font-size: 12px;
+    font-size: 1rem;
     margin-left: -5px;
     height: 100%;
     padding: 1rem 0.75rem;
@@ -97,7 +97,7 @@ border-bottom: solid 1px lightgray;
 }
 
 .titleSection h1 {
-    font-size: 6rem;
+    font-size: 5rem;
     letter-spacing: -.02em;
 }
 
@@ -119,7 +119,7 @@ border-bottom: solid 1px lightgray;
 }
 
 .buildMfers {
-    font-size: 28px;
+    font-size: 2rem;
     width: 75px;
     background: #5468ff;
     color: white;
@@ -156,7 +156,7 @@ border-bottom: solid 1px lightgray;
 .seedWrapper input {
     font-weight: bold;
     margin: 0px;
-    font-size: 20px;
+    font-size: 3rem;
     padding-top: 1rem;
     padding-bottom: 0.625rem;
     padding-left: 1rem;
@@ -171,7 +171,7 @@ border-bottom: solid 1px lightgray;
 }
 
 .wtfButton {
-    font-size: 30;
+    font-size: 2rem;
     float: left;
     margin: 10px;
     border: solid 1px lightgray;
