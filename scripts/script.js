@@ -377,7 +377,6 @@ function generateMfers(mfers, seedinput) {
 }
 
 document.getElementsByClassName("html-content-holder")[0].style.display = "none";
-setTimeout(() => console.log(""), 100)
 }
 
 function buildMfers() {
