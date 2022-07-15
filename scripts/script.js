@@ -1,5 +1,5 @@
 // base domain for image layers
-var baseURL = 'https://github.com/thebadcc-eth/mfer-builder/blob/main/images/';
+var baseURL = 'https://raw.githubusercontent.com/thebadcc-eth/mfer-builder/main/images/';
 
 // mfer traits and layers
 const background = [];
