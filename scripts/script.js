@@ -1,5 +1,6 @@
 // base domain for image layers
 var baseURL = 'https://www.cerealbox.wtf';
+var baseURL2 = 'https://github.com/thebadcc-eth/mfer-builder/blob/main/images/';
 
 // mfer traits and layers
 const background = [];
