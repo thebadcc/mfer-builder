@@ -169,6 +169,7 @@ function generateMfers(mfers, seedinput) {
 			var _background = "url(" + baseURL + base + background[Math.floor(Math.random() * 8)] + ")";
 		} else if (t1 > 1) {
 			var _background = "url(" + baseURL + base + background[t1 - 2] + ")";
+			console.log(_background);
 		}
 		if (t2 == 1) {
 			var _type = "";
