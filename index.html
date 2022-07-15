@@ -23,6 +23,13 @@
             </div>
             <div class="dropdown">
                 <div class="traitWrapper">
+                <label for="base">Base</label>
+                <select class="base" onchange="updateSeed()">
+                    <option value="mfers"> mfer</option>
+                    <option value="creyzies">creyzies</option>
+                </select>
+                </div>
+                <div class="traitWrapper">
                 <label for="background">Background</label>
                 <select class="background" onchange="updateSeed()">
                     <option value="00">random</option>
@@ -229,13 +236,6 @@
                 <div class="traitWrapper">
                 <label for="quantity">Quantity</label>          
                 <input type="number" class="quantity" min="1" max="100" value="12">
-                </div>
-                <div class="traitWrapper">
-                <label for="base">Base</label>
-                <select class="base" onchange="updateSeed()">
-                    <option value="mfers"> mfer</option>
-                    <option value="creyzies">....</option>
-                </select>
                 </div>
                 <button class="wtfButton" onclick="wtf()" value="0">
                     <i class="fa-solid fa-brush"></i>
