@@ -1,141 +1,141 @@
 // base domain for image layers
-var baseURL = 'https://www.cerealbox.wtf';
-var baseURL2 = 'https://github.com/thebadcc-eth/mfer-builder/blob/main/images/';
+var baseURL = 'https://github.com/thebadcc-eth/mfer-builder/blob/main/images/';
 
 // mfer traits and layers
 const background = [];
-background[0]= "/traits/background/background-blue.png";
-background[1]= "/traits/background/background-yellow.png";
-background[2]= "/traits/background/background-green.png";
-background[3]= "/traits/background/background-orange.png";
-background[4]= "/traits/background/background-red.png";
-background[5]= "/traits/background/background-space.png";
-background[6]= "/traits/background/background-tree.png";
-background[7]= "/traits/background/background-graveyard.png";
+background[0]= "/background/blue.png";
+background[1]= "/background/yellow.png";
+background[2]= "/background/green.png";
+background[3]= "/background/orange.png";
+background[4]= "/background/red.png";
+background[5]= "/background/space.png";
+background[6]= "/background/tree.png";
+background[7]= "/background/graveyard.png";
 
 const type = [];
-type[0]= "/traits/type/type-plainmfer.png";
-type[1]= "/traits/type/type-charcoalmfer.png";
-type[2]= "/traits/type/type-zombiemfer.png";
-type[3]= "/traits/type/type-apemfer.png";
-type[4]= "/traits/type/type-alienmfer.png";
+type[0]= "/type/plain mfer.png";
+type[1]= "/type/charcoal mfer.png";
+type[2]= "/type/zombie mfer.png";
+type[3]= "/type/ape mfer.png";
+type[4]= "/type/alien mfer.png";
 
 const watch420 = [];
-watch420[0]= "/traits/watch/watch-argoblack.png";
-watch420[1]= "/traits/watch/watch-argowhite.png";
-watch420[2]= "/traits/watch/watch-oystergold.png";
-watch420[3]= "/traits/watch/watch-oystersilver.png";
-watch420[4]= "/traits/watch/watch-subbat.png";
-watch420[5]= "/traits/watch/watch-subblack.png";
-watch420[6]= "/traits/watch/watch-subblue.png";
-watch420[7]= "/traits/watch/watch-subcola.png";
-watch420[8]= "/traits/watch/watch-sublantern.png";
-watch420[9]= "/traits/watch/watch-subred.png";
-watch420[10]= "/traits/watch/watch-subrose.png";
-watch420[11]= "/traits/watch/watch-subturquoise.png";
+watch420[0]= "/watch/argo black.png";
+watch420[1]= "/watch/argo white.png";
+watch420[2]= "/watch/oyster gold.png";
+watch420[3]= "/watch/oyster silver.png";
+watch420[4]= "/watch/sub bat (black_blue).png";
+watch420[5]= "/watch/sub black.png";
+watch420[6]= "/watch/sub blue.png";
+watch420[7]= "/watch/sub cola (blue_red).png";
+watch420[8]= "/watch/sub lantern (green).png";
+watch420[9]= "/watch/sub red.png";
+watch420[10]= "/watch/sub rose.png";
+watch420[11]= "/watch/sub turquoise.png";
 
 const beard = [];
-beard[0]= "/traits/beard/beard-fullbeard.png";
-beard[1]= "/traits/beard/beard-shadowbeard.png";
+beard[0]= "/beard/full beard.png";
+beard[1]= "/beard/shadow beard.png";
 
 const eyes = [];
-eyes[0]= "/traits/eyes/eyes-3dglasses.png";
-eyes[1]= "/traits/eyes/eyes-alieneyes.png";
-eyes[2]= "/traits/eyes/eyes-eyemask.png";
-eyes[3]= "/traits/eyes/eyes-eyepatch.png";
-eyes[4]= "/traits/eyes/eyes-nerdglasses.png";
-eyes[5]= "/traits/eyes/eyes-purpleshades.png";
-eyes[6]= "/traits/eyes/eyes-regulareyes.png";
-eyes[7]= "/traits/eyes/eyes-shades.png";
-eyes[8]= "/traits/eyes/eyes-vr.png";
-eyes[9]= "/traits/eyes/eyes-zombieeyes.png";
+eyes[0]= "/eyes/3d glasses.png";
+eyes[1]= "/eyes/alien eyes.png";
+eyes[2]= "/eyes/eye mask.png";
+eyes[3]= "/eyes/eye patch.png";
+eyes[4]= "/eyes/nerd glasses.png";
+eyes[5]= "/eyes/purple shades.png";
+eyes[6]= "/eyes/regular eyes.png";
+eyes[7]= "/eyes/shades.png";
+eyes[8]= "/eyes/vr.png";
+eyes[9]= "/eyes/zombie eyes.png";
 
 const hoodies = [];
-hoodies[0]= "/traits/hatoverheadphones/hatoverheadphones-hoodie.png";
+hoodies[0]= "/hatoverheadphones/hoodie.png";
 
 const headphones = [];
-headphones[0]= "/traits/headphones/headphones-rcsheadphones.png";
-headphones[1]= "/traits/headphones/headphones-blackheadphones.png";
-headphones[2]= "/traits/headphones/headphones-blueheadphones.png";
-headphones[3]= "/traits/headphones/headphones-goldheadphones.png";
-headphones[4]= "/traits/headphones/headphones-greenheadphones.png";
-headphones[5]= "/traits/headphones/headphones-linedheadphones.png";
-headphones[6]= "/traits/headphones/headphones-pinkheadphones.png";
-headphones[7]= "/traits/headphones/headphones-redheadphones.png";
-headphones[8]= "/traits/headphones/headphones-whiteheadphones.png";
+headphones[0]= "/headphones/rcs headphones.png";
+headphones[1]= "/headphones/black headphones.png";
+headphones[2]= "/headphones/blue headphones.png";
+headphones[3]= "/headphones/gold headphones.png";
+headphones[4]= "/headphones/green headphones.png";
+headphones[5]= "/headphones/lined headphones.png";
+headphones[6]= "/headphones/pink headphones.png";
+headphones[7]= "/headphones/red headphones.png";
+headphones[8]= "/headphones/white headphones.png";
 
 const hatsUnder = [];
-hatsUnder[0]= "/traits/hatunderheadphones/hatunderheadphones-bandanablue.png";
-hatsUnder[1]= "/traits/hatunderheadphones/hatunderheadphones-bandanadarkgray.png";
-hatsUnder[2]= "/traits/hatunderheadphones/hatunderheadphones-bandanared.png";
-hatsUnder[3]= "/traits/hatunderheadphones/hatunderheadphones-beaniemonochrome.png";
-hatsUnder[4]= "/traits/hatunderheadphones/hatunderheadphones-beanie.png";
-hatsUnder[5]= "/traits/hatunderheadphones/hatunderheadphones-capmonochrome.png";
-hatsUnder[6]= "/traits/hatunderheadphones/hatunderheadphones-cappurple.png";
-hatsUnder[7]= "/traits/hatunderheadphones/hatunderheadphones-headbandbluegreen.png";
-hatsUnder[8]= "/traits/hatunderheadphones/hatunderheadphones-headbandbluered.png";
-hatsUnder[9]= "/traits/hatunderheadphones/hatunderheadphones-headbandbluewhite.png";
-hatsUnder[10]= "/traits/hatunderheadphones/hatunderheadphones-headbandgreenwhite.png";
-hatsUnder[11]= "/traits/hatunderheadphones/hatunderheadphones-headbandpinkwhite.png";
-hatsUnder[12]= "/traits/hatunderheadphones/hatunderheadphones-knitatlanta.png";
-hatsUnder[13]= "/traits/hatunderheadphones/hatunderheadphones-knitbaltimore.png";
-hatsUnder[14]= "/traits/hatunderheadphones/hatunderheadphones-knitbuffalo.png";
-hatsUnder[15]= "/traits/hatunderheadphones/hatunderheadphones-knitchicago.png";
-hatsUnder[16]= "/traits/hatunderheadphones/hatunderheadphones-knitcleveland.png";
-hatsUnder[17]= "/traits/hatunderheadphones/hatunderheadphones-knitdallas.png";
-hatsUnder[18]= "/traits/hatunderheadphones/hatunderheadphones-knitkc.png";
-hatsUnder[19]= "/traits/hatunderheadphones/hatunderheadphones-knitlasvegas.png";
-hatsUnder[20]= "/traits/hatunderheadphones/hatunderheadphones-knitmiami.png";
-hatsUnder[21]= "/traits/hatunderheadphones/hatunderheadphones-knitnewyork.png";
-hatsUnder[22]= "/traits/hatunderheadphones/hatunderheadphones-knitpittsburgh.png";
-hatsUnder[23]= "/traits/hatunderheadphones/hatunderheadphones-knitsanfran.png";
+hatsUnder[0]= "/hat under headphones/bandana blue.png";
+hatsUnder[1]= "/hat under headphones/bandana darkgray.png";
+hatsUnder[2]= "/hat under headphones/bandana red.png";
+hatsUnder[3]= "/hat under headphones/beanie monochrome.png";
+hatsUnder[4]= "/hat under headphones/beanie.png";
+hatsUnder[5]= "/hat under headphones/cap monochrome.png";
+hatsUnder[6]= "/hat under headphones/cap purple.png";
+hatsUnder[7]= "/hat under headphones/headband blue_green.png";
+hatsUnder[8]= "/hat under headphones/headband blue_red.png";
+hatsUnder[9]= "/hat under headphones/headband blue_white.png";
+hatsUnder[10]= "/hat under headphones/headband green_white.png";
+hatsUnder[11]= "/hat under headphones/headband pink_white.png";
+hatsUnder[12]= "/hat under headphones/knit atlanta.png";
+hatsUnder[13]= "/hat under headphones/knit baltimore.png";
+hatsUnder[14]= "/hat under headphones/knit buffalo.png";
+hatsUnder[15]= "/hat under headphones/knit chicago.png";
+hatsUnder[16]= "/hat under headphones/knit cleveland.png";
+hatsUnder[17]= "/hat under headphones/knit dallas.png";
+hatsUnder[18]= "/hat under headphones/knit kc.png";
+hatsUnder[19]= "/hat under headphones/knit las vegas.png";
+hatsUnder[20]= "/hat under headphones/knit miami.png";
+hatsUnder[21]= "/hat under headphones/knit new york.png";
+hatsUnder[22]= "/hat under headphones/knit pittsburgh.png";
+hatsUnder[23]= "/hat under headphones/knit san fran.png";
 
 const hatsOver = [];
-hatsOver[0]= "/traits/hatoverheadphones/hatoverheadphones-cowboyhat.png";
-hatsOver[1]= "/traits/hatoverheadphones/hatoverheadphones-pilothelmet.png";
-hatsOver[2]= "/traits/hatoverheadphones/hatoverheadphones-tophat.png";
+hatsOver[0]= "/hat over headphones/cowboy hat.png";
+hatsOver[1]= "/hat over headphones/pilot helmet.png";
+hatsOver[2]= "/hat over headphones/top hat.png";
 
 const shortHair = [];
-shortHair[0]= "/traits/shorthair/shorthair-messyblack.png";
-shortHair[1]= "/traits/shorthair/shorthair-messypurple.png";
-shortHair[2]= "/traits/shorthair/shorthair-messyred.png";
-shortHair[3]= "/traits/shorthair/shorthair-messyyellow.png";
-shortHair[4]= "/traits/shorthair/shorthair-mohawkblack.png";
-shortHair[5]= "/traits/shorthair/shorthair-mohawkblue.png";
-shortHair[6]= "/traits/shorthair/shorthair-mohawkgreen.png";
-shortHair[7]= "/traits/shorthair/shorthair-mohawkpink.png";
-shortHair[8]= "/traits/shorthair/shorthair-mohawkpurple.png";
-shortHair[9]= "/traits/shorthair/shorthair-mohawkred.png";
-shortHair[10]= "/traits/shorthair/shorthair-mohawkyellow.png";
+shortHair[0]= "/short hair/messy black.png";
+shortHair[1]= "/short hair/messy purple.png";
+shortHair[2]= "/short hair/messy red.png";
+shortHair[3]= "/short hair/messy yellow.png";
+shortHair[4]= "/short hair/mohawk black.png";
+shortHair[5]= "/short hair/mohawk blue.png";
+shortHair[6]= "/short hair/mohawk green.png";
+shortHair[7]= "/short hair/mohawk pink.png";
+shortHair[8]= "/short hair/mohawk purple.png";
+shortHair[9]= "/short hair/mohawk red.png";
+shortHair[10]= "/short hair/mohawk yellow.png";
 
 const longHair = [];
-longHair[0]= "/traits/longhair/longhair-longhairblack.png";
-longHair[1]= "/traits/longhair/longhair-longhairyellow.png";
+longHair[0]= "/long hair/long hair black.png";
+longHair[1]= "/long hair/long hair yellow.png";
 
 const mouth = [];
-mouth[0]= "/traits/mouth/mouth-flat.png";
-mouth[1]= "/traits/mouth/mouth-smile.png";
+mouth[0]= "/mouth/flat.png";
+mouth[1]= "/mouth/smile.png";
 
 const shirt = [];
-shirt[0]= "/traits/shirt/shirt-collaredshirtblue.png";
-shirt[1]= "/traits/shirt/shirt-collaredshirtgreen.png";
-shirt[2]= "/traits/shirt/shirt-collaredshirtpink.png";
-shirt[3]= "/traits/shirt/shirt-collaredshirtturquoise.png";
-shirt[4]= "/traits/shirt/shirt-collaredshirtwhite.png";
-shirt[5]= "/traits/shirt/shirt-collaredshirtyellow.png";
-shirt[6]= "/traits/shirt/shirt-hoodiedownblue.png";
-shirt[7]= "/traits/shirt/shirt-hoodiedowngray.png";
-shirt[8]= "/traits/shirt/shirt-hoodiedowngreen.png";
-shirt[9]= "/traits/shirt/shirt-hoodiedownpink.png";
-shirt[10]= "/traits/shirt/shirt-hoodiedownred.png";
-shirt[11]= "/traits/shirt/shirt-hoodiedownwhite.png";
-shirt[12]= "/traits/chain/chain-goldchain.png";
-shirt[13]= "/traits/chain/chain-silverchain.png";
+shirt[0]= "/shirt/collared shirt blue.png";
+shirt[1]= "/shirt/collared shirt green.png";
+shirt[2]= "/shirt/collared shirt pink.png";
+shirt[3]= "/shirt/collared shirt turquoise.png";
+shirt[4]= "/shirt/collared shirt white.png";
+shirt[5]= "/shirt/collared shirt yellow.png";
+shirt[6]= "/shirt/hoodie down blue.png";
+shirt[7]= "/shirt/hoodie down gray.png";
+shirt[8]= "/shirt/hoodie down green.png";
+shirt[9]= "/shirt/hoodie down pink.png";
+shirt[10]= "/shirt/hoodie down red.png";
+shirt[11]= "/shirt/hoodie down white.png";
+shirt[12]= "/chain/gold chain.png";
+shirt[13]= "/chain/silver chain.png";
 
 const smoke = [];
-smoke[0]= "/traits/smoke/smoke-cigblack.png";
-smoke[1]= "/traits/smoke/smoke-cigwhite.png";
-smoke[2]= "/traits/smoke/smoke-pipe.png";
+smoke[0]= "/smoke/cig black.png";
+smoke[1]= "/smoke/cig white.png";
+smoke[2]= "/smoke/pipe.png";
+
 
 // function to generate mfers
 function generateMfers(mfers, seedinput) {
@@ -154,6 +154,7 @@ function generateMfers(mfers, seedinput) {
 	var t12 = parseFloat(seedinput.slice(22, 24));
 	var t13 = parseFloat(seedinput.slice(24, 26));
 	var t14 = parseFloat(seedinput.slice(26, 28));
+	var base = document.getElementsByClassName('base')[0].value;
 	
 	document.getElementsByClassName("html-content-holder")[0].style.display = "inherit";
 	const elements = document.getElementsByClassName('mferImg');
@@ -165,115 +166,115 @@ function generateMfers(mfers, seedinput) {
 		if (t1 == 1) {
 			var _background = "url()"
 		} else if (t1 == 0) {
-			var _background = "url(" + baseURL + background[Math.floor(Math.random() * 8)] + ")";
+			var _background = "url(" + baseURL + base + background[Math.floor(Math.random() * 8)] + ")";
 		} else if (t1 > 1) {
-			var _background = "url(" + baseURL + background[t1 - 2] + ")";
+			var _background = "url(" + baseURL + base + background[t1 - 2] + ")";
 		}
 		if (t2 == 1) {
 			var _type = "";
 		} else if (t2 == 0) {
-			var _type = "url(" + baseURL + type[Math.floor(Math.random() * 5)] + "), ";
+			var _type = "url(" + baseURL + base + type[Math.floor(Math.random() * 5)] + "), ";
 		} else if (t2 > 1) {
-			var _type = "url(" + baseURL + type[t2 - 2] + "), ";
+			var _type = "url(" + baseURL + base + type[t2 - 2] + "), ";
 		}
 		if (t3 == 1) {
 			var _eyes = "";
 		} else if (t3 == 0) {
-			var _eyes = "url(" + baseURL + eyes[Math.floor(Math.random() * 10)] + "), ";
+			var _eyes = "url(" + baseURL + base + eyes[Math.floor(Math.random() * 10)] + "), ";
 		} else if (t3 > 1) {
-			var _eyes = "url(" + baseURL + eyes[t3 - 2] + "), ";
+			var _eyes = "url(" + baseURL + base + eyes[t3 - 2] + "), ";
 		}
 		if (t4 == 1) {
 			var _mouth = "";
 		} else if (t4 == 0) {
-			var _mouth = "url(" + baseURL + mouth[Math.floor(Math.random() * 2)] + "), ";
+			var _mouth = "url(" + baseURL + base + mouth[Math.floor(Math.random() * 2)] + "), ";
 		} else if (t4 > 1) {
-			var _mouth = "url(" + baseURL + mouth[t4 - 2] + "), ";
+			var _mouth = "url(" + baseURL + base + mouth[t4 - 2] + "), ";
 		}
 		if (t5 == 1) {
 			var _headphones = "";
 		} else if (t5 == 0) {
-			var _headphones = "url(" + baseURL + headphones[Math.floor(Math.random() * 9)] + "), ";
+			var _headphones = "url(" + baseURL + base + headphones[Math.floor(Math.random() * 9)] + "), ";
 		} else if (t5 > 1) {
-			var _headphones = "url(" + baseURL + headphones[t5 - 2] + "), ";
+			var _headphones = "url(" + baseURL + base + headphones[t5 - 2] + "), ";
 		}
 		if (t6 == 1) {
 			var _smoke = ""
 		} else if (t6 == 0) {
 			var rollSmoke = Math.floor(Math.random() * 10);
 			if (rollSmoke <= 7) {
-				var _smoke = "url(" + baseURL + smoke[Math.floor(Math.random() * 3)] + "), ";
+				var _smoke = "url(" + baseURL + base + smoke[Math.floor(Math.random() * 3)] + "), ";
 			} else {
 				var _smoke = ""
    			}
 		} else if (t6 > 1) {
-			var _smoke = "url(" + baseURL + smoke[t6 - 2] + "), ";
+			var _smoke = "url(" + baseURL + base + smoke[t6 - 2] + "), ";
 		}
 		if (t7 == 1) {
 			var _watch420 = ""
 		} else if (t7 == 0) {
 			var rollWatch = Math.floor(Math.random() * 10);
 			if (rollWatch <= 5) {
-				var _watch420 = "url(" + baseURL + watch420[Math.floor(Math.random() * 12)] + "), ";
+				var _watch420 = "url(" + baseURL + base + watch420[Math.floor(Math.random() * 12)] + "), ";
 			} else {
 				var _watch420 = ""
 			}
 		} else if (t7 > 1) {
-			var _watch420 = "url(" + baseURL + watch420[t7 - 2] + "), ";
+			var _watch420 = "url(" + baseURL + base + watch420[t7 - 2] + "), ";
 		}
 		if (t8 == 1) {
 			var _beard = "";
 		} else if (t8 == 0) {
 			var rollBeard = Math.floor(Math.random() * 10);
 			if (rollBeard <= 3) {
-				var _beard = "url(" + baseURL + beard[Math.floor(Math.random() * 2)] + "), ";
+				var _beard = "url(" + baseURL + base + beard[Math.floor(Math.random() * 2)] + "), ";
 			} else {
 				var _beard = "";
 			}
 		} else if (t8 > 1) {
-			var _beard = "url(" + baseURL + beard[t8 - 2] + "), ";
+			var _beard = "url(" + baseURL + base + beard[t8 - 2] + "), ";
 		}
 		if (t9 == 1) {
 			var _hoodies = "";
 		} else if (t9 == 0) {
-			var _hoodies = "url(" + baseURL + hoodies[0] + "), ";
+			var _hoodies = "url(" + baseURL + base + hoodies[0] + "), ";
 		} else if (t9 > 1) {
-			var _hoodies = "url(" + baseURL + hoodies[t9 - 2] + "), ";
+			var _hoodies = "url(" + baseURL + base + hoodies[t9 - 2] + "), ";
 		}
 		if (t10 == 1) {
 			var _shirt = "";
 		} else if (t10 == 0) {
-			var _shirt = "url(" + baseURL + shirt[Math.floor(Math.random() * 14)] + "), ";
+			var _shirt = "url(" + baseURL + base + shirt[Math.floor(Math.random() * 14)] + "), ";
 		} else if (t10 > 1) {
-			var _shirt = "url(" + baseURL + shirt[t10 - 2] + "), ";
+			var _shirt = "url(" + baseURL + base + shirt[t10 - 2] + "), ";
 		}
 		if (t11 == 1) {
 			var _longHair = "";
 		} else if (t11 == 0) {
-			var _longHair = "url(" + baseURL + longHair[Math.floor(Math.random() * 2)] + "), ";
+			var _longHair = "url(" + baseURL + base + longHair[Math.floor(Math.random() * 2)] + "), ";
 		} else if (t11 > 1) {
-			var _longHair = "url(" + baseURL + longHair[t11 - 2] + "), ";
+			var _longHair = "url(" + baseURL + base + longHair[t11 - 2] + "), ";
 		}
 		if (t12 == 1) {
 			var _hatsUnder = "";           
 		} else if (t12 == 0) {
-			var _hatsUnder = "url(" + baseURL + hatsUnder[Math.floor(Math.random() * 24)] + "), ";           
+			var _hatsUnder = "url(" + baseURL + base + hatsUnder[Math.floor(Math.random() * 24)] + "), ";           
 		} else if (t12 > 1) {
-			var _hatsUnder = "url(" + baseURL + hatsUnder[t12 - 2] + "), ";           
+			var _hatsUnder = "url(" + baseURL + base + hatsUnder[t12 - 2] + "), ";           
 		}
 		if (t13 == 1) {
 			var _hatsOver = "";  
 		} else if (t13 == 0) {
-			var _hatsOver = "url(" + baseURL + hatsOver[Math.floor(Math.random() * 3)] + "), ";  
+			var _hatsOver = "url(" + baseURL + base + hatsOver[Math.floor(Math.random() * 3)] + "), ";  
 		} else if (t13 > 1) {
-			var _hatsOver = "url(" + baseURL + hatsOver[t13 - 2] + "), "; 
+			var _hatsOver = "url(" + baseURL + base + hatsOver[t13 - 2] + "), "; 
 		}
 		if (t14 == 1) {
 			var _shortHair = "";
 		} else if (t14 == 0) {
-			var _shortHair = "url(" + baseURL + shortHair[Math.floor(Math.random() * 12)] + "), ";
+			var _shortHair = "url(" + baseURL + base + shortHair[Math.floor(Math.random() * 12)] + "), ";
 		} else if (t14 > 1) {
-			var _shortHair = "url(" + baseURL + shortHair[t14 - 2] + "), ";
+			var _shortHair = "url(" + baseURL + base + shortHair[t14 - 2] + "), ";
 		}
 		var rollHoodies = Math.floor(Math.random() * 10);
 		if (rollHoodies <= 1 && t9 == 0) {
