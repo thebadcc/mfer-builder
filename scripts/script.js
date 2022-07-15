@@ -38,7 +38,7 @@ beard[0]= "/beard/fullbeard.png";
 beard[1]= "/beard/shadowbeard.png";
 
 const eyes = [];
-eyes[0]= "/eyes/3dglasses.png";
+eyes[0]= "/eyes/3Dglasses.png";
 eyes[1]= "/eyes/alieneyes.png";
 eyes[2]= "/eyes/eyemask.png";
 eyes[3]= "/eyes/eyepatch.png";
@@ -53,7 +53,7 @@ const hoodies = [];
 hoodies[0]= "/hatoverheadphones/hoodie.png";
 
 const headphones = [];
-headphones[0]= "/headphones/rcsheadphones.png";
+headphones[0]= "/headphones/RCSheadphones.png";
 headphones[1]= "/headphones/blackheadphones.png";
 headphones[2]= "/headphones/blueheadphones.png";
 headphones[3]= "/headphones/goldheadphones.png";
