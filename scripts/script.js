@@ -366,7 +366,7 @@ function generateMfers(mfers, seedinput) {
 			var _longHair = "";
     	}
 	}
-	var seed = _hoodies + _smoke + _watch420 + _mouth + _hatsOver + _headphones + _hatsUnder + _longHair + _shortHair + _shirt + _eyes + _beard + _type + _background;
+	var seed = _hoodies + _smoke + _watch420 + _hatsOver + _headphones + _hatsUnder + _longHair + _shortHair + _shirt + _eyes + _mouth + _beard + _type + _background;
 	document.getElementsByClassName("html-content-holder")[0].style.backgroundImage = seed;
 	window.scrollTo(0,0);	
 	html2canvas(document.getElementsByClassName("html-content-holder")[0],{allowTaint: true,useCORS: true}).then(function (canvas) {
