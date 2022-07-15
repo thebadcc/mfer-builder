@@ -140,21 +140,20 @@ smoke[2]= "/traits/smoke/smoke-pipe.png";
 // function to generate mfers
 function generateMfers(mfers, seedinput) {
 	
-	var t0 = parseFloat(seedinput.slice(0, 2));
-	var t1 = parseFloat(seedinput.slice(2, 4));
-	var t2 = parseFloat(seedinput.slice(4, 6));
-	var t3 = parseFloat(seedinput.slice(6, 8));
-	var t4 = parseFloat(seedinput.slice(8, 10));
-	var t5 = parseFloat(seedinput.slice(10, 12));
-	var t6 = parseFloat(seedinput.slice(12, 14));
-	var t7 = parseFloat(seedinput.slice(14, 16));
-	var t8 = parseFloat(seedinput.slice(16, 18));
-	var t9 = parseFloat(seedinput.slice(18, 20));
-	var t10 = parseFloat(seedinput.slice(20, 22));
-	var t11 = parseFloat(seedinput.slice(22, 24));
-	var t12 = parseFloat(seedinput.slice(24, 26));
-	var t13 = parseFloat(seedinput.slice(26, 28));
-	var t14 = parseFloat(seedinput.slice(28, 30));
+	var t1 = parseFloat(seedinput.slice(0, 2));
+	var t2 = parseFloat(seedinput.slice(2, 4));
+	var t3 = parseFloat(seedinput.slice(4, 6));
+	var t4 = parseFloat(seedinput.slice(6, 8));
+	var t5 = parseFloat(seedinput.slice(8, 10));
+	var t6 = parseFloat(seedinput.slice(10, 12));
+	var t7 = parseFloat(seedinput.slice(12, 14));
+	var t8 = parseFloat(seedinput.slice(14, 16));
+	var t9 = parseFloat(seedinput.slice(16, 18));
+	var t10 = parseFloat(seedinput.slice(18, 20));
+	var t11 = parseFloat(seedinput.slice(20, 22));
+	var t12 = parseFloat(seedinput.slice(22, 24));
+	var t13 = parseFloat(seedinput.slice(24, 26));
+	var t14 = parseFloat(seedinput.slice(26, 28));
 	
 	document.getElementsByClassName("html-content-holder")[0].style.display = "inherit";
 	const elements = document.getElementsByClassName('mferImg');
@@ -384,12 +383,12 @@ function buildMfers() {
 	var quant = document.getElementsByClassName("quantity")[0].value;
 	var _seed = document.getElementsByClassName("seed")[0].value.toString();
 	if (_seed == '') {
-		var seed = '000000000000000000000000000000';
+		var seed = '0000000000000000000000000000';
 	} else {
 		var seed = _seed;
 	}
 	generateMfers(quant, seed);
-	if (seed == '000000000000000000000000000000') {
+	if (seed == '0000000000000000000000000000') {
 		document.getElementsByClassName("seed")[0].value = '';
 	} else {
 		document.getElementsByClassName("seed")[0].value = seed;
@@ -397,7 +396,7 @@ function buildMfers() {
 }
 
 function updateSeed() {
-	var _t0 = '00';
+
 	var _t1 = document.getElementsByClassName("background")[0].value;
 	var _t2 = document.getElementsByClassName("type")[0].value;
 	var _t3 = document.getElementsByClassName("eyes")[0].value;
@@ -412,7 +411,7 @@ function updateSeed() {
 	var _t12 = document.getElementsByClassName("hatsUnder")[0].value;
 	var _t13 = document.getElementsByClassName("hatsOver")[0].value;
 	var _t14 = document.getElementsByClassName("shortHair")[0].value;
-	var _seed = _t0 + _t1 + _t2 + _t3 + _t4 + _t5 + _t6 + _t7 + _t8 + _t9 + _t10 + _t11 + _t12 + _t13 + _t14;
+	var _seed = _t1 + _t2 + _t3 + _t4 + _t5 + _t6 + _t7 + _t8 + _t9 + _t10 + _t11 + _t12 + _t13 + _t14;
 	document.getElementsByClassName("seed")[0].value = _seed;
 	buildMfers();
 }
