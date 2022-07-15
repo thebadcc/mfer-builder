@@ -169,7 +169,6 @@ function generateMfers(mfers, seedinput) {
 			var _background = "url(" + baseURL + base + background[Math.floor(Math.random() * 8)] + ")";
 		} else if (t1 > 1) {
 			var _background = "url(" + baseURL + base + background[t1 - 2] + ")";
-			console.log(_background);
 		}
 		if (t2 == 1) {
 			var _type = "";
@@ -177,7 +176,6 @@ function generateMfers(mfers, seedinput) {
 			var _type = "url(" + baseURL + base + type[Math.floor(Math.random() * 5)] + "), ";
 		} else if (t2 > 1) {
 			var _type = "url(" + baseURL + base + type[t2 - 2] + "), ";
-			console.log(_type);
 		}
 		if (t3 == 1) {
 			var _eyes = "";
