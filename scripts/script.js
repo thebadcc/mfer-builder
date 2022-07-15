@@ -177,6 +177,7 @@ function generateMfers(mfers, seedinput) {
 			var _type = "url(" + baseURL + base + type[Math.floor(Math.random() * 5)] + "), ";
 		} else if (t2 > 1) {
 			var _type = "url(" + baseURL + base + type[t2 - 2] + "), ";
+			console.log(_type);
 		}
 		if (t3 == 1) {
 			var _eyes = "";
