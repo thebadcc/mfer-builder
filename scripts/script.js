@@ -165,7 +165,7 @@ function generateMfers(mfers, seedinput) {
 	for (let i = 0; i < mfers; i++){
 		var htmlContent = document.createElement("div");
 		htmlContent.className = 'html-content-holder';
-		document.getElementsByClassName("mferWrapper")[0].appendChild(htmlContent);
+		document.getElementsByTagName("body").appendChild(htmlContent);
 		if (t1 == 1) {
 			var _background = "url()"
 		} else if (t1 == 0) {
