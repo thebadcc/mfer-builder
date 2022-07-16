@@ -162,10 +162,8 @@ function generateMfers(mfers, seedinput) {
 	div.setAttribute('class', 'mferImg');
 	document.getElementsByClassName('mferWrapper')[0].appendChild(div);
 	elements[0].parentNode.removeChild(elements[0]);
+	document.getElementsByClassName("html-content-holder")[0].style.display = "inherit";
 	for (let i = 0; i < mfers; i++){
-		var htmlContent = document.createElement("div");
-		htmlContent.className = 'html-content-holder';
-		document.getElementsByTagName("body").appendChild(htmlContent);
 		if (t1 == 1) {
 			var _background = "url()"
 		} else if (t1 == 0) {
@@ -377,9 +375,9 @@ function generateMfers(mfers, seedinput) {
 	mferImg.className = 'mfers';
 	document.getElementsByClassName("mferImg")[0].appendChild(mferImg);
 	});
-	document.getElementsByClassName("html-content-holder")[0].remove()
+	document.getElementsByClassName("html-content-holder")[0].style.backgroundImage = "";
 }
-
+document.getElementsByClassName("html-content-holder")[0].style.display = "none";
 }
 
 function buildMfers() {
