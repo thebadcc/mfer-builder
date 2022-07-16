@@ -163,6 +163,7 @@ function generateMfers(mfers, seedinput) {
 	document.getElementsByClassName('mferWrapper')[0].appendChild(div);
 	elements[0].parentNode.removeChild(elements[0]);
 	for (let i = 0; i < mfers; i++){
+		Math.seedrandom(Math.random());
 		if (t1 == 1) {
 			var _background = "url()"
 		} else if (t1 == 0) {
