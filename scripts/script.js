@@ -367,6 +367,7 @@ function generateMfers(mfers, seedinput) {
 	var seed = _hoodies + _smoke + _watch420 + _hatsOver + _headphones + _hatsUnder + _longHair + _shortHair + _shirt + _eyes + _mouth + _beard + _type + _background;
 	var htmlContent = document.createElement("div");
 	htmlContent.className = 'html-content-holder';
+	document.getElementsByClassName("mferWrapper")[0].appendChild(htmlContent);
 	document.getElementsByClassName("html-content-holder")[i].style.backgroundImage = seed;
 	window.scrollTo(0,0);	
 	html2canvas(document.getElementsByClassName("html-content-holder")[i],{allowTaint: true,useCORS: true}).then(function (canvas) {
