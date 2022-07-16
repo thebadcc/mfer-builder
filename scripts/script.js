@@ -139,7 +139,7 @@ smoke[2]= "/smoke/pipe.png";
 // function to generate mfers
 function generateMfers(mfers, seedinput) {
 	
-	document.getElementsByClassName("html-content-holder")[0].style.display = "inherit";
+	// document.getElementsByClassName("html-content-holder")[0].style.display = "inherit";
 	
 	var t1 = parseFloat(seedinput.slice(0, 2));
 	var t2 = parseFloat(seedinput.slice(2, 4));
@@ -163,7 +163,6 @@ function generateMfers(mfers, seedinput) {
 	document.getElementsByClassName('mferWrapper')[0].appendChild(div);
 	elements[0].parentNode.removeChild(elements[0]);
 	for (let i = 0; i < mfers; i++){
-		Math.seedrandom(Math.random());
 		if (t1 == 1) {
 			var _background = "url()"
 		} else if (t1 == 0) {
@@ -366,9 +365,11 @@ function generateMfers(mfers, seedinput) {
     	}
 	}
 	var seed = _hoodies + _smoke + _watch420 + _hatsOver + _headphones + _hatsUnder + _longHair + _shortHair + _shirt + _eyes + _mouth + _beard + _type + _background;
-	document.getElementsByClassName("html-content-holder")[0].style.backgroundImage = seed;
+	var htmlContent = document.createElement("div");
+	htmlContent.className = 'html-content-holder';
+	document.getElementsByClassName("html-content-holder")[i].style.backgroundImage = seed;
 	window.scrollTo(0,0);	
-	html2canvas(document.getElementsByClassName("html-content-holder")[0],{allowTaint: true,useCORS: true}).then(function (canvas) {
+	html2canvas(document.getElementsByClassName("html-content-holder")[i],{allowTaint: true,useCORS: true}).then(function (canvas) {
 	var pngUrl = canvas.toDataURL("image/png");
 	var mferImg = document.createElement("img");
 	mferImg.src = pngUrl;
@@ -377,7 +378,7 @@ function generateMfers(mfers, seedinput) {
 	});
 }
 
-document.getElementsByClassName("html-content-holder")[0].style.display = "none";
+document.getElementsByClassName("html-content-holder")[i].style.display = "none";
 }
 
 function buildMfers() {
