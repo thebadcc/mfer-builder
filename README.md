@@ -103,7 +103,7 @@ Enjoy,
     
 thebadcc
  
-LICENSE (MIT)
+# LICENSE (MIT)
 
 ---
 
