@@ -368,9 +368,9 @@ function generateMfers(mfers, seedinput) {
 	var htmlContent = document.createElement("div");
 	htmlContent.className = 'html-content-holder';
 	document.getElementsByClassName("mferWrapper")[0].appendChild(htmlContent);
-	document.getElementsByClassName("html-content-holder")[i].style.backgroundImage = seed;
+	document.getElementsByClassName("html-content-holder")[0].style.backgroundImage = seed;
 	window.scrollTo(0,0);	
-	html2canvas(document.getElementsByClassName("html-content-holder")[i],{allowTaint: true,useCORS: true}).then(function (canvas) {
+	html2canvas(document.getElementsByClassName("html-content-holder")[0],{allowTaint: true,useCORS: true}).then(function (canvas) {
 	var pngUrl = canvas.toDataURL("image/png");
 	var mferImg = document.createElement("img");
 	mferImg.src = pngUrl;
@@ -379,7 +379,7 @@ function generateMfers(mfers, seedinput) {
 	});
 }
 
-document.getElementsByClassName("html-content-holder")[i].style.display = "none";
+document.getElementsByClassName("html-content-holder")[0].remove()
 }
 
 function buildMfers() {
