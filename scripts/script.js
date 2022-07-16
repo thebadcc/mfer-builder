@@ -377,9 +377,9 @@ function generateMfers(mfers, seedinput) {
 	mferImg.className = 'mfers';
 	document.getElementsByClassName("mferImg")[0].appendChild(mferImg);
 	});
+	document.getElementsByClassName("html-content-holder")[0].remove()
 }
 
-document.getElementsByClassName("html-content-holder")[0].remove()
 }
 
 function buildMfers() {
