@@ -162,7 +162,6 @@ function generateMfers(mfers, seedinput) {
 	div.setAttribute('class', 'mferImg');
 	document.getElementsByClassName('mferWrapper')[0].appendChild(div);
 	elements[0].parentNode.removeChild(elements[0]);
-	document.getElementsByClassName("html-content-holder")[0].style.display = "inherit";
 	for (let i = 0; i < mfers; i++){
 		if (t1 == 1) {
 			var _background = "url()"
