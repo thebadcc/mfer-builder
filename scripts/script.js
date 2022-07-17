@@ -367,16 +367,14 @@ function generateMfers(mfers, seedinput) {
 	}
 	window.scrollTo(0,0);	
 	var seed = _hoodies + _smoke + _watch420 + _hatsOver + _headphones + _hatsUnder + _longHair + _shortHair + _shirt + _eyes + _mouth + _beard + _type + _background;
-	console.log(seed);
 	document.getElementsByClassName("html-content-holder")[0].style.backgroundImage = seed;
-	html2canvas(document.getElementsByClassName("html-content-holder")[0],{allowTaint: true,useCORS: true, imageTimeout: 5000}).then(function (canvas) {
+	setTimeout(() => {html2canvas(document.getElementsByClassName("html-content-holder")[0],{allowTaint: true,useCORS: true}).then(function (canvas) {
 	var pngUrl = canvas.toDataURL("image/png");
 	var mferImg = document.createElement("img");
 	mferImg.src = pngUrl;
-	console.log(pngUrl);
 	mferImg.className = 'mfers';
 	document.getElementsByClassName("mferImg")[0].appendChild(mferImg);
-	});
+	})}, 1000);
 }
 document.getElementsByClassName("html-content-holder")[0].style.display = "none";
 }
