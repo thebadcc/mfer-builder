@@ -139,7 +139,7 @@ smoke[2]= "/smoke/pipe.png";
 // function to generate mfers
 function generateMfers(mfers, seedinput) {
 	
-	// document.getElementsByClassName("html-content-holder")[0].style.display = "inherit";
+	document.getElementsByClassName("html-content-holder")[0].style.display = "inherit";
 	
 	var t1 = parseFloat(seedinput.slice(0, 2));
 	var t2 = parseFloat(seedinput.slice(2, 4));
@@ -162,11 +162,6 @@ function generateMfers(mfers, seedinput) {
 	div.setAttribute('class', 'mferImg');
 	document.getElementsByClassName('mferWrapper')[0].appendChild(div);
 	elements[0].parentNode.removeChild(elements[0]);
-	for (let i = 0; i < mfers; i++){
-		var htmlContent = document.createElement("div");
-		htmlContent.className = 'html-content-holder';
-		document.getElementsByClassName("mferWrapper")[0].appendChild(htmlContent);
-	};
 	for (let i = 0; i < mfers; i++){
 		if (t1 == 1) {
 			var _background = "url()"
@@ -371,20 +366,17 @@ function generateMfers(mfers, seedinput) {
 	}
 	window.scrollTo(0,0);	
 	var seed = _hoodies + _smoke + _watch420 + _hatsOver + _headphones + _hatsUnder + _longHair + _shortHair + _shirt + _eyes + _mouth + _beard + _type + _background;
-	if (seed = '') {
-		console.log('true');
-	}
 	document.getElementsByClassName("html-content-holder")[i].style.backgroundImage = seed;
-	html2canvas(document.getElementsByClassName("html-content-holder")[i],{allowTaint: true,useCORS: true}).then(function (canvas) {
+	html2canvas(document.getElementsByClassName("html-content-holder")[0],{allowTaint: true,useCORS: true}).then(function (canvas) {
 		var pngUrl = canvas.toDataURL("image/png");
 		var mferImg = document.createElement("img");
 		mferImg.src = pngUrl;
 		mferImg.className = 'mfers';
 		document.getElementsByClassName("mferImg")[0].appendChild(mferImg);
 	});
-	document.getElementsByClassName("html-content-holder")[i].style.display = "none";	
+	
 }
-
+	document.getElementsByClassName("html-content-holder")[0].style.display = "none";
 }
 
 function buildMfers() {
