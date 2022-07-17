@@ -139,7 +139,7 @@ smoke[2]= "/smoke/pipe.png";
 // function to generate mfers
 function generateMfers(mfers, seedinput) {
 	
-	// document.getElementsByClassName("html-content-holder")[0].style.display = "inherit";
+	document.getElementsByClassName("html-content-holder")[0].style.display = "inherit";
 	
 	var t1 = parseFloat(seedinput.slice(0, 2));
 	var t2 = parseFloat(seedinput.slice(2, 4));
@@ -374,7 +374,6 @@ function generateMfers(mfers, seedinput) {
 		mferImg.src = pngUrl;
 		mferImg.className = 'mfers';
 		document.getElementsByClassName("mferImg")[0].appendChild(mferImg);
-		document.getElementsByClassName("html-content-holder")[0].style.backgroundImage = "";
 	});
 	
 }
