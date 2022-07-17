@@ -369,6 +369,7 @@ function generateMfers(mfers, seedinput) {
 	}
 	window.scrollTo(0,0);	
 	var seed = _hoodies + _smoke + _watch420 + _hatsOver + _headphones + _hatsUnder + _longHair + _shortHair + _shirt + _eyes + _mouth + _beard + _type + _background;
+	console.log(seed);
 	document.getElementsByClassName("html-content-holder")[i].style.backgroundImage = seed;
 	document.getElementsByClassName("html-content-holder")[i].style.display = "none";	
 }
