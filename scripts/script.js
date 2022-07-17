@@ -163,6 +163,9 @@ function generateMfers(mfers, seedinput) {
 	document.getElementsByClassName('mferWrapper')[0].appendChild(div);
 	elements[0].parentNode.removeChild(elements[0]);
 	for (let i = 0; i < mfers; i++){
+		var htmlContent = document.createElement("div");
+		htmlContent.className = 'html-content-holder';
+		document.getElementsByClassName("mferWrapper")[0].appendChild(htmlContent);
 		if (t1 == 1) {
 			var _background = "url()"
 		} else if (t1 == 0) {
@@ -367,9 +370,6 @@ function generateMfers(mfers, seedinput) {
 	window.scrollTo(0,0);	
 	var seed = _hoodies + _smoke + _watch420 + _hatsOver + _headphones + _hatsUnder + _longHair + _shortHair + _shirt + _eyes + _mouth + _beard + _type + _background;
 	document.getElementsByClassName("html-content-holder")[i].style.backgroundImage = seed;
-	var htmlContent = document.createElement("div");
-	htmlContent.className = 'html-content-holder';
-	document.getElementsByClassName("mferWrapper")[0].appendChild(htmlContent);
 	html2canvas(document.getElementsByClassName("html-content-holder")[i],{allowTaint: true,useCORS: true}).then(function (canvas) {
 		var pngUrl = canvas.toDataURL("image/png");
 		var mferImg = document.createElement("img");
@@ -377,9 +377,9 @@ function generateMfers(mfers, seedinput) {
 		mferImg.className = 'mfers';
 		document.getElementsByClassName("mferImg")[0].appendChild(mferImg);
 	});
-			
+	document.getElementsByClassName("html-content-holder")[i].style.display = "none";	
 }
-document.getElementsByClassName("html-content-holder")[i].style.display = "none";
+
 }
 
 function buildMfers() {
