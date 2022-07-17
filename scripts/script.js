@@ -370,11 +370,13 @@ function generateMfers(mfers, seedinput) {
 	document.getElementsByClassName("html-content-holder")[0].style.backgroundImage = seed;
 	html2canvas(document.getElementsByClassName("html-content-holder")[0],{allowTaint: true,useCORS: true}).then(function (canvas) {
 		var pngUrl = canvas.toDataURL("image/png");
+		var mferImg = document.createElement("img");
+		mferImg.src = pngUrl;
+		mferImg.className = 'mfers';
+		document.getElementsByClassName("mferImg")[0].appendChild(mferImg);
+		document.getElementsByClassName("html-content-holder")[0].style.backgroundImage = "";
 	});
-	var mferImg = document.createElement("img");
-	mferImg.src = pngUrl;
-	mferImg.className = 'mfers';
-	document.getElementsByClassName("mferImg")[0].appendChild(mferImg);
+	
 }
 document.getElementsByClassName("html-content-holder")[0].style.display = "none";
 }
