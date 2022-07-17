@@ -25,7 +25,7 @@ Add the following script  at the end of your `<body>` tag:
 ```
 <body>
     ....
-    <script src="https://raw.githubusercontent.com/thebadcc-eth/mfer-builder/main/scripts/script.js"></script>
+    <script src="https://raw.githubusercontent.com/thebadcc/mfer-builder/main/scripts/script.js"></script>
 </body>
 ```
 
