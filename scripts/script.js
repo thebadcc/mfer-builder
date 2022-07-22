@@ -367,6 +367,8 @@ function generateMfers(mfers, seedinput) {
 	window.scrollTo(0,0);	
 	var seed = _hoodies + _smoke + _watch420 + _hatsOver + _headphones + _hatsUnder + _longHair + _shortHair + _shirt + _eyes + _mouth + _beard + _type + _background;
 	document.getElementsByClassName("html-content-holder")[0].style.backgroundImage = seed;
+	setTimeout(rendering, 1000);
+
 	html2canvas(document.getElementsByClassName("html-content-holder")[0],{allowTaint: true,useCORS: true}).then(function (canvas) {
 		var pngUrl = canvas.toDataURL("image/png");
 		var mferImg = document.createElement("img");
@@ -378,6 +380,11 @@ function generateMfers(mfers, seedinput) {
 	
 }
 	document.getElementsByClassName("html-content-holder")[0].style.display = "none";
+}
+
+
+function rendering() {
+console.log('rendering...')
 }
 
 function buildMfers() {
