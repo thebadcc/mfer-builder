@@ -6,7 +6,7 @@
 
 All traits pull from and are archieved in this repository under [images](https://github.com/thebadcc-eth/mfer-builder/tree/main/images).
 
-A working [mfer playground](https://thebadcc-eth.github.io/mfer-builder/) is available to create your own mfer. If you'd like to generate mfers on another site, please see the installation guide below.
+A working [mfer playground](https://thebadcc.github.io/mfer-builder/) is available to create your own mfer. If you'd like to generate mfers on another site, please see the installation guide below.
 
 **Installation Guide**
 
