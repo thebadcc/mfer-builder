@@ -365,8 +365,14 @@ function generateMfers(mfers, seedinput) {
     	}
 	}
 	window.scrollTo(0,0);	
+	if (base == "mfers") {
 	var seed = _hoodies + _watch420 + _smoke + _hatsOver + _headphones + _hatsUnder + _longHair + _shortHair + _shirt + _eyes + _mouth + _beard + _type + _background;
-	document.getElementsByClassName("html-content-holder")[0].style.backgroundImage = seed;
+	} else if (base == "creyzies") {
+	var seed = _hoodies + _watch420 + _smoke + _hatsOver + _headphones + _hatsUnder + _longHair + _shortHair + _shirt + _eyes + _mouth + _beard + _type + _background;
+	} else if (base == "mfersBehind") {
+	var seed = _hoodies + _watch420  + _hatsOver + _headphones + _hatsUnder + _smoke + _longHair + _shortHair + _shirt + _eyes + _mouth + _beard + _type + _background;
+	}
+		document.getElementsByClassName("html-content-holder")[0].style.backgroundImage = seed;
 	console.log(seed);
 	html2canvas(document.getElementsByClassName("html-content-holder")[0],{allowTaint: true,useCORS: true}).then(function (canvas) {
 		var pngUrl = canvas.toDataURL("image/png");
