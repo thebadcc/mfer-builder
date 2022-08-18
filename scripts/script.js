@@ -370,7 +370,7 @@ function generateMfers(mfers, seedinput) {
 	} else if (base == "creyzies") {
 	var seed = _hoodies + _watch420 + _smoke + _hatsOver + _headphones + _hatsUnder + _longHair + _shortHair + _shirt + _eyes + _mouth + _beard + _type + _background;
 	} else if (base == "mfersBehind") {
-	var seed = _hoodies + _watch420  + _hatsOver + _headphones + _hatsUnder + _smoke + _longHair + _shortHair + _shirt + _eyes + _mouth + _beard + _type + _background;
+	var seed = _hoodies + _watch420  + _hatsOver + _headphones + _hatsUnder + _longHair + _smoke + _shortHair + _shirt + _eyes + _mouth + _beard + _type + _background;
 	}
 		document.getElementsByClassName("html-content-holder")[0].style.backgroundImage = seed;
 	console.log(seed);
