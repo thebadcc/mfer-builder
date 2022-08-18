@@ -365,7 +365,7 @@ function generateMfers(mfers, seedinput) {
     	}
 	}
 	window.scrollTo(0,0);	
-	var seed = _hoodies + _watch420 + _hatsOver + _headphones + _hatsUnder + _smoke + _longHair + _shortHair + _shirt + _eyes + _mouth + _beard + _type + _background;
+	var seed = _hoodies + _watch420 + _smoke + _hatsOver + _headphones + _hatsUnder + _longHair + _shortHair + _shirt + _eyes + _mouth + _beard + _type + _background;
 	document.getElementsByClassName("html-content-holder")[0].style.backgroundImage = seed;
 	console.log(seed);
 	html2canvas(document.getElementsByClassName("html-content-holder")[0],{allowTaint: true,useCORS: true}).then(function (canvas) {
