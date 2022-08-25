@@ -376,11 +376,14 @@ function generateMfers(mfers, seedinput) {
 	document.getElementsByClassName("html-content-holder")[0].style.backgroundImage = seed;
 	document.getElementsByClassName("html-content-holder")[0].style.width = dimension;
 	document.getElementsByClassName("html-content-holder")[0].style.height = dimension;
+	
 	console.log(seed);
 	html2canvas(document.getElementsByClassName("html-content-holder")[0],{allowTaint: true,useCORS: true}).then(function (canvas) {
 		var pngUrl = canvas.toDataURL("image/png");
 		var mferImg = document.createElement("img");
 		mferImg.src = pngUrl;
+		mferImg.style.width = dimension;
+		mferImg.style.height = dimension;
 		mferImg.className = 'mfers';
 		document.getElementsByClassName("mferImg")[0].appendChild(mferImg);
 	});
