@@ -372,7 +372,10 @@ function generateMfers(mfers, seedinput) {
 	} else if (base == "mfersBehind") {
 	var seed = _hoodies + _watch420  + _hatsOver + _headphones + _hatsUnder + _longHair + _smoke + _shortHair + _shirt + _eyes + _mouth + _beard + _type + _background;
 	}
-		document.getElementsByClassName("html-content-holder")[0].style.backgroundImage = seed;
+	var dimension = document.getElementsByClassName("pixels")[0].value;
+	document.getElementsByClassName("html-content-holder")[0].style.backgroundImage = seed;
+	document.getElementsByClassName("html-content-holder")[0].style.width = dimension;
+	document.getElementsByClassName("html-content-holder")[0].style.height = dimension;
 	console.log(seed);
 	html2canvas(document.getElementsByClassName("html-content-holder")[0],{allowTaint: true,useCORS: true}).then(function (canvas) {
 		var pngUrl = canvas.toDataURL("image/png");
