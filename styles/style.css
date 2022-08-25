@@ -19,15 +19,11 @@ body {
 
 
 .html-content-holder {
-    width: 1000px;
-    height: 1000px;
     background-size: contain; 
 }
 
 .mferImg img {
     margin: 10px;
-    width: 1000px;
-    height: 1000px;
     border-radius: 10px;
 }
 
