@@ -372,7 +372,7 @@ function generateMfers(mfers, seedinput) {
 	} else if (base == "mfersBehind") {
 	var seed = _hoodies + _watch420  + _hatsOver + _shortHair + _headphones + _hatsUnder + _longHair + _smoke + _shirt + _eyes + _mouth + _beard + _type + _background;
 	} else if (base == "mfersAhead") {
-	var seed = _hoodies + _watch420  + _hatsOver + _shortHair + _headphones + _hatsUnder + _longHair + _smoke + _shirt + _eyes + _mouth + _beard + _type + _background;
+	var seed = _smoke + _hoodies + _watch420  + _hatsOver + _shortHair + _headphones + _hatsUnder + _longHair + _shirt + _eyes + _mouth + _beard + _type + _background;
 	}
 	var dimension = document.getElementsByClassName("pixels")[0].value;
 	document.getElementsByClassName("html-content-holder")[0].style.backgroundImage = seed;
