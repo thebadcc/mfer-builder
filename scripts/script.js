@@ -162,7 +162,7 @@ function generateMfers(mfers, seedinput) {
 	div.setAttribute('class', 'mferImg');
 	document.getElementsByClassName('mferWrapper')[0].appendChild(div);
 	elements[0].parentNode.removeChild(elements[0]);
-	
+	if (base == "mfers" || base == "creyzies" || base == "eos" || base == "mfersBehind" || base == "mfersAhead") {
 	for (let i = 0; i < mfers; i++){
 		if (t1 == 1) {
 			var _background = "url()"
@@ -364,6 +364,7 @@ function generateMfers(mfers, seedinput) {
 			var _hatsOver = "";
 			var _longHair = "";
     	}
+	}
 	}
 	window.scrollTo(0,0);	
 	if (base == "mfers" || base == "creyzies" || base == "eos") {
