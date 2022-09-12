@@ -373,7 +373,7 @@ function generateMfers(mfers, seedinput) {
 	} else if (base == "mfersAhead") {
 	var seed = _smoke + _hoodies + _watch420  + _hatsOver + _shortHair + _headphones + _hatsUnder + _longHair + _shirt + _eyes + _mouth + _beard + _type + _background;
 	} else if (base == "sketchyMfers") {
-		if (_hatsUnder == "https://raw.githubusercontent.com/thebadcc-eth/mfer-builder/main/images/sketchyMfers/hatunderheadphones/beaniemonochrome.png" ) {
+		if (_hatsUnder == ("url(" + baseURL + base + hatsUnder[3] + "), ")) {
 			var seed = _hoodies + _watch420 + _smoke + _hatsOver + _hatsUnder + _headphones + _shirt + _longHair + _shortHair + _eyes + _mouth + _beard + _type + _background;
 		    } else {
 			var seed = _hoodies + _watch420 + _smoke + _hatsOver + _headphones + _hatsUnder + _shirt + _longHair + _shortHair + _eyes + _mouth + _beard + _type + _background;
