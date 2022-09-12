@@ -162,7 +162,6 @@ function generateMfers(mfers, seedinput) {
 	div.setAttribute('class', 'mferImg');
 	document.getElementsByClassName('mferWrapper')[0].appendChild(div);
 	elements[0].parentNode.removeChild(elements[0]);
-	if (base == "mfers" || base == "creyzies" || base == "eos" || base == "mfersBehind" || base == "mfersAhead") {
 	for (let i = 0; i < mfers; i++){
 		if (t1 == 1) {
 			var _background = "url()"
@@ -365,7 +364,7 @@ function generateMfers(mfers, seedinput) {
 			var _longHair = "";
     	}
 	}
-	}
+	
 	window.scrollTo(0,0);	
 	if (base == "mfers" || base == "creyzies" || base == "eos") {
 	var seed = _hoodies + _watch420 + _smoke + _hatsOver + _headphones + _hatsUnder + _longHair + _shortHair + _shirt + _eyes + _mouth + _beard + _type + _background;
@@ -395,6 +394,7 @@ function generateMfers(mfers, seedinput) {
 	document.getElementsByClassName("html-content-holder")[0].style.backgroundImage = 'URL(https://raw.githubusercontent.com/thebadcc-eth/mfer-builder/main/images/eos/endofsartoshi.jpg)';
 	
 }
+
 	document.getElementsByClassName("html-content-holder")[0].style.display = "none";
 }
 
