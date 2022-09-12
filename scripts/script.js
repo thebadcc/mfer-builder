@@ -375,7 +375,7 @@ function generateMfers(mfers, seedinput) {
 	} else if (base == "sketchyMfers") {
 		if (_hatsUnder == "https://raw.githubusercontent.com/thebadcc-eth/mfer-builder/main/images/sketchyMfers/hatunderheadphones/beaniemonochrome.png" ) {
 			var seed = _hoodies + _watch420 + _smoke + _hatsOver + _hatsUnder + _headphones + _shirt + _longHair + _shortHair + _eyes + _mouth + _beard + _type + _background;
-		    } else if () {
+		    } else if {
 			var seed = _hoodies + _watch420 + _smoke + _hatsOver + _headphones + _hatsUnder + _shirt + _longHair + _shortHair + _eyes + _mouth + _beard + _type + _background;
 		}
 	}
