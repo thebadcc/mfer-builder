@@ -375,7 +375,10 @@ function generateMfers(mfers, seedinput) {
 	var seed = _hoodies + _watch420  + _hatsOver + _shortHair + _headphones + _hatsUnder + _longHair + _smoke + _shirt + _eyes + _mouth + _beard + _type + _background;
 	} else if (base == "mfersAhead") {
 	var seed = _smoke + _hoodies + _watch420  + _hatsOver + _shortHair + _headphones + _hatsUnder + _longHair + _shirt + _eyes + _mouth + _beard + _type + _background;
+	} else if (base == "sketchyMfers") {
+	var seed = _hoodies + _watch420 + _smoke + _hatsOver + _headphones + _hatsUnder + _longHair + _shortHair + _shirt + _eyes + _mouth + _beard + _type + _background;
 	}
+		
 	var dimension = document.getElementsByClassName("pixels")[0].value;
 	document.getElementsByClassName("html-content-holder")[0].style.backgroundImage = seed;
 	document.getElementsByClassName("html-content-holder")[0].style.width = dimension;
