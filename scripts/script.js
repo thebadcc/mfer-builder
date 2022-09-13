@@ -51,6 +51,17 @@ eyes[9]= "/eyes/zombieeyes.png";
 
 const hoodies = [];
 hoodies[0]= "/hatoverheadphones/hoodie.png";
+hoodies[1]= "/hatoverheadphones/bearhoodie.png";
+hoodies[2]= "/hatoverheadphones/bullhoodie.png";
+hoodies[3]= "/hatoverheadphones/foxhoodie.png";
+hoodies[4]= "/hatoverheadphones/trexhoodie.png";
+hoodies[5]= "/hatoverheadphones/dragonhoodie.png";
+hoodies[6]= "/hatoverheadphones/chickenhoodie.png";
+hoodies[7]= "/hatoverheadphones/pepehoodie.png";
+hoodies[8]= "/hatoverheadphones/sharkhoodie.png";
+hoodies[9]= "/hatoverheadphones/axolotlhoodie.png";
+hoodies[10]= "/hatoverheadphones/mleehoodie.png";
+hoodies[11]= "/hatoverheadphones/kikihoodie.png";
 
 const headphones = [];
 headphones[0]= "/headphones/RCSheadphones.png";
@@ -237,7 +248,7 @@ function generateMfers(mfers, seedinput) {
 		if (t9 == 1) {
 			var _hoodies = "";
 		} else if (t9 == 0) {
-			var _hoodies = "url(" + baseURL + base + hoodies[0] + "), ";
+			var _hoodies = "url(" + baseURL + base + hoodies[Math.floor(Math.random() * 12)] + "), ";
 		} else if (t9 > 1) {
 			var _hoodies = "url(" + baseURL + base + hoodies[t9 - 2] + "), ";
 		}
