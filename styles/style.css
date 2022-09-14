@@ -146,6 +146,11 @@ border-bottom: solid 1px lightgray;
     margin-top: -20px;
 }
 
+.dropdown {
+display: none;  
+    
+}
+
 .seedWrapper {
     width: 98%;  
     display: flex;
