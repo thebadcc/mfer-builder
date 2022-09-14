@@ -170,8 +170,8 @@ display: none;
     padding-bottom: 0.625rem;
     padding-left: 1rem;
     color: black;
-    border: solid 1px lightgray;
-    border-radius: 5px 0px 0px 5px;
+    background: none;
+    border: none;
 }
 
 .seedWrapper input::placeholder {
