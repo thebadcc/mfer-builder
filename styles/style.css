@@ -182,7 +182,7 @@ border-bottom: solid 1px lightgray;
     margin: 10px;
 }
 
-.baseWrapper select {
+.base {
     font-weight: bold;
     margin: 0px;
     font-size: 2rem;
@@ -190,8 +190,6 @@ border-bottom: solid 1px lightgray;
     padding-bottom: 0.625rem;
     padding-left: 1rem;
     color: black;
-    background: none;
-    border: none;
 }
 
 .wtfButton {
