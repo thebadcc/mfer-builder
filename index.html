@@ -14,19 +14,8 @@
             <p>the <!-- --><b>unofficial</b> builder of <!-- --><b>mfers, creyzies & more</b></p>        
         </div>
         <div class="navigationWrapper"> 
-            <div class="seedWrapper">      
-                <button class="buildMfers" onclick="buildMfers()">
-                    <i class="fa-solid fa-seedling"></i>
-                </button>
-                <input class="seed" value="" placeholder="0000000000000000000000000000">
-                <button class="filter" onclick="dropdown()">
-                    <i class="fa-solid fa-bars"></i>
-                </button> 
-            </div>
-            <div class="dropdown">
-                <div class="traitWrapper">
-                <label for="base">Base</label>
-                <select class="base" onchange="updateSeed()">
+            <div class="baseWrapper"> 
+               <select class="base" onchange="updateSeed()">
                     <option value="mfers"> mfer</option>
                     <option value="creyzies">creyzies</option>
                     <option value="eos">end of sartoshi</option>
@@ -34,7 +23,18 @@
                     <option value="mfersBehind">mfers behind</option>
                     <option value="sketchyMfers">sketchy mfers</option>
                 </select>
-                </div>
+                <button class="filter" onclick="dropdown()">
+                    <i class="fa-solid fa-bars"></i>
+                </button>       
+            </div>
+            <div class="seedWrapper">      
+                <button class="buildMfers" onclick="buildMfers()">
+                    <i class="fa-solid fa-seedling"></i>
+                </button>
+                <input class="seed" value="" placeholder="0000000000000000000000000000">
+ 
+            </div>
+            <div class="dropdown">
                 <div class="traitWrapper">
                 <label for="background">Background</label>
                 <select class="background" onchange="updateSeed()">
