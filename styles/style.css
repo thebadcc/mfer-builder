@@ -115,11 +115,8 @@ border-bottom: solid 1px lightgray;
 
 .buildMfers {
     font-size: 2rem;
-    width: 75px;
-    background: #5468ff;
-    color: white;
-    border: 1px solid #5468ff;
-    padding: 10px;
+    background: none;
+    border: none;
 }
 
 .filter {
