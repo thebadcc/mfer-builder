@@ -62,6 +62,9 @@ hoodies[8]= "/hatoverheadphones/sharkhoodie.png";
 hoodies[9]= "/hatoverheadphones/axolotlhoodie.png";
 hoodies[10]= "/hatoverheadphones/mleehoodie.png";
 hoodies[11]= "/hatoverheadphones/kikihoodie.png";
+hoodies[12]= "/hatoverheadphones/masterchanhoodie.png";
+hoodies[13]= "/hatoverheadphones/sonichoodie.png";
+hoodies[14]= "/hatoverheadphones/rabbithoodie.png";
 
 const headphones = [];
 headphones[0]= "/headphones/RCSheadphones.png";
@@ -248,7 +251,7 @@ function generateMfers(mfers, seedinput) {
 		if (t9 == 1) {
 			var _hoodies = "";
 		} else if (t9 == 0) {
-			var _hoodies = "url(" + baseURL + base + hoodies[Math.floor(Math.random() * 12)] + "), ";
+			var _hoodies = "url(" + baseURL + base + hoodies[Math.floor(Math.random() * 15)] + "), ";
 		} else if (t9 > 1) {
 			var _hoodies = "url(" + baseURL + base + hoodies[t9 - 2] + "), ";
 		}
