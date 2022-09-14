@@ -159,6 +159,17 @@ display: none;
     margin: 10px;
 }
 
+.baseWrapper {
+    width: 98%;
+    display: flex;
+    border-radius: 5px 0 0 5px;
+    padding-right: 0;
+    border: none;
+    background: none;
+    float: left;
+    margin: 10px;
+}
+
 .seedWrapper input {
     font-weight: bold;
     margin: 0px;
