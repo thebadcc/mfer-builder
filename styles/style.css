@@ -159,17 +159,6 @@ display: none;
     margin: 10px;
 }
 
-.baseWrapper {
-    width: 98%;
-    display: flex;
-    border-radius: 5px 0 0 5px;
-    padding-right: 0;
-    border: none;
-    background: none;
-    float: left;
-    margin: 10px;
-}
-
 .seedWrapper input {
     font-weight: bold;
     margin: 0px;
@@ -185,6 +174,29 @@ display: none;
 .seedWrapper input::placeholder {
   color: black;
   opacity: 1;
+}
+
+.baseWrapper {
+    width: 98%;
+    display: flex;
+    border-radius: 5px 0 0 5px;
+    padding-right: 0;
+    border: none;
+    background: none;
+    float: left;
+    margin: 10px;
+}
+
+.baseWrapper select {
+    font-weight: bold;
+    margin: 0px;
+    font-size: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 0.625rem;
+    padding-left: 1rem;
+    color: black;
+    background: none;
+    border: none;
 }
 
 .wtfButton {
