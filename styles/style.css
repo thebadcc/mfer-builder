@@ -120,6 +120,15 @@ border-bottom: solid 1px lightgray;
     color: white;
     border: 1px solid #5468ff;
     padding: 10px;
+}
+
+.filter {
+    font-size: 2rem;
+    width: 75px;
+    background: #5468ff;
+    color: white;
+    border: 1px solid #5468ff;
+    padding: 10px;
     border-radius: 0 5px 5px 0;
 }
 
