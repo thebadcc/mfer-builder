@@ -493,7 +493,7 @@ function wtf() {
 
 function dropdown() {
   var x = document.getElementsByClassName("dropdown")[0];
-  var y = document.getElementsByClassName("fa-bars")[0];
+  var y = document.getElementsByClassName("fa-arrow-down-wide-short")[0];
   var z = document.getElementsByClassName("fa-xmark")[0];
   if (x.style.display == "none") {
     x.style.display = "block";
