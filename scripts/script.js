@@ -493,9 +493,15 @@ function wtf() {
 
 function dropdown() {
   var x = document.getElementsByClassName("dropdown")[0];
+  var y = document.getElementsByClassName("fa-bars")[0];
+  var z = document.getElementsByClassName("fa-xmark")[0];
   if (x.style.display == "none") {
     x.style.display = "block";
+    y.style.display = "none";
+    z.style.display = "block";	 
   } else {
     x.style.display = "none";
+    y.style.display = "block";
+    z.style.display = "none";	 
   }
 }
