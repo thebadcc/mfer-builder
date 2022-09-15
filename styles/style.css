@@ -192,7 +192,17 @@ border-bottom: solid 1px lightgray;
     color: black;
     background: white;
     border: solid 1px lightgray;
+    border-width: 1px 0px 1px 1px;
     width: 100%;
+}
+
+.refresh {
+      background: white;
+    border: solid 1px lightgray;
+    border-width: 1px 0px 1px 0px;
+    color: #5468ff;
+    font-size: 2rem;
+    padding: 20px;  
 }
 
 .wtfButton {
