@@ -177,14 +177,19 @@ function generateMfers(mfers, seedinput) {
 	var t12 = parseFloat(seedinput.slice(22, 24));
 	var t13 = parseFloat(seedinput.slice(24, 26));
 	var t14 = parseFloat(seedinput.slice(26, 28));
-	var base = document.getElementsByClassName('base')[0].value;
-	
+
 	const elements = document.getElementsByClassName('mferImg');
 	var div = document.createElement("div");
 	div.setAttribute('class', 'mferImg');
 	document.getElementsByClassName('mferWrapper')[0].appendChild(div);
 	elements[0].parentNode.removeChild(elements[0]);
 	for (let i = 0; i < mfers; i++){
+		var baseID = document.getElementsByClassName('base')[0].value;
+		if (baseID == "random") {
+			var base = project[Math.floor(Math.random() * 8)];
+		} else {
+			var base = document.getElementsByClassName('base')[0].value;
+		}
 		if (t1 == 1) {
 			var _background = "url()"
 		} else if (t1 == 0) {
