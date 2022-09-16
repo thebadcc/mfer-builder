@@ -186,7 +186,7 @@ function generateMfers(mfers, seedinput) {
 	for (let i = 0; i < mfers; i++){
 		var baseID = document.getElementsByClassName('base')[0].value;
 		if (baseID == "random") {
-			var base = project[Math.floor(Math.random() * 8)];
+			var base = project[Math.floor(Math.random() * 6)];
 		} else {
 			var base = document.getElementsByClassName('base')[0].value;
 		}
