@@ -1,7 +1,15 @@
 // base domain for image layers
 var baseURL = 'https://raw.githubusercontent.com/thebadcc-eth/mfer-builder/main/images/';
 
-// mfer traits and layers
+// repositories
+const projects = [];
+projects[0] = "mfers";
+projects[1] = "creyzies";
+projects[2] = "eos";
+projects[3] = "mfersAhead";
+projects[4] = "mfersBehind";
+projects[5] = "sketchyMfers";
+
 const background = [];
 background[0]= "/background/blue.png";
 background[1]= "/background/yellow.png";
@@ -474,6 +482,7 @@ function wtf() {
 	filters[4]= "sepia(1)";
 	filters[5]= "contrast(5)";
 	filters[6]= "hue-rotate(3.142rad)";
+	
 	var currentFilter = document.getElementsByClassName("wtfButton")[0].value;
 	console.log(currentFilter);
 	var imgLength = document.getElementsByClassName("mfers").length;
