@@ -440,6 +440,9 @@ function generateMfers(mfers, seedinput) {
 }
 
 	document.getElementsByClassName("html-content-holder")[0].style.display = "none";
+	document.getElementsByClassName("waitingIcon")[0].style.display = "none";
+	document.getElementsByClassName("mferImg")[0].style.display = "inherit";
+	document.getElementsByClassName("waitingIcon")[0].style.display = "none";
 }
 
 function buildMfers() {
