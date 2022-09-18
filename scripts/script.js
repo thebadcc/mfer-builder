@@ -201,7 +201,7 @@ function generateMfers(mfers, seedinput) {
 		var shortHairRNG = shortHair[Math.floor(Math.random() * 12)];
 		
 		if (baseID == "random") {
-			var base = projects[Math.floor(Math.random() * 5)];
+			var base = projects[Math.floor(Math.random() * 6)];
 		} else {
 			var base = document.getElementsByClassName('base')[0].value;
 		}
