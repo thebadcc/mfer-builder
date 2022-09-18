@@ -187,6 +187,12 @@ function generateMfers(mfers, seedinput) {
 		var backgroundRNG = background[Math.floor(Math.random() * 8)];
 		var typeRNG = type[Math.floor(Math.random() * 5)];
 		var eyesRNG = eyes[Math.floor(Math.random() * 10)];
+		var mouthRNG = mouth[Math.floor(Math.random() * 2)];
+		var headphonesRNG = headphones[Math.floor(Math.random() * 9)];
+		var smokeRNG = smoke[Math.floor(Math.random() * 3)];
+		var watchRNG = watch420[Math.floor(Math.random() * 12)];
+		var beardRNG = beard[Math.floor(Math.random() * 2)];
+		var hoodiesRNG = hoodies[Math.floor(Math.random() * 15)];
 		
 		if (baseID == "random") {
 			var base = projects[Math.floor(Math.random() * 5)];
@@ -217,14 +223,14 @@ function generateMfers(mfers, seedinput) {
 		if (t4 == 1) {
 			var _mouth = "";
 		} else if (t4 == 0) {
-			var _mouth = "url(" + baseURL + base + mouth[Math.floor(Math.random() * 2)] + "), ";
+			var _mouth = "url(" + baseURL + base + mouthRNG + "), ";
 		} else if (t4 > 1) {
 			var _mouth = "url(" + baseURL + base + mouth[t4 - 2] + "), ";
 		}
 		if (t5 == 1) {
 			var _headphones = "";
 		} else if (t5 == 0) {
-			var _headphones = "url(" + baseURL + base + headphones[Math.floor(Math.random() * 9)] + "), ";
+			var _headphones = "url(" + baseURL + base + headphonesRNG + "), ";
 		} else if (t5 > 1) {
 			var _headphones = "url(" + baseURL + base + headphones[t5 - 2] + "), ";
 		}
@@ -233,7 +239,7 @@ function generateMfers(mfers, seedinput) {
 		} else if (t6 == 0) {
 			var rollSmoke = Math.floor(Math.random() * 10);
 			if (rollSmoke <= 7) {
-				var _smoke = "url(" + baseURL + base + smoke[Math.floor(Math.random() * 3)] + "), ";
+				var _smoke = "url(" + baseURL + base + smokeRNG + "), ";
 			} else {
 				var _smoke = ""
    			}
@@ -245,7 +251,7 @@ function generateMfers(mfers, seedinput) {
 		} else if (t7 == 0) {
 			var rollWatch = Math.floor(Math.random() * 10);
 			if (rollWatch <= 5) {
-				var _watch420 = "url(" + baseURL + base + watch420[Math.floor(Math.random() * 12)] + "), ";
+				var _watch420 = "url(" + baseURL + base + watchRNG + "), ";
 			} else {
 				var _watch420 = ""
 			}
@@ -257,7 +263,7 @@ function generateMfers(mfers, seedinput) {
 		} else if (t8 == 0) {
 			var rollBeard = Math.floor(Math.random() * 10);
 			if (rollBeard <= 3) {
-				var _beard = "url(" + baseURL + base + beard[Math.floor(Math.random() * 2)] + "), ";
+				var _beard = "url(" + baseURL + base + beardRNG + "), ";
 			} else {
 				var _beard = "";
 			}
@@ -267,7 +273,7 @@ function generateMfers(mfers, seedinput) {
 		if (t9 == 1) {
 			var _hoodies = "";
 		} else if (t9 == 0) {
-			var _hoodies = "url(" + baseURL + base + hoodies[Math.floor(Math.random() * 15)] + "), ";
+			var _hoodies = "url(" + baseURL + base + hoodiesRNG + "), ";
 		} else if (t9 > 1) {
 			var _hoodies = "url(" + baseURL + base + hoodies[t9 - 2] + "), ";
 		}
