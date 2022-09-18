@@ -193,6 +193,11 @@ function generateMfers(mfers, seedinput) {
 		var watchRNG = watch420[Math.floor(Math.random() * 12)];
 		var beardRNG = beard[Math.floor(Math.random() * 2)];
 		var hoodiesRNG = hoodies[Math.floor(Math.random() * 15)];
+		var shirtRNG = shirt[Math.floor(Math.random() * 14)];
+		var hatsUnderRNG = hatsUnder[Math.floor(Math.random() * 24)];
+		var hatsOverRNG = hatsOver[Math.floor(Math.random() * 3)];
+		var longHairRNG = longHair[Math.floor(Math.random() * 2)];
+		var shortHairRNG = shortHair[Math.floor(Math.random() * 12)];
 		
 		if (baseID == "random") {
 			var base = projects[Math.floor(Math.random() * 5)];
@@ -280,35 +285,35 @@ function generateMfers(mfers, seedinput) {
 		if (t10 == 1) {
 			var _shirt = "";
 		} else if (t10 == 0) {
-			var _shirt = "url(" + baseURL + base + shirt[Math.floor(Math.random() * 14)] + "), ";
+			var _shirt = "url(" + baseURL + base + shirtRNG + "), ";
 		} else if (t10 > 1) {
 			var _shirt = "url(" + baseURL + base + shirt[t10 - 2] + "), ";
 		}
 		if (t11 == 1) {
 			var _longHair = "";
 		} else if (t11 == 0) {
-			var _longHair = "url(" + baseURL + base + longHair[Math.floor(Math.random() * 2)] + "), ";
+			var _longHair = "url(" + baseURL + base + longHairRNG + "), ";
 		} else if (t11 > 1) {
 			var _longHair = "url(" + baseURL + base + longHair[t11 - 2] + "), ";
 		}
 		if (t12 == 1) {
 			var _hatsUnder = "";           
 		} else if (t12 == 0) {
-			var _hatsUnder = "url(" + baseURL + base + hatsUnder[Math.floor(Math.random() * 24)] + "), ";           
+			var _hatsUnder = "url(" + baseURL + base + hatsUnderRNG + "), ";           
 		} else if (t12 > 1) {
 			var _hatsUnder = "url(" + baseURL + base + hatsUnder[t12 - 2] + "), ";           
 		}
 		if (t13 == 1) {
 			var _hatsOver = "";  
 		} else if (t13 == 0) {
-			var _hatsOver = "url(" + baseURL + base + hatsOver[Math.floor(Math.random() * 3)] + "), ";  
+			var _hatsOver = "url(" + baseURL + base + hatsOverRNG + "), ";  
 		} else if (t13 > 1) {
 			var _hatsOver = "url(" + baseURL + base + hatsOver[t13 - 2] + "), "; 
 		}
 		if (t14 == 1) {
 			var _shortHair = "";
 		} else if (t14 == 0) {
-			var _shortHair = "url(" + baseURL + base + shortHair[Math.floor(Math.random() * 12)] + "), ";
+			var _shortHair = "url(" + baseURL + base + shortHairRNG + "), ";
 		} else if (t14 > 1) {
 			var _shortHair = "url(" + baseURL + base + shortHair[t14 - 2] + "), ";
 		}
