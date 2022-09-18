@@ -29,7 +29,6 @@ body {
 
 .mferImg {
     text-align: center;
-    display: none;
 }
 
 
@@ -220,8 +219,4 @@ border-bottom: solid 1px lightgray;
 
 .quantity {
     padding-bottom: 0;
-}
-
-.waitingIcon {
-  text-align: center;  
 }
