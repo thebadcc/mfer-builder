@@ -8,7 +8,6 @@ projects[1] = "creyzies";
 projects[2] = "eos";
 projects[3] = "mfersAhead";
 projects[4] = "mfersBehind";
-projects[5] = "sketchyMfers";
 
 const background = [];
 background[0]= "/background/blue.png";
