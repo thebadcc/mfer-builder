@@ -184,6 +184,8 @@ function generateMfers(mfers, seedinput) {
 	elements[0].parentNode.removeChild(elements[0]);
 	for (let i = 0; i < mfers; i++){
 		var baseID = document.getElementsByClassName('base')[0].value;
+		const eyeSelect = eyes[Math.floor(Math.random() * 10)];
+		
 		if (baseID == "random") {
 			var base = projects[Math.floor(Math.random() * 6)];
 		} else {
@@ -206,9 +208,15 @@ function generateMfers(mfers, seedinput) {
 		if (t3 == 1) {
 			var _eyes = "";
 		} else if (t3 == 0) {
-			var _eyes = "url(" + baseURL + base + eyes[Math.floor(Math.random() * 10)] + "), ";
+			var _eyes = "url(" + baseURL + base + eyeSelect + "), ";
+			if (base = projects[5]) {
+			var _eyesMod = "url(" + baseURL + base + "/modifiers" + eyeSelect + "), ";
+			}
 		} else if (t3 > 1) {
 			var _eyes = "url(" + baseURL + base + eyes[t3 - 2] + "), ";
+			if (base = projects[5]) {
+			var _eyesMod = "url(" + baseURL + base + "/modifiers" + eyeSelect + "), ";
+			}
 		}
 		if (t4 == 1) {
 			var _mouth = "";
