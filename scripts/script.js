@@ -8,6 +8,7 @@ projects[1] = "creyzies";
 projects[2] = "eos";
 projects[3] = "mfersAhead";
 projects[4] = "mfersBehind";
+projects[5] = "sketchyMfers";
 
 const background = [];
 background[0]= "/background/blue.png";
@@ -222,8 +223,16 @@ function generateMfers(mfers, seedinput) {
 			var _eyes = "";
 		} else if (t3 == 0) {
 			var _eyes = "url(" + baseURL + base + eyesRNG + "), ";
+			if (base == projects[5]) {
+			var _eyesMod = "url(" + baseURL + base + "/modifiers" + eyesRNG + "), ";
+			} else {
+			}
 		} else if (t3 > 1) {
 			var _eyes = "url(" + baseURL + base + eyes[t3 - 2] + "), ";
+			if (base == projects[5]) {
+			var _eyesMod = "url(" + baseURL + base + "/modifiers" + eyes[t3 - 2] + "), ";
+			} else {
+			}
 		}
 		if (t4 == 1) {
 			var _mouth = "";
@@ -416,19 +425,19 @@ function generateMfers(mfers, seedinput) {
 	} else if (base == "sketchyMfers") {
 		if (_hatsUnder == ("url(" + baseURL + base + hatsUnder[3] + "), ") || _hatsUnder == ("url(" + baseURL + base + hatsUnder[4] + "), ") || _hatsUnder == ("url(" + baseURL + base + hatsUnder[5] + "), ") || _hatsUnder == ("url(" + baseURL + base + hatsUnder[6] + "), ")) {
 			if (_longHair == ("url(" + baseURL + base + longHair[0] + "), ")) {
-			var seed = _hoodies + _watch420 + _smoke + _hatsOver + _hatsUnder + _headphones + "url(https://raw.githubusercontent.com/thebadcc-eth/mfer-builder/main/images/sketchyMfers/longhair/longhairblackmod.png), " + _shirt + _longHair + _shortHair + _eyes + _mouth + _beard + _type + _background;
+			var seed = _hoodies + _watch420 + _smoke + _hatsOver + _eyesMod + _hatsUnder + _headphones + "url(https://raw.githubusercontent.com/thebadcc-eth/mfer-builder/main/images/sketchyMfers/longhair/longhairblackmod.png), " + _shirt + _longHair + _shortHair + _eyes + _mouth + _beard + _type + _background;
 			} else if (_longHair == ("url(" + baseURL + base + longHair[1] + "), ")) {
-			var seed = _hoodies + _watch420 + _smoke + _hatsOver + _hatsUnder + _headphones + "url(https://raw.githubusercontent.com/thebadcc-eth/mfer-builder/main/images/sketchyMfers/longhair/longhairyellowmod.png), " + _shirt + _longHair + _shortHair + _eyes + _mouth + _beard + _type + _background;
+			var seed = _hoodies + _watch420 + _smoke + _hatsOver + _eyesMod + _hatsUnder + _headphones + "url(https://raw.githubusercontent.com/thebadcc-eth/mfer-builder/main/images/sketchyMfers/longhair/longhairyellowmod.png), " + _shirt + _longHair + _shortHair + _eyes + _mouth + _beard + _type + _background;
 			} else  {
-			var seed = _hoodies + _watch420 + _smoke + _hatsOver + _hatsUnder + _headphones + _shirt + _longHair + _shortHair + _eyes + _mouth + _beard + _type + _background;
+			var seed = _hoodies + _watch420 + _smoke + _hatsOver + _eyesMod + _hatsUnder + _headphones + _shirt + _longHair + _shortHair + _eyes + _mouth + _beard + _type + _background;
 			}
 		} else {
 			if (_longHair == ("url(" + baseURL + base + longHair[0] + "), ")) {
-			var seed = _hoodies + _watch420 + _smoke + _hatsOver + _headphones + _hatsUnder  + "url(https://raw.githubusercontent.com/thebadcc-eth/mfer-builder/main/images/sketchyMfers/longhair/longhairblackmod.png), " + _shirt + _longHair + _shortHair + _eyes + _mouth + _beard + _type + _background;
+			var seed = _hoodies + _watch420 + _smoke + _hatsOver + _eyesMod + _headphones + _hatsUnder  + "url(https://raw.githubusercontent.com/thebadcc-eth/mfer-builder/main/images/sketchyMfers/longhair/longhairblackmod.png), " + _shirt + _longHair + _shortHair + _eyes + _mouth + _beard + _type + _background;
 			} else if (_longHair == ("url(" + baseURL + base + longHair[1] + "), ")) {
-			var seed = _hoodies + _watch420 + _smoke + _hatsOver + _headphones + _hatsUnder + "url(https://raw.githubusercontent.com/thebadcc-eth/mfer-builder/main/images/sketchyMfers/longhair/longhairyellowmod.png), " + _shirt + _longHair + _shortHair + _eyes + _mouth + _beard + _type + _background;
+			var seed = _hoodies + _watch420 + _smoke + _hatsOver + _eyesMod + _headphones + _hatsUnder + "url(https://raw.githubusercontent.com/thebadcc-eth/mfer-builder/main/images/sketchyMfers/longhair/longhairyellowmod.png), " + _shirt + _longHair + _shortHair + _eyes + _mouth + _beard + _type + _background;
 			} else {
-			var seed = _hoodies + _watch420 + _smoke + _hatsOver + _headphones + _hatsUnder + _shirt + _longHair + _shortHair + _eyes + _mouth + _beard + _type + _background;
+			var seed = _hoodies + _watch420 + _smoke + _hatsOver + _eyesMod + _headphones + _hatsUnder + _shirt + _longHair + _shortHair + _eyes + _mouth + _beard + _type + _background;
 			
 			}
 		}
