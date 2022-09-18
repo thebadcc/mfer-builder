@@ -184,6 +184,7 @@ function generateMfers(mfers, seedinput) {
 	elements[0].parentNode.removeChild(elements[0]);
 	for (let i = 0; i < mfers; i++){
 		var baseID = document.getElementsByClassName('base')[0].value;	
+		var backgroundRNG = background[Math.floor(Math.random() * 8)];
 		if (baseID == "random") {
 			var base = projects[Math.floor(Math.random() * 5)];
 		} else {
@@ -192,7 +193,7 @@ function generateMfers(mfers, seedinput) {
 		if (t1 == 1) {
 			var _background = "url()"
 		} else if (t1 == 0) {
-			var _background = "url(" + baseURL + base + background[Math.floor(Math.random() * 8)] + ")";
+			var _background = "url(" + baseURL + base + backgroundRNG + ")";
 		} else if (t1 > 1) {
 			var _background = "url(" + baseURL + base + background[t1 - 2] + ")";
 		}
