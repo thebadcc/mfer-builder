@@ -9,7 +9,6 @@ projects[2] = "eos";
 projects[3] = "mfersAhead";
 projects[4] = "mfersBehind";
 projects[5] = "sketchyMfers";
-projects[6] = "mferDinos";
 
 const background = [];
 background[0]= "/background/blue.png";
@@ -202,7 +201,7 @@ function generateMfers(mfers, seedinput) {
 		var shortHairRNG = shortHair[Math.floor(Math.random() * 12)];
 		
 		if (baseID == "random") {
-			var base = projects[Math.floor(Math.random() * 7)];
+			var base = projects[Math.floor(Math.random() * 6)];
 		} else {
 			var base = document.getElementsByClassName('base')[0].value;
 		}
