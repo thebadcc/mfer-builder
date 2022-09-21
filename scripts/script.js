@@ -338,12 +338,14 @@ function generateMfers(mfers, seedinput) {
 		var rollHoodies = Math.floor(Math.random() * 10);
 		if (rollHoodies <= 1 && t9 == 0) {
 			var _hatsOver = "";
+			var _hatsOverMod = "";
 			var _hatsUnder = "";
 			var _shortHair = "";
 			var _longHair = "";
 			var _shirt = "";    
 		} else if (t9 > 1) {
 			var _hatsOver = "";
+			var _hatsOverMod = "";
 			var _hatsUnder = "";
 			var _shortHair = "";
 			var _longHair = "";
@@ -359,6 +361,7 @@ function generateMfers(mfers, seedinput) {
     	var rollOverUnder = Math.floor(Math.random() * 10);
     	if (rollOverUnder <= 2 && t12 == 0) { 
 			var _hatsOver = ""
+			var _hatsOverMod = "";
 			var _shortHair = ""
 			var rollLongHair = Math.floor(Math.random() * 10);
 			if (rollLongHair <= 3 && t11 == 0) {
@@ -368,6 +371,7 @@ function generateMfers(mfers, seedinput) {
       		}
     	} else if (t12 > 1) {
 			var _hatsOver = ""
+			var _hatsOverMod = "";
 			var _shortHair = ""
 			var rollLongHair = Math.floor(Math.random() * 10);
     		if (rollLongHair <= 3 && t11 == 0) {
@@ -396,6 +400,7 @@ function generateMfers(mfers, seedinput) {
     	} else if (rollOverUnder >= 4 && rollOverUnder < 6 && t11 == 0){
 			var _hatsUnder = "";
 			var _hatsOver = "";
+			var _hatsOverMod = "";
 			var _shortHair = "";
 			var rollLongHair = Math.floor(Math.random() * 10);
       		if (rollLongHair <= 3 && t11 == 0) {
@@ -406,6 +411,7 @@ function generateMfers(mfers, seedinput) {
     	} else if (t11 > 1){
     		var _hatsUnder = "";
     		var _hatsOver = "";
+		var _hatsOverMod = "";
     		var _shortHair = "";
     		var rollLongHair = Math.floor(Math.random() * 10);
       		if (rollLongHair <= 3 && t11 == 0) {
@@ -416,10 +422,12 @@ function generateMfers(mfers, seedinput) {
     	} else if (rollOverUnder >= 6 && t14 == 0) {
 			var _hatsUnder = "";
 			var _hatsOver = "";
+			var _hatsOverMod = "";
 			var _longHair = "";
     	} else if (t14 > 1) {
 			var _hatsUnder = "";
 			var _hatsOver = "";
+			var _hatsOverMod = "";
 			var _longHair = "";
     	}
 	}
@@ -434,19 +442,19 @@ function generateMfers(mfers, seedinput) {
 	} else if (base == "sketchyMfers") {
 		if (_hatsUnder == ("url(" + baseURL + base + hatsUnder[3] + "), ") || _hatsUnder == ("url(" + baseURL + base + hatsUnder[4] + "), ") || _hatsUnder == ("url(" + baseURL + base + hatsUnder[5] + "), ") || _hatsUnder == ("url(" + baseURL + base + hatsUnder[6] + "), ")) {
 			if (_longHair == ("url(" + baseURL + base + longHair[0] + "), ")) {
-			var seed = _eyesMod + _hoodies + _watch420 + _smoke + _hatsOver + _hatsUnder + _headphones + "url(https://raw.githubusercontent.com/thebadcc-eth/mfer-builder/main/images/sketchyMfers/longhair/longhairblackmod.png), " + _shirt + _longHair + _shortHair + _eyes + _mouth + _beard + _type  + _background;
+			var seed = _eyesMod + _hoodies + _watch420 + _smoke + _hatsOver + _hatsUnder + _headphones + "url(https://raw.githubusercontent.com/thebadcc-eth/mfer-builder/main/images/sketchyMfers/longhair/longhairblackmod.png), " + _shirt + _longHair + _shortHair + _eyes + _mouth + _beard + _type + _hatsOverMod + _background;
 			} else if (_longHair == ("url(" + baseURL + base + longHair[1] + "), ")) {
-			var seed = _eyesMod + _hoodies + _watch420 + _smoke + _hatsOver + _eyesMod + _hatsUnder + _headphones + "url(https://raw.githubusercontent.com/thebadcc-eth/mfer-builder/main/images/sketchyMfers/longhair/longhairyellowmod.png), " + _shirt + _longHair + _shortHair + _eyes + _mouth + _beard + _type  + _background;
+			var seed = _eyesMod + _hoodies + _watch420 + _smoke + _hatsOver + _eyesMod + _hatsUnder + _headphones + "url(https://raw.githubusercontent.com/thebadcc-eth/mfer-builder/main/images/sketchyMfers/longhair/longhairyellowmod.png), " + _shirt + _longHair + _shortHair + _eyes + _mouth + _beard + _type + _hatsOverMod + _background;
 			} else  {
-			var seed = _eyesMod + _hoodies + _watch420 + _smoke + _hatsOver + _eyesMod + _hatsUnder + _headphones + _shirt + _longHair + _shortHair + _eyes + _mouth + _beard + _type + _background;
+			var seed = _eyesMod + _hoodies + _watch420 + _smoke + _hatsOver + _eyesMod + _hatsUnder + _headphones + _shirt + _longHair + _shortHair + _eyes + _mouth + _beard + _type + _hatsOverMod + _background;
 			}
 		} else {
 			if (_longHair == ("url(" + baseURL + base + longHair[0] + "), ")) {
-			var seed = _eyesMod + _hoodies + _watch420 + _smoke + _hatsOver + _eyesMod + _headphones + _hatsUnder  + "url(https://raw.githubusercontent.com/thebadcc-eth/mfer-builder/main/images/sketchyMfers/longhair/longhairblackmod.png), " + _shirt + _longHair + _shortHair + _eyes + _mouth + _beard + _type + _background;
+			var seed = _eyesMod + _hoodies + _watch420 + _smoke + _hatsOver + _eyesMod + _headphones + _hatsUnder  + "url(https://raw.githubusercontent.com/thebadcc-eth/mfer-builder/main/images/sketchyMfers/longhair/longhairblackmod.png), " + _shirt + _longHair + _shortHair + _eyes + _mouth + _beard + _type + _hatsOverMod + _background;
 			} else if (_longHair == ("url(" + baseURL + base + longHair[1] + "), ")) {
-			var seed = _eyesMod + _hoodies + _watch420 + _smoke + _hatsOver + _eyesMod + _headphones + _hatsUnder + "url(https://raw.githubusercontent.com/thebadcc-eth/mfer-builder/main/images/sketchyMfers/longhair/longhairyellowmod.png), " + _shirt + _longHair + _shortHair + _eyes + _mouth + _beard + _type + _background;
+			var seed = _eyesMod + _hoodies + _watch420 + _smoke + _hatsOver + _eyesMod + _headphones + _hatsUnder + "url(https://raw.githubusercontent.com/thebadcc-eth/mfer-builder/main/images/sketchyMfers/longhair/longhairyellowmod.png), " + _shirt + _longHair + _shortHair + _eyes + _mouth + _beard + _type + _hatsOverMod + _background;
 			} else {
-			var seed = _eyesMod + _hoodies + _watch420 + _smoke + _hatsOver + _eyesMod + _headphones + _hatsUnder + _shirt + _longHair + _shortHair + _eyes + _mouth + _beard + _type + _background;	
+			var seed = _eyesMod + _hoodies + _watch420 + _smoke + _hatsOver + _eyesMod + _headphones + _hatsUnder + _shirt + _longHair + _shortHair + _eyes + _mouth + _beard + _type + _hatsOverMod + _background;	
 			}
 		}
 	}
