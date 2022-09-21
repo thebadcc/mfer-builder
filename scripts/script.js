@@ -56,6 +56,7 @@ eyes[6]= "/eyes/regulareyes.png";
 eyes[7]= "/eyes/shades.png";
 eyes[8]= "/eyes/vr.png";
 eyes[9]= "/eyes/zombieeyes.png";
+eyes[10]= "/eyes/mcxshades.png";
 
 const hoodies = [];
 hoodies[0]= "/hatoverheadphones/hoodie.png";
@@ -187,7 +188,7 @@ function generateMfers(mfers, seedinput) {
 		var baseID = document.getElementsByClassName('base')[0].value;	
 		var backgroundRNG = background[Math.floor(Math.random() * 8)];
 		var typeRNG = type[Math.floor(Math.random() * 5)];
-		var eyesRNG = eyes[Math.floor(Math.random() * 10)];
+		var eyesRNG = eyes[Math.floor(Math.random() * 11)];
 		var mouthRNG = mouth[Math.floor(Math.random() * 2)];
 		var headphonesRNG = headphones[Math.floor(Math.random() * 9)];
 		var smokeRNG = smoke[Math.floor(Math.random() * 3)];
