@@ -19,6 +19,7 @@ background[4]= "/background/red.png";
 background[5]= "/background/space.png";
 background[6]= "/background/tree.png";
 background[7]= "/background/graveyard.png";
+background[8]= "/background/prettycoolpurple.png";
 
 const type = [];
 type[0]= "/type/plainmfer.png";
@@ -186,7 +187,7 @@ function generateMfers(mfers, seedinput) {
 	elements[0].parentNode.removeChild(elements[0]);
 	for (let i = 0; i < mfers; i++){
 		var baseID = document.getElementsByClassName('base')[0].value;	
-		var backgroundRNG = background[Math.floor(Math.random() * 8)];
+		var backgroundRNG = background[Math.floor(Math.random() * 9)];
 		var typeRNG = type[Math.floor(Math.random() * 5)];
 		var eyesRNG = eyes[Math.floor(Math.random() * 11)];
 		var mouthRNG = mouth[Math.floor(Math.random() * 2)];
