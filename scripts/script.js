@@ -134,6 +134,7 @@ shortHair[10]= "/shorthair/mohawkyellow.png";
 const longHair = [];
 longHair[0]= "/longhair/longhairblack.png";
 longHair[1]= "/longhair/longhairyellow.png";
+longHair[2]= "/longhair/prettycoolhair.png";
 
 const mouth = [];
 mouth[0]= "/mouth/flat.png";
@@ -199,7 +200,7 @@ function generateMfers(mfers, seedinput) {
 		var shirtRNG = shirt[Math.floor(Math.random() * 14)];
 		var hatsUnderRNG = hatsUnder[Math.floor(Math.random() * 24)];
 		var hatsOverRNG = hatsOver[Math.floor(Math.random() * 3)];
-		var longHairRNG = longHair[Math.floor(Math.random() * 2)];
+		var longHairRNG = longHair[Math.floor(Math.random() * 3)];
 		var shortHairRNG = shortHair[Math.floor(Math.random() * 12)];
 		
 		if (baseID == "random") {
