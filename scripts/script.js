@@ -297,6 +297,7 @@ function generateMfers(mfers, seedinput) {
 			var _hoodies = "url(" + baseURL + base + hoodiesRNG + "), ";
 		} else if (t9 > 1) {
 			console.log(base);
+			console.log(mfers[8]);
             		var _hoodies = "url(" + baseURL + base + hoodies[t9 - 2] + "), ";
 		}
 		if (t10 == 1) {
