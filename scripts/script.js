@@ -296,7 +296,7 @@ function generateMfers(mfers, seedinput) {
 		} else if (t9 == 0) {
 			var _hoodies = "url(" + baseURL + base + hoodiesRNG + "), ";
 		} else if (t9 > 1) {
-			var objArr = {mfers[], creyzies[]};
+			var objArr = {mfers, creyzies};
 			console.log(objArr[mfers][8]);
             		var _hoodies = "url(" + baseURL + base + hoodies[t9 - 2] + "), ";
 		}
