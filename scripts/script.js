@@ -167,7 +167,7 @@ shortHair[9]= "/shorthair/mohawkred.png";
 shortHair[10]= "/shorthair/mohawkyellow.png";
 
 // function to generate mfers
-function generateMfers(mfers, seedinput) {
+function generateMfers(count, seedinput) {
 	
 	document.getElementsByClassName("html-content-holder")[0].style.display = "inherit";
 	
@@ -191,7 +191,7 @@ function generateMfers(mfers, seedinput) {
 	div.setAttribute('class', 'mferImg');
 	document.getElementsByClassName('mferWrapper')[0].appendChild(div);
 	elements[0].parentNode.removeChild(elements[0]);
-	for (let i = 0; i < mfers; i++){
+	for (let i = 0; i < count; i++){
 		var baseID = document.getElementsByClassName('base')[0].value;	
 		var backgroundRNG = background[Math.floor(Math.random() * 9)];
 		var typeRNG = type[Math.floor(Math.random() * 5)];
