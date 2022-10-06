@@ -296,6 +296,8 @@ function generateMfers(mfers, seedinput) {
 		} else if (t9 == 0) {
 			var _hoodies = "url(" + baseURL + base + hoodiesRNG + "), ";
 		} else if (t9 > 1) {
+    			var number = window[base][8];
+    			console.log(number);
             		var _hoodies = "url(" + baseURL + base + hoodies[t9 - 2] + "), ";
 		}
 		if (t10 == 1) {
