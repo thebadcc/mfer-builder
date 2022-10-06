@@ -292,14 +292,7 @@ function generateMfers(mfers, seedinput) {
 		} else if (t9 == 0) {
 			var _hoodies = "url(" + baseURL + base + hoodiesRNG + "), ";
 		} else if (t9 > 1) {
-			var hoodieCheck = baseURL + base + hoodies[t9 - 2];
-			http.open('HEAD', hoodieCheck, false);
-        		http.send();
-        		if (http.status != 404) {
-            			var _hoodies = "url(" + baseURL + base + hoodies[0] + "), ";
-        		} else {
-            			var _hoodies = "url(" + baseURL + base + hoodies[t9 - 2] + "), ";
-			}
+            		var _hoodies = "url(" + baseURL + base + hoodies[t9 - 2] + "), ";
 		}
 		if (t10 == 1) {
 			var _shirt = "";
