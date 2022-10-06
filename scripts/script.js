@@ -10,7 +10,8 @@ projects[3] = "mfersAhead";
 projects[4] = "mfersBehind";
 projects[5] = "sketchyMfers";
 
-const mfers = [];
+const mfers = [8, 4, 10, 1, 9, 2, 11, 1, 14, 13, 23, 2, 2, 11];
+const creyzies = [8, 4, 10, 1, 9, 2, 11, 1, 14, 13, 23, 2, 2, 11];
 
 const background = [];
 background[0]= "/background/blue.png";
@@ -47,6 +48,22 @@ const mouth = [];
 mouth[0]= "/mouth/flat.png";
 mouth[1]= "/mouth/smile.png";
 
+const headphones = [];
+headphones[0]= "/headphones/RCSheadphones.png";
+headphones[1]= "/headphones/blackheadphones.png";
+headphones[2]= "/headphones/blueheadphones.png";
+headphones[3]= "/headphones/goldheadphones.png";
+headphones[4]= "/headphones/greenheadphones.png";
+headphones[5]= "/headphones/linedheadphones.png";
+headphones[6]= "/headphones/pinkheadphones.png";
+headphones[7]= "/headphones/redheadphones.png";
+headphones[8]= "/headphones/whiteheadphones.png";
+
+const smoke = [];
+smoke[0]= "/smoke/cigblack.png";
+smoke[1]= "/smoke/cigwhite.png";
+smoke[2]= "/smoke/pipe.png";
+
 const watch420 = [];
 watch420[0]= "/watch/argoblack.png";
 watch420[1]= "/watch/argowhite.png";
@@ -82,16 +99,27 @@ hoodies[12]= "/hatoverheadphones/masterchanhoodie.png";
 hoodies[13]= "/hatoverheadphones/sonichoodie.png";
 hoodies[14]= "/hatoverheadphones/rabbithoodie.png";
 
-const headphones = [];
-headphones[0]= "/headphones/RCSheadphones.png";
-headphones[1]= "/headphones/blackheadphones.png";
-headphones[2]= "/headphones/blueheadphones.png";
-headphones[3]= "/headphones/goldheadphones.png";
-headphones[4]= "/headphones/greenheadphones.png";
-headphones[5]= "/headphones/linedheadphones.png";
-headphones[6]= "/headphones/pinkheadphones.png";
-headphones[7]= "/headphones/redheadphones.png";
-headphones[8]= "/headphones/whiteheadphones.png";
+
+const shirt = [];
+shirt[0]= "/shirt/collaredshirtblue.png";
+shirt[1]= "/shirt/collaredshirtgreen.png";
+shirt[2]= "/shirt/collaredshirtpink.png";
+shirt[3]= "/shirt/collaredshirtturquoise.png";
+shirt[4]= "/shirt/collaredshirtwhite.png";
+shirt[5]= "/shirt/collaredshirtyellow.png";
+shirt[6]= "/shirt/hoodiedownblue.png";
+shirt[7]= "/shirt/hoodiedowngray.png";
+shirt[8]= "/shirt/hoodiedowngreen.png";
+shirt[9]= "/shirt/hoodiedownpink.png";
+shirt[10]= "/shirt/hoodiedownred.png";
+shirt[11]= "/shirt/hoodiedownwhite.png";
+shirt[12]= "/chain/goldchain.png";
+shirt[13]= "/chain/silverchain.png";
+
+const longHair = [];
+longHair[0]= "/longhair/longhairblack.png";
+longHair[1]= "/longhair/longhairyellow.png";
+longHair[2]= "/longhair/prettycoolhair.png";
 
 const hatsUnder = [];
 hatsUnder[0]= "/hatunderheadphones/bandanablue.png";
@@ -136,32 +164,6 @@ shortHair[7]= "/shorthair/mohawkpink.png";
 shortHair[8]= "/shorthair/mohawkpurple.png";
 shortHair[9]= "/shorthair/mohawkred.png";
 shortHair[10]= "/shorthair/mohawkyellow.png";
-
-const longHair = [];
-longHair[0]= "/longhair/longhairblack.png";
-longHair[1]= "/longhair/longhairyellow.png";
-longHair[2]= "/longhair/prettycoolhair.png";
-
-const shirt = [];
-shirt[0]= "/shirt/collaredshirtblue.png";
-shirt[1]= "/shirt/collaredshirtgreen.png";
-shirt[2]= "/shirt/collaredshirtpink.png";
-shirt[3]= "/shirt/collaredshirtturquoise.png";
-shirt[4]= "/shirt/collaredshirtwhite.png";
-shirt[5]= "/shirt/collaredshirtyellow.png";
-shirt[6]= "/shirt/hoodiedownblue.png";
-shirt[7]= "/shirt/hoodiedowngray.png";
-shirt[8]= "/shirt/hoodiedowngreen.png";
-shirt[9]= "/shirt/hoodiedownpink.png";
-shirt[10]= "/shirt/hoodiedownred.png";
-shirt[11]= "/shirt/hoodiedownwhite.png";
-shirt[12]= "/chain/goldchain.png";
-shirt[13]= "/chain/silverchain.png";
-
-const smoke = [];
-smoke[0]= "/smoke/cigblack.png";
-smoke[1]= "/smoke/cigwhite.png";
-smoke[2]= "/smoke/pipe.png";
 
 // function to generate mfers
 function generateMfers(mfers, seedinput) {
