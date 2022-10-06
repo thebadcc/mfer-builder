@@ -12,6 +12,7 @@ projects[5] = "sketchyMfers";
 
 const mfers = [8, 4, 10, 1, 9, 2, 11, 1, 14, 13, 23, 2, 2, 11];
 const creyzies = [8, 4, 10, 1, 9, 2, 11, 1, 14, 13, 23, 2, 2, 11];
+console.log(mfers[8]);
 
 const background = [];
 background[0]= "/background/blue.png";
