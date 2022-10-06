@@ -300,6 +300,7 @@ function generateMfers(mfers, seedinput) {
         		} else {
             			var _hoodies = "url(" + baseURL + base + hoodies[t9 - 2] + "), ";
 			}
+		}
 		if (t10 == 1) {
 			var _shirt = "";
 		} else if (t10 == 0) {
