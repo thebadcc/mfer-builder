@@ -10,6 +10,8 @@ projects[3] = "mfersAhead";
 projects[4] = "mfersBehind";
 projects[5] = "sketchyMfers";
 
+const mfers = [];
+
 const background = [];
 background[0]= "/background/blue.png";
 background[1]= "/background/yellow.png";
@@ -28,6 +30,23 @@ type[2]= "/type/zombiemfer.png";
 type[3]= "/type/apemfer.png";
 type[4]= "/type/alienmfer.png";
 
+const eyes = [];
+eyes[0]= "/eyes/3Dglasses.png";
+eyes[1]= "/eyes/alieneyes.png";
+eyes[2]= "/eyes/eyemask.png";
+eyes[3]= "/eyes/eyepatch.png";
+eyes[4]= "/eyes/nerdglasses.png";
+eyes[5]= "/eyes/purpleshades.png";
+eyes[6]= "/eyes/regulareyes.png";
+eyes[7]= "/eyes/shades.png";
+eyes[8]= "/eyes/vr.png";
+eyes[9]= "/eyes/zombieeyes.png";
+eyes[10]= "/eyes/mcxshades.png";
+
+const mouth = [];
+mouth[0]= "/mouth/flat.png";
+mouth[1]= "/mouth/smile.png";
+
 const watch420 = [];
 watch420[0]= "/watch/argoblack.png";
 watch420[1]= "/watch/argowhite.png";
@@ -45,19 +64,6 @@ watch420[11]= "/watch/subturquoise.png";
 const beard = [];
 beard[0]= "/beard/fullbeard.png";
 beard[1]= "/beard/shadowbeard.png";
-
-const eyes = [];
-eyes[0]= "/eyes/3Dglasses.png";
-eyes[1]= "/eyes/alieneyes.png";
-eyes[2]= "/eyes/eyemask.png";
-eyes[3]= "/eyes/eyepatch.png";
-eyes[4]= "/eyes/nerdglasses.png";
-eyes[5]= "/eyes/purpleshades.png";
-eyes[6]= "/eyes/regulareyes.png";
-eyes[7]= "/eyes/shades.png";
-eyes[8]= "/eyes/vr.png";
-eyes[9]= "/eyes/zombieeyes.png";
-eyes[10]= "/eyes/mcxshades.png";
 
 const hoodies = [];
 hoodies[0]= "/hatoverheadphones/hoodie.png";
@@ -135,10 +141,6 @@ const longHair = [];
 longHair[0]= "/longhair/longhairblack.png";
 longHair[1]= "/longhair/longhairyellow.png";
 longHair[2]= "/longhair/prettycoolhair.png";
-
-const mouth = [];
-mouth[0]= "/mouth/flat.png";
-mouth[1]= "/mouth/smile.png";
 
 const shirt = [];
 shirt[0]= "/shirt/collaredshirtblue.png";
