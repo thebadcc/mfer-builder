@@ -198,7 +198,7 @@ function generateMfers(count, seedinput) {
 		} else {
 			var base = document.getElementsByClassName('base')[0].value;
 		}
-		var backgroundRNG = background[Math.floor(Math.random() * 14)];
+		var backgroundRNG = background[Math.floor(Math.random() * 9)];
 		var typeRNG = type[Math.floor(Math.random() * 5)];
 		var eyesRNG = eyes[Math.floor(Math.random() * 11)];
 		var mouthRNG = mouth[Math.floor(Math.random() * 2)];
