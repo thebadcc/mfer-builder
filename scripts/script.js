@@ -297,10 +297,13 @@ function generateMfers(count, seedinput) {
 			console.log(url)
 			http.open('HEAD', url, false);
 			http.send();
+			console.log(http.status);
 			if (http.status == 200) {
-            			var _hoodies = "url(" + baseURL + base + hoodies[t9 - 2] + "), ";
+            			var _hoodies = "url(" url + "), ";
+				console.log("works");
 			} else {
-				var _hoodies = "url(" + baseURL + base + hoodies[2] + "), ";
+				var _hoodies = "url(" + baseURL + base + hoodies[0] + "), ";
+				console.log("nope");
 			}
 		}
 		if (t10 == 1) {
