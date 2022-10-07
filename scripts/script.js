@@ -10,10 +10,6 @@ projects[3] = "mfersAhead";
 projects[4] = "mfersBehind";
 projects[5] = "sketchyMfers";
 
-const mfers = [8, 4, 10, 1, 9, 2, 11, 1, 14, 13, 23, 2, 2, 11];
-const creyzies = [8, 4, 10, 1, 9, 2, 11, 1, 14, 13, 23, 2, 2, 11];
-console.log(mfers[8]);
-
 const background = [];
 background[0]= "/background/blue.png";
 background[1]= "/background/yellow.png";
@@ -297,8 +293,11 @@ function generateMfers(count, seedinput) {
 		} else if (t9 == 0) {
 			var _hoodies = "url(" + baseURL + base + hoodiesRNG + "), ";
 		} else if (t9 > 1) {
-			console.log(base);
-			console.log(mfers[8]);
+			var url = baseURL + base + hoodies[t9 - 2];
+    			var http = new XMLHttpRequest();
+    			http.open('HEAD', url, false);
+    			http.send();
+    			console.log(http.status);
             		var _hoodies = "url(" + baseURL + base + hoodies[t9 - 2] + "), ";
 		}
 		if (t10 == 1) {
