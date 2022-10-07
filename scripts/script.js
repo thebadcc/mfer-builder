@@ -295,25 +295,9 @@ function generateMfers(count, seedinput) {
 		if (t9 == 1) {
 			var _hoodies = "";
 		} else if (t9 == 0) {
-			var httpHoodie = new XMLHttpRequest();
-			var urlHoodie = baseURL + base + hoodiesRNG;
-			httpHoodie.open('HEAD', urlHoodie, false);
-			httpHoodie.send();
-			if (httpHoodie.status == 200) {
-            			var _hoodies = "url(" + urlHoodie + "), ";
-			} else {
-				var _hoodies = "url(" + baseURL + base + hoodies[0] + "), ";
-			}
+            		var _hoodies = "url(" + baseURL + base + hoodiesRNG + "), ";
 		} else if (t9 > 1) {
-			var httpHoodie = new XMLHttpRequest();
-			var urlHoodie = baseURL + base + hoodies[t9 - 2];
-			httpHoodie.open('HEAD', urlHoodie, false);
-			httpHoodie.send();
-			if (httpHoodie.status == 200) {
-            			var _hoodies = "url(" + urlHoodie + "), ";
-			} else {
-				var _hoodies = "url(" + baseURL + base + hoodies[0] + "), ";
-			}
+			var _hoodies = "url(" + baseURL + base + hoodies[t9 - 2] + "), ";
 		}
 		if (t10 == 1) {
 			var _shirt = "";
@@ -325,25 +309,9 @@ function generateMfers(count, seedinput) {
 		if (t11 == 1) {
 			var _longHair = "";
 		} else if (t11 == 0) {
-			var httpLongHair = new XMLHttpRequest();
-			var urlLongHair = baseURL + base + longHairRNG;
-			httpLongHair.open('HEAD', urlLongHair, false);
-			httpLongHair.send();
-			if (httpLongHair.status == 200) {
-            			var _longHair = "url(" + urlLongHair + "), ";
-			} else {
-				var _longHair = "url(" + baseURL + base + longHair[0] + "), ";
-			}
+			var _longHair = "url(" + baseURL + base + longHairRNG + "), ";
 		} else if (t11 > 1) {
-			var httpLongHair = new XMLHttpRequest();
-			var urlLongHair = baseURL + base + longHair[t11 - 2];
-			httpLongHair.open('HEAD', urlLongHair, false);
-			httpLongHair.send();
-			if (httpLongHair.status == 200) {
-            			var _longHair = "url(" + urlLongHair + "), ";
-			} else {
-				var _longHair = "url(" + baseURL + base + longHair[0] + "), ";
-			}
+			var _longHair = "url(" + baseURL + base + longHair[t11 - 2] + "), ";
 		}
 		if (t12 == 1) {
 			var _hatsUnder = "";           
