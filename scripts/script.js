@@ -294,12 +294,13 @@ function generateMfers(count, seedinput) {
 		} else if (t9 > 1) {
 			var http = new XMLHttpRequest();
 			var url = baseURL + base + background[t9 - 2];
+			console.log(url)
 			http.open('HEAD', url, false);
 			http.send();
-			if (http.status == "404") {
-            			var _hoodies = "url(" + baseURL + base + hoodies[2] + "), ";
+			if (http.status == 200) {
+            			var _hoodies = "url(" + baseURL + base + hoodies[t9 - 2] + "), ";
 			} else {
-				var _hoodies = "url(" + baseURL + base + hoodies[t9 - 2] + "), ";
+				var _hoodies = "url(" + baseURL + base + hoodies[2] + "), ";
 			}
 		}
 		if (t10 == 1) {
