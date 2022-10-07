@@ -294,10 +294,8 @@ function generateMfers(count, seedinput) {
 		} else if (t9 > 1) {
 			var http = new XMLHttpRequest();
 			var url = baseURL + base + hoodies[t9 - 2];
-			console.log(url)
 			http.open('HEAD', url, false);
 			http.send();
-			console.log(http.status);
 			if (http.status == 200) {
             			var _hoodies = "url(" + url + "), ";
 			} else {
