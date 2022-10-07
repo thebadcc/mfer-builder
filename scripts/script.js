@@ -320,9 +320,25 @@ function generateMfers(count, seedinput) {
 		if (t11 == 1) {
 			var _longHair = "";
 		} else if (t11 == 0) {
-			var _longHair = "url(" + baseURL + base + longHairRNG + "), ";
+			var httpLongHair = new XMLHttpRequest();
+			var urlLongHair = baseURL + base + longHairRNG;
+			httpLongHair.open('HEAD', urlLongHair, false);
+			httpLongHair.send();
+			if (httpLongHair.status == 200) {
+            			var _longHair = "url(" + urlLongHair + "), ";
+			} else {
+				var _longHair = "url(" + baseURL + base + longHair[0] + "), ";
+			}
 		} else if (t11 > 1) {
-			var _longHair = "url(" + baseURL + base + longHair[t11 - 2] + "), ";
+			var httpLongHair = new XMLHttpRequest();
+			var urlLongHair = baseURL + base + longHair[t11 - 2];
+			httpLongHair.open('HEAD', urlLongHair, false);
+			httpLongHair.send();
+			if (httpLongHair.status == 200) {
+            			var _longHair = "url(" + urlLongHair + "), ";
+			} else {
+				var _longHair = "url(" + baseURL + base + longHair[0] + "), ";
+			}
 		}
 		if (t12 == 1) {
 			var _hatsUnder = "";           
