@@ -96,7 +96,6 @@ hoodies[12]= "/hatoverheadphones/masterchanhoodie.png";
 hoodies[13]= "/hatoverheadphones/sonichoodie.png";
 hoodies[14]= "/hatoverheadphones/rabbithoodie.png";
 
-
 const shirt = [];
 shirt[0]= "/shirt/collaredshirtblue.png";
 shirt[1]= "/shirt/collaredshirtgreen.png";
@@ -293,7 +292,15 @@ function generateMfers(count, seedinput) {
 		} else if (t9 == 0) {
 			var _hoodies = "url(" + baseURL + base + hoodiesRNG + "), ";
 		} else if (t9 > 1) {
+			var http = new XMLHttpRequest();
+			var url = baseURL + base + background[t9 - 2];
+			http.open('HEAD', url, false);
+			http.send();
+			if (http.status == 200) {
             		var _hoodies = "url(" + baseURL + base + hoodies[t9 - 2] + "), ";
+			} else if {
+			var _hoodies = "url(" + baseURL + base + hoodies[2] + "), ";
+			}
 		}
 		if (t10 == 1) {
 			var _shirt = "";
