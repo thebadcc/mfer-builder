@@ -299,11 +299,9 @@ function generateMfers(count, seedinput) {
 			http.send();
 			console.log(http.status);
 			if (http.status == 200) {
-            			var _hoodies = "url(" url + "), ";
-				console.log("works");
+            			var _hoodies = "url(" + url + "), ";
 			} else {
 				var _hoodies = "url(" + baseURL + base + hoodies[0] + "), ";
-				console.log("nope");
 			}
 		}
 		if (t10 == 1) {
