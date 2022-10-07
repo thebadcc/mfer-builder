@@ -218,7 +218,7 @@ function generateMfers(count, seedinput) {
 		} else if (t1 == 0) {
             		var _background = "url(" +  baseURL + base + backgroundRNG + "), ";
 		} else if (t1 > 1) {
-			var _background = "url(" +  baseURL + base + background[t2 - 2] + "), ";
+			var _background = "url(" +  baseURL + base + background[t1 - 2] + "), ";
 		}
 		if (t2 == 1) {
 			var _type = "";
