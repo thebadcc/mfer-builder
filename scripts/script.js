@@ -290,14 +290,22 @@ function generateMfers(count, seedinput) {
 		if (t9 == 1) {
 			var _hoodies = "";
 		} else if (t9 == 0) {
-			var _hoodies = "url(" + baseURL + base + hoodiesRNG + "), ";
+			var httpHoodie = new XMLHttpRequest();
+			var urlHoodie = baseURL + base + hoodiesRNG;
+			httpHoodie.open('HEAD', urlHoodie, false);
+			httpHoodie.send();
+			if (httpHoodie.status == 200) {
+            			var _hoodies = "url(" + urlHoodie + "), ";
+			} else {
+				var _hoodies = "url(" + baseURL + base + hoodies[0] + "), ";
+			}
 		} else if (t9 > 1) {
-			var http = new XMLHttpRequest();
-			var url = baseURL + base + hoodies[t9 - 2];
-			http.open('HEAD', url, false);
-			http.send();
-			if (http.status == 200) {
-            			var _hoodies = "url(" + url + "), ";
+			var httpHoodie = new XMLHttpRequest();
+			var urlHoodie = baseURL + base + hoodies[t9 - 2];
+			httpHoodie.open('HEAD', urlHoodie, false);
+			httpHoodie.send();
+			if (httpHoodie.status == 200) {
+            			var _hoodies = "url(" + urlHoodie + "), ";
 			} else {
 				var _hoodies = "url(" + baseURL + base + hoodies[0] + "), ";
 			}
