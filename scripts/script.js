@@ -183,7 +183,7 @@ function generateMfers(count, seedinput) {
 	var t14 = parseFloat(seedinput.slice(26, 28));
 	for (let y = 1; y < 14; y++){
 		var http = new XMLHttpRequest();
-		var trait = t + y;
+		var trait = "t" + y;
 		var url = baseURL + base + background[trait - 2];
 		http.open('HEAD', url, false);
 		http.send();
