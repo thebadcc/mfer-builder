@@ -20,6 +20,11 @@ background[5]= "/background/space.png";
 background[6]= "/background/tree.png";
 background[7]= "/background/graveyard.png";
 background[8]= "/background/prettycoolpurple.png";
+background[9]= "/background/TWU_negative.png";
+background[10]= "/background/TWU_northerLights.png";
+background[11]= "/background/TWU_redLeopard2.png";
+background[12]= "/background/TWU_sherbert.png";
+background[13]= "/background/TWU_water.png";
 
 const type = [];
 type[0]= "/type/plainmfer.png";
@@ -193,7 +198,7 @@ function generateMfers(count, seedinput) {
 		} else {
 			var base = document.getElementsByClassName('base')[0].value;
 		}
-		var backgroundRNG = background[Math.floor(Math.random() * 9)];
+		var backgroundRNG = background[Math.floor(Math.random() * 14)];
 		var typeRNG = type[Math.floor(Math.random() * 5)];
 		var eyesRNG = eyes[Math.floor(Math.random() * 11)];
 		var mouthRNG = mouth[Math.floor(Math.random() * 2)];
@@ -211,9 +216,9 @@ function generateMfers(count, seedinput) {
 		if (t1 == 1) {
 			var _background = "url()"
 		} else if (t1 == 0) {
-            		var _background = "url(" +  baseURL + base + backgroundRNG + "), ";
+			var _background = "url(" + baseURL + base + backgroundRNG + ")";
 		} else if (t1 > 1) {
-			var _background = "url(" +  baseURL + base + background[t1 - 2] + "), ";
+			var _background = "url(" + baseURL + base + background[t1 - 2] + ")";
 		}
 		if (t2 == 1) {
 			var _type = "";
@@ -290,9 +295,25 @@ function generateMfers(count, seedinput) {
 		if (t9 == 1) {
 			var _hoodies = "";
 		} else if (t9 == 0) {
-            		var _hoodies = "url(" + baseURL + base + hoodiesRNG + "), ";
+			var httpHoodie = new XMLHttpRequest();
+			var urlHoodie = baseURL + base + hoodiesRNG;
+			httpHoodie.open('HEAD', urlHoodie, false);
+			httpHoodie.send();
+			if (httpHoodie.status == 200) {
+            			var _hoodies = "url(" + urlHoodie + "), ";
+			} else {
+				var _hoodies = "url(" + baseURL + base + hoodies[0] + "), ";
+			}
 		} else if (t9 > 1) {
-			var _hoodies = "url(" + baseURL + base + hoodies[t9 - 2] + "), ";
+			var httpHoodie = new XMLHttpRequest();
+			var urlHoodie = baseURL + base + hoodies[t9 - 2];
+			httpHoodie.open('HEAD', urlHoodie, false);
+			httpHoodie.send();
+			if (httpHoodie.status == 200) {
+            			var _hoodies = "url(" + urlHoodie + "), ";
+			} else {
+				var _hoodies = "url(" + baseURL + base + hoodies[0] + "), ";
+			}
 		}
 		if (t10 == 1) {
 			var _shirt = "";
@@ -304,9 +325,25 @@ function generateMfers(count, seedinput) {
 		if (t11 == 1) {
 			var _longHair = "";
 		} else if (t11 == 0) {
-			var _longHair = "url(" + baseURL + base + longHairRNG + "), ";
+			var httpLongHair = new XMLHttpRequest();
+			var urlLongHair = baseURL + base + longHairRNG;
+			httpLongHair.open('HEAD', urlLongHair, false);
+			httpLongHair.send();
+			if (httpLongHair.status == 200) {
+            			var _longHair = "url(" + urlLongHair + "), ";
+			} else {
+				var _longHair = "url(" + baseURL + base + longHair[0] + "), ";
+			}
 		} else if (t11 > 1) {
-			var _longHair = "url(" + baseURL + base + longHair[t11 - 2] + "), ";
+			var httpLongHair = new XMLHttpRequest();
+			var urlLongHair = baseURL + base + longHair[t11 - 2];
+			httpLongHair.open('HEAD', urlLongHair, false);
+			httpLongHair.send();
+			if (httpLongHair.status == 200) {
+            			var _longHair = "url(" + urlLongHair + "), ";
+			} else {
+				var _longHair = "url(" + baseURL + base + longHair[0] + "), ";
+			}
 		}
 		if (t12 == 1) {
 			var _hatsUnder = "";           
