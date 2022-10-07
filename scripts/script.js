@@ -298,7 +298,7 @@ function generateMfers(count, seedinput) {
 			http.send();
 			if (http.status == 200) {
             		var _hoodies = "url(" + baseURL + base + hoodies[t9 - 2] + "), ";
-			} else if {
+			} else {
 			var _hoodies = "url(" + baseURL + base + hoodies[2] + "), ";
 			}
 		}
