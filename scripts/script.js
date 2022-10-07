@@ -216,9 +216,25 @@ function generateMfers(count, seedinput) {
 		if (t1 == 1) {
 			var _background = "url()"
 		} else if (t1 == 0) {
-			var _background = "url(" + baseURL + base + backgroundRNG + ")";
+			var httpBackground = new XMLHttpRequest();
+			var urlBackground = baseURL + base + backgroundRNG;
+			httpBackground.open('HEAD', urlBackground, false);
+			httpBackground.send();
+			if (httpBackground.status == 200) {
+            			var _background = "url(" + urlBackground + "), ";
+			} else {
+				var _background = "url(" + baseURL + base + background[0] + "), ";
+			}
 		} else if (t1 > 1) {
-			var _background = "url(" + baseURL + base + background[t1 - 2] + ")";
+			var httpBackground = new XMLHttpRequest();
+			var urlBackground = baseURL + base + background[t1 - 2];
+			httpBackground.open('HEAD', urlBackground, false);
+			httpBackground.send();
+			if (httpBackground.status == 200) {
+            			var _background = "url(" + urlBackground + "), ";
+			} else {
+				var _background = "url(" + baseURL + base + background[0] + "), ";
+			}
 		}
 		if (t2 == 1) {
 			var _type = "";
