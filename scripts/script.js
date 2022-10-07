@@ -181,14 +181,7 @@ function generateMfers(count, seedinput) {
 	var t12 = parseFloat(seedinput.slice(22, 24));
 	var t13 = parseFloat(seedinput.slice(24, 26));
 	var t14 = parseFloat(seedinput.slice(26, 28));
-	for (let y = 1; y < 14; y++){
-		var http = new XMLHttpRequest();
-		var trait = "t" + y;
-		var url = baseURL + base + background[trait - 2];
-		http.open('HEAD', url, false);
-		http.send();
-		console.log(http.status);
-	}
+
 	const elements = document.getElementsByClassName('mferImg');
 	var div = document.createElement("div");
 	div.setAttribute('class', 'mferImg');
@@ -196,6 +189,11 @@ function generateMfers(count, seedinput) {
 	elements[0].parentNode.removeChild(elements[0]);
 	for (let i = 0; i < count; i++){
 		var baseID = document.getElementsByClassName('base')[0].value;	
+		if (baseID == "random") {
+			var base = projects[Math.floor(Math.random() * 6)];
+		} else {
+			var base = document.getElementsByClassName('base')[0].value;
+		}
 		var backgroundRNG = background[Math.floor(Math.random() * 9)];
 		var typeRNG = type[Math.floor(Math.random() * 5)];
 		var eyesRNG = eyes[Math.floor(Math.random() * 11)];
@@ -210,12 +208,7 @@ function generateMfers(count, seedinput) {
 		var hatsOverRNG = hatsOver[Math.floor(Math.random() * 3)];
 		var longHairRNG = longHair[Math.floor(Math.random() * 3)];
 		var shortHairRNG = shortHair[Math.floor(Math.random() * 12)];
-		
-		if (baseID == "random") {
-			var base = projects[Math.floor(Math.random() * 6)];
-		} else {
-			var base = document.getElementsByClassName('base')[0].value;
-		}
+
 		if (t1 == 1) {
 			var _background = "url()"
 		} else if (t1 == 0) {
