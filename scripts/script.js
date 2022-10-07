@@ -20,6 +20,11 @@ background[5]= "/background/space.png";
 background[6]= "/background/tree.png";
 background[7]= "/background/graveyard.png";
 background[8]= "/background/prettycoolpurple.png";
+background[9]= "/background/TWU_negative.png";
+background[10]= "/background/TWU_northerLights.png";
+background[11]= "/background/TWU_redLeopard2.png";
+background[12]= "/background/TWU_sherbert.png";
+background[13]= "/background/TWU_water.png";
 
 const type = [];
 type[0]= "/type/plainmfer.png";
@@ -193,7 +198,7 @@ function generateMfers(count, seedinput) {
 		} else {
 			var base = document.getElementsByClassName('base')[0].value;
 		}
-		var backgroundRNG = background[Math.floor(Math.random() * 9)];
+		var backgroundRNG = background[Math.floor(Math.random() * 14)];
 		var typeRNG = type[Math.floor(Math.random() * 5)];
 		var eyesRNG = eyes[Math.floor(Math.random() * 11)];
 		var mouthRNG = mouth[Math.floor(Math.random() * 2)];
