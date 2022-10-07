@@ -181,7 +181,14 @@ function generateMfers(count, seedinput) {
 	var t12 = parseFloat(seedinput.slice(22, 24));
 	var t13 = parseFloat(seedinput.slice(24, 26));
 	var t14 = parseFloat(seedinput.slice(26, 28));
-
+	for (let y = 1; y < 14; y++){
+		var http = new XMLHttpRequest();
+		var trait = t + y
+		var url = baseURL + base + background[trait - 2];
+		http.open('HEAD', url, false);
+		http.send();
+		console.log(http.status);
+	}
 	const elements = document.getElementsByClassName('mferImg');
 	var div = document.createElement("div");
 	div.setAttribute('class', 'mferImg');
@@ -293,11 +300,6 @@ function generateMfers(count, seedinput) {
 		} else if (t9 == 0) {
 			var _hoodies = "url(" + baseURL + base + hoodiesRNG + "), ";
 		} else if (t9 > 1) {
-			var url = baseURL + base + hoodies[t9 - 2];
-    			var http = new XMLHttpRequest();
-    			http.open('HEAD', url, false);
-    			http.send();
-    			console.log(http.status);
             		var _hoodies = "url(" + baseURL + base + hoodies[t9 - 2] + "), ";
 		}
 		if (t10 == 1) {
