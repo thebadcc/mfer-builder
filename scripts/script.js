@@ -21,10 +21,10 @@ background[6]= "/background/tree.png";
 background[7]= "/background/graveyard.png";
 background[8]= "/background/prettycoolpurple.png";
 background[9]= "/background/TWU_negative.png";
-background[10]= "/background/TWU_northerLights.png";
+background[10]= "/background/TWU_bubblegum.png";
 background[11]= "/background/TWU_redLeopard2.png";
-background[12]= "/background/TWU_sherbert.png";
-background[13]= "/background/TWU_water.png";
+background[12]= "/background/TWU_ice.png";
+background[13]= "/background/TWU_orangeCheetah.png";
 
 const type = [];
 type[0]= "/type/plainmfer.png";
