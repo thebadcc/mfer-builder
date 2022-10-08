@@ -514,8 +514,6 @@ function generateMfers(count, seedinput) {
 		mferImg.className = 'mfers';
 		document.getElementsByClassName("mferImg")[0].appendChild(mferImg);
 	});
-	document.getElementsByClassName("html-content-holder")[0].style.backgroundImage = 'URL(https://raw.githubusercontent.com/thebadcc-eth/mfer-builder/main/images/eos/endofsartoshi.jpg)';
-	
 }
 
 	document.getElementsByClassName("html-content-holder")[0].style.display = "none";
