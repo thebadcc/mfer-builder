@@ -230,16 +230,32 @@ function generateMfers(count, seedinput) {
 		if (t3 == 1) {
 			var _eyes = "";
 		} else if (t3 == 0) {
-			var _eyes = "url(" + baseURL + base + eyesRNG + "), ";
-			if (base == projects[5]) {
-			var _eyesMod = "url(" + baseURL + base + "/modifiers" + eyesRNG + "), ";
+			var httpEyes = new XMLHttpRequest();
+			var urlEyes = baseURL + base + eyesRNG;
+			httpEyes.open('HEAD', urlEyes, false);
+			httpEyes.send();
+			if (httpEyes.status == 200) {
+            			var _eyes = "url(" + urlEyes + "), ";
+				if (base == projects[5]) {
+					var _eyesMod = "url(" + baseURL + base + "/modifiers" + eyesRNG + "), ";
+				} else {
+				}	
 			} else {
+				var _eyes = "url(" + baseURL + base + eyes[6] + "), ";
 			}
 		} else if (t3 > 1) {
-			var _eyes = "url(" + baseURL + base + eyes[t3 - 2] + "), ";
-			if (base == projects[5]) {
-			var _eyesMod = "url(" + baseURL + base + "/modifiers" + eyes[t3 - 2] + "), ";
+			var httpEyes = new XMLHttpRequest();
+			var urlEyes = baseURL + base + eyes[t3 - 2];
+			httpEyes.open('HEAD', urlEyes, false);
+			httpEyes.send();
+			if (httpEyes.status == 200) {
+            			var _eyes = "url(" + urlEyes + "), ";
+				if (base == projects[5]) {
+					var _eyesMod = "url(" + baseURL + base + "/modifiers" + eyes[t3 - 2] + "), ";
+				} else {
+				}	
 			} else {
+				var _eyes = "url(" + baseURL + base + eyes[6] + "), ";
 			}
 		}
 		if (t4 == 1) {
@@ -332,7 +348,7 @@ function generateMfers(count, seedinput) {
 			if (httpLongHair.status == 200) {
             			var _longHair = "url(" + urlLongHair + "), ";
 			} else {
-				var _longHair = "url(" + baseURL + base + longHair[0] + "), ";
+				var _longHair = "url(" + baseURL + base + longHairRNG + "), ";
 			}
 		} else if (t11 > 1) {
 			var httpLongHair = new XMLHttpRequest();
