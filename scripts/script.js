@@ -505,7 +505,7 @@ function generateMfers(count, seedinput) {
 	document.getElementsByClassName("html-content-holder")[0].style.height = dimension;
 	
 	console.log(seed);
-	html2canvas(document.getElementsByClassName("html-content-holder")[0],{allowTaint: true,useCORS: true}).then(function (canvas) {
+	html2canvas(document.getElementsByClassName("html-content-holder")[0],{backgroundColor: null,allowTaint: true,useCORS: true}).then(function (canvas) {
 		var pngUrl = canvas.toDataURL("image/png");
 		var mferImg = document.createElement("img");
 		mferImg.src = pngUrl;
