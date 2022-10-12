@@ -222,3 +222,23 @@ border-bottom: solid 1px lightgray;
 .quantity {
     padding-bottom: 0;
 }
+
+
+.skeleton-loader {
+  background: linear-gradient(	  
+      to right,
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 0.5) 20%,
+      rgba(255, 255, 255, 0) 40%
+    ),
+    #F5F5F5;
+  background-repeat: repeat-y;
+  background-size: 150px 500px;
+  background-position: 0 0;
+  animation: shine 2s infinite;	  
+}
+@keyframes shine {	
+  to {
+    background-position: 100% 0, /* move highlight to right */ 0 0;
+  }
+}
