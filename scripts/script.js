@@ -11,6 +11,8 @@ const projects = [
 	["sketchyMfers", 6],
 ];
 
+console.log(projects[1]);
+
 const background = [];
 background[0]= "/background/blue.png";
 background[1]= "/background/yellow.png";
