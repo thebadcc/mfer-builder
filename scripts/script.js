@@ -324,6 +324,7 @@ function generateMfers(count, seedinput) {
 			var httpHoodie = new XMLHttpRequest();
 			var urlHoodie = baseURL + base + hoodies[t9 - 2];
 			httpHoodie.open('HEAD', urlHoodie, false);
+			httpHoodie.send();
 			if (httpHoodie.status == 200) {
             			var _hoodies = "url(" + urlHoodie + "), ";
 			} else {
