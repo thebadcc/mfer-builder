@@ -2,13 +2,14 @@
 var baseURL = 'https://raw.githubusercontent.com/thebadcc-eth/mfer-builder/main/images/';
 
 // repositories
-const projects = [];
-projects[0] = "mfers";
-projects[1] = "creyzies";
-projects[2] = "eos";
-projects[3] = "mfersAhead";
-projects[4] = "mfersBehind";
-projects[5] = "sketchyMfers";
+const projects = [
+	["mfers", 1],
+	["creyzies", 2],
+	["eos", 3],
+	["mfersAhead", 4],
+	["mfersBehind", 5],
+	["sketchyMfers", 6],
+];
 
 const background = [];
 background[0]= "/background/blue.png";
