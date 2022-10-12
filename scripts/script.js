@@ -194,11 +194,14 @@ function generateMfers(count, seedinput) {
 	document.getElementsByClassName('mferWrapper')[0].appendChild(div);
 	elements[0].parentNode.removeChild(elements[0]);
 	for (let i = 0; i < count; i++){
-		var baseID = document.getElementsByClassName('base')[0].value;	
-		if (baseID == "random") {
-			var base = projects[Math.floor(Math.random() * 6)][0];
+		var baseID = parseFloat(document.getElementsByClassName('base')[0].value);	
+		if (baseID == 0) {
+			var baseRNG = Math.floor(Math.random() * 6);
+			var base = projects[baseRNG][0];
+			var baseCheck = projects[baseRNG][1];
 		} else {
-			var base = document.getElementsByClassName('base')[0].value;
+			var base = projects[baseID][0];
+			var baseCheck = projects[baseID][1];
 		}
 		var backgroundRNG = background[Math.floor(Math.random() * 14)][0];
 		var typeRNG = type[Math.floor(Math.random() * 5)];
