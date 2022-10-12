@@ -32,7 +32,6 @@ type[1]= "/type/charcoalmfer.png";
 type[2]= "/type/zombiemfer.png";
 type[3]= "/type/apemfer.png";
 type[4]= "/type/alienmfer.png";
-type[5]= "/type/robotmfer.png";
 
 const eyes = [];
 eyes[0]= "/eyes/3Dglasses.png";
@@ -46,12 +45,10 @@ eyes[7]= "/eyes/shades.png";
 eyes[8]= "/eyes/vr.png";
 eyes[9]= "/eyes/zombieeyes.png";
 eyes[10]= "/eyes/mcxshades.png";
-eyes[11]= "/eyes/scanner.png";
 
 const mouth = [];
 mouth[0]= "/mouth/flat.png";
 mouth[1]= "/mouth/smile.png";
-mouth[2]= "/mouth/voicebox.png";
 
 const headphones = [];
 headphones[0]= "/headphones/RCSheadphones.png";
@@ -227,7 +224,6 @@ function generateMfers(count, seedinput) {
 			var _type = "";
 		} else if (t2 == 0) {
 			var _type = "url(" + baseURL + base + typeRNG + "), ";
-
 		} else if (t2 > 1) {
 			var _type = "url(" + baseURL + base + type[t2 - 2] + "), ";
 		}
@@ -265,11 +261,9 @@ function generateMfers(count, seedinput) {
 		if (t4 == 1) {
 			var _mouth = "";
 		} else if (t4 == 0) {
-
-				var _type = "url(" + baseURL + base + mouthRNG + "), ";
-			
+			var _mouth = "url(" + baseURL + base + mouthRNG + "), ";
 		} else if (t4 > 1) {
-			var _type = "url(" + baseURL + base + mouth[t4 - 2] + "), ";
+			var _mouth = "url(" + baseURL + base + mouth[t4 - 2] + "), ";
 		}
 		if (t5 == 1) {
 			var _headphones = "";
