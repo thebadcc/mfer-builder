@@ -202,9 +202,9 @@ function generateMfers(count, seedinput) {
 			var base = document.getElementsByClassName('base')[0].value;
 		}
 		var backgroundRNG = background[Math.floor(Math.random() * 14)];
-		var typeRNG = type[Math.floor(Math.random() * 6)];
-		var eyesRNG = eyes[Math.floor(Math.random() * 12)];
-		var mouthRNG = mouth[Math.floor(Math.random() * 3)];
+		var typeRNG = type[Math.floor(Math.random() * 5)];
+		var eyesRNG = eyes[Math.floor(Math.random() * 11)];
+		var mouthRNG = mouth[Math.floor(Math.random() * 2)];
 		var headphonesRNG = headphones[Math.floor(Math.random() * 9)];
 		var smokeRNG = smoke[Math.floor(Math.random() * 3)];
 		var watchRNG = watch420[Math.floor(Math.random() * 12)];
@@ -226,25 +226,10 @@ function generateMfers(count, seedinput) {
 		if (t2 == 1) {
 			var _type = "";
 		} else if (t2 == 0) {
-			var httpType = new XMLHttpRequest();
-			var urlType = baseURL + base + typeRNG;
-			httpType.open('HEAD', urlType, false);
-			httpType.send();
-			if (httpType.status == 200) {
-            			var _type = "url(" + urlType + "), ";
-			} else {
-				var _type = "url(" + baseURL + base + type[0] + "), ";
-			}
+			var _type = "url(" + baseURL + base + typeRNG + "), ";
+
 		} else if (t2 > 1) {
-			var httpType = new XMLHttpRequest();
-			var urlType = baseURL + base + type[t2 - 2];
-			httpType.open('HEAD', urlType, false);
-			httpType.send();
-			if (httpType.status == 200) {
-            			var _type = "url(" + urlType + "), ";
-			} else {
-				var _type = "url(" + baseURL + base + type[0] + "), ";
-			}
+			var _type = "url(" + baseURL + base + type[t2 - 2] + "), ";
 		}
 		if (t3 == 1) {
 			var _eyes = "";
@@ -280,25 +265,11 @@ function generateMfers(count, seedinput) {
 		if (t4 == 1) {
 			var _mouth = "";
 		} else if (t4 == 0) {
-			var httpMouth = new XMLHttpRequest();
-			var urlMouth = baseURL + base + mouthRNG;
-			httpMouth.open('HEAD', urlMouth, false);
-			httpMouth.send();
-			if (httpMouth.status == 200) {
-            			var _type = "url(" + urlMouth + "), ";
-			} else {
-				var _type = "url(" + baseURL + base + mouth[0] + "), ";
-			}
+
+				var _type = "url(" + baseURL + base + mouthRNG + "), ";
+			
 		} else if (t4 > 1) {
-			var httpMouth = new XMLHttpRequest();
-			var urlMouth = baseURL + base + mouth[t4 - 2];
-			httpMouth.open('HEAD', urlMouth, false);
-			httpMouth.send();
-			if (httpMouth.status == 200) {
-            			var _type = "url(" + urlMouth + "), ";
-			} else {
-				var _type = "url(" + baseURL + base + mouth[0] + "), ";
-			}
+			var _type = "url(" + baseURL + base + mouth[t4 - 2] + "), ";
 		}
 		if (t5 == 1) {
 			var _headphones = "";
