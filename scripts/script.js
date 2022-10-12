@@ -8,10 +8,10 @@ const projects = [
 	["eos", 3],
 	["mfersAhead", 4],
 	["mfersBehind", 5],
-	["sketchyMfers", 6],
+	["sketchyMfers", 6]
 ];
 
-const background = [];
+const background = [
 ["/background/blue.png", 1, 1, 1, 1, 1, 1],
 ["/background/yellow.png", 1, 1, 1, 1, 1, 1],
 ["/background/green.png", 1, 1, 1, 1, 1, 1],
@@ -25,7 +25,7 @@ const background = [];
 ["/background/TWU_bubblegum.png", 1, 0, 0, 1, 1, 1],
 ["/background/TWU_redLeopard2.png", 1, 0, 0, 1, 1, 1],
 ["/background/TWU_ice.png", 1, 0, 0, 1, 1, 1],
-["/background/TWU_orangeCheetah.png", 1, 0, 0, 1, 1, 1],
+["/background/TWU_orangeCheetah.png", 1, 0, 0, 1, 1, 1]
 ];
 
 const type = [];
