@@ -12,20 +12,21 @@ const projects = [
 ];
 
 const background = [];
-background[0]= "/background/blue.png";
-background[1]= "/background/yellow.png";
-background[2]= "/background/green.png";
-background[3]= "/background/orange.png";
-background[4]= "/background/red.png";
-background[5]= "/background/space.png";
-background[6]= "/background/tree.png";
-background[7]= "/background/graveyard.png";
-background[8]= "/background/prettycoolpurple.png";
-background[9]= "/background/TWU_negative.png";
-background[10]= "/background/TWU_bubblegum.png";
-background[11]= "/background/TWU_redLeopard2.png";
-background[12]= "/background/TWU_ice.png";
-background[13]= "/background/TWU_orangeCheetah.png";
+["/background/blue.png", 1, 1, 1, 1, 1, 1],
+["/background/yellow.png", 1, 1, 1, 1, 1, 1],
+["/background/green.png", 1, 1, 1, 1, 1, 1],
+["/background/orange.png", 1, 1, 1, 1, 1, 1],
+["/background/red.png", 1, 1, 1, 1, 1, 1],
+["/background/space.png", 1, 1, 1, 1, 1, 1],
+["/background/tree.png", 1, 1, 1, 1, 1, 1],
+["/background/graveyard.png", 1, 1, 1, 1, 1, 1],
+["/background/prettycoolpurple.png", 1, 1, 1, 1, 1, 1],
+["/background/TWU_negative.png", 1, 0, 0, 1, 1, 1],
+["/background/TWU_bubblegum.png", 1, 0, 0, 1, 1, 1],
+["/background/TWU_redLeopard2.png", 1, 0, 0, 1, 1, 1],
+["/background/TWU_ice.png", 1, 0, 0, 1, 1, 1],
+["/background/TWU_orangeCheetah.png", 1, 0, 0, 1, 1, 1],
+];
 
 const type = [];
 type[0]= "/type/plainmfer.png";
@@ -199,7 +200,7 @@ function generateMfers(count, seedinput) {
 		} else {
 			var base = document.getElementsByClassName('base')[0].value;
 		}
-		var backgroundRNG = background[Math.floor(Math.random() * 14)];
+		var backgroundRNG = background[Math.floor(Math.random() * 14)][0];
 		var typeRNG = type[Math.floor(Math.random() * 5)];
 		var eyesRNG = eyes[Math.floor(Math.random() * 11)];
 		var mouthRNG = mouth[Math.floor(Math.random() * 2)];
@@ -219,7 +220,7 @@ function generateMfers(count, seedinput) {
 		} else if (t1 == 0) {
 			var _background = "url(" + baseURL + base + backgroundRNG + ")";
 		} else if (t1 > 1) {
-			var _background = "url(" + baseURL + base + background[t1 - 2] + ")";
+			var _background = "url(" + baseURL + base + background[t1 - 2][0] + ")";
 		}
 		if (t2 == 1) {
 			var _type = "";
