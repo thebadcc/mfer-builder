@@ -11,8 +11,6 @@ const projects = [
 	["sketchyMfers", 6],
 ];
 
-console.log(projects[1]);
-
 const background = [];
 background[0]= "/background/blue.png";
 background[1]= "/background/yellow.png";
@@ -197,7 +195,7 @@ function generateMfers(count, seedinput) {
 	for (let i = 0; i < count; i++){
 		var baseID = document.getElementsByClassName('base')[0].value;	
 		if (baseID == "random") {
-			var base = projects[Math.floor(Math.random() * 6)];
+			var base = projects[Math.floor(Math.random() * 6)][0];
 		} else {
 			var base = document.getElementsByClassName('base')[0].value;
 		}
@@ -239,7 +237,7 @@ function generateMfers(count, seedinput) {
 			httpEyes.send();
 			if (httpEyes.status == 200) {
             			var _eyes = "url(" + urlEyes + "), ";
-				if (base == projects[5]) {
+				if (base == projects[5][0]) {
 					var _eyesMod = "url(" + baseURL + base + "/modifiers" + eyesRNG + "), ";
 				} else {
 				}	
@@ -253,7 +251,7 @@ function generateMfers(count, seedinput) {
 			httpEyes.send();
 			if (httpEyes.status == 200) {
             			var _eyes = "url(" + urlEyes + "), ";
-				if (base == projects[5]) {
+				if (base == projects[5][0]) {
 					var _eyesMod = "url(" + baseURL + base + "/modifiers" + eyes[t3 - 2] + "), ";
 				} else {
 				}	
@@ -375,14 +373,14 @@ function generateMfers(count, seedinput) {
 			var _hatsOver = "";  
 		} else if (t13 == 0) {
 			var _hatsOver = "url(" + baseURL + base + hatsOverRNG + "), ";  
-			if (base == projects[5]) {
+			if (base == projects[5][0]) {
 				var _hatsOverMod = "url(" + baseURL + base + "/modifiers" + hatsOverRNG + "), ";
 			} else {
 			}
 
 		} else if (t13 > 1) {
 			var _hatsOver = "url(" + baseURL + base + hatsOver[t13 - 2] + "), "; 
-			if (base == projects[5]) {
+			if (base == projects[5][0]) {
 				var _hatsOverMod = "url(" + baseURL + base + "/modifiers" + hatsOver[t13 - 2] + "), ";
 			} else {
 			}
