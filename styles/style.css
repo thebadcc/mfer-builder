@@ -225,6 +225,9 @@ border-bottom: solid 1px lightgray;
 
 
 .skeleton-loader {
+  width: 300px;
+  height: 300px;
+  display: block;
   background: linear-gradient(	  
       to right,
       rgba(255, 255, 255, 0),
