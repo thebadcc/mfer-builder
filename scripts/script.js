@@ -12,20 +12,20 @@ const projects = [
 ];
 
 const background = [
-["/background/blue.png", 1, 1, 1, 1, 1, 1],
-["/background/yellow.png", 1, 1, 1, 1, 1, 1],
-["/background/green.png", 1, 1, 1, 1, 1, 1],
-["/background/orange.png", 1, 1, 1, 1, 1, 1],
-["/background/red.png", 1, 1, 1, 1, 1, 1],
-["/background/space.png", 1, 1, 1, 1, 1, 1],
-["/background/tree.png", 1, 1, 1, 1, 1, 1],
-["/background/graveyard.png", 1, 1, 1, 1, 1, 1],
-["/background/prettycoolpurple.png", 1, 1, 1, 1, 1, 1],
-["/background/TWU_negative.png", 1, 0, 0, 1, 1, 1],
-["/background/TWU_bubblegum.png", 1, 0, 0, 1, 1, 1],
-["/background/TWU_redLeopard2.png", 1, 0, 0, 1, 1, 1],
-["/background/TWU_ice.png", 1, 0, 0, 1, 1, 1],
-["/background/TWU_orangeCheetah.png", 1, 0, 0, 1, 1, 1]
+	["/background/blue.png", 1, 1, 1, 1, 1, 1],
+	["/background/yellow.png", 1, 1, 1, 1, 1, 1],
+	["/background/green.png", 1, 1, 1, 1, 1, 1],
+	["/background/orange.png", 1, 1, 1, 1, 1, 1],
+	["/background/red.png", 1, 1, 1, 1, 1, 1],
+	["/background/space.png", 1, 1, 1, 1, 1, 1],
+	["/background/tree.png", 1, 1, 1, 1, 1, 1],
+	["/background/graveyard.png", 1, 1, 1, 1, 1, 1],
+	["/background/prettycoolpurple.png", 1, 1, 1, 1, 1, 1],
+	["/background/TWU_negative.png", 1, 0, 0, 1, 1, 1],
+	["/background/TWU_bubblegum.png", 1, 0, 0, 1, 1, 1],
+	["/background/TWU_redLeopard2.png", 1, 0, 0, 1, 1, 1],
+	["/background/TWU_ice.png", 1, 0, 0, 1, 1, 1],
+	["/background/TWU_orangeCheetah.png", 1, 0, 0, 1, 1, 1]
 ];
 
 const type = [];
