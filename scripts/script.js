@@ -28,12 +28,13 @@ const background = [
 	["/background/TWU_orangeCheetah.png", 1, 0, 0, 1, 1, 1]
 ];
 
-const type = [];
-type[0]= "/type/plainmfer.png";
-type[1]= "/type/charcoalmfer.png";
-type[2]= "/type/zombiemfer.png";
-type[3]= "/type/apemfer.png";
-type[4]= "/type/alienmfer.png";
+const type = [
+	["/type/plainmfer.png", 1, 1, 1, 1, 1, 1],
+	["/type/charcoalmfer.png", 1, 1, 1, 1, 1, 1],
+	["/type/zombiemfer.png", 1, 1, 1, 1, 1, 1],
+	["/type/apemfer.png", 1, 1, 1, 1, 1, 1],
+	["/type/alienmfer.png", 1, 1, 1, 1, 1, 1]
+];
 
 const eyes = [];
 eyes[0]= "/eyes/3Dglasses.png";
@@ -204,7 +205,7 @@ function generateMfers(count, seedinput) {
 			var baseCheck = projects[baseID - 1][1];
 		}
 		var backgroundRNG = background[Math.floor(Math.random() * 14)][0];
-		var typeRNG = type[Math.floor(Math.random() * 5)];
+		var typeRNG = type[Math.floor(Math.random() * 5)][0];
 		var eyesRNG = eyes[Math.floor(Math.random() * 11)];
 		var mouthRNG = mouth[Math.floor(Math.random() * 2)];
 		var headphonesRNG = headphones[Math.floor(Math.random() * 9)];
@@ -221,16 +222,24 @@ function generateMfers(count, seedinput) {
 		if (t1 == 1) {
 			var _background = "url()"
 		} else if (t1 == 0) {
-			var _background = "url(" + baseURL + base + backgroundRNG + ")";
+			if (background[backgroundRNG][baseCheck] == 1) {
+				var _background = "url(" + baseURL + base + backgroundRNG + ")";
+			} else {
+				var _background = "url(" + baseURL + base + background[0][0] + ")";
+			}
 		} else if (t1 > 1) {
-			var _background = "url(" + baseURL + base + background[t1 - 2][0] + ")";
+			if (background[t1 - 2][baseCheck] == 1) {
+				var _background = "url(" + baseURL + base + background[t1 - 2][0] + ")";
+			} else {
+				var _background = "url(" + baseURL + base + background[0][0] + ")";
+			}
 		}
 		if (t2 == 1) {
 			var _type = "";
 		} else if (t2 == 0) {
 			var _type = "url(" + baseURL + base + typeRNG + "), ";
 		} else if (t2 > 1) {
-			var _type = "url(" + baseURL + base + type[t2 - 2] + "), ";
+			var _type = "url(" + baseURL + base + type[t2 - 2][0] + "), ";
 		}
 		if (t3 == 1) {
 			var _eyes = "";
