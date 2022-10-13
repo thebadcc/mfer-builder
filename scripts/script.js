@@ -200,8 +200,8 @@ function generateMfers(count, seedinput) {
 			var base = projects[baseRNG][0];
 			var baseCheck = projects[baseRNG][1];
 		} else {
-			var base = projects[baseID-1][0];
-			var baseCheck = projects[baseID-1][1];
+			var base = projects[baseID - 1][0];
+			var baseCheck = projects[baseID - 1][1];
 		}
 		var backgroundRNG = background[Math.floor(Math.random() * 14)][0];
 		var typeRNG = type[Math.floor(Math.random() * 5)];
