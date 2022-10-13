@@ -222,17 +222,11 @@ function generateMfers(count, seedinput) {
 		if (t1 == 1) {
 			var _background = "url()"
 		} else if (t1 == 0) {
-			if (background[backgroundRNG][baseCheck] == 1) {
-				var _background = "url(" + baseURL + base + backgroundRNG + ")";
-			} else {
-				var _background = "url(" + baseURL + base + background[0][0] + ")";
-			}
+			console.log(background[backgroundRNG][baseCheck]);
+			var _background = "url(" + baseURL + base + backgroundRNG + ")";
 		} else if (t1 > 1) {
-			if (background[t1 - 2][baseCheck] == 1) {
-				var _background = "url(" + baseURL + base + background[t1 - 2][0] + ")";
-			} else {
-				var _background = "url(" + baseURL + base + background[0][0] + ")";
-			}
+			console.log(background[backgroundRNG][baseCheck]);
+			var _background = "url(" + baseURL + base + background[t1 - 2][0] + ")";
 		}
 		if (t2 == 1) {
 			var _type = "";
