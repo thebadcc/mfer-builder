@@ -494,7 +494,7 @@ function generateMfers(count, seedinput) {
 			var _hatsOver = "";
 			var _hatsOverMod = "";
 			var _longHair = "";
-    	} else if (t14 > 1) {
+    	} else if (t14 >= 1) {
 			var _hatsUnder = "";
 			var _hatsOver = "";
 			var _hatsOverMod = "";
