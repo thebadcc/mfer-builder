@@ -204,7 +204,7 @@ function generateMfers(count, seedinput) {
 			var base = projects[baseID - 1][0];
 			var baseCheck = projects[baseID - 1][1];
 		}
-		var backgroundRNG = background[Math.floor(Math.random() * 14)][0];
+		var backgroundRNG = Math.floor(Math.random() * 14);
 		var typeRNG = type[Math.floor(Math.random() * 5)][0];
 		var eyesRNG = eyes[Math.floor(Math.random() * 11)];
 		var mouthRNG = mouth[Math.floor(Math.random() * 2)];
@@ -222,11 +222,11 @@ function generateMfers(count, seedinput) {
 		if (t1 == 1) {
 			var _background = "url()"
 		} else if (t1 == 0) {
-			console.log(background[backgroundRNG][1]);
+			console.log(background[backgroundRNG][baseCheck]);
 			
-			var _background = "url(" + baseURL + base + backgroundRNG + ")";
+			var _background = "url(" + baseURL + base + background[backgroundRNG][0] + ")";
 		} else if (t1 > 1) {
-			console.log(background[t1 - 2][2]);
+			console.log(background[t1 - 2][baseCheck]);
 			
 			var _background = "url(" + baseURL + base + background[t1 - 2][0] + ")";
 		}
