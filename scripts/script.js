@@ -222,10 +222,10 @@ function generateMfers(count, seedinput) {
 		if (t1 == 1) {
 			var _background = "url()"
 		} else if (t1 == 0) {
-			console.log(background[backgroundRNG][baseCheck]);
+			console.log(background[0][1]);
 			var _background = "url(" + baseURL + base + backgroundRNG + ")";
 		} else if (t1 > 1) {
-			console.log(background[backgroundRNG][baseCheck]);
+			console.log(background[0][3]);
 			var _background = "url(" + baseURL + base + background[t1 - 2][0] + ")";
 		}
 		if (t2 == 1) {
