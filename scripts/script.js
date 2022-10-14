@@ -50,9 +50,10 @@ const eyes = [
 	["/eyes/mcxshades.png", 1, 1, 1, 1, 1, 1]
 ];
 
-const mouth = [];
-mouth[0]= "/mouth/flat.png";
-mouth[1]= "/mouth/smile.png";
+const mouth = [
+	["/mouth/flat.png", 1, 1, 1, 1, 1, 1],
+	["/mouth/smile.png", 1, 1, 1, 1, 1, 1]
+];
 
 const headphones = [];
 headphones[0]= "/headphones/RCSheadphones.png";
@@ -208,7 +209,7 @@ function generateMfers(count, seedinput) {
 		var backgroundRNG = Math.floor(Math.random() * 14);
 		var typeRNG = Math.floor(Math.random() * 5);
 		var eyesRNG = Math.floor(Math.random() * 11);
-		var mouthRNG = mouth[Math.floor(Math.random() * 2)];
+		var mouthRNG = Math.floor(Math.random() * 2);
 		var headphonesRNG = headphones[Math.floor(Math.random() * 9)];
 		var smokeRNG = smoke[Math.floor(Math.random() * 3)];
 		var watchRNG = watch420[Math.floor(Math.random() * 12)];
@@ -276,9 +277,17 @@ function generateMfers(count, seedinput) {
 		if (t4 == 1) {
 			var _mouth = "";
 		} else if (t4 == 0) {
-			var _mouth = "url(" + baseURL + base + mouthRNG + "), ";
+			if (mouth[mouthRNG][baseCheck] == 1) {
+				var _mouth = "url(" + baseURL + base + mouth[mouthRNG][0] + "), ";
+			} else {
+				var _mouth = "url(" + baseURL + base + mouth[0][0] + "), ";
+			}
 		} else if (t4 > 1) {
-			var _mouth = "url(" + baseURL + base + mouth[t4 - 2] + "), ";
+			if (mouth[t4 - 2][baseCheck] == 1) {
+				var _mouth = "url(" + baseURL + base + mouth[t4 - 2][0] + "), ";
+			} else {
+				var _mouth = "url(" + baseURL + base + mouth[0][0] + "), ";
+			}
 		}
 		if (t5 == 1) {
 			var _headphones = "";
