@@ -237,17 +237,12 @@ function generateMfers(count, seedinput) {
 		if (t2 == 1) {
 			var _type = "";
 		} else if (t2 == 0) {
-			if(type[typeRNG][baseCheck] == 1) {
+
 				var _type = "url(" + baseURL + base + type[typeRNG][0] + ")";
-			} else {
-				var _type = "url(" + baseURL + base + type[0][0] + ")";
-			}
+
 		} else if (t2 > 1) {
-			if(type[typeRNG][baseCheck] == 1) {
+
 				var _type = "url(" + baseURL + base + type[t2 - 2][0] + ")";
-			} else {
-				var _type = "url(" + baseURL + base + type[0][0] + ")";
-			}
 		}
 		if (t3 == 1) {
 			var _eyes = "";
