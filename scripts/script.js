@@ -67,10 +67,11 @@ const headphones = [
 	["/headphones/whiteheadphones.png", 1, 1, 1, 1, 1, 1]
 ];
 
-const smoke = [];
-smoke[0]= "/smoke/cigblack.png";
-smoke[1]= "/smoke/cigwhite.png";
-smoke[2]= "/smoke/pipe.png";
+const smoke = [
+	["/smoke/cigblack.png", 1, 1, 1, 1, 1, 1], 
+	["/smoke/cigwhite.png", 1, 1, 1, 1, 1, 1], 
+	["/smoke/pipe.png", 1, 1, 1, 1, 1, 1]
+];
 
 const watch420 = [];
 watch420[0]= "/watch/argoblack.png";
@@ -212,7 +213,7 @@ function generateMfers(count, seedinput) {
 		var eyesRNG = Math.floor(Math.random() * 11);
 		var mouthRNG = Math.floor(Math.random() * 2);
 		var headphonesRNG = Math.floor(Math.random() * 9);
-		var smokeRNG = smoke[Math.floor(Math.random() * 3)];
+		var smokeRNG = Math.floor(Math.random() * 3);
 		var watchRNG = watch420[Math.floor(Math.random() * 12)];
 		var beardRNG = beard[Math.floor(Math.random() * 2)];
 		var hoodiesRNG = hoodies[Math.floor(Math.random() * 15)];
@@ -310,12 +311,20 @@ function generateMfers(count, seedinput) {
 		} else if (t6 == 0) {
 			var rollSmoke = Math.floor(Math.random() * 10);
 			if (rollSmoke <= 7) {
-				var _smoke = "url(" + baseURL + base + smokeRNG + "), ";
+				if (smoke[smokeRNG][baseCheck] == 1) {
+					var _smoke = "url(" + baseURL + base + smoke[smokeRNG][0] + "), ";
+				} else {
+					var _smoke = "url(" + baseURL + base + smoke[0][0] + "), ";
+				}
 			} else {
 				var _smoke = ""
    			}
 		} else if (t6 > 1) {
-			var _smoke = "url(" + baseURL + base + smoke[t6 - 2] + "), ";
+			if (smoke[t6 - 2][baseCheck] == 1) {
+				var _smoke = "url(" + baseURL + base + smoke[t6 - 2][0] + "), ";
+			} else {
+				var _smoke = "url(" + baseURL + base + smoke[0][0] + "), ";
+			}
 		}
 		if (t7 == 1) {
 			var _watch420 = ""
