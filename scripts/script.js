@@ -36,18 +36,19 @@ const type = [
 	["/type/alienmfer.png", 1, 1, 1, 1, 1, 1]
 ];
 
-const eyes = [];
-eyes[0]= "/eyes/3Dglasses.png";
-eyes[1]= "/eyes/alieneyes.png";
-eyes[2]= "/eyes/eyemask.png";
-eyes[3]= "/eyes/eyepatch.png";
-eyes[4]= "/eyes/nerdglasses.png";
-eyes[5]= "/eyes/purpleshades.png";
-eyes[6]= "/eyes/regulareyes.png";
-eyes[7]= "/eyes/shades.png";
-eyes[8]= "/eyes/vr.png";
-eyes[9]= "/eyes/zombieeyes.png";
-eyes[10]= "/eyes/mcxshades.png";
+const eyes = [
+	["/eyes/3Dglasses.png", 1, 1, 1, 1, 1, 1],
+	["/eyes/alieneyes.png", 1, 1, 1, 1, 1, 1],
+	["/eyes/eyemask.png", 1, 1, 1, 1, 1, 1],
+	["/eyes/eyepatch.png", 1, 1, 1, 1, 1, 1],
+	["/eyes/nerdglasses.png", 1, 1, 1, 1, 1, 1],
+	["/eyes/purpleshades.png", 1, 1, 1, 1, 1, 1],
+	["/eyes/regulareyes.png", 1, 1, 1, 1, 1, 1],
+	["/eyes/shades.png", 1, 1, 1, 1, 1, 1],
+	["/eyes/vr.png", 1, 1, 1, 1, 1, 1],
+	["/eyes/zombieeyes.png", 1, 1, 1, 1, 1, 1],
+	["/eyes/mcxshades.png", 1, 1, 1, 1, 1, 1]
+];
 
 const mouth = [];
 mouth[0]= "/mouth/flat.png";
@@ -206,7 +207,7 @@ function generateMfers(count, seedinput) {
 		}
 		var backgroundRNG = Math.floor(Math.random() * 14);
 		var typeRNG = Math.floor(Math.random() * 5);
-		var eyesRNG = eyes[Math.floor(Math.random() * 11)];
+		var eyesRNG = Math.floor(Math.random() * 11);
 		var mouthRNG = mouth[Math.floor(Math.random() * 2)];
 		var headphonesRNG = headphones[Math.floor(Math.random() * 9)];
 		var smokeRNG = smoke[Math.floor(Math.random() * 3)];
@@ -252,33 +253,18 @@ function generateMfers(count, seedinput) {
 		if (t3 == 1) {
 			var _eyes = "";
 		} else if (t3 == 0) {
-			var httpEyes = new XMLHttpRequest();
-			var urlEyes = baseURL + base + eyesRNG;
-			httpEyes.open('HEAD', urlEyes, false);
-			httpEyes.send();
-			if (httpEyes.status == 200) {
-            			var _eyes = "url(" + urlEyes + "), ";
+            			var _eyes = "url(" + baseURL + base + eyes[eyesRNG][0] + "), ";
 				if (base == projects[5][0]) {
-					var _eyesMod = "url(" + baseURL + base + "/modifiers" + eyesRNG + "), ";
+					var _eyesMod = "url(" + baseURL + base + "/modifiers" + eyes[eyesRNG][0] + "), ";
 				} else {
 				}	
-			} else {
-				var _eyes = "url(" + baseURL + base + eyes[6] + "), ";
-			}
 		} else if (t3 > 1) {
-			var httpEyes = new XMLHttpRequest();
-			var urlEyes = baseURL + base + eyes[t3 - 2];
-			httpEyes.open('HEAD', urlEyes, false);
-			httpEyes.send();
-			if (httpEyes.status == 200) {
-            			var _eyes = "url(" + urlEyes + "), ";
+
+            			var _eyes = "url(" + baseURL + base + eyes[t3 - 2][0] + "), ";
 				if (base == projects[5][0]) {
-					var _eyesMod = "url(" + baseURL + base + "/modifiers" + eyes[t3 - 2] + "), ";
+					var _eyesMod = "url(" + baseURL + base + "/modifiers" + eyes[t3 - 2][0] + "), ";
 				} else {
 				}	
-			} else {
-				var _eyes = "url(" + baseURL + base + eyes[6] + "), ";
-			}
 		}
 		if (t4 == 1) {
 			var _mouth = "";
