@@ -253,18 +253,25 @@ function generateMfers(count, seedinput) {
 		if (t3 == 1) {
 			var _eyes = "";
 		} else if (t3 == 0) {
+			if(eyes[eyesRNG][baseCheck] == 1) {
             			var _eyes = "url(" + baseURL + base + eyes[eyesRNG][0] + "), ";
 				if (base == projects[5][0]) {
 					var _eyesMod = "url(" + baseURL + base + "/modifiers" + eyes[eyesRNG][0] + "), ";
 				} else {
-				}	
+				}
+			} else {
+				var _type = "url(" + baseURL + base + eyes[6][0] + "), ";	
+			}
 		} else if (t3 > 1) {
-
+			if(eyes[eyesRNG][baseCheck] == 1) {
             			var _eyes = "url(" + baseURL + base + eyes[t3 - 2][0] + "), ";
 				if (base == projects[5][0]) {
 					var _eyesMod = "url(" + baseURL + base + "/modifiers" + eyes[t3 - 2][0] + "), ";
 				} else {
 				}	
+			} else {
+				var _type = "url(" + baseURL + base + eyes[6][0] + "), ";	
+			}
 		}
 		if (t4 == 1) {
 			var _mouth = "";
