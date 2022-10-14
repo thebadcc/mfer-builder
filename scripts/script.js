@@ -161,23 +161,26 @@ const hatsUnder = [
 	["/hatunderheadphones/knitsanfran.png", 1, 1, 1, 1, 1, 1]
 ];
 
-const hatsOver = [];
-hatsOver[0]= "/hatoverheadphones/cowboyhat.png";
-hatsOver[1]= "/hatoverheadphones/pilothelmet.png";
-hatsOver[2]= "/hatoverheadphones/tophat.png";
+const hatsOver = [
+	["/hatoverheadphones/cowboyhat.png", 1, 1, 1, 1, 1, 1], 
+	["/hatoverheadphones/pilothelmet.png", 1, 1, 1, 1, 1, 1], 
+	["/hatoverheadphones/tophat.png", 1, 1, 1, 1, 1, 1]
+];
 
-const shortHair = [];
-shortHair[0]= "/shorthair/messyblack.png";
-shortHair[1]= "/shorthair/messypurple.png";
-shortHair[2]= "/shorthair/messyred.png";
-shortHair[3]= "/shorthair/messyyellow.png";
-shortHair[4]= "/shorthair/mohawkblack.png";
-shortHair[5]= "/shorthair/mohawkblue.png";
-shortHair[6]= "/shorthair/mohawkgreen.png";
-shortHair[7]= "/shorthair/mohawkpink.png";
-shortHair[8]= "/shorthair/mohawkpurple.png";
-shortHair[9]= "/shorthair/mohawkred.png";
-shortHair[10]= "/shorthair/mohawkyellow.png";
+const shortHair = [
+	["/shorthair/messyblack.png", 1, 1, 1, 1, 1, 1],
+	["/shorthair/messypurple.png", 1, 1, 1, 1, 1, 1],
+	["/shorthair/messyred.png", 1, 1, 1, 1, 1, 1],
+	["/shorthair/messyyellow.png", 1, 1, 1, 1, 1, 1],
+	["/shorthair/mohawkblack.png", 1, 1, 1, 1, 1, 1],
+	["/shorthair/mohawkblue.png", 1, 1, 1, 1, 1, 1],
+	["/shorthair/mohawkgreen.png", 1, 1, 1, 1, 1, 1],
+	["/shorthair/mohawkpink.png", 1, 1, 1, 1, 1, 1],
+	["/shorthair/mohawkpurple.png", 1, 1, 1, 1, 1, 1],
+	["/shorthair/mohawkred.png", 1, 1, 1, 1, 1, 1],
+	["/shorthair/mohawkyellow.png", 1, 1, 1, 1, 1, 1],
+	["/shorthair/messyblack.png", 1, 1, 1, 1, 1, 1]
+];
 
 // function to generate mfers
 function generateMfers(count, seedinput) {
@@ -225,9 +228,9 @@ function generateMfers(count, seedinput) {
 		var hoodiesRNG = Math.floor(Math.random() * 15);
 		var shirtRNG = Math.floor(Math.random() * 14);
 		var hatsUnderRNG = Math.floor(Math.random() * 24);
-		var hatsOverRNG = hatsOver[Math.floor(Math.random() * 3)];
+		var hatsOverRNG = Math.floor(Math.random() * 3);
 		var longHairRNG = Math.floor(Math.random() * 3);
-		var shortHairRNG = shortHair[Math.floor(Math.random() * 12)];
+		var shortHairRNG = Math.floor(Math.random() * 12);
 
 		if (t1 == 1) {
 			var _background = "url()"
@@ -443,25 +446,48 @@ function generateMfers(count, seedinput) {
 		if (t13 == 1) {
 			var _hatsOver = "";  
 		} else if (t13 == 0) {
-			var _hatsOver = "url(" + baseURL + base + hatsOverRNG + "), ";  
-			if (base == projects[5][0]) {
-				var _hatsOverMod = "url(" + baseURL + base + "/modifiers" + hatsOverRNG + "), ";
+			if (hatsOver[hatsOverRNG][baseCheck] == 1) {
+				var _hatsOver = "url(" + baseURL + base + hatsOver[hatsOverRNG][0] + "), ";
+				if (base == projects[5][0]) {
+				var _hatsOverMod = "url(" + baseURL + base + "/modifiers" + hatsOver[hatsOverRNG][0] + "), ";
+				} else {
+				}
 			} else {
-			}
-
+				var _hatsOver = "url(" + baseURL + base + hatsOver[0][0] + "), ";
+				if (base == projects[5][0]) {
+				var _hatsOverMod = "url(" + baseURL + base + "/modifiers" + hatsOver[0][0] + "), ";
+				} else {
+				}
+			}   
 		} else if (t13 > 1) {
-			var _hatsOver = "url(" + baseURL + base + hatsOver[t13 - 2] + "), "; 
-			if (base == projects[5][0]) {
-				var _hatsOverMod = "url(" + baseURL + base + "/modifiers" + hatsOver[t13 - 2] + "), ";
+			if (hatsOver[t13 - 2][baseCheck] == 1) {
+				var _hatsOver = "url(" + baseURL + base + hatsOver[t13 - 2][0] + "), ";
+				if (base == projects[5][0]) {
+				var _hatsOverMod = "url(" + baseURL + base + "/modifiers" + hatsOver[t13 - 2][0] + "), ";
+				} else {
+				}
 			} else {
-			}
+				var _hatsOver = "url(" + baseURL + base + hatsOver[0][0] + "), ";
+				if (base == projects[5][0]) {
+				var _hatsOverMod = "url(" + baseURL + base + "/modifiers" + hatsOver[0][0] + "), ";
+				} else {
+				}
+			}   
 		}
 		if (t14 == 1) {
 			var _shortHair = "";
 		} else if (t14 == 0) {
-			var _shortHair = "url(" + baseURL + base + shortHairRNG + "), ";
+			if (shortHair[shortHairRNG][baseCheck] == 1) {
+				var _shortHair = "url(" + baseURL + base + shortHair[shortHairRNG][0] + "), ";
+			} else {
+				var _shortHair = "url(" + baseURL + base + shortHair[0][0] + "), ";
+			}   
 		} else if (t14 > 1) {
-			var _shortHair = "url(" + baseURL + base + shortHair[t14 - 2] + "), ";
+			if (shortHair[t14 - 2][baseCheck] == 1) {
+				var _shortHair = "url(" + baseURL + base + shortHair[t14 - 2][0] + "), ";
+			} else {
+				var _shortHair = "url(" + baseURL + base + shortHair[0][0] + "), ";
+			}   
 		}
 		var rollHoodies = Math.floor(Math.random() * 10);
 		if (rollHoodies <= 1 && t9 == 0) {
