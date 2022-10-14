@@ -263,7 +263,8 @@ function generateMfers(count, seedinput) {
 				} else {
 				}
 			} else {
-				var _eyes = "url(" + baseURL + base + eyes[6][0] + "), ";	
+				var _eyes = "url(" + baseURL + base + eyes[6][0] + "), ";
+				console.log(_eyes);
 			}
 		} else if (t3 > 1) {
 			if (eyes[t3 - 2][baseCheck] == 1) {
@@ -273,7 +274,9 @@ function generateMfers(count, seedinput) {
 				} else {
 				}	
 			} else {
-				var _eyes = "url(" + baseURL + base + eyes[6][0] + "), ";	
+				
+				var _eyes = "url(" + baseURL + base + eyes[6][0] + "), ";
+				console.log(_eyes);
 			}
 		}
 		if (t4 == 1) {
