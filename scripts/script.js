@@ -205,7 +205,7 @@ function generateMfers(count, seedinput) {
 			var baseCheck = projects[baseID - 1][1];
 		}
 		var backgroundRNG = Math.floor(Math.random() * 14);
-		var typeRNG = type[Math.floor(Math.random() * 5)][0];
+		var typeRNG = Math.floor(Math.random() * 5);
 		var eyesRNG = eyes[Math.floor(Math.random() * 11)];
 		var mouthRNG = mouth[Math.floor(Math.random() * 2)];
 		var headphonesRNG = headphones[Math.floor(Math.random() * 9)];
@@ -237,7 +237,7 @@ function generateMfers(count, seedinput) {
 		if (t2 == 1) {
 			var _type = "";
 		} else if (t2 == 0) {
-			var _type = "url(" + baseURL + base + typeRNG + "), ";
+			var _type = "url(" + baseURL + base + type[typeRNG][0] + "), ";
 		} else if (t2 > 1) {
 			var _type = "url(" + baseURL + base + type[t2 - 2][0] + "), ";
 		}
