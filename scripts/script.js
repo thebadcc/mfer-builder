@@ -134,31 +134,32 @@ const longHair = [
 	["/longhair/prettycoolhair.png", 1, 1, 1, 1, 1, 1],
 ];
 
-const hatsUnder = [];
-hatsUnder[0]= "/hatunderheadphones/bandanablue.png";
-hatsUnder[1]= "/hatunderheadphones/bandanadarkgray.png";
-hatsUnder[2]= "/hatunderheadphones/bandanared.png";
-hatsUnder[3]= "/hatunderheadphones/beaniemonochrome.png";
-hatsUnder[4]= "/hatunderheadphones/beanie.png";
-hatsUnder[5]= "/hatunderheadphones/capmonochrome.png";
-hatsUnder[6]= "/hatunderheadphones/cappurple.png";
-hatsUnder[7]= "/hatunderheadphones/headbandblue_green.png";
-hatsUnder[8]= "/hatunderheadphones/headbandblue_red.png";
-hatsUnder[9]= "/hatunderheadphones/headbandblue_white.png";
-hatsUnder[10]= "/hatunderheadphones/headbandgreen_white.png";
-hatsUnder[11]= "/hatunderheadphones/headbandpink_white.png";
-hatsUnder[12]= "/hatunderheadphones/knitatlanta.png";
-hatsUnder[13]= "/hatunderheadphones/knitbaltimore.png";
-hatsUnder[14]= "/hatunderheadphones/knitbuffalo.png";
-hatsUnder[15]= "/hatunderheadphones/knitchicago.png";
-hatsUnder[16]= "/hatunderheadphones/knitcleveland.png";
-hatsUnder[17]= "/hatunderheadphones/knitdallas.png";
-hatsUnder[18]= "/hatunderheadphones/knitkc.png";
-hatsUnder[19]= "/hatunderheadphones/knitlasvegas.png";
-hatsUnder[20]= "/hatunderheadphones/knitmiami.png";
-hatsUnder[21]= "/hatunderheadphones/knitnewyork.png";
-hatsUnder[22]= "/hatunderheadphones/knitpittsburgh.png";
-hatsUnder[23]= "/hatunderheadphones/knitsanfran.png";
+const hatsUnder = [
+	["/hatunderheadphones/bandanablue.png", 1, 1, 1, 1, 1, 1],
+	["/hatunderheadphones/bandanadarkgray.png", 1, 1, 1, 1, 1, 1],
+	["/hatunderheadphones/bandanared.png", 1, 1, 1, 1, 1, 1],
+	["/hatunderheadphones/beaniemonochrome.png", 1, 1, 1, 1, 1, 1],
+	["/hatunderheadphones/beanie.png", 1, 1, 1, 1, 1, 1],
+	["/hatunderheadphones/capmonochrome.png", 1, 1, 1, 1, 1, 1],
+	["/hatunderheadphones/cappurple.png", 1, 1, 1, 1, 1, 1],
+	["/hatunderheadphones/headbandblue_green.png", 1, 1, 1, 1, 1, 1],
+	["/hatunderheadphones/headbandblue_red.png", 1, 1, 1, 1, 1, 1],
+	["/hatunderheadphones/headbandblue_white.png", 1, 1, 1, 1, 1, 1],
+	["/hatunderheadphones/headbandgreen_white.png", 1, 1, 1, 1, 1, 1],
+	["/hatunderheadphones/headbandpink_white.png", 1, 1, 1, 1, 1, 1],
+	["/hatunderheadphones/knitatlanta.png", 1, 1, 1, 1, 1, 1],
+	["/hatunderheadphones/knitbaltimore.png", 1, 1, 1, 1, 1, 1],
+	["/hatunderheadphones/knitbuffalo.png", 1, 1, 1, 1, 1, 1],
+	["/hatunderheadphones/knitchicago.png", 1, 1, 1, 1, 1, 1],
+	["/hatunderheadphones/knitcleveland.png", 1, 1, 1, 1, 1, 1],
+	["/hatunderheadphones/knitdallas.png", 1, 1, 1, 1, 1, 1],
+	["/hatunderheadphones/knitkc.png", 1, 1, 1, 1, 1, 1],
+	["/hatunderheadphones/knitlasvegas.png", 1, 1, 1, 1, 1, 1],
+	["/hatunderheadphones/knitmiami.png", 1, 1, 1, 1, 1, 1],
+	["/hatunderheadphones/knitnewyork.png", 1, 1, 1, 1, 1, 1],
+	["/hatunderheadphones/knitpittsburgh.png", 1, 1, 1, 1, 1, 1],
+	["/hatunderheadphones/knitsanfran.png", 1, 1, 1, 1, 1, 1]
+];
 
 const hatsOver = [];
 hatsOver[0]= "/hatoverheadphones/cowboyhat.png";
@@ -223,7 +224,7 @@ function generateMfers(count, seedinput) {
 		var beardRNG = Math.floor(Math.random() * 2);
 		var hoodiesRNG = Math.floor(Math.random() * 15);
 		var shirtRNG = Math.floor(Math.random() * 14);
-		var hatsUnderRNG = hatsUnder[Math.floor(Math.random() * 24)];
+		var hatsUnderRNG = Math.floor(Math.random() * 24);
 		var hatsOverRNG = hatsOver[Math.floor(Math.random() * 3)];
 		var longHairRNG = Math.floor(Math.random() * 3);
 		var shortHairRNG = shortHair[Math.floor(Math.random() * 12)];
@@ -425,11 +426,19 @@ function generateMfers(count, seedinput) {
 			}
 		}
 		if (t12 == 1) {
-			var _hatsUnder = "";           
+			var _hatsUnder = "";     
 		} else if (t12 == 0) {
-			var _hatsUnder = "url(" + baseURL + base + hatsUnderRNG + "), ";           
+			if (hatsUnder[hatsUnderRNG][baseCheck] == 1) {
+				var _hatsUnder = "url(" + baseURL + base + hatsUnder[hatsUnderRNG][0] + "), ";
+			} else {
+				var _hatsUnder = "url(" + baseURL + base + hatsUnder[19][0] + "), ";
+			}        
 		} else if (t12 > 1) {
-			var _hatsUnder = "url(" + baseURL + base + hatsUnder[t12 - 2] + "), ";           
+			if (hatsUnder[t12 - 2][baseCheck] == 1) {
+				var _hatsUnder = "url(" + baseURL + base + hatsUnder[t12 - 2][0] + "), ";
+			} else {
+				var _hatsUnder = "url(" + baseURL + base + hatsUnder[19][0] + "), ";
+			}          
 		}
 		if (t13 == 1) {
 			var _hatsOver = "";  
