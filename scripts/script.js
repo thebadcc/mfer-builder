@@ -93,22 +93,23 @@ const beard = [
 	["/beard/shadowbeard.png", 1, 1, 1, 1, 1, 1]
 ];
 
-const hoodies = [];
-hoodies[0]= "/hatoverheadphones/hoodie.png";
-hoodies[1]= "/hatoverheadphones/bearhoodie.png";
-hoodies[2]= "/hatoverheadphones/bullhoodie.png";
-hoodies[3]= "/hatoverheadphones/foxhoodie.png";
-hoodies[4]= "/hatoverheadphones/trexhoodie.png";
-hoodies[5]= "/hatoverheadphones/dragonhoodie.png";
-hoodies[6]= "/hatoverheadphones/chickenhoodie.png";
-hoodies[7]= "/hatoverheadphones/pepehoodie.png";
-hoodies[8]= "/hatoverheadphones/sharkhoodie.png";
-hoodies[9]= "/hatoverheadphones/axolotlhoodie.png";
-hoodies[10]= "/hatoverheadphones/mleehoodie.png";
-hoodies[11]= "/hatoverheadphones/kikihoodie.png";
-hoodies[12]= "/hatoverheadphones/masterchanhoodie.png";
-hoodies[13]= "/hatoverheadphones/sonichoodie.png";
-hoodies[14]= "/hatoverheadphones/rabbithoodie.png";
+const hoodies = [
+	["/hatoverheadphones/hoodie.png", 1, 1, 1, 1, 1, 1],
+	["/hatoverheadphones/bearhoodie.png", 1, 0, 0, 0, 0, 0],
+	["/hatoverheadphones/bullhoodie.png", 1, 0, 0, 0, 0, 0],	
+	["/hatoverheadphones/foxhoodie.png", 1, 0, 0, 0, 0, 0],	
+	["/hatoverheadphones/trexhoodie.png", 1, 0, 0, 0, 0, 0],	
+	["/hatoverheadphones/dragonhoodie.png", 1, 0, 0, 0, 0, 0],	
+	["/hatoverheadphones/chickenhoodie.png", 1, 0, 0, 0, 0, 0],	
+	["/hatoverheadphones/pepehoodie.png", 1, 0, 0, 0, 0, 0],	
+	["/hatoverheadphones/sharkhoodie.png", 1, 0, 0, 0, 0, 0],	
+	["/hatoverheadphones/axolotlhoodie.png", 1, 0, 0, 0, 0, 0],	
+	["/hatoverheadphones/mleehoodie.png", 1, 0, 0, 0, 0, 0],	
+	["/hatoverheadphones/kikihoodie.png", 1, 0, 0, 0, 0, 0],	
+	["/hatoverheadphones/masterchanhoodie.png", 1, 0, 0, 0, 0, 0],	
+	["/hatoverheadphones/sonichoodie.png", 1, 0, 0, 0, 0, 0],	
+	["/hatoverheadphones/rabbithoodie.png", 1, 0, 0, 0, 0, 0]	
+];
 
 const shirt = [];
 shirt[0]= "/shirt/collaredshirtblue.png";
@@ -218,7 +219,7 @@ function generateMfers(count, seedinput) {
 		var smokeRNG = Math.floor(Math.random() * 3);
 		var watchRNG = Math.floor(Math.random() * 12);
 		var beardRNG = Math.floor(Math.random() * 2);
-		var hoodiesRNG = hoodies[Math.floor(Math.random() * 15)];
+		var hoodiesRNG = Math.floor(Math.random() * 15);
 		var shirtRNG = shirt[Math.floor(Math.random() * 14)];
 		var hatsUnderRNG = hatsUnder[Math.floor(Math.random() * 24)];
 		var hatsOverRNG = hatsOver[Math.floor(Math.random() * 3)];
@@ -379,24 +380,16 @@ function generateMfers(count, seedinput) {
 		if (t9 == 1) {
 			var _hoodies = "";
 		} else if (t9 == 0) {
-			var httpHoodie = new XMLHttpRequest();
-			var urlHoodie = baseURL + base + hoodiesRNG;
-			httpHoodie.open('HEAD', urlHoodie, false);
-			httpHoodie.send();
-			if (httpHoodie.status == 200) {
-            			var _hoodies = "url(" + urlHoodie + "), ";
+			if (hoodies[hoodiesRNG][baseCheck] == 1) {
+				var _hoodies = "url(" + baseURL + base + hoodies[hoodiesRNG][0] + "), ";
 			} else {
-				var _hoodies = "url(" + baseURL + base + hoodies[0] + "), ";
+				var _hoodies = "url(" + baseURL + base + hoodies[0][0] + "), ";
 			}
 		} else if (t9 > 1) {
-			var httpHoodie = new XMLHttpRequest();
-			var urlHoodie = baseURL + base + hoodies[t9 - 2];
-			httpHoodie.open('HEAD', urlHoodie, false);
-			httpHoodie.send();
-			if (httpHoodie.status == 200) {
-            			var _hoodies = "url(" + urlHoodie + "), ";
+			if (hoodies[t9 - 2][baseCheck] == 1) {
+				var _hoodies = "url(" + baseURL + base + hoodies[t9 - 2][0] + "), ";
 			} else {
-				var _hoodies = "url(" + baseURL + base + hoodies[0] + "), ";
+				var _hoodies = "url(" + baseURL + base + hoodies[0][0] + "), ";
 			}
 		}
 		if (t10 == 1) {
