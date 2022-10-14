@@ -55,16 +55,17 @@ const mouth = [
 	["/mouth/smile.png", 1, 1, 1, 1, 1, 1]
 ];
 
-const headphones = [];
-headphones[0]= "/headphones/RCSheadphones.png";
-headphones[1]= "/headphones/blackheadphones.png";
-headphones[2]= "/headphones/blueheadphones.png";
-headphones[3]= "/headphones/goldheadphones.png";
-headphones[4]= "/headphones/greenheadphones.png";
-headphones[5]= "/headphones/linedheadphones.png";
-headphones[6]= "/headphones/pinkheadphones.png";
-headphones[7]= "/headphones/redheadphones.png";
-headphones[8]= "/headphones/whiteheadphones.png";
+const headphones = [
+	["/headphones/RCSheadphones.png", 1, 1, 1, 1, 1, 1],
+	["/headphones/blackheadphones.png", 1, 1, 1, 1, 1, 1],
+	["/headphones/blueheadphones.png", 1, 1, 1, 1, 1, 1],
+	["/headphones/goldheadphones.png", 1, 1, 1, 1, 1, 1],
+	["/headphones/greenheadphones.png", 1, 1, 1, 1, 1, 1],
+	["/headphones/linedheadphones.png", 1, 1, 1, 1, 1, 1],
+	["/headphones/pinkheadphones.png", 1, 1, 1, 1, 1, 1],
+	["/headphones/redheadphones.png", 1, 1, 1, 1, 1, 1],
+	["/headphones/whiteheadphones.png", 1, 1, 1, 1, 1, 1]
+];
 
 const smoke = [];
 smoke[0]= "/smoke/cigblack.png";
@@ -210,7 +211,7 @@ function generateMfers(count, seedinput) {
 		var typeRNG = Math.floor(Math.random() * 5);
 		var eyesRNG = Math.floor(Math.random() * 11);
 		var mouthRNG = Math.floor(Math.random() * 2);
-		var headphonesRNG = headphones[Math.floor(Math.random() * 9)];
+		var headphonesRNG = Math.floor(Math.random() * 9);
 		var smokeRNG = smoke[Math.floor(Math.random() * 3)];
 		var watchRNG = watch420[Math.floor(Math.random() * 12)];
 		var beardRNG = beard[Math.floor(Math.random() * 2)];
@@ -292,9 +293,17 @@ function generateMfers(count, seedinput) {
 		if (t5 == 1) {
 			var _headphones = "";
 		} else if (t5 == 0) {
-			var _headphones = "url(" + baseURL + base + headphonesRNG + "), ";
+			if (headphones[headphonesRNG][baseCheck] == 1) {
+				var _headphones = "url(" + baseURL + base + headphones[headphonesRNG][0] + "), ";
+			} else {
+				var _headphones = "url(" + baseURL + base + headphones[1][0] + "), ";
+			}
 		} else if (t5 > 1) {
-			var _headphones = "url(" + baseURL + base + headphones[t5 - 2] + "), ";
+			if (headphones[t5 - 2][baseCheck] == 1) {
+				var _headphones = "url(" + baseURL + base + headphones[t5 - 2][0] + "), ";
+			} else {
+				var _headphones = "url(" + baseURL + base + headphones[1][0] + "), ";
+			}
 		}
 		if (t6 == 1) {
 			var _smoke = ""
