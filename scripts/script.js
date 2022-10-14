@@ -237,8 +237,10 @@ function generateMfers(count, seedinput) {
 		if (t2 == 1) {
 			var _type = "";
 		} else if (t2 == 0) {
+			console.log(type[typeRNG][baseCheck]);
 			var _type = "url(" + baseURL + base + type[typeRNG][0] + "), ";
 		} else if (t2 > 1) {
+			console.log(type[t2 - 2][baseCheck]);
 			var _type = "url(" + baseURL + base + type[t2 - 2][0] + "), ";
 		}
 		if (t3 == 1) {
