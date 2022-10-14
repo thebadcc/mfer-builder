@@ -128,10 +128,11 @@ const shirt = [
 	["/shirt/silverchain.png", 1, 1, 1, 1, 1, 1]
 ];
 
-const longHair = [];
-longHair[0]= "/longhair/longhairblack.png";
-longHair[1]= "/longhair/longhairyellow.png";
-longHair[2]= "/longhair/prettycoolhair.png";
+const longHair = [
+	["/longhair/longhairblack.png", 1, 1, 1, 1, 1, 1],
+	["/longhair/longhairyellow.png", 1, 1, 1, 1, 1, 1],
+	["/longhair/prettycoolhair.png", 1, 1, 1, 1, 1, 1],
+];
 
 const hatsUnder = [];
 hatsUnder[0]= "/hatunderheadphones/bandanablue.png";
@@ -224,7 +225,7 @@ function generateMfers(count, seedinput) {
 		var shirtRNG = Math.floor(Math.random() * 14);
 		var hatsUnderRNG = hatsUnder[Math.floor(Math.random() * 24)];
 		var hatsOverRNG = hatsOver[Math.floor(Math.random() * 3)];
-		var longHairRNG = longHair[Math.floor(Math.random() * 3)];
+		var longHairRNG = Math.floor(Math.random() * 3);
 		var shortHairRNG = shortHair[Math.floor(Math.random() * 12)];
 
 		if (t1 == 1) {
@@ -411,24 +412,16 @@ function generateMfers(count, seedinput) {
 		if (t11 == 1) {
 			var _longHair = "";
 		} else if (t11 == 0) {
-			var httpLongHair = new XMLHttpRequest();
-			var urlLongHair = baseURL + base + longHairRNG;
-			httpLongHair.open('HEAD', urlLongHair, false);
-			httpLongHair.send();
-			if (httpLongHair.status == 200) {
-            			var _longHair = "url(" + urlLongHair + "), ";
+			if (longHair[longHairRNG][baseCheck] == 1) {
+				var _longHair = "url(" + baseURL + base + longHair[longHairRNG][0] + "), ";
 			} else {
-				var _longHair = "url(" + baseURL + base + longHairRNG + "), ";
+				var _longHair = "url(" + baseURL + base + longHair[0][0] + "), ";
 			}
 		} else if (t11 > 1) {
-			var httpLongHair = new XMLHttpRequest();
-			var urlLongHair = baseURL + base + longHair[t11 - 2];
-			httpLongHair.open('HEAD', urlLongHair, false);
-			httpLongHair.send();
-			if (httpLongHair.status == 200) {
-            			var _longHair = "url(" + urlLongHair + "), ";
+			if (longHair[t11 - 2][baseCheck] == 1) {
+				var _longHair = "url(" + baseURL + base + longHair[t11 - 2][0] + "), ";
 			} else {
-				var _longHair = "url(" + baseURL + base + longHair[0] + "), ";
+				var _longHair = "url(" + baseURL + base + longHair[0][0] + "), ";
 			}
 		}
 		if (t12 == 1) {
