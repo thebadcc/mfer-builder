@@ -33,7 +33,8 @@ const type = [
 	["/type/charcoalmfer.png", 1, 1, 1, 1, 1, 1],
 	["/type/zombiemfer.png", 1, 1, 1, 1, 1, 1],
 	["/type/apemfer.png", 1, 1, 1, 1, 1, 1],
-	["/type/alienmfer.png", 1, 1, 1, 1, 1, 1]
+	["/type/alienmfer.png", 1, 1, 1, 1, 1, 1],
+	["/type/robotmfer.png", 1, 0, 0, 0, 0, 0]
 ];
 
 const eyes = [
@@ -47,12 +48,15 @@ const eyes = [
 	["/eyes/shades.png", 1, 1, 1, 1, 1, 1],
 	["/eyes/vr.png", 1, 1, 1, 1, 1, 1],
 	["/eyes/zombieeyes.png", 1, 1, 1, 1, 1, 1],
-	["/eyes/mcxshades.png", 1, 1, 1, 1, 1, 0]
+	["/eyes/mcxshades.png", 1, 1, 1, 1, 1, 0],
+	["/eyes/scanner.png", 1, 0, 0, 0, 0, 0]
+	
 ];
 
 const mouth = [
 	["/mouth/flat.png", 1, 1, 1, 1, 1, 1],
-	["/mouth/smile.png", 1, 1, 1, 1, 1, 1]
+	["/mouth/smile.png", 1, 1, 1, 1, 1, 1],
+	["/mouth/voicebox.png", 1, 0, 0, 0, 0, 0]
 ];
 
 const headphones = [
@@ -218,9 +222,9 @@ function generateMfers(count, seedinput) {
 			var baseCheck = projects[baseID - 1][1];
 		}
 		var backgroundRNG = Math.floor(Math.random() * 14);
-		var typeRNG = Math.floor(Math.random() * 5);
-		var eyesRNG = Math.floor(Math.random() * 11);
-		var mouthRNG = Math.floor(Math.random() * 2);
+		var typeRNG = Math.floor(Math.random() * 6);
+		var eyesRNG = Math.floor(Math.random() * 12);
+		var mouthRNG = Math.floor(Math.random() * 3);
 		var headphonesRNG = Math.floor(Math.random() * 9);
 		var smokeRNG = Math.floor(Math.random() * 3);
 		var watchRNG = Math.floor(Math.random() * 12);
