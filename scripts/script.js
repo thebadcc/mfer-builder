@@ -205,7 +205,7 @@ function generateMfers(count, seedinput) {
 			var baseCheck = projects[baseID - 1][1];
 		}
 		var backgroundRNG = Math.floor(Math.random() * 14);
-		var typeRNG = type[Math.floor(Math.random() * 5)][0];
+		var typeRNG = Math.floor(Math.random() * 5);
 		var eyesRNG = eyes[Math.floor(Math.random() * 11)];
 		var mouthRNG = mouth[Math.floor(Math.random() * 2)];
 		var headphonesRNG = headphones[Math.floor(Math.random() * 9)];
@@ -223,9 +223,9 @@ function generateMfers(count, seedinput) {
 			var _background = "url()"
 		} else if (t1 == 0) {
 			if(background[backgroundRNG][baseCheck] == 1) {
-			var _background = "url(" + baseURL + base + background[backgroundRNG][0] + ")";
+				var _background = "url(" + baseURL + base + background[backgroundRNG][0] + ")";
 			} else {
-			var _background = "url(" + baseURL + base + background[0][0] + ")";
+				var _background = "url(" + baseURL + base + background[0][0] + ")";
 			}
 		} else if (t1 > 1) {
 			if(background[t1 - 2][baseCheck] == 1) {
@@ -237,9 +237,17 @@ function generateMfers(count, seedinput) {
 		if (t2 == 1) {
 			var _type = "";
 		} else if (t2 == 0) {
-			var _type = "url(" + baseURL + base + typeRNG + "), ";
+			if(type[typeRNG][baseCheck] == 1) {
+				var _type = "url(" + baseURL + base + type[typeRNG][0] + ")";
+			} else {
+				var _type = "url(" + baseURL + base + type[0][0] + ")";
+			}
 		} else if (t2 > 1) {
-			var _type = "url(" + baseURL + base + type[t2 - 2][0] + "), ";
+			if(type[typeRNG][baseCheck] == 1) {
+				var _type = "url(" + baseURL + base + type[t2 - 2][0] + ")";
+			} else {
+				var _type = "url(" + baseURL + base + type[0][0] + ")";
+			}
 		}
 		if (t3 == 1) {
 			var _eyes = "";
