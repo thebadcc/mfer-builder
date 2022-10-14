@@ -264,7 +264,10 @@ function generateMfers(count, seedinput) {
 				}
 			} else {
 				var _eyes = "url(" + baseURL + base + eyes[6][0] + "), ";
-				console.log(_eyes);
+				if (base == projects[5][0]) {
+					var _eyesMod = "url(" + baseURL + base + "/modifiers" + eyes[6][0] + "), ";
+				} else {
+				}
 			}
 		} else if (t3 > 1) {
 			if (eyes[t3 - 2][baseCheck] == 1) {
@@ -274,9 +277,11 @@ function generateMfers(count, seedinput) {
 				} else {
 				}	
 			} else {
-				
 				var _eyes = "url(" + baseURL + base + eyes[6][0] + "), ";
-				console.log(_eyes);
+				if (base == projects[5][0]) {
+					var _eyesMod = "url(" + baseURL + base + "/modifiers" + eyes[6][0] + "), ";
+				} else {
+				}
 			}
 		}
 		if (t4 == 1) {
