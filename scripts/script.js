@@ -598,18 +598,18 @@ function generateMfers(count, seedinput) {
 	} else if (base == "mfersAhead") {
 	var seed = _smoke + _hoodies + _watch420 + _eyes + _hatsOver + _shortHair + _headphones + _hatsUnder + _longHair + _shirt + _mouth + _beard + _type + _background;
 	} else if (base == "sketchyMfers") {
-		if (_hatsUnder == ("url(" + baseURL + base + hatsUnder[3] + "), ") || _hatsUnder == ("url(" + baseURL + base + hatsUnder[4] + "), ") || _hatsUnder == ("url(" + baseURL + base + hatsUnder[5] + "), ") || _hatsUnder == ("url(" + baseURL + base + hatsUnder[6] + "), ")) {
+		if (_hatsUnder == ("url(" + baseURL + base + hatsUnder[3][0] + "), ") || _hatsUnder == ("url(" + baseURL + base + hatsUnder[4][0] + "), ") || _hatsUnder == ("url(" + baseURL + base + hatsUnder[5][0] + "), ") || _hatsUnder == ("url(" + baseURL + base + hatsUnder[6][0] + "), ")) {
 			if (_longHair == ("url(" + baseURL + base + longHair[0] + "), ")) {
 			var seed = _eyesMod + _hoodies + _watch420 + _smoke + _hatsOver + _hatsUnder + _headphones + "url(https://raw.githubusercontent.com/thebadcc-eth/mfer-builder/main/images/sketchyMfers/longhair/longhairblackmod.png), " + _shirt + _longHair + _shortHair + _eyes + _mouth + _beard + _type + _hatsOverMod + _background;
-			} else if (_longHair == ("url(" + baseURL + base + longHair[1] + "), ")) {
+			} else if (_longHair == ("url(" + baseURL + base + longHair[1][0] + "), ")) {
 			var seed = _eyesMod + _hoodies + _watch420 + _smoke + _hatsOver + _eyesMod + _hatsUnder + _headphones + "url(https://raw.githubusercontent.com/thebadcc-eth/mfer-builder/main/images/sketchyMfers/longhair/longhairyellowmod.png), " + _shirt + _longHair + _shortHair + _eyes + _mouth + _beard + _type + _hatsOverMod + _background;
 			} else  {
 			var seed = _eyesMod + _hoodies + _watch420 + _smoke + _hatsOver + _eyesMod + _hatsUnder + _headphones + _shirt + _longHair + _shortHair + _eyes + _mouth + _beard + _type + _hatsOverMod + _background;
 			}
 		} else {
-			if (_longHair == ("url(" + baseURL + base + longHair[0] + "), ")) {
+			if (_longHair == ("url(" + baseURL + base + longHair[0][0] + "), ")) {
 			var seed = _eyesMod + _hoodies + _watch420 + _smoke + _hatsOver + _eyesMod + _headphones + _hatsUnder  + "url(https://raw.githubusercontent.com/thebadcc-eth/mfer-builder/main/images/sketchyMfers/longhair/longhairblackmod.png), " + _shirt + _longHair + _shortHair + _eyes + _mouth + _beard + _type + _hatsOverMod + _background;
-			} else if (_longHair == ("url(" + baseURL + base + longHair[1] + "), ")) {
+			} else if (_longHair == ("url(" + baseURL + base + longHair[1][0] + "), ")) {
 			var seed = _eyesMod + _hoodies + _watch420 + _smoke + _hatsOver + _eyesMod + _headphones + _hatsUnder + "url(https://raw.githubusercontent.com/thebadcc-eth/mfer-builder/main/images/sketchyMfers/longhair/longhairyellowmod.png), " + _shirt + _longHair + _shortHair + _eyes + _mouth + _beard + _type + _hatsOverMod + _background;
 			} else {
 			var seed = _eyesMod + _hoodies + _watch420 + _smoke + _hatsOver + _eyesMod + _headphones + _hatsUnder + _shirt + _longHair + _shortHair + _eyes + _mouth + _beard + _type + _hatsOverMod + _background;	
