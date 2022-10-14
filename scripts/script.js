@@ -243,8 +243,11 @@ function generateMfers(count, seedinput) {
 			var _type = "url(" + baseURL + base + type[0][0] + "), ";
 			}
 		} else if (t2 > 1) {
-			console.log(type[t2 - 2][baseCheck]);
+			if (type[t2 - 2][baseCheck] == 1) {
 			var _type = "url(" + baseURL + base + type[t2 - 2][0] + "), ";
+			} else {
+			var _type = "url(" + baseURL + base + type[0][0] + "), ";
+			}
 		}
 		if (t3 == 1) {
 			var _eyes = "";
