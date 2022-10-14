@@ -47,7 +47,7 @@ const eyes = [
 	["/eyes/shades.png", 1, 1, 1, 1, 1, 1],
 	["/eyes/vr.png", 1, 1, 1, 1, 1, 1],
 	["/eyes/zombieeyes.png", 1, 1, 1, 1, 1, 1],
-	["/eyes/mcxshades.png", 1, 1, 1, 1, 1, 1]
+	["/eyes/mcxshades.png", 1, 1, 1, 1, 1, 0]
 ];
 
 const mouth = [
