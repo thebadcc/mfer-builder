@@ -228,7 +228,7 @@ function generateMfers(count, seedinput) {
 			var _background = "url(" + baseURL + base + background[0][0] + ")";
 			}
 		} else if (t1 > 1) {
-			if(background[t1 - 2][baseCheck] == 1) {
+			if (background[t1 - 2][baseCheck] == 1) {
 			var _background = "url(" + baseURL + base + background[t1 - 2][0] + ")";
 			} else {
 			var _background = "url(" + baseURL + base + background[0][0] + ")";
@@ -237,8 +237,11 @@ function generateMfers(count, seedinput) {
 		if (t2 == 1) {
 			var _type = "";
 		} else if (t2 == 0) {
-			console.log(type[typeRNG][baseCheck]);
+			if (type[typeRNG][baseCheck] == 1){
 			var _type = "url(" + baseURL + base + type[typeRNG][0] + "), ";
+			} else if {
+			var _type = "url(" + baseURL + base + type[0][0] + "), ";
+			}
 		} else if (t2 > 1) {
 			console.log(type[t2 - 2][baseCheck]);
 			var _type = "url(" + baseURL + base + type[t2 - 2][0] + "), ";
