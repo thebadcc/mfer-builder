@@ -111,21 +111,22 @@ const hoodies = [
 	["/hatoverheadphones/rabbithoodie.png", 1, 0, 0, 0, 0, 0]	
 ];
 
-const shirt = [];
-shirt[0]= "/shirt/collaredshirtblue.png";
-shirt[1]= "/shirt/collaredshirtgreen.png";
-shirt[2]= "/shirt/collaredshirtpink.png";
-shirt[3]= "/shirt/collaredshirtturquoise.png";
-shirt[4]= "/shirt/collaredshirtwhite.png";
-shirt[5]= "/shirt/collaredshirtyellow.png";
-shirt[6]= "/shirt/hoodiedownblue.png";
-shirt[7]= "/shirt/hoodiedowngray.png";
-shirt[8]= "/shirt/hoodiedowngreen.png";
-shirt[9]= "/shirt/hoodiedownpink.png";
-shirt[10]= "/shirt/hoodiedownred.png";
-shirt[11]= "/shirt/hoodiedownwhite.png";
-shirt[12]= "/chain/goldchain.png";
-shirt[13]= "/chain/silverchain.png";
+const shirt = [
+	["/shirt/collaredshirtblue.png", 1, 1, 1, 1, 1, 1],
+	["/shirt/collaredshirtgreen.png", 1, 1, 1, 1, 1, 1],
+	["/shirt/collaredshirtpink.png", 1, 1, 1, 1, 1, 1],
+	["/shirt/collaredshirtturquoise.png", 1, 1, 1, 1, 1, 1],
+	["/shirt/collaredshirtwhite.png", 1, 1, 1, 1, 1, 1],
+	["/shirt/collaredshirtyellow.png", 1, 1, 1, 1, 1, 1],
+	["/shirt/hoodiedownblue.png", 1, 1, 1, 1, 1, 1],
+	["/shirt/hoodiedowngray.png", 1, 1, 1, 1, 1, 1],
+	["/shirt/hoodiedowngreen.png", 1, 1, 1, 1, 1, 1],
+	["/shirt/hoodiedownpink.png", 1, 1, 1, 1, 1, 1],
+	["/shirt/hoodiedownred.png", 1, 1, 1, 1, 1, 1],
+	["/shirt/hoodiedownwhite.png", 1, 1, 1, 1, 1, 1],
+	["/shirt/goldchain.png", 1, 1, 1, 1, 1, 1],
+	["/shirt/silverchain.png", 1, 1, 1, 1, 1, 1]
+];
 
 const longHair = [];
 longHair[0]= "/longhair/longhairblack.png";
@@ -220,7 +221,7 @@ function generateMfers(count, seedinput) {
 		var watchRNG = Math.floor(Math.random() * 12);
 		var beardRNG = Math.floor(Math.random() * 2);
 		var hoodiesRNG = Math.floor(Math.random() * 15);
-		var shirtRNG = shirt[Math.floor(Math.random() * 14)];
+		var shirtRNG = Math.floor(Math.random() * 14);
 		var hatsUnderRNG = hatsUnder[Math.floor(Math.random() * 24)];
 		var hatsOverRNG = hatsOver[Math.floor(Math.random() * 3)];
 		var longHairRNG = longHair[Math.floor(Math.random() * 3)];
@@ -395,9 +396,17 @@ function generateMfers(count, seedinput) {
 		if (t10 == 1) {
 			var _shirt = "";
 		} else if (t10 == 0) {
-			var _shirt = "url(" + baseURL + base + shirtRNG + "), ";
+			if (shirt[shirtRNG][baseCheck] == 1) {
+				var _shirt = "url(" + baseURL + base + shirt[shirtRNG][0] + "), ";
+			} else {
+				var _shirt = "url(" + baseURL + base + shirt[4][0] + "), ";
+			}
 		} else if (t10 > 1) {
-			var _shirt = "url(" + baseURL + base + shirt[t10 - 2] + "), ";
+			if (shirt[t10 - 2][baseCheck] == 1) {
+				var _shirt = "url(" + baseURL + base + shirt[t10 - 2][0] + "), ";
+			} else {
+				var _shirt = "url(" + baseURL + base + shirt[4][0] + "), ";
+			}
 		}
 		if (t11 == 1) {
 			var _longHair = "";
