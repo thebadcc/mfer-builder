@@ -112,7 +112,8 @@ const hoodies = [
 	["/hatoverheadphones/kikihoodie.png", 1, 0, 0, 0, 0, 0],	
 	["/hatoverheadphones/masterchanhoodie.png", 1, 0, 0, 0, 0, 0],	
 	["/hatoverheadphones/sonichoodie.png", 1, 0, 0, 0, 0, 0],	
-	["/hatoverheadphones/rabbithoodie.png", 1, 0, 0, 0, 0, 0]	
+	["/hatoverheadphones/rabbithoodie.png", 1, 0, 0, 0, 0, 0],
+	["/hatoverheadphones/screamhoodie.png", 1, 0, 0, 0, 0, 0]
 ];
 
 const shirt = [
@@ -229,7 +230,7 @@ function generateMfers(count, seedinput) {
 		var smokeRNG = Math.floor(Math.random() * 3);
 		var watchRNG = Math.floor(Math.random() * 12);
 		var beardRNG = Math.floor(Math.random() * 2);
-		var hoodiesRNG = Math.floor(Math.random() * 15);
+		var hoodiesRNG = Math.floor(Math.random() * 16);
 		var shirtRNG = Math.floor(Math.random() * 14);
 		var hatsUnderRNG = Math.floor(Math.random() * 24);
 		var hatsOverRNG = Math.floor(Math.random() * 3);
