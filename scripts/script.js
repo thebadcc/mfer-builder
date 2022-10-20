@@ -246,7 +246,7 @@ function generateMfers(count, seedinput) {
 		var smokeRNG = Math.floor(Math.random() * 3);
 		var watchRNG = Math.floor(Math.random() * 12);
 		var beardRNG = Math.floor(Math.random() * 2);
-		var hoodiesRNG = Math.floor(Math.random() * 22);
+		var hoodiesRNG = Math.floor(Math.random() * 32);
 		var shirtRNG = Math.floor(Math.random() * 14);
 		var hatsUnderRNG = Math.floor(Math.random() * 24);
 		var hatsOverRNG = Math.floor(Math.random() * 3);
