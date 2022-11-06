@@ -25,7 +25,8 @@ const background = [
 	["/background/TWU_bubblegum.png", 1, 1, 1, 1, 1, 1],
 	["/background/TWU_redLeopard2.png", 1, 1, 1, 1, 1, 1],
 	["/background/TWU_ice.png", 1, 1, 1, 1, 1, 1],
-	["/background/TWU_orangeCheetah.png", 1, 1, 1, 1, 1, 1]
+	["/background/TWU_orangeCheetah.png", 1, 1, 1, 1, 1, 1],
+	["/background/heresmy_salmon.png", 1, 1, 1, 1, 1, 1]
 ];
 
 const type = [
@@ -34,7 +35,8 @@ const type = [
 	["/type/zombiemfer.png", 1, 1, 1, 1, 1, 1],
 	["/type/apemfer.png", 1, 1, 1, 1, 1, 1],
 	["/type/alienmfer.png", 1, 1, 1, 1, 1, 1],
-	["/type/robotmfer.png", 1, 0, 0, 0, 0, 0]
+	["/type/robotmfer.png", 1, 0, 0, 0, 0, 0],
+	["/type/heresmy_brainMfer.png", 1, 0, 0, 0, 0, 0]
 ];
 
 const eyes = [
@@ -49,7 +51,9 @@ const eyes = [
 	["/eyes/vr.png", 1, 1, 1, 1, 1, 1],
 	["/eyes/zombieeyes.png", 1, 1, 1, 1, 1, 1],
 	["/eyes/mcxshades.png", 1, 1, 1, 1, 1, 0],
-	["/eyes/scanner.png", 1, 0, 0, 0, 0, 0]
+	["/eyes/scanner.png", 1, 0, 0, 0, 0, 0],
+	["/eyes/heresmy_aviators.png", 1, 0, 0, 0, 0, 0],
+	["/eyes/heresmy_googlyEyes.png", 1, 0, 0, 0, 0, 0]
 	
 ];
 
@@ -68,13 +72,15 @@ const headphones = [
 	["/headphones/linedheadphones.png", 1, 1, 1, 1, 1, 1],
 	["/headphones/pinkheadphones.png", 1, 1, 1, 1, 1, 1],
 	["/headphones/redheadphones.png", 1, 1, 1, 1, 1, 1],
-	["/headphones/whiteheadphones.png", 1, 1, 1, 1, 1, 1]
+	["/headphones/whiteheadphones.png", 1, 1, 1, 1, 1, 1],
+	["/headphones/heresmy_powerHeadphones.png", 1, 0, 0, 0, 0, 0],
 ];
 
 const smoke = [
 	["/smoke/cigblack.png", 1, 1, 1, 1, 1, 1], 
 	["/smoke/cigwhite.png", 1, 1, 1, 1, 1, 1], 
-	["/smoke/pipe.png", 1, 1, 1, 1, 1, 1]
+	["/smoke/pipe.png", 1, 1, 1, 1, 1, 1],
+	["/smoke/heresmy_cigar.png", 1, 0, 0, 0, 0, 0],
 ];
 
 const watch420 = [
@@ -89,7 +95,8 @@ const watch420 = [
 	["/watch/sublanterngreen.png", 1, 1, 1, 1, 1, 1],
 	["/watch/subred.png", 1, 1, 1, 1, 1, 1],
 	["/watch/subrose.png", 1, 1, 1, 1, 1, 1],
-	["/watch/subturquoise.png", 1, 1, 1, 1, 1, 1]
+	["/watch/subturquoise.png", 1, 1, 1, 1, 1, 1],
+	["/watch/heresmy_catchersWatch.png", 1, 0, 0, 0, 0, 0],
 ];
 
 const beard = [
@@ -129,7 +136,8 @@ const hoodies = [
 	["/hatoverheadphones/am_plagueDoctor.png", 1, 0, 0, 0, 0, 0],
 	["/hatoverheadphones/am_sheepWhite.png", 1, 0, 0, 0, 0, 0],
 	["/hatoverheadphones/am_snowWhite.png", 1, 0, 0, 0, 0, 0],
-	["/hatoverheadphones/am_stimpy.png", 1, 0, 0, 0, 0, 0]
+	["/hatoverheadphones/am_stimpy.png", 1, 0, 0, 0, 0, 0],
+	["/hatoverheadphones/heresmy_astronaut.png", 1, 0, 0, 0, 0, 0]
 ];
 
 const shirt = [
@@ -179,13 +187,15 @@ const hatsUnder = [
 	["/hatunderheadphones/knitmiami.png", 1, 1, 1, 1, 1, 1],
 	["/hatunderheadphones/knitnewyork.png", 1, 1, 1, 1, 1, 1],
 	["/hatunderheadphones/knitpittsburgh.png", 1, 1, 1, 1, 1, 1],
-	["/hatunderheadphones/knitsanfran.png", 1, 1, 1, 1, 1, 1]
+	["/hatunderheadphones/knitsanfran.png", 1, 1, 1, 1, 1, 1],
+	["/hatunderheadphones/heresmy_pirateBandana.png", 1, 0, 0, 0, 0, 0]
 ];
 
 const hatsOver = [
 	["/hatoverheadphones/cowboyhat.png", 1, 1, 1, 1, 1, 1], 
 	["/hatoverheadphones/pilothelmet.png", 1, 1, 1, 1, 1, 1], 
-	["/hatoverheadphones/tophat.png", 1, 1, 1, 1, 1, 1]
+	["/hatoverheadphones/tophat.png", 1, 1, 1, 1, 1, 1],
+	["/hatoverheadphones/heresmy_pirateHat.png", 1, 0, 0, 0, 0, 0],
 ];
 
 const shortHair = [
@@ -238,18 +248,18 @@ function generateMfers(count, seedinput) {
 			var base = projects[baseID - 1][0];
 			var baseCheck = projects[baseID - 1][1];
 		}
-		var backgroundRNG = Math.floor(Math.random() * 14);
-		var typeRNG = Math.floor(Math.random() * 6);
-		var eyesRNG = Math.floor(Math.random() * 12);
+		var backgroundRNG = Math.floor(Math.random() * 15);
+		var typeRNG = Math.floor(Math.random() * 7);
+		var eyesRNG = Math.floor(Math.random() * 14);
 		var mouthRNG = Math.floor(Math.random() * 3);
-		var headphonesRNG = Math.floor(Math.random() * 9);
-		var smokeRNG = Math.floor(Math.random() * 3);
-		var watchRNG = Math.floor(Math.random() * 12);
+		var headphonesRNG = Math.floor(Math.random() * 10);
+		var smokeRNG = Math.floor(Math.random() * 4);
+		var watchRNG = Math.floor(Math.random() * 13);
 		var beardRNG = Math.floor(Math.random() * 2);
-		var hoodiesRNG = Math.floor(Math.random() * 32);
+		var hoodiesRNG = Math.floor(Math.random() * 33);
 		var shirtRNG = Math.floor(Math.random() * 14);
-		var hatsUnderRNG = Math.floor(Math.random() * 24);
-		var hatsOverRNG = Math.floor(Math.random() * 3);
+		var hatsUnderRNG = Math.floor(Math.random() * 25);
+		var hatsOverRNG = Math.floor(Math.random() * 4);
 		var longHairRNG = Math.floor(Math.random() * 3);
 		var shortHairRNG = Math.floor(Math.random() * 12);
 
