@@ -9,7 +9,7 @@ const projects = [
 	["mfersAhead", 4],
 	["mfersBehind", 5],
 	["sketchyMfers", 6],
-	["SOMFERs", 6],
+	["SOMFERs", 7],
 ];
 
 const background = [
