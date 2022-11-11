@@ -21,7 +21,7 @@ const background = [
 	["/background/space.png", 1, 1, 1, 1, 1, 1, 1],
 	["/background/tree.png", 1, 1, 1, 1, 1, 1, 1],
 	["/background/graveyard.png", 1, 1, 1, 1, 1, 1, 1],
-	["/background/prettycoolpurple.png", 1, 1, 1, 1, 1, 1, 1],
+	["/background/prettycoolpurple.png", 1, 1, 1, 1, 1, 1, 0],
 	["/background/TWU_negative.png", 1, 1, 1, 1, 1, 1, 0],
 	["/background/TWU_bubblegum.png", 1, 1, 1, 1, 1, 1, 0],
 	["/background/TWU_redLeopard2.png", 1, 1, 1, 1, 1, 1, 0],
