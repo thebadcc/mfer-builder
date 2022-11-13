@@ -229,3 +229,157 @@ border-bottom: solid 1px lightgray;
   height: 200px;
 }
 
+/* Navigation
+
+body.active-overlay {
+  position: fixed;
+  overflow-y: scroll;
+}
+
+[v-cloak] {
+  display: none;
+}
+
+.overlay-menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  will-change: transform;
+  z-index: 1050;
+}
+
+.overlay-menu-content {
+  position: relative;
+}
+
+.overlay-menu-inner {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.overlay-menu-ripple {
+  position: absolute;
+  border-radius: 50%;
+  background: black;
+}
+
+.menu-icon {
+  position: relative;
+  display: block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+  border-color: transparent;
+  background-color: transparent;
+  outline: none;
+  z-index: 1060;
+  transition: background-color 200ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.menu-icon span, .menu-icon span::before, .menu-icon span::after {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  margin-right: -13px;
+  margin-top: -1px;
+  width: 26px;
+  height: 2px;
+  background-color: white;
+}
+.menu-icon span::before, .menu-icon span::after {
+  content: "";
+  display: block;
+  width: 20px;
+  transition: all 200ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.menu-icon span::before {
+  transform: translateY(-7px);
+}
+.menu-icon span::after {
+  transform: translateY(7px);
+}
+.menu-icon:hover, .menu-icon:focus {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+.menu-icon:active {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+.menu-icon.menu-icon-active span {
+  height: 0;
+}
+.menu-icon.menu-icon-active span::before, .menu-icon.menu-icon-active span::after {
+  width: 26px;
+}
+.menu-icon.menu-icon-active span::before {
+  transform: rotate(45deg);
+}
+.menu-icon.menu-icon-active span::after {
+  transform: rotate(-45deg);
+}
+
+.v-ripple-in-enter-active {
+  -webkit-animation: ripple-in 480ms cubic-bezier(0.4, 0, 0.2, 1);
+          animation: ripple-in 480ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.v-ripple-in-leave-active {
+  animation: ripple-in 200ms cubic-bezier(0.4, 0, 0.2, 1) reverse;
+}
+
+@-webkit-keyframes ripple-in {
+  0% {
+    transform: scale(0);
+    opacity: 0.2;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes ripple-in {
+  0% {
+    transform: scale(0);
+    opacity: 0.2;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.header {
+  position: fixed;
+  width: 100%;
+  z-index: 1030;
+}
+
+.header-inner {
+  max-width: 1024px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.list {
+  color: white;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  line-height: 1.5rem;
+  opacity: 0;
+  transform: translateX(40px);
+  transition-property: opacity, transform;
+  transition-duration: 600ms;
+  transition-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+}
+.overlay-menu-active .list {
+  opacity: 1;
+  transform: translateX(0);
+}
+  
