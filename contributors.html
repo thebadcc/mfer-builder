@@ -1,19 +1,58 @@
-<div id="app">
-  <header class="header">
-    <div class="header-inner">
-      <div>
-        <button type="button" name="menu-icon" aria-label="Toggle menu" class="menu-icon"><span></span></button> 
-        <div class="overlay-menu" style="transform-origin: 0% 0%; display: none;">
-          <div class="overlay-menu-inner"><div class="overlay-menu-ripple" style="height: 0px; width: 0px;"></div> 
-            <div class="overlay-menu-content">
-              <ul class="list">
-                <li>About</li>
-                <li>Playground</li>
-              </ul>
+<html>
+    <head>
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-CGTPK47QHZ"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-CGTPK47QHZ');
+        </script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.0.0-rc.7/dist/html2canvas.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/seedrandom/3.0.5/seedrandom.min.js"></script>
+        <link rel="stylesheet" href="./styles/style.css">
+        <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    </head>
+    <body>
+        <div class="titleSection">
+            <h1>mfer playground</h1>
+            <p>the <!-- --><b>unofficial</b> builder of <!-- --><b>mfers, creyzies & more</b></p>        
+        </div>
+        <div id="app">
+        <header class="header">
+          <div class="header-inner">
+            <div>
+              <button type="button" name="menu-icon" aria-label="Toggle menu" class="menu-icon"><span></span></button> 
+              <div class="overlay-menu" style="transform-origin: 0% 0%; display: none;">
+                <div class="overlay-menu-inner"><div class="overlay-menu-ripple" style="height: 0px; width: 0px;"></div> 
+                  <div class="overlay-menu-content">
+                    <ul class="list">
+                      <li>About</li>
+                      <li>Playground</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
+        </header>
+        <main class="main"></main></div>
+        <div class="lineWrapper">
+            <div class="line"></div>
+            <div class="iconWrapper">
+                <span class="icon">
+                    <img src="https://github.com/thebadcc-eth/mfer-builder/blob/main/images/mferLogo.png?raw=true" width="40px" height="40px">
+                </span>
+            </div>
         </div>
-      </div>
-    </div>
-  </header>
-  <main class="main"></main></div>
+        <div class="titleSection">
+            <p>A special thank you to @RΞY, @hyreal, @0x1723, @biz, @vrmfer, @sartocrates, @illiquidkiki, @metabananas, @m4rsh, @jellopeas, @sodasoondae, @zhoug0x, @thompsonNFT, @animatedmfers, @heresmy, & @somfers</p>
+            <p>by @thebadcc</p>
+        </div>
+        <script src="./scripts/script.js"></script>
+    </body>
+</html>
+
