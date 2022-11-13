@@ -229,6 +229,10 @@ border-bottom: solid 1px lightgray;
   height: 200px;
 }
 
+.topnav {
+    overflow: hidden;
+}
+
 .topnav a {
   float: left;
   display: block;
