@@ -252,12 +252,9 @@ border-bottom: solid 1px lightgray;
   padding: 7px 10px 3px 10px;
   margin-top: 2px;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 45px;
 }
-.topnav .logo img {
-  width: 30px;
-  height: auto;
-}
+
 .topnav .logo:hover {
   background: transparent;
 }
