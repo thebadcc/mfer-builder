@@ -253,7 +253,7 @@ border-bottom: solid 1px lightgray;
   display: block;
   color: black;
   text-align: center;
-  padding: 7px 100px 3px 10px;
+  padding: 7px 40px 3px 10px;
   margin-top: 2px;
   text-decoration: none;
   font-size: 45px;
@@ -276,7 +276,7 @@ border-bottom: solid 1px lightgray;
   }
 
   .topnav button.icon {
-    background: #d8d8d8;
+    background: none;
     float: right;
     display: block;
     padding: 16px 17px;
@@ -288,7 +288,7 @@ border-bottom: solid 1px lightgray;
   button.icon:focus, button.icon:hover {
     border: 0;
     outline: none;
-    background: #b3b3b3;
+    background: none;
   }
 }
 @media screen and (max-width: 600px) {
