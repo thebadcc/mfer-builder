@@ -229,17 +229,6 @@ border-bottom: solid 1px lightgray;
   height: 200px;
 }
 
-
-body {
-  margin: 0;
-  padding: 0;
-  font-family: Helvetica, sans-serif;
-}
-
-.topnav {
-  overflow: hidden;
-  background-color: #eee;
-}
 .topnav a {
   float: left;
   display: block;
@@ -247,15 +236,13 @@ body {
   text-align: center;
   padding: 13px 16px;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 45px;
 }
 .topnav a:hover {
-  background-color: #ddd;
-  color: black;
+
 }
 .topnav a.active {
-  background-color: #ddd;
-  color: black;
+
 }
 .topnav .logo {
   float: left;
