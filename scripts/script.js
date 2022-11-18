@@ -74,6 +74,7 @@ const headphones = [
 	["/headphones/pinkheadphones.png", 1, 1, 1, 1, 1, 1, 1],
 	["/headphones/redheadphones.png", 1, 1, 1, 1, 1, 1, 1],
 	["/headphones/whiteheadphones.png", 1, 1, 1, 1, 1, 1, 1],
+	["/headphones/heresmy_powerheadphones.png", 1, 1, 1, 1, 1, 1, 1],
 	["/headphones/linedheadphonesBlackBlue.png", 1, 0, 0, 0, 0, 0, 0],
 	["/headphones/linedheadphonesBlackGold.png", 1, 0, 0, 0, 0, 0, 0],
 	["/headphones/linedheadphonesBlackGreen.png", 1, 0, 0, 0, 0, 0, 0],
@@ -262,7 +263,7 @@ function generateMfers(count, seedinput) {
 		var typeRNG = Math.floor(Math.random() * 7);
 		var eyesRNG = Math.floor(Math.random() * 14);
 		var mouthRNG = Math.floor(Math.random() * 3);
-		var headphonesRNG = Math.floor(Math.random() * 20);
+		var headphonesRNG = Math.floor(Math.random() * 21);
 		var smokeRNG = Math.floor(Math.random() * 4);
 		var watchRNG = Math.floor(Math.random() * 13);
 		var beardRNG = Math.floor(Math.random() * 2);
