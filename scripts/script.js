@@ -262,7 +262,7 @@ function generateMfers(count, seedinput) {
 		var typeRNG = Math.floor(Math.random() * 7);
 		var eyesRNG = Math.floor(Math.random() * 14);
 		var mouthRNG = Math.floor(Math.random() * 3);
-		var headphonesRNG = Math.floor(Math.random() * 21);
+		var headphonesRNG = Math.floor(Math.random() * 20);
 		var smokeRNG = Math.floor(Math.random() * 4);
 		var watchRNG = Math.floor(Math.random() * 13);
 		var beardRNG = Math.floor(Math.random() * 2);
