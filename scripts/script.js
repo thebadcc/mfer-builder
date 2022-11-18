@@ -74,7 +74,17 @@ const headphones = [
 	["/headphones/pinkheadphones.png", 1, 1, 1, 1, 1, 1, 1],
 	["/headphones/redheadphones.png", 1, 1, 1, 1, 1, 1, 1],
 	["/headphones/whiteheadphones.png", 1, 1, 1, 1, 1, 1, 1],
-	["/headphones/heresmy_powerHeadphones.png", 1, 0, 0, 0, 0, 0, 0],
+	["/headphones/linedheadphonesBlackBlue.png", 1, 0, 0, 0, 0, 0, 0],
+	["/headphones/linedheadphonesBlackGold.png", 1, 0, 0, 0, 0, 0, 0],
+	["/headphones/linedheadphonesBlackGreen.png", 1, 0, 0, 0, 0, 0, 0],
+	["/headphones/linedheadphonesBlackPink.png", 1, 0, 0, 0, 0, 0, 0],
+	["/headphones/linedheadphonesBlackRed.png", 1, 0, 0, 0, 0, 0, 0],
+	["/headphones/linedheadphonesWhiteBlack.png", 1, 0, 0, 0, 0, 0, 0],
+	["/headphones/linedheadphonesWhiteBlue.png", 1, 0, 0, 0, 0, 0, 0],
+	["/headphones/linedheadphonesWhiteGold.png", 1, 0, 0, 0, 0, 0, 0],
+	["/headphones/linedheadphonesWhiteGreen.png", 1, 0, 0, 0, 0, 0, 0],
+	["/headphones/linedheadphonesWhitePink.png", 1, 0, 0, 0, 0, 0, 0],
+	["/headphones/linedheadphonesWhiteRed.png", 1, 0, 0, 0, 0, 0, 0],
 ];
 
 const smoke = [
