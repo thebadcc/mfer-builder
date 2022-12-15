@@ -164,8 +164,8 @@ const shirt = [
 	["/shirt/hoodiedownpink.png", 1, 1, 1, 1, 1, 1, 1],
 	["/shirt/hoodiedownred.png", 1, 1, 1, 1, 1, 1, 1],
 	["/shirt/hoodiedownwhite.png", 1, 1, 1, 1, 1, 1, 1],
-	["/shirt/goldchain.png", 1, 1, 1, 1, 1, 1, 1],
-	["/shirt/silverchain.png", 1, 1, 1, 1, 1, 1, 1]
+	["/chain/goldchain.png", 1, 1, 1, 1, 1, 1, 1],
+	["/chain/silverchain.png", 1, 1, 1, 1, 1, 1, 1]
 ];
 
 const longHair = [
