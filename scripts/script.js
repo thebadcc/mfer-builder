@@ -284,7 +284,7 @@ function generateMfers(count, seedinput) {
 		var hatsUnderRNG = Math.floor(Math.random() * 26);
 		var hatsOverRNG = Math.floor(Math.random() * 5);
 		var longHairRNG = Math.floor(Math.random() * 3);
-		var shortHairRNG = Math.floor(Math.random() * 12);
+		var shortHairRNG = Math.floor(Math.random() * 11);
 
 		if (t1 == 1) {
 			var _background = "url()"
