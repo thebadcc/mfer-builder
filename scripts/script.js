@@ -167,7 +167,8 @@ const shirt = [
 	["/shirt/hoodiedownred.png", 1, 1, 1, 1, 1, 1, 1],
 	["/shirt/hoodiedownwhite.png", 1, 1, 1, 1, 1, 1, 1],
 	["/chain/goldchain.png", 1, 1, 1, 1, 1, 1, 1],
-	["/chain/silverchain.png", 1, 1, 1, 1, 1, 1, 1]
+	["/chain/silverchain.png", 1, 1, 1, 1, 1, 1, 1],
+	["/shirt/collaredshirtbrown.png", 1, 1, 1, 1, 1, 1, 1]
 ];
 
 const longHair = [
@@ -179,14 +180,11 @@ const longHair = [
 const hatsUnder = [
 	["/hatunderheadphones/bandanablue.png", 1, 1, 1, 1, 1, 1, 1],
 	["/hatunderheadphones/bandanadarkgray.png", 1, 1, 1, 1, 1, 1, 1],
-	["/hatunderheadphones/brain.png", 1, 1, 1, 1, 1, 1, 1],
 	["/hatunderheadphones/bandanared.png", 1, 1, 1, 1, 1, 1, 1],
 	["/hatunderheadphones/beaniemonochrome.png", 1, 1, 1, 1, 1, 1, 1],
 	["/hatunderheadphones/beanie.png", 1, 1, 1, 1, 1, 1, 1],
 	["/hatunderheadphones/capmonochrome.png", 1, 1, 1, 1, 1, 1, 1],
 	["/hatunderheadphones/cappurple.png", 1, 1, 1, 1, 1, 1, 1],
-	["/hatunderheadphones/beerhat.png", 1, 1, 1, 1, 1, 1, 1],
-	["/hatunderheadphones/crown.png", 1, 1, 1, 1, 1, 1, 1],
 	["/hatunderheadphones/headbandblue_green.png", 1, 1, 1, 1, 1, 1, 1],
 	["/hatunderheadphones/headbandblue_red.png", 1, 1, 1, 1, 1, 1, 1],
 	["/hatunderheadphones/headbandblue_white.png", 1, 1, 1, 1, 1, 1, 1],
@@ -204,14 +202,17 @@ const hatsUnder = [
 	["/hatunderheadphones/knitnewyork.png", 1, 1, 1, 1, 1, 1, 1],
 	["/hatunderheadphones/knitpittsburgh.png", 1, 1, 1, 1, 1, 1, 1],
 	["/hatunderheadphones/knitsanfran.png", 1, 1, 1, 1, 1, 1, 1],
-	["/hatunderheadphones/heresmy_pirateBandana.png", 1, 0, 0, 0, 0, 0, 0]
+	["/hatunderheadphones/heresmy_pirateBandana.png", 1, 0, 0, 0, 0, 0, 0],
+	["/hatunderheadphones/brain.png", 1, 1, 1, 1, 1, 1, 1],
+	["/hatunderheadphones/crown.png", 1, 1, 1, 1, 1, 1, 1]
 ];
 
 const hatsOver = [
 	["/hatoverheadphones/cowboyhat.png", 1, 1, 1, 1, 1, 1, 1], 
 	["/hatoverheadphones/pilothelmet.png", 1, 1, 1, 1, 1, 1, 1], 
 	["/hatoverheadphones/tophat.png", 1, 1, 1, 1, 1, 1, 1],
-	["/hatoverheadphones/heresmy_pirateHat.png", 1, 0, 0, 0, 0, 0, 0]
+	["/hatoverheadphones/heresmy_pirateHat.png", 1, 0, 0, 0, 0, 0, 0],
+	["/hatunderheadphones/beerhat.png", 1, 1, 1, 1, 1, 1, 1],
 ];
 
 const shortHair = [
