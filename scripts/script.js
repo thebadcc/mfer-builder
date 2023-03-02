@@ -54,9 +54,7 @@ const eyes = [
 	["/eyes/mcxshades.png", 1, 1, 1, 1, 1, 0, 0],
 	["/eyes/scanner.png", 1, 0, 0, 0, 0, 0, 0],
 	["/eyes/heresmy_aviators.png", 1, 0, 0, 0, 0, 0, 0],
-	["/eyes/heresmy_googlyEyes.png", 1, 0, 0, 0, 0, 0, 0],
-	["/eyes/69.png", 1, 0, 0, 0, 0, 0, 0],
-	["/eyes/pepe.png", 1, 0, 0, 0, 0, 0, 0]
+	["/eyes/heresmy_googlyEyes.png", 1, 0, 0, 0, 0, 0, 0]
 	
 ];
 
