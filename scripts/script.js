@@ -55,6 +55,8 @@ const eyes = [
 	["/eyes/scanner.png", 1, 0, 0, 0, 0, 0, 0],
 	["/eyes/heresmy_aviators.png", 1, 0, 0, 0, 0, 0, 0],
 	["/eyes/heresmy_googlyEyes.png", 1, 0, 0, 0, 0, 0, 0]
+	["/eyes/69.png", 1, 0, 0, 0, 0, 0, 0]
+	["/eyes/pepe.png", 1, 0, 0, 0, 0, 0, 0]
 	
 ];
 
@@ -177,11 +179,14 @@ const longHair = [
 const hatsUnder = [
 	["/hatunderheadphones/bandanablue.png", 1, 1, 1, 1, 1, 1, 1],
 	["/hatunderheadphones/bandanadarkgray.png", 1, 1, 1, 1, 1, 1, 1],
+	["/hatunderheadphones/brain.png", 1, 1, 1, 1, 1, 1, 1],
 	["/hatunderheadphones/bandanared.png", 1, 1, 1, 1, 1, 1, 1],
 	["/hatunderheadphones/beaniemonochrome.png", 1, 1, 1, 1, 1, 1, 1],
 	["/hatunderheadphones/beanie.png", 1, 1, 1, 1, 1, 1, 1],
 	["/hatunderheadphones/capmonochrome.png", 1, 1, 1, 1, 1, 1, 1],
 	["/hatunderheadphones/cappurple.png", 1, 1, 1, 1, 1, 1, 1],
+	["/hatunderheadphones/beerhat.png", 1, 1, 1, 1, 1, 1, 1],
+	["/hatunderheadphones/crown.png", 1, 1, 1, 1, 1, 1, 1],
 	["/hatunderheadphones/headbandblue_green.png", 1, 1, 1, 1, 1, 1, 1],
 	["/hatunderheadphones/headbandblue_red.png", 1, 1, 1, 1, 1, 1, 1],
 	["/hatunderheadphones/headbandblue_white.png", 1, 1, 1, 1, 1, 1, 1],
