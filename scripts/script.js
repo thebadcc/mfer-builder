@@ -54,8 +54,8 @@ const eyes = [
 	["/eyes/mcxshades.png", 1, 1, 1, 1, 1, 0, 0],
 	["/eyes/scanner.png", 1, 0, 0, 0, 0, 0, 0],
 	["/eyes/heresmy_aviators.png", 1, 0, 0, 0, 0, 0, 0],
-	["/eyes/heresmy_googlyEyes.png", 1, 0, 0, 0, 0, 0, 0]
-	["/eyes/69.png", 1, 0, 0, 0, 0, 0, 0]
+	["/eyes/heresmy_googlyEyes.png", 1, 0, 0, 0, 0, 0, 0],
+	["/eyes/69.png", 1, 0, 0, 0, 0, 0, 0],
 	["/eyes/pepe.png", 1, 0, 0, 0, 0, 0, 0]
 	
 ];
@@ -87,14 +87,14 @@ const headphones = [
 	["/headphones/linedheadphonesWhiteGold.png", 1, 0, 0, 0, 0, 0, 0],
 	["/headphones/linedheadphonesWhiteGreen.png", 1, 0, 0, 0, 0, 0, 0],
 	["/headphones/linedheadphonesWhitePink.png", 1, 0, 0, 0, 0, 0, 0],
-	["/headphones/linedheadphonesWhiteRed.png", 1, 0, 0, 0, 0, 0, 0],
+	["/headphones/linedheadphonesWhiteRed.png", 1, 0, 0, 0, 0, 0, 0]
 ];
 
 const smoke = [
 	["/smoke/cigblack.png", 1, 1, 1, 1, 1, 1, 1], 
 	["/smoke/cigwhite.png", 1, 1, 1, 1, 1, 1,, 1], 
 	["/smoke/pipe.png", 1, 1, 1, 1, 1, 1, 1],
-	["/smoke/heresmy_cigar.png", 1, 0, 0, 0, 0, 0, 0],
+	["/smoke/heresmy_cigar.png", 1, 0, 0, 0, 0, 0, 0]
 ];
 
 const watch420 = [
@@ -110,7 +110,7 @@ const watch420 = [
 	["/watch/subred.png", 1, 1, 1, 1, 1, 1, 1],
 	["/watch/subrose.png", 1, 1, 1, 1, 1, 1, 1],
 	["/watch/subturquoise.png", 1, 1, 1, 1, 1, 1, 1],
-	["/watch/heresmy_catchersWatch.png", 1, 0, 0, 0, 0, 0, 0],
+	["/watch/heresmy_catchersWatch.png", 1, 0, 0, 0, 0, 0, 0]
 ];
 
 const beard = [
@@ -173,7 +173,7 @@ const shirt = [
 const longHair = [
 	["/longhair/longhairblack.png", 1, 1, 1, 1, 1, 1, 1],
 	["/longhair/longhairyellow.png", 1, 1, 1, 1, 1, 1, 1],
-	["/longhair/prettycoolhair.png", 1, 1, 1, 1, 1, 1, 0],
+	["/longhair/prettycoolhair.png", 1, 1, 1, 1, 1, 1, 0]
 ];
 
 const hatsUnder = [
@@ -211,7 +211,7 @@ const hatsOver = [
 	["/hatoverheadphones/cowboyhat.png", 1, 1, 1, 1, 1, 1, 1], 
 	["/hatoverheadphones/pilothelmet.png", 1, 1, 1, 1, 1, 1, 1], 
 	["/hatoverheadphones/tophat.png", 1, 1, 1, 1, 1, 1, 1],
-	["/hatoverheadphones/heresmy_pirateHat.png", 1, 0, 0, 0, 0, 0, 0],
+	["/hatoverheadphones/heresmy_pirateHat.png", 1, 0, 0, 0, 0, 0, 0]
 ];
 
 const shortHair = [
