@@ -10,226 +10,230 @@ const projects = [
 	["mfersBehind", 5],
 	["sketchyMfers", 6],
 	["SOMFERS", 7],
+	["fineArtMfers", 8]
 ];
 
 const background = [
-	["/background/blue.png", 1, 1, 1, 1, 1, 1, 1],
-	["/background/yellow.png", 1, 1, 1, 1, 1, 1, 1],
-	["/background/green.png", 1, 1, 1, 1, 1, 1, 1],
-	["/background/orange.png", 1, 1, 1, 1, 1, 1, 1],
-	["/background/red.png", 1, 1, 1, 1, 1, 1, 1],
-	["/background/space.png", 1, 1, 1, 1, 1, 1, 1],
-	["/background/tree.png", 1, 1, 1, 1, 1, 1, 1],
-	["/background/graveyard.png", 1, 1, 1, 1, 1, 1, 1],
-	["/background/prettycoolpurple.png", 1, 1, 1, 1, 1, 1, 0],
-	["/background/TWU_negative.png", 1, 1, 1, 1, 1, 1, 0],
-	["/background/TWU_bubblegum.png", 1, 1, 1, 1, 1, 1, 0],
-	["/background/TWU_redLeopard2.png", 1, 1, 1, 1, 1, 1, 0],
-	["/background/TWU_ice.png", 1, 1, 1, 1, 1, 1, 0],
-	["/background/TWU_orangeCheetah.png", 1, 1, 1, 1, 1, 1, 0],
-	["/background/heresmy_salmon.png", 1, 1, 1, 1, 1, 1, 0]
+	["/background/blue.png", 1, 1, 1, 1, 1, 1, 1, 1],
+	["/background/yellow.png", 1, 1, 1, 1, 1, 1, 1, 1],
+	["/background/green.png", 1, 1, 1, 1, 1, 1, 1, 1],
+	["/background/orange.png", 1, 1, 1, 1, 1, 1, 1, 1],
+	["/background/red.png", 1, 1, 1, 1, 1, 1, 1, 1],
+	["/background/space.png", 1, 1, 1, 1, 1, 1, 1, 1],
+	["/background/tree.png", 1, 1, 1, 1, 1, 1, 1, 1],
+	["/background/graveyard.png", 1, 1, 1, 1, 1, 1, 1, 1],
+	["/background/prettycoolpurple.png", 1, 1, 1, 1, 1, 1, 0, 0],
+	["/background/TWU_negative.png", 1, 1, 1, 1, 1, 1, 0, 0],
+	["/background/TWU_bubblegum.png", 1, 1, 1, 1, 1, 1, 0, 0],
+	["/background/TWU_redLeopard2.png", 1, 1, 1, 1, 1, 1, 0, 0],
+	["/background/TWU_ice.png", 1, 1, 1, 1, 1, 1, 0, 0],
+	["/background/TWU_orangeCheetah.png", 1, 1, 1, 1, 1, 1, 0, 0],
+	["/background/heresmy_salmon.png", 1, 1, 1, 1, 1, 1, 0, 0]
 ];
 
 const type = [
-	["/type/plainmfer.png", 1, 1, 1, 1, 1, 1, 1],
-	["/type/charcoalmfer.png", 1, 1, 1, 1, 1, 1, 1],
-	["/type/zombiemfer.png", 1, 1, 1, 1, 1, 1, 1],
-	["/type/apemfer.png", 1, 1, 1, 1, 1, 1, 1],
-	["/type/alienmfer.png", 1, 1, 1, 1, 1, 1, 1],
-	["/type/robotmfer.png", 1, 0, 0, 0, 0, 0, 0],
-	["/type/heresmy_brainMfer.png", 1, 0, 0, 0, 0, 0, 0]
+	["/type/plainmfer.png", 1, 1, 1, 1, 1, 1, 1, 1],
+	["/type/charcoalmfer.png", 1, 1, 1, 1, 1, 1, 1, 1],
+	["/type/zombiemfer.png", 1, 1, 1, 1, 1, 1, 1, 1],
+	["/type/apemfer.png", 1, 1, 1, 1, 1, 1, 1, 1],
+	["/type/alienmfer.png", 1, 1, 1, 1, 1, 1, 1, 1],
+	["/type/robotmfer.png", 1, 0, 0, 0, 0, 0, 0, 0],
+	["/type/heresmy_brainMfer.png", 1, 0, 0, 0, 0, 0, 0, 0]
 ];
 
 const eyes = [
-	["/eyes/3Dglasses.png", 1, 1, 1, 1, 1, 1, 1],
-	["/eyes/alieneyes.png", 1, 1, 1, 1, 1, 1, 1],
-	["/eyes/eyemask.png", 1, 1, 1, 1, 1, 1, 1],
-	["/eyes/eyepatch.png", 1, 1, 1, 1, 1, 1, 0],
-	["/eyes/nerdglasses.png", 1, 1, 1, 1, 1, 1, 1],
-	["/eyes/purpleshades.png", 1, 1, 1, 1, 1, 1, 1],
-	["/eyes/regulareyes.png", 1, 1, 1, 1, 1, 1, 1],
-	["/eyes/shades.png", 1, 1, 1, 1, 1, 1, 1],
-	["/eyes/vr.png", 1, 1, 1, 1, 1, 1, 1],
-	["/eyes/zombieeyes.png", 1, 1, 1, 1, 1, 1, 1],
-	["/eyes/mcxshades.png", 1, 1, 1, 1, 1, 0, 0],
-	["/eyes/scanner.png", 1, 0, 0, 0, 0, 0, 0],
-	["/eyes/heresmy_aviators.png", 1, 0, 0, 0, 0, 0, 0],
-	["/eyes/heresmy_googlyEyes.png", 1, 0, 0, 0, 0, 0, 0],
-	["/eyes/hypnoeyes.png", 1, 0, 0, 0, 0, 0, 0],
-	["/eyes/lovingeyes.png", 1, 0, 0, 0, 0, 0, 0],
-	["/eyes/wink.png", 1, 0, 0, 0, 0, 0, 0],
-	["/eyes/pepe.png", 1, 0, 0, 0, 0, 0, 0],
+	["/eyes/3Dglasses.png", 1, 1, 1, 1, 1, 1, 1, 1],
+	["/eyes/alieneyes.png", 1, 1, 1, 1, 1, 1, 1, 1],
+	["/eyes/eyemask.png", 1, 1, 1, 1, 1, 1, 1, 1],
+	["/eyes/eyepatch.png", 1, 1, 1, 1, 1, 1, 0, 0],
+	["/eyes/nerdglasses.png", 1, 1, 1, 1, 1, 1, 1, 0],
+	["/eyes/purpleshades.png", 1, 1, 1, 1, 1, 1, 1, 1],
+	["/eyes/regulareyes.png", 1, 1, 1, 1, 1, 1, 1, 1],
+	["/eyes/shades.png", 1, 1, 1, 1, 1, 1, 1, 0],
+	["/eyes/vr.png", 1, 1, 1, 1, 1, 1, 1, 0],
+	["/eyes/zombieeyes.png", 1, 1, 1, 1, 1, 1, 1, 1],
+	["/eyes/mcxshades.png", 1, 1, 1, 1, 1, 0, 0, 0],
+	["/eyes/scanner.png", 1, 0, 0, 0, 0, 0, 0, 1],
+	["/eyes/heresmy_aviators.png", 1, 0, 0, 0, 0, 0, 0, 0],
+	["/eyes/heresmy_googlyEyes.png", 1, 0, 0, 0, 0, 0, 0, 1],
+	["/eyes/hypnoeyes.png", 0, 0, 0, 0, 0, 0, 0, 1],
+	["/eyes/lovingeyes.png", 0, 0, 0, 0, 0, 0, 0, 1],
+	["/eyes/wink.png", 0, 0, 0, 0, 0, 0, 0, 1],
+	["/eyes/pepe.png", 0, 0, 0, 0, 0, 0, 0, 1],
+	["/eyes/bigeyes.png", 0, 0, 0, 0, 0, 0, 0, 1],
 	
 ];
 
 const mouth = [
-	["/mouth/flat.png", 1, 1, 1, 1, 1, 1, 1],
-	["/mouth/smile.png", 1, 1, 1, 1, 1, 1, 1],
-	["/mouth/voicebox.png", 1, 0, 0, 0, 0, 0, 0]
+	["/mouth/flat.png", 1, 1, 1, 1, 1, 1, 1, 1],
+	["/mouth/smile.png", 1, 1, 1, 1, 1, 1, 1, 1],
+	["/mouth/voicebox.png", 1, 0, 0, 0, 0, 0, 0, 0],
+	["/mouth/kiss.png", 0, 0, 0, 0, 0, 0, 0, 1],
+	["/mouth/pepe.png", 0, 0, 0, 0, 0, 0, 0, 1],
+	["/mouth/scream.png", 0, 0, 0, 0, 0, 0, 0, 1],
+	["/mouth/cheshire.png", 0, 0, 0, 0, 0, 0, 0, 1],
+	["/mouth/ice.png", 0, 0, 0, 0, 0, 0, 0, 1]
 ];
 
 const headphones = [
-	["/headphones/RCSheadphones.png", 1, 1, 1, 1, 1, 1, 0],
-	["/headphones/blackheadphones.png", 1, 1, 1, 1, 1, 1, 1],
-	["/headphones/blueheadphones.png", 1, 1, 1, 1, 1, 1, 0],
-	["/headphones/goldheadphones.png", 1, 1, 1, 1, 1, 1, 1],
-	["/headphones/greenheadphones.png", 1, 1, 1, 1, 1, 1, 1],
-	["/headphones/linedheadphones.png", 1, 1, 1, 1, 1, 1, 1],
-	["/headphones/pinkheadphones.png", 1, 1, 1, 1, 1, 1, 1],
-	["/headphones/redheadphones.png", 1, 1, 1, 1, 1, 1, 1],
-	["/headphones/whiteheadphones.png", 1, 1, 1, 1, 1, 1, 1],
-	["/headphones/heresmy_powerHeadphones.png", 1, 1, 1, 1, 1, 1, 1],
-	["/headphones/linedheadphonesBlackBlue.png", 1, 0, 0, 0, 0, 0, 0],
-	["/headphones/linedheadphonesBlackGold.png", 1, 0, 0, 0, 0, 0, 0],
-	["/headphones/linedheadphonesBlackGreen.png", 1, 0, 0, 0, 0, 0, 0],
-	["/headphones/linedheadphonesBlackPink.png", 1, 0, 0, 0, 0, 0, 0],
-	["/headphones/linedheadphonesBlackRed.png", 1, 0, 0, 0, 0, 0, 0],
-	["/headphones/linedheadphonesWhiteBlack.png", 1, 0, 0, 0, 0, 0, 0],
-	["/headphones/linedheadphonesWhiteBlue.png", 1, 0, 0, 0, 0, 0, 0],
-	["/headphones/linedheadphonesWhiteGold.png", 1, 0, 0, 0, 0, 0, 0],
-	["/headphones/linedheadphonesWhiteGreen.png", 1, 0, 0, 0, 0, 0, 0],
-	["/headphones/linedheadphonesWhitePink.png", 1, 0, 0, 0, 0, 0, 0],
-	["/headphones/linedheadphonesWhiteRed.png", 1, 0, 0, 0, 0, 0, 0]
+	["/headphones/RCSheadphones.png", 1, 1, 1, 1, 1, 1, 0, 1],
+	["/headphones/blackheadphones.png", 1, 1, 1, 1, 1, 1, 1, 1],
+	["/headphones/blueheadphones.png", 1, 1, 1, 1, 1, 1, 0, 1],
+	["/headphones/goldheadphones.png", 1, 1, 1, 1, 1, 1, 1, 1],
+	["/headphones/greenheadphones.png", 1, 1, 1, 1, 1, 1, 1, 1],
+	["/headphones/linedheadphones.png", 1, 1, 1, 1, 1, 1, 1, 1],
+	["/headphones/pinkheadphones.png", 1, 1, 1, 1, 1, 1, 1, 0],
+	["/headphones/redheadphones.png", 1, 1, 1, 1, 1, 1, 1, 0],
+	["/headphones/whiteheadphones.png", 1, 1, 1, 1, 1, 1, 1, 1],
+	["/headphones/heresmy_powerHeadphones.png", 1, 0, 0, 0, 0, 0, 0, 0],
+	["/headphones/linedheadphonesBlackBlue.png", 1, 0, 0, 0, 0, 0, 0, 0],
+	["/headphones/linedheadphonesBlackGold.png", 1, 0, 0, 0, 0, 0, 0, 0],
+	["/headphones/linedheadphonesBlackGreen.png", 1, 0, 0, 0, 0, 0, 0, 0],
+	["/headphones/linedheadphonesBlackPink.png", 1, 0, 0, 0, 0, 0, 0, 0],
+	["/headphones/linedheadphonesBlackRed.png", 1, 0, 0, 0, 0, 0, 0, 0],
+	["/headphones/linedheadphonesWhiteBlack.png", 1, 0, 0, 0, 0, 0, 0, 0],
+	["/headphones/linedheadphonesWhiteBlue.png", 1, 0, 0, 0, 0, 0, 0, 0],
+	["/headphones/linedheadphonesWhiteGold.png", 1, 0, 0, 0, 0, 0, 0, 0],
+	["/headphones/linedheadphonesWhiteGreen.png", 1, 0, 0, 0, 0, 0, 0, 0],
+	["/headphones/linedheadphonesWhitePink.png", 1, 0, 0, 0, 0, 0, 0, 0],
+	["/headphones/linedheadphonesWhiteRed.png", 1, 0, 0, 0, 0, 0, 0, 0]
 ];
 
 const smoke = [
-	["/smoke/cigblack.png", 1, 1, 1, 1, 1, 1, 1], 
-	["/smoke/cigwhite.png", 1, 1, 1, 1, 1, 1,, 1], 
-	["/smoke/pipe.png", 1, 1, 1, 1, 1, 1, 1],
-	["/smoke/heresmy_cigar.png", 1, 0, 0, 0, 0, 0, 0]
+	["/smoke/cigblack.png", 1, 1, 1, 1, 1, 1, 1, 0], 
+	["/smoke/cigwhite.png", 1, 1, 1, 1, 1, 1, 1, 0], 
+	["/smoke/pipe.png", 1, 1, 1, 1, 1, 1, 1, 1],
+	["/smoke/heresmy_cigar.png", 1, 0, 0, 0, 0, 0, 0, 0]
 ];
 
 const watch420 = [
-	["/watch/argoblack.png", 1, 1, 1, 1, 1, 1, 1],
-	["/watch/argowhite.png", 1, 1, 1, 1, 1, 1, 1],
-	["/watch/oystergold.png", 1, 1, 1, 1, 1, 1, 1],
-	["/watch/oystersilver.png", 1, 1, 1, 1, 1, 1, 1],
-	["/watch/subbatblueblack.png", 1, 1, 1, 1, 1, 1, 1],
-	["/watch/subblack.png", 1, 1, 1, 1, 1, 1, 1],
-	["/watch/subblue.png", 1, 1, 1, 1, 1, 1, 1],
-	["/watch/subcolabluered.png", 1, 1, 1, 1, 1, 1, 1],
-	["/watch/sublanterngreen.png", 1, 1, 1, 1, 1, 1, 1],
-	["/watch/subred.png", 1, 1, 1, 1, 1, 1, 1],
-	["/watch/subrose.png", 1, 1, 1, 1, 1, 1, 1],
-	["/watch/subturquoise.png", 1, 1, 1, 1, 1, 1, 1],
-	["/watch/heresmy_catchersWatch.png", 1, 0, 0, 0, 0, 0, 0]
+	["/watch/argoblack.png", 1, 1, 1, 1, 1, 1, 1, 1],
+	["/watch/argowhite.png", 1, 1, 1, 1, 1, 1, 1, 1],
+	["/watch/oystergold.png", 1, 1, 1, 1, 1, 1, 1, 1],
+	["/watch/oystersilver.png", 1, 1, 1, 1, 1, 1, 1, 1],
+	["/watch/subbatblueblack.png", 1, 1, 1, 1, 1, 1, 1, 0],
+	["/watch/subblack.png", 1, 1, 1, 1, 1, 1, 1, 0],
+	["/watch/subblue.png", 1, 1, 1, 1, 1, 1, 1, 0],
+	["/watch/subcolabluered.png", 1, 1, 1, 1, 1, 1, 1, 0],
+	["/watch/sublanterngreen.png", 1, 1, 1, 1, 1, 1, 1, 0],
+	["/watch/subred.png", 1, 1, 1, 1, 1, 1, 1, 1],
+	["/watch/subrose.png", 1, 1, 1, 1, 1, 1, 1, 1],
+	["/watch/subturquoise.png", 1, 1, 1, 1, 1, 1, 1, 1],
+	["/watch/heresmy_catchersWatch.png", 1, 0, 0, 0, 0, 0, 0, 0]
 ];
 
 const beard = [
-	["/beard/fullbeard.png", 1, 1, 1, 1, 1, 1, 1],
-	["/beard/shadowbeard.png", 1, 1, 1, 1, 1, 1, 0]
+	["/beard/fullbeard.png", 1, 1, 1, 1, 1, 1, 1, 0],
+	["/beard/shadowbeard.png", 1, 1, 1, 1, 1, 1, 0, 0]
 ];
 
 const hoodies = [
-	["/hatoverheadphones/hoodie.png", 1, 1, 1, 1, 1, 1, 1],
-	["/hatoverheadphones/bearhoodie.png", 1, 0, 0, 0, 0, 0, 0],
-	["/hatoverheadphones/bullhoodie.png", 1, 0, 0, 0, 0, 0, 0],	
-	["/hatoverheadphones/foxhoodie.png", 1, 0, 0, 0, 0, 0, 0],	
-	["/hatoverheadphones/trexhoodie.png", 1, 0, 0, 0, 0, 0, 0],	
-	["/hatoverheadphones/dragonhoodie.png", 1, 0, 0, 0, 0, 0, 0],	
-	["/hatoverheadphones/chickenhoodie.png", 1, 0, 0, 0, 0, 0, 0],	
-	["/hatoverheadphones/pepehoodie.png", 1, 0, 0, 0, 0, 0, 0],	
-	["/hatoverheadphones/sharkhoodie.png", 1, 0, 0, 0, 0, 0, 0],	
-	["/hatoverheadphones/axolotlhoodie.png", 1, 0, 0, 0, 0, 0, 0],	
-	["/hatoverheadphones/mleehoodie.png", 1, 0, 0, 0, 0, 0, 0],	
-	["/hatoverheadphones/kikihoodie.png", 1, 0, 0, 0, 0, 0, 0],	
-	["/hatoverheadphones/masterchanhoodie.png", 1, 0, 0, 0, 0, 0, 0],	
-	["/hatoverheadphones/sonichoodie.png", 1, 0, 0, 0, 0, 0, 0],	
-	["/hatoverheadphones/rabbithoodie.png", 1, 0, 0, 0, 0, 0, 0],
-	["/hatoverheadphones/am_scream.png", 1, 0, 0, 0, 0, 0, 0],
-	["/hatoverheadphones/am_royal.png", 1, 0, 0, 0, 0, 0, 0],
-	["/hatoverheadphones/am_sheepBlack.png", 1, 0, 0, 0, 0, 0, 0],
-	["/hatoverheadphones/am_wickedWitch.png", 1, 0, 0, 0, 0, 0, 0],
-	["/hatoverheadphones/am_amongUs_blue.png", 1, 0, 0, 0, 0, 0, 0],
-	["/hatoverheadphones/am_amongUs_green.png", 1, 0, 0, 0, 0, 0, 0],
-	["/hatoverheadphones/am_amongUs_pink.png", 1, 0, 0, 0, 0, 0, 0],
-	["/hatoverheadphones/am_breakingBad.png", 1, 0, 0, 0, 0, 0, 0],
-	["/hatoverheadphones/am_death.png", 1, 0, 0, 0, 0, 0, 0],
-	["/hatoverheadphones/am_grandmaWolf.png", 1, 0, 0, 0, 0, 0, 0],
-	["/hatoverheadphones/am_human.png", 1, 0, 0, 0, 0, 0, 0],
-	["/hatoverheadphones/am_lobster.png", 1, 0, 0, 0, 0, 0, 0],
-	["/hatoverheadphones/am_pickleRick.png", 1, 0, 0, 0, 0, 0, 0],
-	["/hatoverheadphones/am_plagueDoctor.png", 1, 0, 0, 0, 0, 0, 0],
-	["/hatoverheadphones/am_sheepWhite.png", 1, 0, 0, 0, 0, 0, 0],
-	["/hatoverheadphones/am_snowWhite.png", 1, 0, 0, 0, 0, 0, 0],
-	["/hatoverheadphones/am_stimpy.png", 1, 0, 0, 0, 0, 0, 0]
+	["/hatoverheadphones/hoodie.png", 1, 1, 1, 1, 1, 1, 1, 1],
+	["/hatoverheadphones/bearhoodie.png", 1, 0, 0, 0, 0, 0, 0, 0],
+	["/hatoverheadphones/bullhoodie.png", 1, 0, 0, 0, 0, 0, 0, 0],	
+	["/hatoverheadphones/foxhoodie.png", 1, 0, 0, 0, 0, 0, 0, 0],	
+	["/hatoverheadphones/trexhoodie.png", 1, 0, 0, 0, 0, 0, 0, 0],	
+	["/hatoverheadphones/dragonhoodie.png", 1, 0, 0, 0, 0, 0, 0, 0],	
+	["/hatoverheadphones/chickenhoodie.png", 1, 0, 0, 0, 0, 0, 0, 0],	
+	["/hatoverheadphones/pepehoodie.png", 1, 0, 0, 0, 0, 0, 0, 0],	
+	["/hatoverheadphones/sharkhoodie.png", 1, 0, 0, 0, 0, 0, 0, 0],	
+	["/hatoverheadphones/axolotlhoodie.png", 1, 0, 0, 0, 0, 0, 0, 0],	
+	["/hatoverheadphones/mleehoodie.png", 1, 0, 0, 0, 0, 0, 0, 0],	
+	["/hatoverheadphones/kikihoodie.png", 1, 0, 0, 0, 0, 0, 0, 0],	
+	["/hatoverheadphones/masterchanhoodie.png", 1, 0, 0, 0, 0, 0, 0, 0],	
+	["/hatoverheadphones/sonichoodie.png", 1, 0, 0, 0, 0, 0, 0, 0],	
+	["/hatoverheadphones/rabbithoodie.png", 1, 0, 0, 0, 0, 0, 0, 0],
+	["/hatoverheadphones/am_scream.png", 1, 0, 0, 0, 0, 0, 0, 0],
+	["/hatoverheadphones/am_royal.png", 1, 0, 0, 0, 0, 0, 0, 0],
+	["/hatoverheadphones/am_sheepBlack.png", 1, 0, 0, 0, 0, 0, 0, 0],
+	["/hatoverheadphones/am_wickedWitch.png", 1, 0, 0, 0, 0, 0, 0, 0],
+	["/hatoverheadphones/am_amongUs_blue.png", 1, 0, 0, 0, 0, 0, 0, 0],
+	["/hatoverheadphones/am_amongUs_green.png", 1, 0, 0, 0, 0, 0, 0, 0],
+	["/hatoverheadphones/am_amongUs_pink.png", 1, 0, 0, 0, 0, 0, 0, 0],
+	["/hatoverheadphones/am_breakingBad.png", 1, 0, 0, 0, 0, 0, 0, 0],
+	["/hatoverheadphones/am_death.png", 1, 0, 0, 0, 0, 0, 0, 0],
+	["/hatoverheadphones/am_grandmaWolf.png", 1, 0, 0, 0, 0, 0, 0, 0],
+	["/hatoverheadphones/am_human.png", 1, 0, 0, 0, 0, 0, 0, 0],
+	["/hatoverheadphones/am_lobster.png", 1, 0, 0, 0, 0, 0, 0, 0],
+	["/hatoverheadphones/am_pickleRick.png", 1, 0, 0, 0, 0, 0, 0, 0],
+	["/hatoverheadphones/am_plagueDoctor.png", 1, 0, 0, 0, 0, 0, 0, 0],
+	["/hatoverheadphones/am_sheepWhite.png", 1, 0, 0, 0, 0, 0, 0, 0],
+	["/hatoverheadphones/am_snowWhite.png", 1, 0, 0, 0, 0, 0, 0, 0],
+	["/hatoverheadphones/am_stimpy.png", 1, 0, 0, 0, 0, 0, 0, 0]
 ];
 
 const shirt = [
-	["/shirt/collaredshirtblue.png", 1, 1, 1, 1, 1, 1, 1],
-	["/shirt/collaredshirtgreen.png", 1, 1, 1, 1, 1, 1, 1],
-	["/shirt/collaredshirtpink.png", 1, 1, 1, 1, 1, 1, 1],
-	["/shirt/collaredshirtturquoise.png", 1, 1, 1, 1, 1, 1, 1],
-	["/shirt/collaredshirtwhite.png", 1, 1, 1, 1, 1, 1, 1],
-	["/shirt/collaredshirtyellow.png", 1, 1, 1, 1, 1, 1, 1],
-	["/shirt/hoodiedownblue.png", 1, 1, 1, 1, 1, 1, 1],
-	["/shirt/hoodiedowngray.png", 1, 1, 1, 1, 1, 1, 1],
-	["/shirt/hoodiedowngreen.png", 1, 1, 1, 1, 1, 1, 1],
-	["/shirt/hoodiedownpink.png", 1, 1, 1, 1, 1, 1, 1],
-	["/shirt/hoodiedownred.png", 1, 1, 1, 1, 1, 1, 1],
-	["/shirt/hoodiedownwhite.png", 1, 1, 1, 1, 1, 1, 1],
-	["/chain/goldchain.png", 1, 1, 1, 1, 1, 1, 1],
-	["/chain/silverchain.png", 1, 1, 1, 1, 1, 1, 1],
-	["/shirt/collaredshirtbrown.png", 1, 1, 1, 1, 1, 1, 1]
+	["/shirt/collaredshirtblue.png", 1, 1, 1, 1, 1, 1, 1, 0],
+	["/shirt/collaredshirtgreen.png", 1, 1, 1, 1, 1, 1, 1, 1],
+	["/shirt/collaredshirtpink.png", 1, 1, 1, 1, 1, 1, 1, 0],
+	["/shirt/collaredshirtturquoise.png", 1, 1, 1, 1, 1, 1, 1, 1],
+	["/shirt/collaredshirtwhite.png", 1, 1, 1, 1, 1, 1, 1, 1],
+	["/shirt/collaredshirtyellow.png", 1, 1, 1, 1, 1, 1, 1, 1],
+	["/shirt/hoodiedownblue.png", 1, 1, 1, 1, 1, 1, 1, 0],
+	["/shirt/hoodiedowngray.png", 1, 1, 1, 1, 1, 1, 1, 0],
+	["/shirt/hoodiedowngreen.png", 1, 1, 1, 1, 1, 1, 1, 0],
+	["/shirt/hoodiedownpink.png", 1, 1, 1, 1, 1, 1, 1, 1],
+	["/shirt/hoodiedownred.png", 1, 1, 1, 1, 1, 1, 1, 0],
+	["/shirt/hoodiedownwhite.png", 1, 1, 1, 1, 1, 1, 1, 0],
+	["/chain/goldchain.png", 1, 1, 1, 1, 1, 1, 1, 1],
+	["/chain/silverchain.png", 1, 1, 1, 1, 1, 1, 1, 0]
 ];
 
 const longHair = [
-	["/longhair/longhairblack.png", 1, 1, 1, 1, 1, 1, 1],
-	["/longhair/longhairyellow.png", 1, 1, 1, 1, 1, 1, 1],
-	["/longhair/prettycoolhair.png", 1, 1, 1, 1, 1, 1, 0]
+	["/longhair/longhairblack.png", 1, 1, 1, 1, 1, 1, 1, 1],
+	["/longhair/longhairyellow.png", 1, 1, 1, 1, 1, 1, 1, 1],
+	["/longhair/prettycoolhair.png", 1, 1, 1, 1, 1, 1, 0, 1]
 ];
 
 const hatsUnder = [
-	["/hatunderheadphones/bandanablue.png", 1, 1, 1, 1, 1, 1, 1],
-	["/hatunderheadphones/bandanadarkgray.png", 1, 1, 1, 1, 1, 1, 1],
-	["/hatunderheadphones/bandanared.png", 1, 1, 1, 1, 1, 1, 1],
-	["/hatunderheadphones/beaniemonochrome.png", 1, 1, 1, 1, 1, 1, 1],
-	["/hatunderheadphones/beanie.png", 1, 1, 1, 1, 1, 1, 1],
-	["/hatunderheadphones/capmonochrome.png", 1, 1, 1, 1, 1, 1, 1],
-	["/hatunderheadphones/cappurple.png", 1, 1, 1, 1, 1, 1, 1],
-	["/hatunderheadphones/headbandblue_green.png", 1, 1, 1, 1, 1, 1, 1],
-	["/hatunderheadphones/headbandblue_red.png", 1, 1, 1, 1, 1, 1, 1],
-	["/hatunderheadphones/headbandblue_white.png", 1, 1, 1, 1, 1, 1, 1],
-	["/hatunderheadphones/headbandgreen_white.png", 1, 1, 1, 1, 1, 1, 1],
-	["/hatunderheadphones/headbandpink_white.png", 1, 1, 1, 1, 1, 1, 1],
-	["/hatunderheadphones/knitatlanta.png", 1, 1, 1, 1, 1, 1, 1],
-	["/hatunderheadphones/knitbaltimore.png", 1, 1, 1, 1, 1, 1, 1],
-	["/hatunderheadphones/knitbuffalo.png", 1, 1, 1, 1, 1, 1, 1],
-	["/hatunderheadphones/knitchicago.png", 1, 1, 1, 1, 1, 1, 1],
-	["/hatunderheadphones/knitcleveland.png", 1, 1, 1, 1, 1, 1, 1],
-	["/hatunderheadphones/knitdallas.png", 1, 1, 1, 1, 1, 1, 1],
-	["/hatunderheadphones/knitkc.png", 1, 1, 1, 1, 1, 1, 1],
-	["/hatunderheadphones/knitlasvegas.png", 1, 1, 1, 1, 1, 1, 1],
-	["/hatunderheadphones/knitmiami.png", 1, 1, 1, 1, 1, 1, 1],
-	["/hatunderheadphones/knitnewyork.png", 1, 1, 1, 1, 1, 1, 1],
-	["/hatunderheadphones/knitpittsburgh.png", 1, 1, 1, 1, 1, 1, 1],
-	["/hatunderheadphones/knitsanfran.png", 1, 1, 1, 1, 1, 1, 1],
-	["/hatunderheadphones/heresmy_pirateBandana.png", 1, 0, 0, 0, 0, 0, 0],
-	["/hatunderheadphones/brain.png", 1, 1, 1, 1, 1, 1, 1],
-	["/hatunderheadphones/crown.png", 1, 1, 1, 1, 1, 1, 1]
+	["/hatunderheadphones/bandanablue.png", 1, 1, 1, 1, 1, 1, 1, 1],
+	["/hatunderheadphones/bandanadarkgray.png", 1, 1, 1, 1, 1, 1, 1, 0],
+	["/hatunderheadphones/bandanared.png", 1, 1, 1, 1, 1, 1, 1, 0],
+	["/hatunderheadphones/beaniemonochrome.png", 1, 1, 1, 1, 1, 1, 1, 0],
+	["/hatunderheadphones/beanie.png", 1, 1, 1, 1, 1, 1, 1, 1],
+	["/hatunderheadphones/capmonochrome.png", 1, 1, 1, 1, 1, 1, 1, 1],
+	["/hatunderheadphones/cappurple.png", 1, 1, 1, 1, 1, 1, 1, 0],
+	["/hatunderheadphones/headbandblue_green.png", 1, 1, 1, 1, 1, 1, 1, 0],
+	["/hatunderheadphones/headbandblue_red.png", 1, 1, 1, 1, 1, 1, 1, 0],
+	["/hatunderheadphones/headbandblue_white.png", 1, 1, 1, 1, 1, 1, 1, 1],
+	["/hatunderheadphones/headbandgreen_white.png", 1, 1, 1, 1, 1, 1, 1, 0],
+	["/hatunderheadphones/headbandpink_white.png", 1, 1, 1, 1, 1, 1, 1, 0],
+	["/hatunderheadphones/knitatlanta.png", 1, 1, 1, 1, 1, 1, 1, 0],
+	["/hatunderheadphones/knitbaltimore.png", 1, 1, 1, 1, 1, 1, 1, 0],
+	["/hatunderheadphones/knitbuffalo.png", 1, 1, 1, 1, 1, 1, 1, 0],
+	["/hatunderheadphones/knitchicago.png", 1, 1, 1, 1, 1, 1, 1, 0],
+	["/hatunderheadphones/knitcleveland.png", 1, 1, 1, 1, 1, 1, 1, 0],
+	["/hatunderheadphones/knitdallas.png", 1, 1, 1, 1, 1, 1, 1, 0],
+	["/hatunderheadphones/knitkc.png", 1, 1, 1, 1, 1, 1, 1, 0],
+	["/hatunderheadphones/knitlasvegas.png", 1, 1, 1, 1, 1, 1, 1, 0],
+	["/hatunderheadphones/knitmiami.png", 1, 1, 1, 1, 1, 1, 1, 0],
+	["/hatunderheadphones/knitnewyork.png", 1, 1, 1, 1, 1, 1, 1, 0],
+	["/hatunderheadphones/knitpittsburgh.png", 1, 1, 1, 1, 1, 1, 1, 0],
+	["/hatunderheadphones/knitsanfran.png", 1, 1, 1, 1, 1, 1, 1, 0],
+	["/hatunderheadphones/heresmy_pirateBandana.png", 1, 0, 0, 0, 0, 0, 0, 0],
+	["/hatunderheadphones/headband_red.png", 0, 0, 0, 0, 0, 0, 0, 1]
 ];
 
 const hatsOver = [
-	["/hatoverheadphones/cowboyhat.png", 1, 1, 1, 1, 1, 1, 1], 
-	["/hatoverheadphones/pilothelmet.png", 1, 1, 1, 1, 1, 1, 1], 
-	["/hatoverheadphones/tophat.png", 1, 1, 1, 1, 1, 1, 1],
-	["/hatoverheadphones/heresmy_pirateHat.png", 1, 0, 0, 0, 0, 0, 0],
-	["/hatunderheadphones/beerhat.png", 1, 1, 1, 1, 1, 1, 1],
+	["/hatoverheadphones/cowboyhat.png", 1, 1, 1, 1, 1, 1, 1, 1], 
+	["/hatoverheadphones/pilothelmet.png", 1, 1, 1, 1, 1, 1, 1, 1], 
+	["/hatoverheadphones/tophat.png", 1, 1, 1, 1, 1, 1, 1, 0],
+	["/hatoverheadphones/heresmy_pirateHat.png", 1, 0, 0, 0, 0, 0, 0, 0],
+	["/hatunderheadphones/beerhat.png", 0, 0, 0, 0, 0, 0, 0, 0, 1],
 ];
 
 const shortHair = [
-	["/shorthair/messyblack.png", 1, 1, 1, 1, 1, 1, 1],
-	["/shorthair/messypurple.png", 1, 1, 1, 1, 1, 1, 1],
-	["/shorthair/messyred.png", 1, 1, 1, 1, 1, 1, 1],
-	["/shorthair/messyyellow.png", 1, 1, 1, 1, 1, 1, 1],
-	["/shorthair/mohawkblack.png", 1, 1, 1, 1, 1, 1, 1],
-	["/shorthair/mohawkblue.png", 1, 1, 1, 1, 1, 1, 1],
-	["/shorthair/mohawkgreen.png", 1, 1, 1, 1, 1, 1, 1],
-	["/shorthair/mohawkpink.png", 1, 1, 1, 1, 1, 1, 1],
-	["/shorthair/mohawkpurple.png", 1, 1, 1, 1, 1, 1, 1],
-	["/shorthair/mohawkred.png", 1, 1, 1, 1, 1, 1, 1],
-	["/shorthair/mohawkyellow.png", 1, 1, 1, 1, 1, 1, 1],
-	["/shorthair/messyblack.png", 1, 1, 1, 1, 1, 1, 1]
+	["/shorthair/messyblack.png", 1, 1, 1, 1, 1, 1, 1, 1],
+	["/shorthair/messypurple.png", 1, 1, 1, 1, 1, 1, 1, 0],
+	["/shorthair/messyred.png", 1, 1, 1, 1, 1, 1, 1, 0],
+	["/shorthair/messyyellow.png", 1, 1, 1, 1, 1, 1, 1, 0],
+	["/shorthair/mohawkblack.png", 1, 1, 1, 1, 1, 1, 1, 0],
+	["/shorthair/mohawkblue.png", 1, 1, 1, 1, 1, 1, 1, 0],
+	["/shorthair/mohawkgreen.png", 1, 1, 1, 1, 1, 1, 1, 0],
+	["/shorthair/mohawkpink.png", 1, 1, 1, 1, 1, 1, 1, 0],
+	["/shorthair/mohawkpurple.png", 1, 1, 1, 1, 1, 1, 1, 1],
+	["/shorthair/mohawkred.png", 1, 1, 1, 1, 1, 1, 1, 0],
+	["/shorthair/mohawkyellow.png", 1, 1, 1, 1, 1, 1, 1, 0],
 ];
 
 // function to generate mfers
@@ -269,16 +273,16 @@ function generateMfers(count, seedinput) {
 		}
 		var backgroundRNG = Math.floor(Math.random() * 15);
 		var typeRNG = Math.floor(Math.random() * 7);
-		var eyesRNG = Math.floor(Math.random() * 14);
-		var mouthRNG = Math.floor(Math.random() * 3);
+		var eyesRNG = Math.floor(Math.random() * 19);
+		var mouthRNG = Math.floor(Math.random() * 8);
 		var headphonesRNG = Math.floor(Math.random() * 21);
 		var smokeRNG = Math.floor(Math.random() * 4);
 		var watchRNG = Math.floor(Math.random() * 13);
 		var beardRNG = Math.floor(Math.random() * 2);
 		var hoodiesRNG = Math.floor(Math.random() * 32);
 		var shirtRNG = Math.floor(Math.random() * 14);
-		var hatsUnderRNG = Math.floor(Math.random() * 25);
-		var hatsOverRNG = Math.floor(Math.random() * 4);
+		var hatsUnderRNG = Math.floor(Math.random() * 26);
+		var hatsOverRNG = Math.floor(Math.random() * 5);
 		var longHairRNG = Math.floor(Math.random() * 3);
 		var shortHairRNG = Math.floor(Math.random() * 12);
 
