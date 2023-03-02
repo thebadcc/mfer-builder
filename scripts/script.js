@@ -54,7 +54,11 @@ const eyes = [
 	["/eyes/mcxshades.png", 1, 1, 1, 1, 1, 0, 0],
 	["/eyes/scanner.png", 1, 0, 0, 0, 0, 0, 0],
 	["/eyes/heresmy_aviators.png", 1, 0, 0, 0, 0, 0, 0],
-	["/eyes/heresmy_googlyEyes.png", 1, 0, 0, 0, 0, 0, 0]
+	["/eyes/heresmy_googlyEyes.png", 1, 0, 0, 0, 0, 0, 0],
+	["/eyes/hypnoeyes.png", 1, 0, 0, 0, 0, 0, 0],
+	["/eyes/lovingeyes.png", 1, 0, 0, 0, 0, 0, 0],
+	["/eyes/wink.png", 1, 0, 0, 0, 0, 0, 0],
+	["/eyes/pepe.png", 1, 0, 0, 0, 0, 0, 0],
 	
 ];
 
