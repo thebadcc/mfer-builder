@@ -264,7 +264,7 @@ function generateMfers(count, seedinput) {
 	for (let i = 0; i < count; i++){
 		var baseID = parseFloat(document.getElementsByClassName('base')[0].value);	
 		if (baseID == 0) {
-			var baseRNG = Math.floor(Math.random() * 7);
+			var baseRNG = Math.floor(Math.random() * 8);
 			var base = projects[baseRNG][0];
 			var baseCheck = projects[baseRNG][1];
 		} else {
