@@ -217,7 +217,7 @@ const hatsUnder = [
 const hatsOver = [
 	["/hatoverheadphones/cowboyhat.png", 1, 1, 1, 1, 1, 1, 1, 1], 
 	["/hatoverheadphones/pilothelmet.png", 1, 1, 1, 1, 1, 1, 1, 1], 
-	["/hatoverheadphones/tophat.png", 1, 1, 1, 1, 1, 1, 1, 0],
+	["/hatoverheadphones/tophat.png", 1, 1, 1, 1, 1, 1, 1, 1],
 	["/hatoverheadphones/heresmy_pirateHat.png", 1, 0, 0, 0, 0, 0, 0, 0],
 	["/hatunderheadphones/beerhat.png", 0, 0, 0, 0, 0, 0, 0, 0, 1],
 ];
