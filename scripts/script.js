@@ -100,8 +100,8 @@ const headphones = [
 ];
 
 const smoke = [
-	["/smoke/cigblack.png", 1, 1, 1, 1, 1, 1, 1, 0], 
-	["/smoke/cigwhite.png", 1, 1, 1, 1, 1, 1, 1, 0], 
+	["/smoke/cigblack.png", 1, 1, 1, 1, 1, 1, 1, 1], 
+	["/smoke/cigwhite.png", 1, 1, 1, 1, 1, 1, 1, 1], 
 	["/smoke/pipe.png", 1, 1, 1, 1, 1, 1, 1, 1],
 	["/smoke/heresmy_cigar.png", 1, 0, 0, 0, 0, 0, 0, 0]
 ];
